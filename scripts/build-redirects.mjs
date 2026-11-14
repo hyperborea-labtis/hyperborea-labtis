@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/**
+/** 
  * Post-build step: keep every URL of the old Drupal site alive.
  *
  * The redirects are NOT configured centrally: each content file declares what it
