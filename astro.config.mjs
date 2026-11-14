@@ -26,6 +26,8 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
+      // Keyword pages keep their old URLs but were never in the old sitemap.
+      filter: (page) => !page.includes("/taxonomy/term/"),
       i18n: {
         defaultLocale: "es",
         locales: { es: "es", en: "en", fr: "fr" },

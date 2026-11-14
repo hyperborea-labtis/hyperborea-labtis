@@ -1,0 +1,45 @@
+---
+// Keyword pages of the old Drupal site (/es/taxonomy/term/976). They are already
+// indexed by search engines, so every term id keeps its URL. The list is built
+// from the papers' `keywords` frontmatter (src/data/keyword-terms.json maps the
+// old term id to its name; refresh it with `npm run import:terms`).
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import PageTitle from "../../../../components/PageTitle.astro";
+import PaperCard from "../../../../components/PaperCard.astro";
+import { locales, type Locale } from "../../../../i18n/config";
+import { papersWithKeyword } from "../../../../lib/content";
+import terms from "../../../../data/keyword-terms.json";
+
+export const getStaticPaths = (async () => {
+  const names: Record<string, string> = terms;
+  return locales.flatMap((lang) =>
+    Object.entries(names).map(([tid, name]) => ({ params: { lang, tid }, props: { name } })),
+  );
+}) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const { tid } = Astro.params;
+const { name } = Astro.props;
+const papers = await papersWithKeyword(lang, name);
+---
+
+<BaseLayout title={`${name} | Hyperborea`} lang={lang} path={`/taxonomy/term/${tid}`}>
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={name} />
+      <div class="hb-grid">
+        {
+          papers.map((p) => (
+            <PaperCard
+              title={p.data.title}
+              href={`/${lang}/paper/${p.data.slug}`}
+              image={p.data.heroImage}
+              columns={2}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

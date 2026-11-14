@@ -106,6 +106,15 @@ export async function papersInSection(locale: Locale, sectionLabel: string): Pro
   return papers.filter((p) => p.data.section === sectionLabel);
 }
 
+const norm = (s: string): string => s.trim().toLowerCase();
+
+/** Papers tagged with a keyword (matched by name, ignoring case). */
+export async function papersWithKeyword(locale: Locale, keyword: string): Promise<Paper[]> {
+  const papers = await papersForLocale(locale);
+  const wanted = norm(keyword);
+  return papers.filter((p) => p.data.keywords.some((k) => norm(k) === wanted));
+}
+
 const HOME_ITEMS = 6;
 
 /** Papers shown on the home page: those with a `featured` position, in that

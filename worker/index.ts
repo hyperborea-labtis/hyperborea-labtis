@@ -1,5 +1,7 @@
-// Cloudflare Pages Function: POST /api/contact — sends the contact form by email.
-// Needs (see README): a `send_email` binding named EMAIL, and the variables
+// Worker entry point. Static files are served by Workers Assets; this code only
+// runs for /api/* (wrangler.jsonc → assets.run_worker_first). It handles
+// POST /api/contact and sends the contact form by email.
+// Needs (see README): a `send_email` binding named EMAIL, and the secrets
 // CONTACT_TO (journal inbox) and CONTACT_FROM (an address on a domain onboarded
 // to Cloudflare Email Sending).
 interface EmailMessage {
@@ -30,7 +32,8 @@ const json = (status: number, body: Record<string, unknown>): Response =>
 const clean = (v: unknown, max: number): string => (typeof v === "string" ? v.trim().slice(0, max) : "");
 const oneLine = (s: string): string => s.replace(/[\r\n]+/g, " ");
 
-export const onRequestPost = async ({ request, env }: { request: Request; env: Env }): Promise<Response> => {
+async function handleContact(request: Request, env: Env): Promise<Response> {
+  if (request.method !== "POST") return json(405, { error: "method_not_allowed" });
   let body: ContactBody;
   try {
     body = (await request.json()) as ContactBody;
@@ -62,4 +65,12 @@ export const onRequestPost = async ({ request, env }: { request: Request; env: E
     return json(502, { error: "send_failed" });
   }
   return json(200, { ok: true });
+}
+
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    const { pathname } = new URL(request.url);
+    if (pathname === "/api/contact") return handleContact(request, env);
+    return json(404, { error: "not_found" });
+  },
 };

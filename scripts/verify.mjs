@@ -88,15 +88,19 @@ if (SKIP_BUILD && fs.existsSync(DIST)) {
 }
 
 // ---------- 2. counts vs Drupal JSON:API ----------
+// Nodes deliberately not migrated (Drupal theme demo page and front-page node);
+// their URLs redirect to the home page — keep in sync with SKIP_NIDS in
+// import-drupal.mjs.
+const SKIPPED_NIDS = new Set([7, 45]);
 async function countRemote(type, lang) {
-  let url = `${ORIGIN}/${lang}/jsonapi/node/${type}?fields%5Bnode--${type}%5D=langcode&page%5Blimit%5D=20`;
+  let url = `${ORIGIN}/${lang}/jsonapi/node/${type}?fields%5Bnode--${type}%5D=langcode,drupal_internal__nid&page%5Blimit%5D=20`;
   let n = 0;
   let guard = 0;
   while (url && guard++ < 100) {
     const res = await fetch(url, { headers: { Accept: "application/vnd.api+json" } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const d = await res.json();
-    n += d.data.filter((x) => x.attributes.langcode === lang).length;
+    n += d.data.filter((x) => x.attributes.langcode === lang && !SKIPPED_NIDS.has(x.attributes.drupal_internal__nid)).length;
     url = d.links?.next?.href ?? null;
   }
   return n;
@@ -306,6 +310,24 @@ if (OFFLINE) {
     if (lines > 2000) items.push(`_redirects has ${lines} lines; Cloudflare Pages allows 2000`);
     record("9. URL parity with old site", items.length ? "fail" : "pass", `${urls.length - missing.length}/${urls.length} old URLs answer; ${lines} lines in _redirects`, items);
   }
+}
+
+// ---------- 9b. keyword pages (/{lang}/taxonomy/term/<tid>) ----------
+{
+  const termsFile = path.join(ROOT, "src", "data", "keyword-terms.json");
+  const terms = fs.existsSync(termsFile) ? Object.keys(JSON.parse(fs.readFileSync(termsFile, "utf8"))) : [];
+  const missing = [];
+  for (const lang of LOCALES) {
+    for (const tid of terms) {
+      if (!fs.existsSync(path.join(DIST, lang, "taxonomy", "term", `${tid}.html`))) missing.push(`/${lang}/taxonomy/term/${tid}`);
+    }
+  }
+  record(
+    "9b. Keyword pages",
+    terms.length && !missing.length ? "pass" : "fail",
+    terms.length ? `${terms.length} terms × ${LOCALES.length} languages, ${missing.length} missing` : "src/data/keyword-terms.json missing — run npm run import:terms",
+    missing.slice(0, 10),
+  );
 }
 
 // ---------- summary ----------

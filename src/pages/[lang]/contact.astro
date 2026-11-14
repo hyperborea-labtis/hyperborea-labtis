@@ -1,6 +1,6 @@
 ---
 // Contact form, same URL as the old Drupal site (/es/contact). Submits to the
-// Cloudflare Pages Function in functions/api/contact.ts.
+// Worker in worker/index.ts (POST /api/contact).
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";

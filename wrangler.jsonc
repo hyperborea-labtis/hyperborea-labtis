@@ -1,0 +1,20 @@
+{
+  // Cloudflare Worker with static assets: the Astro build (dist/) plus a tiny
+  // Worker for POST /api/contact. Deploy: `npm run build` then `npx wrangler deploy`.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hyperborea-labtis",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    // The Worker only runs for the API; everything else is served as static files
+    // (and dist/_redirects gives the 301s that keep the old Drupal URLs alive).
+    "run_worker_first": ["/api/*"],
+    // URLs have no trailing slash (/es/numero-1, not /es/numero-1/).
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  // Contact form. CONTACT_TO and CONTACT_FROM are SECRETS (not committed: the
+  // repository is public); see README.
+  "send_email": [{ "name": "EMAIL" }]
+}

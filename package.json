@@ -13,6 +13,7 @@
     "check": "astro check",
     "import": "node scripts/import-drupal.mjs",
     "import:all": "node scripts/import-drupal.mjs --all",
+    "import:terms": "node scripts/import-keyword-terms.mjs",
     "verify": "node scripts/verify.mjs"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "turndown": "^7.2.5",
     "turndown-plugin-gfm": "^1.0.2",
     "typescript": "^5.9.3",
+    "wrangler": "^4.162.0",
     "yaml": "^2.9.1"
   }
 }
