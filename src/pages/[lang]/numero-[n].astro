@@ -1,0 +1,52 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import { locales, useTranslations, type Locale } from "../../i18n/config";
+import { ISSUE_NUMBERS, issueTitle } from "../../data/issues";
+import { papersInIssue } from "../../lib/content";
+
+export const getStaticPaths = (() =>
+  locales.flatMap((lang) =>
+    ISSUE_NUMBERS.map((n) => ({ params: { lang, n: String(n) } })),
+  )) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const n = Number(Astro.params.n);
+const t = useTranslations(lang);
+const title = issueTitle(n);
+const papers = await papersInIssue(lang, n);
+const pad = String(n).padStart(2, "0");
+---
+
+<BaseLayout title={`${title} | Hyperborea`} lang={lang} path={`/numero-${n}`}>
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={title} />
+      <ul class="hb-toc">
+        {
+          papers.map((p) => (
+            <li class="hb-toc-item">
+              {p.data.section && <blockquote class="hb-toc-section">{p.data.section}</blockquote>}
+              <h2 class="hb-toc-title">
+                <a href={`/${lang}/paper/${p.data.slug}`}>{p.data.title}</a>
+              </h2>
+              {p.data.author && <h3 class="hb-toc-author">{p.data.author}</h3>}
+              <p class="hb-toc-meta">
+                {t("issue.published")}: {t("issue.number")} {pad}
+                {p.data.publishedDate && (
+                  <>
+                    {" · "}
+                    <time datetime={p.data.publishedDate.toISOString()}>
+                      {p.data.publishedDate.toISOString().slice(0, 10)}
+                    </time>
+                  </>
+                )}
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

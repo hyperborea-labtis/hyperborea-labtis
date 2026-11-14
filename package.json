@@ -1,0 +1,32 @@
+{
+  "name": "hyperborea",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist && node scripts/build-redirects.mjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "import": "node scripts/import-drupal.mjs",
+    "import:all": "node scripts/import-drupal.mjs --all",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.5",
+    "@fontsource/lato": "^5.3.0",
+    "astro": "^7.4.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "pagefind": "^1.6.0",
+    "sharp": "^0.35.5",
+    "turndown": "^7.2.5",
+    "turndown-plugin-gfm": "^1.0.2",
+    "typescript": "^5.9.3",
+    "yaml": "^2.9.1"
+  }
+}

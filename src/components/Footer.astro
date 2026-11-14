@@ -1,0 +1,104 @@
+---
+import {
+  footerInstitucional,
+  footerMenu,
+  subfooterNav,
+  PARTNERS,
+} from "../data/nav";
+import { useTranslations, type Locale } from "../i18n/config";
+
+interface Props {
+  lang: Locale;
+  variant?: "full" | "minimal";
+}
+const { lang, variant = "full" } = Astro.props;
+const t = useTranslations(lang);
+---
+
+{
+  variant === "full" && (
+    <div class="hb-topfooter">
+      <div class="hb-container">
+        <div class="hb-topfooter-row">
+          <nav class="hb-topfooter-col" aria-label={t("footer.institucional")}>
+            <h2 class="hb-topfooter-title">{t("footer.institucional")}</h2>
+            <ul class="hb-topfooter-menu">
+              {footerInstitucional(lang).map((link) => (
+                <li>
+                  <a href={link.href} {...(link.external ? { rel: "noopener" } : {})}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav class="hb-topfooter-col" aria-label={t("footer.menu")}>
+            <h2 class="hb-topfooter-title">{t("footer.menu")}</h2>
+            <ul class="hb-topfooter-menu">
+              {footerMenu(lang).map((link) => (
+                <li>
+                  <a href={link.href}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<footer class="hb-footer">
+  <div class="hb-container">
+    <div class="hb-footer-row">
+      <div class="hb-footer-col">
+        <p>
+          <strong>Revista HYPERBOREA</strong><br />
+          ISSN 2618-4397
+        </p>
+        <p>
+          Este sitio tiene fines académicos y culturales sin lucro, utiliza una{" "}
+          <a
+            href="https://creativecommons.org/licenses/by-nc-nd/3.0/es"
+            rel="license noopener"
+            target="_blank">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 3.0 Unported</a
+          > y su creación fue posible gracias a los aportes de la Secretaría de
+          Investigación, Creación Artística, Desarrollo y Transferencia de
+          Tecnología y la Editorial de la Universidad Nacional de Río Negro y del
+          Consejo de Investigaciones Científico Técnicas de la Rep. Argentina /
+          CONICET.
+        </p>
+        <p class="hb-cc">
+          <a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es"
+            rel="license noopener"
+            target="_blank"
+          >
+            <img src="/site/cc-88x31.png" alt="Licencia Creative Commons" width="88" height="31" />
+          </a>
+        </p>
+      </div>
+
+      <div class="hb-footer-col">
+        <nav aria-label="Subfooter">
+          <ul class="hb-subnav">
+            {subfooterNav(lang).map((link) => (
+              <li>
+                <a href={link.href} {...(link.external ? { rel: "noopener" } : {})}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div class="hb-partners">
+          {PARTNERS.map((p) => (
+            <a href={p.href} target="_blank" rel="noopener">
+              <img src={p.src} alt={p.alt} width="140" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

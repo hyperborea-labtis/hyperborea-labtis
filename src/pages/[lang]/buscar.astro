@@ -1,0 +1,136 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import { locales, useTranslations, type Locale } from "../../i18n/config";
+
+export const getStaticPaths = (() =>
+  locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useTranslations(lang);
+const strings = {
+  results: t("search.results"),
+  none: t("search.none"),
+  more: t("search.more"),
+  unavailable: t("search.unavailable"),
+  hint: t("search.hint"),
+};
+---
+
+<BaseLayout title={`${t("search.title")} | Hyperborea`} lang={lang} path="/buscar">
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={t("search.title")} />
+
+      <section class="hb-search-page" data-strings={JSON.stringify(strings)}>
+        <form class="hb-search-page-form" role="search" method="get">
+          <label for="hb-q" class="hb-visually-hidden">{t("search.label")}</label>
+          <input id="hb-q" name="q" type="search" class="hb-input" autocomplete="off" />
+          <button type="submit" class="hb-button">{t("search.submit")}</button>
+        </form>
+        <p class="hb-search-status" role="status" aria-live="polite"></p>
+        <ol class="hb-search-results"></ol>
+        <button type="button" class="hb-button hb-search-more" hidden>{t("search.more")}</button>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Client-side full-text search over the static Pagefind index generated at
+  // build time (see the "build" script). Pagefind picks the index of the page's
+  // <html lang>, so each locale searches its own content.
+  interface PagefindResultData {
+    url: string;
+    excerpt: string;
+    meta: { title?: string };
+  }
+  interface PagefindResult {
+    data: () => Promise<PagefindResultData>;
+  }
+  interface PagefindApi {
+    search: (query: string) => Promise<{ results: PagefindResult[] }>;
+  }
+
+  const root = document.querySelector<HTMLElement>(".hb-search-page");
+  if (root) {
+    const strings = JSON.parse(root.dataset.strings ?? "{}") as Record<string, string>;
+    const form = root.querySelector<HTMLFormElement>("form")!;
+    const input = root.querySelector<HTMLInputElement>("input[name=q]")!;
+    const status = root.querySelector<HTMLElement>(".hb-search-status")!;
+    const list = root.querySelector<HTMLOListElement>(".hb-search-results")!;
+    const moreBtn = root.querySelector<HTMLButtonElement>(".hb-search-more")!;
+    const PAGE = 20;
+
+    let pagefind: PagefindApi | null = null;
+    let pending: PagefindResult[] = [];
+
+    async function load(): Promise<PagefindApi | null> {
+      if (pagefind) return pagefind;
+      try {
+        const url = "/pagefind/pagefind.js";
+        pagefind = (await import(/* @vite-ignore */ url)) as PagefindApi;
+      } catch {
+        pagefind = null;
+      }
+      return pagefind;
+    }
+
+    async function renderBatch() {
+      const batch = pending.splice(0, PAGE);
+      const items = await Promise.all(batch.map((r) => r.data()));
+      for (const d of items) {
+        const li = document.createElement("li");
+        li.className = "hb-search-result";
+        const h = document.createElement("h2");
+        const a = document.createElement("a");
+        // Pagefind reports the built file (…/x.html); the public URL has no extension.
+        a.href = d.url.replace(/\.html$/, "");
+        a.textContent = d.meta.title ?? d.url;
+        h.append(a);
+        const p = document.createElement("p");
+        p.innerHTML = d.excerpt; // Pagefind output: escaped text + <mark>
+        li.append(h, p);
+        list.append(li);
+      }
+      moreBtn.hidden = pending.length === 0;
+    }
+
+    async function run(query: string) {
+      list.replaceChildren();
+      moreBtn.hidden = true;
+      pending = [];
+      const q = query.trim();
+      if (q.length < 2) {
+        status.textContent = strings.hint ?? "";
+        return;
+      }
+      const api = await load();
+      if (!api) {
+        status.textContent = strings.unavailable ?? "";
+        return;
+      }
+      const { results } = await api.search(q);
+      pending = results;
+      status.textContent = results.length
+        ? `${results.length} ${strings.results}`
+        : `${strings.none} “${q}”`;
+      await renderBatch();
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const q = input.value;
+      const url = new URL(location.href);
+      url.searchParams.set("q", q);
+      history.replaceState(null, "", url);
+      void run(q);
+    });
+    moreBtn.addEventListener("click", () => void renderBatch());
+
+    const initial = new URLSearchParams(location.search).get("q") ?? "";
+    input.value = initial;
+    void run(initial);
+  }
+</script>

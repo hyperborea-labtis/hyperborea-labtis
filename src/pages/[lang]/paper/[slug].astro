@@ -1,0 +1,68 @@
+---
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PageTitle from "../../../components/PageTitle.astro";
+import { locales, useTranslations, type Locale } from "../../../i18n/config";
+import { papersForLocale, paperBySlug } from "../../../lib/content";
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const lang of locales) {
+    for (const paper of await papersForLocale(lang)) {
+      paths.push({ params: { lang, slug: paper.data.slug } });
+    }
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const slug = Astro.params.slug as string;
+const t = useTranslations(lang);
+
+const paper = await paperBySlug(lang, slug);
+if (!paper) return Astro.redirect(`/${lang}`);
+const { Content } = await render(paper);
+const d = paper.data;
+---
+
+<BaseLayout
+  title={`${d.title} | Hyperborea`}
+  description={d.abstract?.slice(0, 180)}
+  lang={lang}
+  path={`/paper/${slug}`}
+>
+  <div class="hb-main">
+    <div class="hb-container" data-pagefind-body>
+      <PageTitle text={d.title} />
+
+      <article class="hb-article">
+        {d.heroImage && (
+          <img
+            class="image-style-mt-slideshow-boxed"
+            src={d.heroImage}
+            alt={d.title}
+            width="1140"
+            height="630"
+          />
+        )}
+
+        {d.author && (
+          <p class="hb-article-author text-align-right">
+            {d.author}
+            {d.email && (<><br />{d.email}</>)}
+            {d.affiliation && (<><br />{d.affiliation}</>)}
+          </p>
+        )}
+
+        <Content />
+
+        {d.pdf && (
+          <p class="hb-pdf">
+            <a href={d.pdf} target="_blank" rel="noopener">{t("paper.pdf")}</a>
+          </p>
+        )}
+      </article>
+    </div>
+  </div>
+</BaseLayout>

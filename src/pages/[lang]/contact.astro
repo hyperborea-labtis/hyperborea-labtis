@@ -1,0 +1,61 @@
+---
+// Contact form, same URL as the old Drupal site (/es/contact). Submits to the
+// Cloudflare Pages Function in functions/api/contact.ts.
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import { locales, type Locale } from "../../i18n/config";
+
+export const getStaticPaths = (() => locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+
+const text: Record<Locale, Record<string, string>> = {
+  es: { title: "Contacto", name: "Su nombre", email: "Su dirección de correo electrónico", subject: "Asunto", message: "Mensaje", send: "Enviar mensaje", ok: "Mensaje enviado. ¡Gracias!", error: "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde." },
+  en: { title: "Contact", name: "Your name", email: "Your email address", subject: "Subject", message: "Message", send: "Send message", ok: "Message sent. Thank you!", error: "The message could not be sent. Please try again later." },
+  fr: { title: "Contact", name: "Votre nom", email: "Votre adresse e-mail", subject: "Sujet", message: "Message", send: "Envoyer le message", ok: "Message envoyé. Merci !", error: "Le message n’a pas pu être envoyé. Veuillez réessayer plus tard." },
+};
+const t = text[lang];
+---
+
+<BaseLayout title={`${t.title} | Hyperborea`} lang={lang} path="/contact">
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={t.title} />
+      <form class="hb-contact" id="contact-form" novalidate>
+        <label>{t.name}<input name="name" type="text" required maxlength="120" autocomplete="name" /></label>
+        <label>{t.email}<input name="email" type="email" required maxlength="200" autocomplete="email" /></label>
+        <label>{t.subject}<input name="subject" type="text" required maxlength="200" /></label>
+        <label>{t.message}<textarea name="message" rows="8" required maxlength="5000"></textarea></label>
+        <input class="hb-contact-trap" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button type="submit">{t.send}</button>
+        <p id="contact-status" role="status" data-ok={t.ok} data-error={t.error}></p>
+      </form>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("contact-status");
+  if (form instanceof HTMLFormElement && status) {
+    form.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      if (!form.reportValidity()) return;
+      const button = form.querySelector("button");
+      if (button) button.disabled = true;
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        status.textContent = res.ok ? (status.dataset.ok ?? "") : (status.dataset.error ?? "");
+        if (res.ok) form.reset();
+      } catch {
+        status.textContent = status.dataset.error ?? "";
+      }
+      if (button) button.disabled = false;
+    });
+  }
+</script>

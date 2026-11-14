@@ -1,0 +1,54 @@
+---
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
+import "../styles/hyperborea.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { locales, type Locale } from "../i18n/config";
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: Locale;
+  /** Locale-relative path (same across languages) for hreflang alternates. */
+  path?: string;
+  footerVariant?: "full" | "minimal";
+}
+
+const {
+  title,
+  description = "Hyperborea — Revista de Ensayo y Creación.",
+  lang,
+  path = "",
+  footerVariant = "full",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {
+      locales.map((l) => (
+        <link rel="alternate" hreflang={l} href={`/${l}${path}`} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={`/es${path}`} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <div class="hb-root">
+      <Header lang={lang} path={path} />
+      <main id="main-content">
+        <slot />
+      </main>
+      <Footer lang={lang} variant={footerVariant} />
+    </div>
+  </body>
+</html>

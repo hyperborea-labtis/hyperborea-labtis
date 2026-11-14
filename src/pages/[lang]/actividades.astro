@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import { locales, type Locale } from "../../i18n/config";
+import { articlesForLocale } from "../../lib/content";
+
+export const getStaticPaths = (() =>
+  locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const articles = await articlesForLocale(lang);
+const titles: Record<Locale, string> = {
+  es: "Actividades culturales y académicas",
+  en: "Cultural and academic activities",
+  fr: "Activités culturelles et académiques",
+};
+---
+
+<BaseLayout title={`${titles[lang]} | Hyperborea`} lang={lang} path="/actividades">
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={titles[lang]} />
+      <ul class="hb-activity-list">
+        {
+          articles.map((a) => (
+            <li class="hb-activity">
+              {a.data.publishedDate && (
+                <time datetime={a.data.publishedDate.toISOString()}>
+                  {a.data.publishedDate.toISOString().slice(0, 10)}
+                </time>
+              )}
+              <a href={`/${lang}/actividad/${a.data.slug}`}>{a.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

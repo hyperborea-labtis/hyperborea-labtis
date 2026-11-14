@@ -1,0 +1,49 @@
+---
+// One dynamic segment serves both institutional pages (/es/presentacion) and
+// section pages (/es/Mare_Sugenum): the old Drupal site published both at the
+// language root, and those URLs must keep working.
+import type { GetStaticPaths } from "astro";
+import { render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import SectionPage from "../../components/SectionPage.astro";
+import { locales, type Locale } from "../../i18n/config";
+import { ALL_SECTIONS } from "../../data/nav";
+import { pagesForLocale, pageBySlug } from "../../lib/content";
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const lang of locales) {
+    for (const page of await pagesForLocale(lang)) {
+      paths.push({ params: { lang, page: page.data.slug } });
+    }
+    for (const section of ALL_SECTIONS) {
+      paths.push({ params: { lang, page: section.path } });
+    }
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const slug = Astro.params.page as string;
+const section = ALL_SECTIONS.find((s) => s.path === slug);
+const page = section ? undefined : await pageBySlug(lang, slug);
+if (!section && !page) return Astro.redirect(`/${lang}`);
+const Content = page ? (await render(page)).Content : undefined;
+---
+
+{section && <SectionPage lang={lang} section={section} />}
+{
+  page && Content && (
+    <BaseLayout title={`${page.data.title} | Hyperborea`} lang={lang} path={`/${slug}`}>
+      <div class="hb-main">
+        <div class="hb-container" data-pagefind-body>
+          <PageTitle text={page.data.title} />
+          <article class="hb-article">
+            <Content />
+          </article>
+        </div>
+      </div>
+    </BaseLayout>
+  )
+}

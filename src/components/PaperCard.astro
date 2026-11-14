@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  image?: string;
+  columns?: 2 | 3;
+}
+const { title, href, image, columns = 3 } = Astro.props;
+---
+
+<article class:list={["hb-card", `hb-card--${columns}`]}>
+  <a class="hb-card-media" href={href} aria-label={title}>
+    {image && <img src={image} alt={title} width="750" height="500" loading="lazy" />}
+    <span class="hb-card-overlay" aria-hidden="true">+</span>
+  </a>
+  <div class="hb-card-body">
+    <h2 class="hb-card-title"><a href={href}>{title}</a></h2>
+  </div>
+</article>

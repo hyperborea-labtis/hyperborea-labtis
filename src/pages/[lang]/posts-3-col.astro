@@ -1,0 +1,27 @@
+---
+// "Últimas publicaciones" — target of the home's "Ver más". Same URL as the
+// current Drupal site (/es/posts-3-col).
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import PaperCard from "../../components/PaperCard.astro";
+import { locales, useTranslations, type Locale } from "../../i18n/config";
+import { latestPublications } from "../../lib/content";
+
+export const getStaticPaths = (() => locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useTranslations(lang);
+const items = await latestPublications(lang);
+---
+
+<BaseLayout title={`${t("home.latest")} | Hyperborea`} lang={lang} path="/posts-3-col">
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={t("home.latest")} />
+      <div class="hb-grid">
+        {items.map((i) => <PaperCard title={i.title} href={i.href} image={i.image} columns={3} />)}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

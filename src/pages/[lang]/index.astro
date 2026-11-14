@@ -1,0 +1,48 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PaperCard from "../../components/PaperCard.astro";
+import { locales, useTranslations, type Locale } from "../../i18n/config";
+import { featuredPapers } from "../../lib/content";
+
+export const getStaticPaths = (() =>
+  locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useTranslations(lang);
+const papers = await featuredPapers(lang);
+
+// Intro block (block_content in Drupal; translate en/fr before launch).
+const intros: Record<Locale, string> = {
+  es: "<strong>Hyperborea. Revista de ensayo y creación</strong> es una publicación digital anual sobre literatura, arte y cine del Laboratorio Texto, imagen y sociedad [LabTIS], que funciona en la Sede Andina de la Universidad Nacional de Río Negro desde el año 2016.",
+  en: "<strong>Hyperborea. Journal of Essay and Creation</strong> is an annual digital publication on literature, art and film by the Text, Image and Society Laboratory [LabTIS] at the Universidad Nacional de Río Negro, Argentina, since 2016.",
+  fr: "<strong>Hyperborea. Revue d’essai et de création</strong> est une publication numérique annuelle consacrée à la littérature, à l’art et au cinéma, éditée par le Laboratoire Texte, image et société [LabTIS] de l’Universidad Nacional de Río Negro, depuis 2016.",
+};
+---
+
+<BaseLayout title="Hyperborea. Revista de Ensayo y Creación" lang={lang} path="">
+  <section class="hb-lead">
+    <div class="hb-container">
+      <p set:html={intros[lang]} />
+    </div>
+  </section>
+
+  <section class="hb-featured">
+    <div class="hb-container">
+      <h2 class="hb-section-title">{t("home.latest")}</h2>
+      <div class="hb-grid">
+        {
+          papers.map((p) => (
+            <PaperCard
+              title={p.data.title}
+              href={`/${lang}/paper/${p.data.slug}`}
+              image={p.data.heroImage}
+              columns={3}
+            />
+          ))
+        }
+      </div>
+      <p class="hb-more"><a href={`/${lang}/posts-3-col`}>{t("home.more")}</a></p>
+    </div>
+  </section>
+</BaseLayout>

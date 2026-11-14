@@ -1,0 +1,113 @@
+# Sveltia CMS (Decap-compatible). Edit content as Markdown + frontmatter in git.
+# Editors sign in with a GitHub personal access token (fine-grained, Contents +
+# Pull requests: read & write on this repo only). Their permissions are their
+# GitHub role on the repo; protect `main` so only reviewers can merge.
+backend:
+  name: github
+  repo: hyperborea-labtis/hyperborea-labtis
+  branch: main
+
+# Editorial workflow: each save opens a pull request. Editors move an entry
+# Draft → In Review → Ready; publishing merges it into `main` (and deploys).
+# Needs write access to the repo; protect `main` so only reviewers can merge.
+publish_mode: editorial_workflow
+
+# Local editing needs no config: open /admin/index.html on `npm run dev` in a
+# Chromium browser and choose "Work with Local Repository" (no proxy server).
+
+# Same location as the current Drupal site, so every file URL stays identical.
+media_folder: public/sites/default/files
+public_folder: /sites/default/files
+
+# Uploads are optimized in the browser (WebP, max 2048px) and capped at 20 MB so
+# new media does not bloat the repository or slow the site.
+media_libraries:
+  default:
+    config:
+      max_file_size: 20971520
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2048
+          height: 2048
+        svg:
+          optimize: true
+
+# Folder-based i18n: files live in src/content/<collection>/<locale>/<slug>.md
+i18n:
+  structure: multiple_folders
+  locales: [es, en, fr]
+  default_locale: es
+
+collections:
+  - name: papers
+    label: Papers (artículos académicos)
+    label_singular: Paper
+    folder: src/content/papers
+    create: true
+    i18n: true
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: Título, widget: string, i18n: true }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
+      - name: section
+        label: Sección
+        widget: select
+        required: false
+        i18n: duplicate
+        options: ["Mare Sugenum", "Kino LabTIS", "Manet et manebit", "41º 9’ S 71º 8’ W", "Afinidades electivas"]
+      - { name: issue, label: Número de Hyperborea, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 a 8. Define en qué número (/numero-N) aparece el paper." }
+      - { name: issueOrder, label: Orden dentro del número, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 = primero. Los que no tienen orden van al final del número." }
+      - { name: featured, label: Destacado en portada (posición), widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 = primero. Déjalo vacío para no mostrarlo en la portada (la portada muestra 6)." }
+      - { name: author, label: Autor/a, widget: string, required: false, i18n: duplicate }
+      - { name: email, label: Email, widget: string, required: false, i18n: duplicate }
+      - { name: affiliation, label: Afiliación, widget: string, required: false, i18n: true }
+      - { name: abstract, label: Resumen, widget: text, required: false, i18n: true }
+      - { name: keywords, label: Palabras clave, widget: list, required: false, i18n: true }
+      - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
+      - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
+      - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
+      - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
+      - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
+      - { name: body, label: Cuerpo, widget: markdown, i18n: true }
+
+  - name: articles
+    label: Actividades
+    label_singular: Actividad
+    folder: src/content/articles
+    create: true
+    i18n: true
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: Título, widget: string, i18n: true }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
+      - { name: publishedDate, label: Fecha, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
+      - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
+      - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
+      - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
+      - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
+      - { name: body, label: Cuerpo, widget: markdown, i18n: true }
+
+  - name: pages
+    label: Páginas institucionales
+    label_singular: Página
+    folder: src/content/pages
+    create: true
+    i18n: true
+    slug: "{{fields.slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: Título, widget: string, i18n: true }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
+      - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
+      - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
+      - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
+      - { name: body, label: Cuerpo, widget: markdown, i18n: true }

@@ -1,0 +1,157 @@
+---
+import { mainNav } from "../data/nav";
+import { locales, localeNames, useTranslations, type Locale } from "../i18n/config";
+
+interface Props {
+  lang: Locale;
+  path?: string;
+}
+const { lang, path = "" } = Astro.props;
+const t = useTranslations(lang);
+const nav = mainNav(lang);
+const current = Astro.url.pathname.replace(/\/$/, "");
+
+const isActive = (item: (typeof nav)[number]) =>
+  current === item.href.replace(/\/$/, "") ||
+  item.children?.some((c) => current === c.href.replace(/\/$/, ""));
+---
+
+<div class="hb-header-container">
+  <header class="hb-header" role="banner">
+    <div class="hb-container-fluid">
+      <div class="hb-header-inside">
+        <div class="hb-brand">
+          <a href={`/${lang}`} title="Hyperborea">
+            <img
+              src="/site/logo-header.gif"
+              alt="Hyperborea. Revista de Ensayo y Creación"
+              width="300"
+              height="80"
+            />
+          </a>
+        </div>
+
+        <div class="hb-header-right">
+          <nav class="hb-nav" aria-label="Menú principal">
+            <ul class="hb-nav-list">
+              {
+                nav.map((item) => (
+                  <li class="hb-nav-item">
+                    <div class="hb-nav-row">
+                      <a
+                        class:list={["hb-nav-link", { "is-active": isActive(item) }]}
+                        href={item.href}
+                        {...(item.external ? { rel: "noopener" } : {})}
+                      >
+                        {item.label}
+                      </a>
+                      {item.children && (
+                        <button
+                          type="button"
+                          class="hb-caret-button"
+                          aria-label={`${item.label} ▾`}
+                          aria-expanded="false"
+                        >
+                          <svg class="hb-caret" viewBox="0 0 1792 1792" aria-hidden="true">
+                            <g transform="translate(0,1536) scale(1,-1)" fill="currentColor">
+                              <path d="M1075 800q0 -13 -10 -23l-466 -466q-10 -10 -23 -10t-23 10l-466 466q-10 10 -10 23t10 23l50 50q10 10 23 10t23 -10l393 -393l393 393q10 10 23 10t23 -10l50 -50q10 -10 10 -23z" />
+                            </g>
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+                    {item.children && (
+                      <ul class="hb-submenu">
+                        {item.children.map((child) => (
+                          <li>
+                            <a href={child.href} {...(child.external ? { rel: "noopener" } : {})}>
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+
+          <div class="hb-search">
+            <form
+              class="hb-search-form"
+              action={`/${lang}/buscar/`}
+              method="get"
+              role="search"
+            >
+              <label for="hb-search-keys" class="hb-visually-hidden">{t("nav.search")}</label>
+              <svg class="hb-search-icon" viewBox="0 0 1792 1792" aria-hidden="true">
+                <g transform="translate(0,1536) scale(1,-1)" fill="currentColor">
+                  <path d="M1152 704q0 185 -131.5 316.5t-316.5 131.5t-316.5 -131.5t-131.5 -316.5t131.5 -316.5t316.5 -131.5t316.5 131.5t131.5 316.5zM1664 -128q0 -52 -38 -90t-90 -38q-54 0 -90 38l-343 342q-179 -124 -399 -124q-143 0 -273.5 55.5t-225 150t-150 225t-55.5 273.5t55.5 273.5t150 225t225 150t273.5 55.5t273.5 -55.5t225 -150t150 -225t55.5 -273.5q0 -220 -124 -399l343 -343q37 -37 37 -90z" />
+                </g>
+              </svg>
+              <input
+                id="hb-search-keys"
+                name="q"
+                type="search"
+                class="hb-search-input"
+                placeholder={t("nav.search")}
+                maxlength="128"
+              />
+              <button type="submit" class="hb-search-submit">{t("nav.search")}</button>
+            </form>
+          </div>
+
+          <nav class="hb-lang" aria-label={t("lang.label")}>
+            {
+              locales.map((l) => (
+                <a
+                  href={`/${l}${path}`}
+                  class:list={["hb-lang-link", { "is-active": l === lang }]}
+                  hreflang={l}
+                  lang={l}
+                  title={localeNames[l]}
+                >
+                  {l.toUpperCase()}
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<script>
+  // Dropdown toggle (mobile tap) + fixed-on-scroll header (desktop > 767px).
+  const container = document.querySelector<HTMLElement>(".hb-header-container");
+  const header = container?.querySelector<HTMLElement>(".hb-header");
+
+  document.querySelectorAll<HTMLButtonElement>(".hb-caret-button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const submenu = btn.closest(".hb-nav-item")?.querySelector(".hb-submenu");
+      const open = submenu?.classList.toggle("is-open") ?? false;
+      btn.setAttribute("aria-expanded", String(open));
+    });
+  });
+
+  if (container && header) {
+    let fixed = false;
+    const update = () => {
+      const shouldFix = window.scrollY > 0 && window.innerWidth > 767;
+      if (shouldFix && !fixed) {
+        container.style.paddingBottom = `${header.offsetHeight}px`;
+        container.classList.add("is-fixed");
+        fixed = true;
+      } else if (!shouldFix && fixed) {
+        container.classList.remove("is-fixed");
+        container.style.paddingBottom = "";
+        fixed = false;
+      }
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+  }
+</script>
