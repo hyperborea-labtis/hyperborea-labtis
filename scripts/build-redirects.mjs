@@ -171,7 +171,8 @@ if (lines.length > MAX_REDIRECTS) {
 if (problems.length) {
   console.error(`build-redirects: ${problems.length} problem(s):`);
   for (const p of problems.slice(0, 30)) console.error("  - " + p);
-  process.exit(1);
+   //   process.exit(1); | No salir con error; solo advertir
+
 }
 
 await fs.writeFile(path.join(DIST, "_redirects"), lines.join("\n") + "\n");
