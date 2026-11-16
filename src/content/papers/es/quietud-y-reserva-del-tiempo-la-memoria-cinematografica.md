@@ -16,7 +16,7 @@ keywords:
   - "Chris Marker"
   - "Le Mystère Koumiko"
   - "Alain Resnais"
-  - "L’Année dernière à Marienbad "
+  - "L’Année dernière à Marienbad"
   - "Tiempo"
   - "Imagen"
   - "memoria"

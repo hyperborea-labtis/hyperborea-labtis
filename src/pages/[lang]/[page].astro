@@ -7,7 +7,7 @@ import { render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";
 import SectionPage from "../../components/SectionPage.astro";
-import { locales, type Locale } from "../../i18n/config";
+import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ALL_SECTIONS } from "../../data/nav";
 import { pagesForLocale, pageBySlug } from "../../lib/content";
 
@@ -26,6 +26,7 @@ export const getStaticPaths = (async () => {
 
 const lang = Astro.params.lang as Locale;
 const slug = Astro.params.page as string;
+const t = useTranslations(lang);
 const section = ALL_SECTIONS.find((s) => s.path === slug);
 const page = section ? undefined : await pageBySlug(lang, slug);
 if (!section && !page) return Astro.redirect(`/${lang}`);
@@ -38,6 +39,7 @@ const Content = page ? (await render(page)).Content : undefined;
     <BaseLayout title={`${page.data.title} | Hyperborea`} lang={lang} path={`/${slug}`}>
       <div class="hb-main">
         <div class="hb-container" data-pagefind-body>
+          <meta data-pagefind-filter="tipo[content]" content={t("search.type.page")} />
           <PageTitle text={page.data.title} />
           <article class="hb-article">
             <Content />

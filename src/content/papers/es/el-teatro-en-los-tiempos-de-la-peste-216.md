@@ -13,7 +13,7 @@ keywords:
   - "Traducción"
   - "covid-19"
   - "cuerpo y representación"
-  - "  América y Europa"
+  - "América y Europa"
   - "escena"
 publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/manfred_intro.jpg"

@@ -13,7 +13,7 @@ keywords:
   - "Cineworks Independent Filmmakers Society"
   - "Scott Haynes"
   - "Doug Chomyn"
-  - "Oliver Hockenhull "
+  - "Oliver Hockenhull"
   - "Speed"
   - "Manifiesto"
   - "Vanguardia"

@@ -11,7 +11,7 @@ email: "a.a.brieba@gmail.com"
 affiliation: "Universidad Alberto Hurtado, Santiago, Chile"
 keywords:
   - "Imagen"
-  - "medio "
+  - "medio"
   - "cuerpo y representación"
   - "muerte"
   - "antropología visual"

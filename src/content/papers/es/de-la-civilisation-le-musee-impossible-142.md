@@ -13,7 +13,7 @@ keywords:
   - "Civilización"
   - "film d'auteur"
   - "documentaire"
-  - "histoire "
+  - "histoire"
   - "Censure"
   - "musée imaginaire"
   - "abstraction"

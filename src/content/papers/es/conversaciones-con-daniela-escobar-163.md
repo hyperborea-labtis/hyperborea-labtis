@@ -17,7 +17,7 @@ keywords:
   - "Atlas"
   - "editoriales independientes"
   - "Susan Howe"
-  - "H. D. "
+  - "H. D."
   - "Rachilde"
   - "Juan Santader Leal"
   - "diseño"

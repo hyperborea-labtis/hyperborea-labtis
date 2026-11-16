@@ -14,7 +14,7 @@ keywords:
   - "La Morte rouge"
   - "James Whale"
   - "censura"
-  - "cine y ensayo "
+  - "cine y ensayo"
   - "memoria"
   - "Frank Kermode"
   - "mito"

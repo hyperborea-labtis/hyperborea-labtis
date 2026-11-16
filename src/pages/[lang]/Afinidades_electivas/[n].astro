@@ -1,0 +1,23 @@
+---
+// Afinidades electivas, pages 2 and up (page 1 is the generic section page in
+// ../[page].astro). This section lists every issue, newest first, 6 per page.
+import type { GetStaticPaths } from "astro";
+import SectionPage from "../../../components/SectionPage.astro";
+import { locales, type Locale } from "../../../i18n/config";
+import { AFINIDADES_ELECTIVAS } from "../../../data/nav";
+import { papersInSectionNewestFirst, paginate } from "../../../lib/content";
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const lang of locales) {
+    const { totalPages } = paginate(await papersInSectionNewestFirst(lang, AFINIDADES_ELECTIVAS.label), 1);
+    for (let n = 2; n <= totalPages; n++) paths.push({ params: { lang, n: String(n) } });
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const page = Number(Astro.params.n);
+---
+
+<SectionPage lang={lang} section={AFINIDADES_ELECTIVAS} page={page} />

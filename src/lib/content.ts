@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import { defaultLocale, type Locale } from "../i18n/config";
+import { SECTIONS } from "../data/nav";
 
 export type Paper = CollectionEntry<"papers">;
 export type Article = CollectionEntry<"articles">;
@@ -109,6 +110,17 @@ export async function currentIssue(locale: Locale): Promise<number | undefined> 
   return issues.length > 0 ? Math.max(...issues) : undefined;
 }
 
+/** Items per page in the paginated listings (Afinidades electivas, "Ver más"). */
+export const PAGE_SIZE = 6;
+
+export type Paginated<T> = { items: T[]; page: number; totalPages: number };
+
+/** One page (1-based) of a list; `totalPages` is at least 1. */
+export function paginate<T>(all: T[], page: number, size: number = PAGE_SIZE): Paginated<T> {
+  const totalPages = Math.max(1, Math.ceil(all.length / size));
+  return { items: all.slice((page - 1) * size, page * size), page, totalPages };
+}
+
 /** Papers of a section in the current issue only (older issues stay reachable
  * from the issue pages and the keyword pages). */
 export async function papersInSection(locale: Locale, sectionLabel: string): Promise<Paper[]> {
@@ -119,7 +131,7 @@ export async function papersInSection(locale: Locale, sectionLabel: string): Pro
     .sort(inIssueOrder);
 }
 
-const norm = (s: string): string => s.trim().toLowerCase();
+export const norm = (s: string): string => s.trim().toLowerCase();
 
 /** Papers tagged with a keyword (matched by name, ignoring case). */
 export async function papersWithKeyword(locale: Locale, keyword: string): Promise<Paper[]> {
@@ -128,15 +140,19 @@ export async function papersWithKeyword(locale: Locale, keyword: string): Promis
   return papers.filter((p) => p.data.keywords.some((k) => norm(k) === wanted));
 }
 
-/** Papers shown on the home page: every paper of the current issue, in issue order. */
-export async function latestIssuePapers(locale: Locale): Promise<Paper[]> {
-  const issue = await currentIssue(locale);
-  return issue === undefined ? [] : papersInIssue(locale, issue);
+/** Every paper of a section, whatever its issue, newest first (ties: highest Drupal node id first). */
+export async function papersInSectionNewestFirst(locale: Locale, sectionLabel: string): Promise<Paper[]> {
+  const papers = await papersForLocale(locale);
+  const nid = (p: Paper) => Number(p.data.translationKey) || 0;
+  return papers
+    .filter((p) => p.data.section === sectionLabel)
+    .sort((a, b) => (b.data.publishedDate?.getTime() ?? 0) - (a.data.publishedDate?.getTime() ?? 0) || nid(b) - nid(a));
 }
 
 export type Publication = { title: string; href: string; image?: string };
 
-/** Every paper and activity, newest first (ties: highest Drupal node id first). */
+/** Every paper and activity (the `papers` and `articles` collections), newest first
+ * (ties: highest Drupal node id first). */
 export async function latestPublications(locale: Locale): Promise<Publication[]> {
   const [papers, articles] = await Promise.all([papersForLocale(locale), articlesForLocale(locale)]);
   const nid = (e: Paper | Article) => Number(e.data.translationKey) || 0;
@@ -148,4 +164,17 @@ export async function latestPublications(locale: Locale): Promise<Publication[]>
       (b.e.data.publishedDate?.getTime() ?? 0) - (a.e.data.publishedDate?.getTime() ?? 0) || nid(b.e) - nid(a.e),
   );
   return rows.map(({ e, href }) => ({ title: e.data.title, href, image: e.data.heroImage }));
+}
+
+/** The latest papers shown on the home page: papers of the four main-menu sections
+ * only (Afinidades electivas and papers without a section stay out); the full list of
+ * papers and activities is paginated at /posts-3-col. */
+export async function homePublications(locale: Locale): Promise<Publication[]> {
+  const sections = new Set(SECTIONS.map((s) => s.label));
+  const papers = (await papersForLocale(locale)).filter((p) => p.data.section && sections.has(p.data.section));
+  const nid = (e: Paper) => Number(e.data.translationKey) || 0;
+  return [...papers]
+    .sort((a, b) => (b.data.publishedDate?.getTime() ?? 0) - (a.data.publishedDate?.getTime() ?? 0) || nid(b) - nid(a))
+    .slice(0, PAGE_SIZE)
+    .map((e) => ({ title: e.data.title, href: `/${locale}/paper/${e.data.slug}`, image: e.data.heroImage }));
 }

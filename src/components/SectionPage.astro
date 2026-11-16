@@ -2,20 +2,30 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageTitle from "./PageTitle.astro";
 import PaperCard from "./PaperCard.astro";
+import Pager from "./Pager.astro";
 import type { Locale } from "../i18n/config";
 import type { Section } from "../data/nav";
-import { papersInSection } from "../lib/content";
+import { papersInSection, papersInSectionNewestFirst, paginate } from "../lib/content";
 
 interface Props {
   lang: Locale;
   section: Section;
+  /** 1-based page, only for sections that list every issue (`allIssues`). */
+  page?: number;
 }
 
-const { lang, section } = Astro.props;
-const papers = await papersInSection(lang, section.label);
+const { lang, section, page = 1 } = Astro.props;
+// Most sections show the current issue only. `allIssues` sections (Afinidades
+// electivas) show everything, newest first, paginated.
+const paged = section.allIssues
+  ? paginate(await papersInSectionNewestFirst(lang, section.label), page)
+  : undefined;
+const papers = paged ? paged.items : await papersInSection(lang, section.label);
+const base = `/${lang}/${section.path}`;
+const path = page === 1 ? `/${section.path}` : `/${section.path}/${page}`;
 ---
 
-<BaseLayout title={`${section.label} | Hyperborea`} lang={lang} path={`/${section.path}`}>
+<BaseLayout title={`${section.label} | Hyperborea`} lang={lang} path={path}>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={section.label} />
@@ -31,6 +41,7 @@ const papers = await papersInSection(lang, section.label);
           ))
         }
       </div>
+      {paged && <Pager lang={lang} base={base} current={page} total={paged.totalPages} />}
     </div>
   </div>
 </BaseLayout>

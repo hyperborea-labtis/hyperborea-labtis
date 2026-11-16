@@ -17,7 +17,7 @@ keywords:
   - "a-dramaturgie"
   - "film d'auteur"
   - "marxisme"
-  - " désépicisation"
+  - "désépicisation"
   - "démythification"
   - "désidentification"
   - "art et politique"

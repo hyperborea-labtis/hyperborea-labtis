@@ -1,0 +1,32 @@
+---
+// One page of the full publications list ("Últimas publicaciones"): papers and
+// activities, newest first. Page 1 is /{lang}/posts-3-col (same URL as the
+// current Drupal site); the rest are /{lang}/posts-3-col/N.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "./PageTitle.astro";
+import PaperCard from "./PaperCard.astro";
+import Pager from "./Pager.astro";
+import { useTranslations, type Locale } from "../i18n/config";
+import { latestPublications, paginate } from "../lib/content";
+
+interface Props {
+  lang: Locale;
+  page: number;
+}
+const { lang, page } = Astro.props;
+const t = useTranslations(lang);
+const { items, totalPages } = paginate(await latestPublications(lang), page);
+const path = page === 1 ? "/posts-3-col" : `/posts-3-col/${page}`;
+---
+
+<BaseLayout title={`${t("home.latest")} | Hyperborea`} lang={lang} path={path}>
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={t("home.latest")} />
+      <div class="hb-grid">
+        {items.map((i) => <PaperCard title={i.title} href={i.href} image={i.image} columns={3} />)}
+      </div>
+      <Pager lang={lang} base={`/${lang}/posts-3-col`} current={page} total={totalPages} />
+    </div>
+  </div>
+</BaseLayout>

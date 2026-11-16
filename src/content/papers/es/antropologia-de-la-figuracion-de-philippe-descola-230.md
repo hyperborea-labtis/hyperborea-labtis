@@ -21,7 +21,7 @@ keywords:
   - "lo real"
   - "figuración"
   - "agency"
-  - "  América y Europa"
+  - "América y Europa"
 publishedDate: "2021-10-24"
 heroImage: "/sites/default/files/ct-paper/captura-de-pantalla-2021-11-09-a-las-17.20.44.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_reyes_macaya-figurar_las_articulaciones_del_mundo_ph._descola.pdf"

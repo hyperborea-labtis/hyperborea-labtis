@@ -19,7 +19,7 @@ keywords:
   - "Sagrado bosques de monstruos"
   - "dramaturgia"
   - "mise en abyme"
-  - "Tableau Vivant "
+  - "Tableau Vivant"
   - "transverberación"
   - "transfixión"
   - "Traducción"

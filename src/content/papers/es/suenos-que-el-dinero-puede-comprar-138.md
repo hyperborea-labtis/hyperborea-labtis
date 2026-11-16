@@ -14,7 +14,7 @@ keywords:
   - "Vormittagsspuk 1928"
   - "Paul Hindemith"
   - "Nazismo"
-  - "Werner Graeff "
+  - "Werner Graeff"
   - "censura"
 publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/78091f35-ccd0-4f92-8e4a-8c221c9ae40b.jpeg"

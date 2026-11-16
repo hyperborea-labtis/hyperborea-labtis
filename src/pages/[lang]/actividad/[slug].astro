@@ -29,6 +29,7 @@ const d = article.data;
 <BaseLayout title={`${d.title} | Hyperborea`} lang={lang} path={`/actividad/${slug}`}>
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>
+      <meta data-pagefind-filter="tipo[content]" content={t("search.type.activity")} />
       <PageTitle text={d.title} />
       <article class="hb-article">
         {d.heroImage && (

@@ -23,7 +23,7 @@ keywords:
   - "Frenhofer"
   - "E. T. A. Hoffmann"
   - "El salón de Artus"
-  - "representación "
+  - "representación"
 publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/poenitz-2_0.png"
 pdf: "/sites/default/files/ct-paper/hypeborea_08_poenitz-naturaleza-y-abstraccion-werfel.pdf"

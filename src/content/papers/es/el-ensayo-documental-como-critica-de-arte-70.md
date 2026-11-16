@@ -11,7 +11,7 @@ affiliation: "Universidad Nacional de Rosario, Universidad Nacional de Córdoba
 keywords:
   - "film essai"
   - "Cine y pintura"
-  - "Tableau Vivant "
+  - "Tableau Vivant"
   - "Crítica de arte"
   - "Charles Baudelaire"
   - "Écfrasis fílmica"

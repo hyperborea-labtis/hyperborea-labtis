@@ -14,7 +14,7 @@ keywords:
   - "Barroco"
   - "Modernsmo"
   - "musée imaginaire"
-  - "  América y Europa"
+  - "América y Europa"
   - "Nueva corónica y buen gobierno"
   - "Hans Belting"
   - "Atalaya"

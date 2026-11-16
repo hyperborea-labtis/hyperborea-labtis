@@ -20,7 +20,7 @@ keywords:
   - "estructuralismo"
   - "Maurice Blanchot"
   - "Ensayo"
-  - "  América y Europa"
+  - "América y Europa"
 publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/stanton_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_stanton-poetica-apocalipsis-prosa-de-paz-1960.pdf"

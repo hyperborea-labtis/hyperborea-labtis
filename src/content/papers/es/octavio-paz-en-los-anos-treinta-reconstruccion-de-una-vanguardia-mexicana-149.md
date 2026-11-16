@@ -10,7 +10,7 @@ author: "Klaus Meyer-Minnemann[1]"
 affiliation: "Institut für Romanistik, Universität Hamburg"
 keywords:
   - "literatura latinoamericana"
-  - "  América y Europa"
+  - "América y Europa"
   - "México"
   - "Octavio Paz"
   - "Contemporáneos"

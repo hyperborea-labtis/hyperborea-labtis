@@ -1,22 +1,39 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import fs from "node:fs";
+import path from "node:path";
 import sitemap from "@astrojs/sitemap";
 
 // Production domain (the current site's canonical host is www).
 const SITE = "https://www.hyperborea-labtis.org";
 
-// Dev only: `astro dev` serves public/admin/index.html at /admin/index.html but
-// 404s on /admin and /admin/ (trailingSlash "never"). Production (Workers
-// Assets) already serves /admin, so only the dev server needs this rewrite.
-const adminInDev = {
-  name: "admin-in-dev",
+// Dev-server helpers (neither runs in the build nor in production):
+// - `astro dev` serves public/admin/index.html at /admin/index.html but 404s on
+//   /admin and /admin/ (trailingSlash "never"); Workers Assets already serves
+//   /admin in production, so only the dev server needs the rewrite.
+// - The search index (/pagefind/*) only exists after `npm run build`, which
+//   writes it to dist/. `astro dev` knows nothing about dist/, so serve it from
+//   there: search then works on the dev server (with the content of the last build).
+/** @type {Record<string, string>} */
+const PAGEFIND_TYPES = { ".js": "text/javascript", ".json": "application/json", ".wasm": "application/wasm" };
+/** @type {import("astro").AstroIntegration} */
+const devServerExtras = {
+  name: "dev-server-extras",
   hooks: {
     "astro:server:setup": ({ server }) => {
-      server.middlewares.use((req, _res, next) => {
+      const pagefindDir = path.resolve("dist", "pagefind");
+      server.middlewares.use((req, res, next) => {
         if (req.url === "/admin" || req.url?.startsWith("/admin?") || req.url === "/admin/") {
           req.url = "/admin/index.html";
+          return next();
         }
-        next();
+        const m = req.url?.match(/^\/pagefind\/([^?#]+)/);
+        if (!m) return next();
+        const file = path.resolve(pagefindDir, decodeURIComponent(m[1]));
+        if (!file.startsWith(pagefindDir + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) return next();
+        res.setHeader("Content-Type", PAGEFIND_TYPES[path.extname(file)] ?? "application/octet-stream");
+        res.setHeader("Cache-Control", "no-store");
+        fs.createReadStream(file).pipe(res);
       });
     },
   },
@@ -42,7 +59,7 @@ export default defineConfig({
     },
   },
   integrations: [
-    adminInDev,
+    devServerExtras,
     sitemap({
       // Keyword pages keep their old URLs but were never in the old sitemap.
       filter: (page) => !page.includes("/taxonomy/term/"),

@@ -18,7 +18,7 @@ keywords:
   - "Karl Toepfer"
   - "cultura corporal"
   - "Wolfgang Graeser"
-  - "Paul Isenfels "
+  - "Paul Isenfels"
   - "Alfred Ohlen"
   - "identidad móvil"
 publishedDate: "2019-11-01"

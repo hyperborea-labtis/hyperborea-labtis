@@ -16,7 +16,7 @@ keywords:
   - "Renacimiento"
   - "Dante Alighieri"
   - "Divina Comedia"
-  - "Claudia Fernández Speier "
+  - "Claudia Fernández Speier"
   - "Candor Lucis Aeternae"
   - "pintura y música"
   - "Sandro Botticelli"

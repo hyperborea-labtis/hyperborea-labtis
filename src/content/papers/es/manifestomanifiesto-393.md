@@ -13,7 +13,7 @@ keywords:
   - "Cineworks Independent Filmmakers Society"
   - "Scott Haynes"
   - "Doug Chomyn"
-  - "Oliver Hockenhull "
+  - "Oliver Hockenhull"
   - "Manifiesto"
 publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/guzman1.png"

@@ -11,7 +11,7 @@ keywords:
   - "Kilómetro 111"
   - "cine"
   - "Ensayo"
-  - "  América y Europa"
+  - "América y Europa"
   - "cultura visual"
   - "Argentina"
   - "crítica"

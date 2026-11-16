@@ -11,7 +11,7 @@ affiliation: "Université Paris-Sorbonne, CNRS/Paris-Sorbonne CELLF 16-21"
 keywords:
   - "Bernard Vouilloux"
   - "film sur l'art"
-  - "Jean-Marie Straub "
+  - "Jean-Marie Straub"
   - "Danièle Huillet"
   - "Akira Kurosawa"
   - "André Bazin"

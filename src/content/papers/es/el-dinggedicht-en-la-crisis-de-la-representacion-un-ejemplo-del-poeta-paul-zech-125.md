@@ -16,7 +16,7 @@ keywords:
   - "Dinggedichte"
   - "Rainer Maria Rilke"
   - "Paul Zech"
-  - "Das schwarze Revier "
+  - "Das schwarze Revier"
   - "Bäume am Río de la Plata"
   - "Héctor Piccoli"
   - "Simultantechnik"

@@ -1,20 +1,20 @@
 ---
 // Keyword pages of the old Drupal site (/es/taxonomy/term/976). They are already
 // indexed by search engines, so every term id keeps its URL. The list is built
-// from the papers' `keywords` frontmatter (src/data/keyword-terms.json maps the
-// old term id to its name; refresh it with `npm run import:terms`).
+// from the papers' `keywords` frontmatter. The vocabulary is
+// src/data/keywords/ (one file per term, editable in the CMS; old Drupal term ids refreshed
+// with `npm run import:terms`); terms added in the CMS get a slug as their id.
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../../components/PageTitle.astro";
 import PaperCard from "../../../../components/PaperCard.astro";
 import { locales, type Locale } from "../../../../i18n/config";
 import { papersWithKeyword } from "../../../../lib/content";
-import terms from "../../../../data/keyword-terms.json";
+import { keywordPages } from "../../../../lib/keywords";
 
 export const getStaticPaths = (async () => {
-  const names: Record<string, string> = terms;
   return locales.flatMap((lang) =>
-    Object.entries(names).map(([tid, name]) => ({ params: { lang, tid }, props: { name } })),
+    keywordPages.map(({ id, name }) => ({ params: { lang, tid: id }, props: { name } })),
   );
 }) satisfies GetStaticPaths;
 

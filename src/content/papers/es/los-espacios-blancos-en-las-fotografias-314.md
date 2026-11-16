@@ -10,7 +10,7 @@ author: "Paula Zori"
 affiliation: "Universidad Nacional de Río Negro, Laboratorio Texto, imagen y sociedad (LabTIS), CONICET"
 keywords:
   - "Atlas"
-  - "Guadalupe Gaona "
+  - "Guadalupe Gaona"
   - "Ignacio Masllorens"
   - "cine de autor"
   - "Documental"

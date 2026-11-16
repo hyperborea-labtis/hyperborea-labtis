@@ -21,7 +21,7 @@ keywords:
   - "Bertrand Borello"
   - "L'Artiste"
   - "Nana"
-  - "traducción "
+  - "traducción"
 publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/1d68b65c-800a-4174-a6be-f4996afa7095.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-sverdloff-huysmans_nana_manet_0.pdf"

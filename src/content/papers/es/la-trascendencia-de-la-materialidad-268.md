@@ -18,7 +18,7 @@ keywords:
   - "Erleben"
   - "Dinggedichte"
   - "Claus Clüver"
-  - "José Luis Brea "
+  - "José Luis Brea"
   - "literatura y escultura"
   - "Europa"
   - "literatura alemana"

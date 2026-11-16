@@ -78,28 +78,13 @@ const isActive = (item: (typeof nav)[number]) =>
           </nav>
 
           <div class="hb-search">
-            <form
-              class="hb-search-form"
-              action={`/${lang}/buscar/`}
-              method="get"
-              role="search"
-            >
-              <label for="hb-search-keys" class="hb-visually-hidden">{t("nav.search")}</label>
+            <a class="hb-search-link" href={`/${lang}/buscar`} aria-label={t("search.title")} title={t("search.title")}>
               <svg class="hb-search-icon" viewBox="0 0 1792 1792" aria-hidden="true">
                 <g transform="translate(0,1536) scale(1,-1)" fill="currentColor">
                   <path d="M1152 704q0 185 -131.5 316.5t-316.5 131.5t-316.5 -131.5t-131.5 -316.5t131.5 -316.5t316.5 -131.5t316.5 131.5t131.5 316.5zM1664 -128q0 -52 -38 -90t-90 -38q-54 0 -90 38l-343 342q-179 -124 -399 -124q-143 0 -273.5 55.5t-225 150t-150 225t-55.5 273.5t55.5 273.5t150 225t225 150t273.5 55.5t273.5 -55.5t225 -150t150 -225t55.5 -273.5q0 -220 -124 -399l343 -343q37 -37 37 -90z" />
                 </g>
               </svg>
-              <input
-                id="hb-search-keys"
-                name="q"
-                type="search"
-                class="hb-search-input"
-                placeholder={t("nav.search")}
-                maxlength="128"
-              />
-              <button type="submit" class="hb-search-submit">{t("nav.search")}</button>
-            </form>
+            </a>
           </div>
 
           <nav class="hb-lang" aria-label={t("lang.label")}>

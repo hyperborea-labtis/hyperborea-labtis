@@ -1,0 +1,21 @@
+---
+// "Últimas publicaciones", pages 2 and up (page 1 is ../posts-3-col.astro).
+import type { GetStaticPaths } from "astro";
+import PublicationsPage from "../../../components/PublicationsPage.astro";
+import { locales, type Locale } from "../../../i18n/config";
+import { latestPublications, paginate } from "../../../lib/content";
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+  for (const lang of locales) {
+    const { totalPages } = paginate(await latestPublications(lang), 1);
+    for (let n = 2; n <= totalPages; n++) paths.push({ params: { lang, n: String(n) } });
+  }
+  return paths;
+}) satisfies GetStaticPaths;
+
+const lang = Astro.params.lang as Locale;
+const page = Number(Astro.params.n);
+---
+
+<PublicationsPage lang={lang} page={page} />

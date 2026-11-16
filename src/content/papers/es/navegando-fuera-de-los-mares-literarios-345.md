@@ -11,7 +11,7 @@ email: "agusbergonce10@hotmail.com"
 affiliation: "CTCL - IdIHCS, Facultad de Humanidades y Ciencias de la Educación, Universidad Nacional de La Plata"
 keywords:
   - "One Piece"
-  - "manga "
+  - "manga"
   - "narrativas transmedia"
   - "Eiichirō Oda"
   - "prosumidor"

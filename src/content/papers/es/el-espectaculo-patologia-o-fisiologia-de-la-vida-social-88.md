@@ -13,7 +13,7 @@ keywords:
   - "Guy Debord"
   - "Teoría de la espectacularidad"
   - "Marxismo"
-  - "Georg Simmel "
+  - "Georg Simmel"
   - "Hannah Arendt"
   - "Erving Goffman"
   - "Imagen"

@@ -22,7 +22,7 @@ keywords:
   - "Inglaterra"
   - "Catherine Alès"
   - "Michel Pouyllau"
-  - "  América y Europa"
+  - "América y Europa"
   - "El Dorado"
 publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_rusiani_0.png"

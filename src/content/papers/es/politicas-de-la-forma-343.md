@@ -10,7 +10,7 @@ author: "Guadalupe Silva"
 email: "guada.silva.guenaga@gmail.com"
 affiliation: "CONICET, Universidad de Buenos Aires"
 keywords:
-  - "arquitectura "
+  - "arquitectura"
   - "Revolución cubana"
   - "posmodernismo"
   - "Estética"

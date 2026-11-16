@@ -65,7 +65,17 @@ collections:
       - { name: email, label: Email, widget: string, required: false, i18n: duplicate }
       - { name: affiliation, label: Afiliación, widget: string, required: false, i18n: true }
       - { name: abstract, label: Resumen, widget: text, required: false, i18n: true }
-      - { name: keywords, label: Palabras clave, widget: list, required: false, i18n: true }
+      - name: keywords
+        label: Palabras clave
+        widget: relation
+        collection: vocabulary
+        search_fields: [name]
+        value_field: name
+        display_fields: [name]
+        multiple: true
+        required: false
+        i18n: duplicate
+        hint: "Elige del menú (se puede buscar). Si falta una palabra, agrégala antes en «Vocabulario de palabras clave»."
       - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
       - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
@@ -110,3 +120,27 @@ collections:
       - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
       - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
       - { name: body, label: Cuerpo, widget: markdown, i18n: true }
+
+  # Vocabulary behind the "Palabras clave" menu of papers: one file per term in
+  # src/data/keywords/, so the CMS list has search and sorting. Terms imported
+  # from Drupal keep their old id (`tid`) because their pages /taxonomy/term/<tid>
+  # are already indexed (names must be unique for the menu, so repeated Drupal
+  # terms are merged, with their other ids in `alsoTids`). Terms added here have
+  # no id and get a page named after them. Deleting is off: it would break
+  # indexed URLs and papers that use the term.
+  - name: vocabulary
+    label: Vocabulario de palabras clave
+    label_singular: Palabra clave
+    folder: src/data/keywords
+    extension: json
+    format: json
+    create: true
+    delete: false
+    identifier_field: name
+    slug: "{{fields.name}}"
+    summary: "{{name}}"
+    sortable_fields: { fields: [name, tid], default: { field: name, direction: Ascending } }
+    fields:
+      - { name: name, label: Palabra clave, widget: string }
+      - { name: tid, label: ID Drupal (solo términos importados), widget: number, value_type: int, required: false, hint: "Déjalo vacío en términos nuevos." }
+      - { name: alsoTids, label: Otros IDs Drupal (mismo nombre), widget: list, field: { name: tid, label: ID Drupal, widget: number, value_type: int }, required: false, hint: "Solo importados: IDs antiguos de términos repetidos que se unieron en este. Déjalo vacío en términos nuevos." }

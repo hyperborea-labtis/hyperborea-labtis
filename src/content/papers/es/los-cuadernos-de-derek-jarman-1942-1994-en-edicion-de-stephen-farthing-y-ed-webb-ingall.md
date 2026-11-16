@@ -15,7 +15,7 @@ keywords:
   - "activismo"
   - "Dungeness"
   - "autobiografía"
-  - " Stephen Farthing"
+  - "Stephen Farthing"
   - "Ed Webb-Ingall"
   - "jardines"
 publishedDate: "2020-11-02"

@@ -9,7 +9,9 @@ export type NavItem = NavLink & { children?: NavLink[] };
 // stay identical across languages. `path` is the URL segment of the term on the
 // current Drupal site (/es/Mare_Sugenum…): it must not change, so existing links
 // keep working. The `section` value of a paper must equal one `label` below.
-export type Section = { label: string; path: string };
+// `allIssues`: the section page lists its papers from every issue, newest first
+// and paginated, instead of only the current issue.
+export type Section = { label: string; path: string; allIssues?: boolean };
 
 // Shown in the main menu and footer.
 export const SECTIONS: Section[] = [
@@ -20,7 +22,7 @@ export const SECTIONS: Section[] = [
 ];
 
 // Listed under the "Hyperborea" menu instead of the main bar.
-export const AFINIDADES_ELECTIVAS: Section = { label: "Afinidades electivas", path: "Afinidades_electivas" };
+export const AFINIDADES_ELECTIVAS: Section = { label: "Afinidades electivas", path: "Afinidades_electivas", allIssues: true };
 
 /** Every section page the site generates. */
 export const ALL_SECTIONS: Section[] = [...SECTIONS, AFINIDADES_ELECTIVAS];

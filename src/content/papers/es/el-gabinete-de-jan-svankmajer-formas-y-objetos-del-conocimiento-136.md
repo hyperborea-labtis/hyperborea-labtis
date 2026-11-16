@@ -14,7 +14,7 @@ keywords:
   - "cine de autor"
   - "Hermanos Quay"
   - "Jan Svankmajer"
-  - "Theatrum mundi "
+  - "Theatrum mundi"
   - "Theatrum Naturalis"
   - "cultura visual"
   - "museo"

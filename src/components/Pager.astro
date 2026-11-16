@@ -1,0 +1,60 @@
+---
+// Numbered pager. Page 1 lives at `base`, page N at `base/N`. The old Drupal
+// site paged with `?page=N` (0-based) and those URLs are indexed: on page 1 a
+// tiny script forwards them to the new address.
+import { useTranslations, type Locale } from "../i18n/config";
+
+interface Props {
+  lang: Locale;
+  base: string;
+  current: number;
+  total: number;
+}
+const { lang, base, current, total } = Astro.props;
+const t = useTranslations(lang);
+
+const href = (n: number) => (n === 1 ? base : `${base}/${n}`);
+
+// 1 … current-2 … current+2 … total, with "…" where pages are skipped.
+const shown = [...new Set([1, total, ...Array.from({ length: 5 }, (_, i) => current - 2 + i)])]
+  .filter((n) => n >= 1 && n <= total)
+  .sort((a, b) => a - b);
+const items: (number | "gap")[] = [];
+shown.forEach((n, i) => {
+  if (i > 0 && n - shown[i - 1] > 1) items.push("gap");
+  items.push(n);
+});
+---
+
+{
+  total > 1 && (
+    <nav class="hb-pager" aria-label={t("pager.label")} data-base={base} data-current={current}>
+      <ul>
+        {current > 1 && (
+          <li><a href={href(current - 1)} rel="prev">‹ {t("pager.prev")}</a></li>
+        )}
+        {items.map((n) =>
+          n === "gap" ? (
+            <li class="hb-pager-gap" aria-hidden="true">…</li>
+          ) : (
+            <li>
+              <a href={href(n)} aria-current={n === current ? "page" : undefined} class:list={{ "is-active": n === current }}>{n}</a>
+            </li>
+          ),
+        )}
+        {current < total && (
+          <li><a href={href(current + 1)} rel="next">{t("pager.next")} ›</a></li>
+        )}
+      </ul>
+    </nav>
+  )
+}
+
+<script>
+  // Old Drupal pager: /es/posts-3-col?page=2 (0-based) → /es/posts-3-col/3.
+  const pager = document.querySelector<HTMLElement>(".hb-pager");
+  if (pager && pager.dataset.current === "1") {
+    const old = Number(new URLSearchParams(location.search).get("page"));
+    if (Number.isInteger(old) && old >= 1) location.replace(`${pager.dataset.base}/${old + 1}`);
+  }
+</script>

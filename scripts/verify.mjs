@@ -253,13 +253,15 @@ if (OFFLINE) {
     const astroCfg = fs.readFileSync(path.join(ROOT, "astro.config.mjs"), "utf8");
     const astroLocales = (astroCfg.match(/locales:\s*\[([^\]]*)\]/) || [])[1]?.replace(/["'\s]/g, "").split(",") ?? [];
     if (JSON.stringify(cfg.i18n?.locales) !== JSON.stringify(astroLocales)) problems.push(`locales differ: CMS=${JSON.stringify(cfg.i18n?.locales)} astro=${JSON.stringify(astroLocales)}`);
-    for (const c of cfg.collections ?? []) {
+    const folderCols = (cfg.collections ?? []).filter((c) => c.folder);
+    for (const c of folderCols) {
       if (!fs.existsSync(path.join(ROOT, c.folder))) problems.push(`collection "${c.name}": folder ${c.folder} missing`);
     }
-    const names = (cfg.collections ?? []).map((c) => c.name).sort().join(",");
+    // "vocabulary" is a data collection (keyword terms), not a content collection.
+    const names = folderCols.map((c) => c.name).filter((n) => n !== "vocabulary").sort().join(",");
     if (names !== Object.keys(COLLECTIONS).sort().join(",")) problems.push(`CMS collections (${names}) ≠ content collections`);
     // every schema field the CMS edits must exist in real frontmatter (sample check)
-    for (const c of cfg.collections ?? []) {
+    for (const c of folderCols) {
       const sample = entries.find((e) => e.col === c.name && e.data);
       if (!sample) continue;
       const cmsFields = new Set(c.fields.map((f) => f.name));
@@ -285,6 +287,9 @@ if (OFFLINE) {
     const missing = LOCALES.filter((l) => !langs[l]);
     const pages = Object.values(langs).reduce((n, l) => n + (l.page_count ?? 0), 0);
     record("8. Search index (Pagefind)", missing.length ? "fail" : "pass", missing.length ? `no index for: ${missing.join(", ")}` : `${pages} pages indexed across ${Object.keys(langs).length} languages`);
+    // The search page filters by tipo / seccion / numero (data-pagefind-filter in the templates).
+    const filterFiles = fs.existsSync(path.join(DIST, "pagefind", "filter")) ? fs.readdirSync(path.join(DIST, "pagefind", "filter")).length : 0;
+    record("8b. Search filters", filterFiles >= LOCALES.length ? "pass" : "fail", `${filterFiles} filter index files (expected at least one per language)`);
   }
 }
 
@@ -312,21 +317,43 @@ if (OFFLINE) {
   }
 }
 
-// ---------- 9b. keyword pages (/{lang}/taxonomy/term/<tid>) ----------
+// ---------- 9b. keyword pages (/{lang}/taxonomy/term/<id>) + vocabulary ----------
 {
-  const termsFile = path.join(ROOT, "src", "data", "keyword-terms.json");
-  const terms = fs.existsSync(termsFile) ? Object.keys(JSON.parse(fs.readFileSync(termsFile, "utf8"))) : [];
+  const termsDir = path.join(ROOT, "src", "data", "keywords");
+  const terms = fs.existsSync(termsDir)
+    ? fs.readdirSync(termsDir).filter((f) => f.endsWith(".json")).map((f) => JSON.parse(fs.readFileSync(path.join(termsDir, f), "utf8")))
+    : [];
+  // Same rule as termId() in src/lib/keywords.ts: old Drupal id, else a slug of the name.
+  const slug = (n) => n.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  const ids = terms.filter((t) => t.name?.trim()).flatMap((t) => [t.tid ? String(t.tid) : slug(t.name), ...(t.alsoTids ?? []).map(String)]);
   const missing = [];
   for (const lang of LOCALES) {
-    for (const tid of terms) {
-      if (!fs.existsSync(path.join(DIST, lang, "taxonomy", "term", `${tid}.html`))) missing.push(`/${lang}/taxonomy/term/${tid}`);
+    for (const id of ids) {
+      if (!fs.existsSync(path.join(DIST, lang, "taxonomy", "term", `${id}.html`))) missing.push(`/${lang}/taxonomy/term/${id}`);
     }
   }
   record(
     "9b. Keyword pages",
-    terms.length && !missing.length ? "pass" : "fail",
-    terms.length ? `${terms.length} terms × ${LOCALES.length} languages, ${missing.length} missing` : "src/data/keyword-terms.json missing — run npm run import:terms",
+    ids.length && !missing.length ? "pass" : "fail",
+    ids.length ? `${ids.length} terms × ${LOCALES.length} languages, ${missing.length} missing` : "src/data/keywords/ missing or empty",
     missing.slice(0, 10),
+  );
+
+  // The CMS menu only offers vocabulary terms: every paper keyword must be one.
+  const known = new Set(terms.map((t) => t.name?.trim()));
+  const unknown = [];
+  for (const e of entries) {
+    if (e.col !== "papers" || !e.data) continue;
+    const kws = e.data.keywords ?? [];
+    for (const k of kws) if (!known.has(k)) unknown.push(`${relf(e.file)}: "${k}"`);
+    // the CMS menu breaks (Svelte each_key_duplicate) when a paper repeats a keyword
+    for (const k of new Set(kws.filter((k, i) => kws.indexOf(k) !== i))) unknown.push(`${relf(e.file)}: "${k}" repeated`);
+  }
+  record(
+    "9c. Paper keywords in vocabulary",
+    unknown.length ? "fail" : "pass",
+    unknown.length ? `${unknown.length} keyword problems (not in src/data/keywords/, or repeated in one paper)` : "all paper keywords exist in the vocabulary",
+    unknown,
   );
 }
 

@@ -15,7 +15,7 @@ keywords:
   - "ut pictura poesis"
   - "visión"
   - "cultura visual"
-  - "Marosa di Giorgio "
+  - "Marosa di Giorgio"
   - "Amanda Berenguer"
   - "Elvira Hernández"
   - "Alejandra Pizarnik"

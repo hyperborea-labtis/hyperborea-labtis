@@ -15,6 +15,9 @@ const strings = {
   more: t("search.more"),
   unavailable: t("search.unavailable"),
   hint: t("search.hint"),
+  all: t("search.filter.all"),
+  issueWord: t("issue.number"),
+  typePaper: t("search.type.paper"),
 };
 ---
 
@@ -29,6 +32,20 @@ const strings = {
           <input id="hb-q" name="q" type="search" class="hb-input" autocomplete="off" />
           <button type="submit" class="hb-button">{t("search.submit")}</button>
         </form>
+        <div class="hb-search-filters">
+          <label>
+            <span>{t("search.filter.type")}</span>
+            <select class="hb-select" name="tipo" data-filter="tipo"></select>
+          </label>
+          <label>
+            <span>{t("search.filter.section")}</span>
+            <select class="hb-select" name="seccion" data-filter="seccion"></select>
+          </label>
+          <label>
+            <span>{t("search.filter.issue")}</span>
+            <select class="hb-select" name="numero" data-filter="numero"></select>
+          </label>
+        </div>
         <p class="hb-search-status" role="status" aria-live="polite"></p>
         <ol class="hb-search-results"></ol>
         <button type="button" class="hb-button hb-search-more" hidden>{t("search.more")}</button>
@@ -40,7 +57,9 @@ const strings = {
 <script>
   // Client-side full-text search over the static Pagefind index generated at
   // build time (see the "build" script). Pagefind picks the index of the page's
-  // <html lang>, so each locale searches its own content.
+  // <html lang>, so each locale searches its own content. Papers, activities and
+  // pages carry `tipo`; papers also `seccion` and `numero` (data-pagefind-filter
+  // metas in their templates), which feed the three selects below.
   interface PagefindResultData {
     url: string;
     excerpt: string;
@@ -49,9 +68,16 @@ const strings = {
   interface PagefindResult {
     data: () => Promise<PagefindResultData>;
   }
+  type FilterCounts = Record<string, Record<string, number>>;
   interface PagefindApi {
-    search: (query: string) => Promise<{ results: PagefindResult[] }>;
+    search: (
+      query: string,
+      options?: { filters?: Record<string, string> },
+    ) => Promise<{ results: PagefindResult[] }>;
+    filters: () => Promise<FilterCounts>;
   }
+
+  const FILTER_KEYS = ["tipo", "seccion", "numero"] as const;
 
   const root = document.querySelector<HTMLElement>(".hb-search-page");
   if (root) {
@@ -61,6 +87,9 @@ const strings = {
     const status = root.querySelector<HTMLElement>(".hb-search-status")!;
     const list = root.querySelector<HTMLOListElement>(".hb-search-results")!;
     const moreBtn = root.querySelector<HTMLButtonElement>(".hb-search-more")!;
+    const selects = Object.fromEntries(
+      FILTER_KEYS.map((k) => [k, root.querySelector<HTMLSelectElement>(`select[data-filter=${k}]`)!]),
+    ) as Record<(typeof FILTER_KEYS)[number], HTMLSelectElement>;
     const PAGE = 20;
 
     let pagefind: PagefindApi | null = null;
@@ -75,6 +104,57 @@ const strings = {
         pagefind = null;
       }
       return pagefind;
+    }
+
+    function fillSelect(select: HTMLSelectElement, values: [string, string][], selected: string) {
+      select.replaceChildren(new Option(strings.all ?? "", ""));
+      for (const [value, label] of values) select.append(new Option(label, value));
+      select.value = values.some(([v]) => v === selected) ? selected : "";
+    }
+
+    async function setupFilters(api: PagefindApi, initial: URLSearchParams) {
+      let counts: FilterCounts = {};
+      try {
+        counts = await api.filters();
+      } catch {
+        // no filters in the index: the selects stay with "all" only
+      }
+      const names = (key: string) => Object.keys(counts[key] ?? {});
+      const plain = (key: string): [string, string][] =>
+        names(key).sort((a, b) => a.localeCompare(b)).map((v) => [v, v]);
+      const issues = names("numero")
+        .sort((a, b) => Number(b) - Number(a))
+        .map((v): [string, string] => [v, `${strings.issueWord} ${v}`]);
+      fillSelect(selects.tipo, plain("tipo"), initial.get("tipo") ?? "");
+      fillSelect(selects.seccion, plain("seccion"), initial.get("seccion") ?? "");
+      fillSelect(selects.numero, issues, initial.get("numero") ?? "");
+      syncDisabled();
+    }
+
+    // Section and issue only exist on papers: when another type is chosen they
+    // cannot match anything, so they are cleared and disabled.
+    function syncDisabled() {
+      const notPaper = selects.tipo.value !== "" && selects.tipo.value !== strings.typePaper;
+      for (const k of ["seccion", "numero"] as const) {
+        if (notPaper) selects[k].value = "";
+        selects[k].disabled = notPaper;
+      }
+    }
+
+    function activeFilters(): Record<string, string> {
+      const filters: Record<string, string> = {};
+      for (const k of FILTER_KEYS) if (selects[k].value) filters[k] = selects[k].value;
+      return filters;
+    }
+
+    function updateUrl(q: string) {
+      const url = new URL(location.href);
+      url.searchParams.set("q", q);
+      for (const k of FILTER_KEYS) {
+        if (selects[k].value) url.searchParams.set(k, selects[k].value);
+        else url.searchParams.delete(k);
+      }
+      history.replaceState(null, "", url);
     }
 
     async function renderBatch() {
@@ -111,7 +191,7 @@ const strings = {
         status.textContent = strings.unavailable ?? "";
         return;
       }
-      const { results } = await api.search(q);
+      const { results } = await api.search(q, { filters: activeFilters() });
       pending = results;
       status.textContent = results.length
         ? `${results.length} ${strings.results}`
@@ -121,16 +201,24 @@ const strings = {
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      const q = input.value;
-      const url = new URL(location.href);
-      url.searchParams.set("q", q);
-      history.replaceState(null, "", url);
-      void run(q);
+      updateUrl(input.value);
+      void run(input.value);
     });
+    for (const k of FILTER_KEYS) {
+      selects[k].addEventListener("change", () => {
+        syncDisabled();
+        updateUrl(input.value);
+        void run(input.value);
+      });
+    }
     moreBtn.addEventListener("click", () => void renderBatch());
 
-    const initial = new URLSearchParams(location.search).get("q") ?? "";
-    input.value = initial;
-    void run(initial);
+    const params = new URLSearchParams(location.search);
+    input.value = params.get("q") ?? "";
+    void (async () => {
+      const api = await load();
+      if (api) await setupFilters(api, params);
+      await run(input.value);
+    })();
   }
 </script>

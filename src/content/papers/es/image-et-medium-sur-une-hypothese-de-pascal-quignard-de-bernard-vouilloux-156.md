@@ -12,7 +12,7 @@ keywords:
   - "Bernard Vouilloux"
   - "Pascal Quignard"
   - "Imagen"
-  - "medio "
+  - "medio"
   - "Medea"
   - "butoh"
 publishedDate: "2019-10-20"
