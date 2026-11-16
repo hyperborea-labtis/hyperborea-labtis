@@ -6,7 +6,6 @@ title: "El «secreto» del arte: naturaleza y abstracción  en Secreto de un hom
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 3
-featured: 3
 author: "Paula Poenitz"
 email: "paupoenitz@hotmail.com"
 affiliation: "Investigadora independiente"

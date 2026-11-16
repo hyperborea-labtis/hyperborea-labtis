@@ -28,8 +28,6 @@ const papers = defineCollection({
     section: z.string().optional(),
     issue: z.number().int().positive().optional(),
     issueOrder: z.number().int().positive().optional(),
-    // Position on the home page (1 = first). Papers without it are not featured.
-    featured: z.number().int().positive().optional(),
     author: z.string().optional(),
     email: z.string().optional(),
     affiliation: z.string().optional(),

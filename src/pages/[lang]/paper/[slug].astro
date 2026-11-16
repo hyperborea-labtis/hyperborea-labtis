@@ -5,6 +5,8 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { papersForLocale, paperBySlug } from "../../../lib/content";
+import { ALL_SECTIONS } from "../../../data/nav";
+import terms from "../../../data/keyword-terms.json";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -24,6 +26,14 @@ const paper = await paperBySlug(lang, slug);
 if (!paper) return Astro.redirect(`/${lang}`);
 const { Content } = await render(paper);
 const d = paper.data;
+
+// Category (section) and keywords shown after the article, like the old site:
+// the section links to its page, each keyword to its /taxonomy/term/<id> page.
+const section = ALL_SECTIONS.find((s) => s.label === d.section);
+const termIds = new Map(
+  Object.entries(terms as Record<string, string>).map(([tid, name]) => [name.trim().toLowerCase(), tid]),
+);
+const keywords = d.keywords.map((name) => ({ name, tid: termIds.get(name.trim().toLowerCase()) }));
 ---
 
 <BaseLayout
@@ -56,6 +66,23 @@ const d = paper.data;
         )}
 
         <Content />
+
+        {(section || keywords.length > 0) && (
+          <div class="hb-tags">
+            {section && (
+              <ul class="hb-tag-list" aria-label={t("paper.category")}>
+                <li><a href={`/${lang}/${section.path}`}>{section.label}</a></li>
+              </ul>
+            )}
+            {keywords.length > 0 && (
+              <ul class="hb-tag-list" aria-label={t("paper.keywords")}>
+                {keywords.map((k) => (
+                  <li>{k.tid ? <a href={`/${lang}/taxonomy/term/${k.tid}`}>{k.name}</a> : <span>{k.name}</span>}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
 
         {d.pdf && (
           <p class="hb-pdf">

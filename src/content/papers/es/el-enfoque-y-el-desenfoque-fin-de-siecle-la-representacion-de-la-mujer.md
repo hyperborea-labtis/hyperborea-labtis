@@ -6,7 +6,6 @@ title: "El enfoque y el desenfoque fin-de-siècle:  la representación de la muj
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 2
-featured: 2
 author: "Paula Zori"
 email: "pzori@unrn.edu.ar"
 affiliation: "Universidad Nacional de Río Negro, Labratorio Texto, Imagen y Sociedad, CONICET"

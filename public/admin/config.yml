@@ -61,7 +61,6 @@ collections:
         options: ["Mare Sugenum", "Kino LabTIS", "Manet et manebit", "41º 9’ S 71º 8’ W", "Afinidades electivas"]
       - { name: issue, label: Número de Hyperborea, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 a 8. Define en qué número (/numero-N) aparece el paper." }
       - { name: issueOrder, label: Orden dentro del número, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 = primero. Los que no tienen orden van al final del número." }
-      - { name: featured, label: Destacado en portada (posición), widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 = primero. Déjalo vacío para no mostrarlo en la portada (la portada muestra 6)." }
       - { name: author, label: Autor/a, widget: string, required: false, i18n: duplicate }
       - { name: email, label: Email, widget: string, required: false, i18n: duplicate }
       - { name: affiliation, label: Afiliación, widget: string, required: false, i18n: true }

@@ -1,5 +1,5 @@
 import type { Locale } from "../i18n/config";
-import { ISSUE_YEARS } from "./issues";
+import { ISSUE_NUMBERS, ISSUE_YEARS } from "./issues";
 
 export type NavLink = { label: string; href: string; external?: boolean };
 export type NavItem = NavLink & { children?: NavLink[] };
@@ -33,8 +33,7 @@ export function mainNav(locale: Locale): NavItem[] {
     {
       label: "Hyperborea",
       href: L("/presentacion"),
-      // Same items and order as the current Drupal site, in every language
-      // (the source keeps these labels in Spanish for en/fr too).
+      // Labels stay in Spanish for en/fr too, as on the current Drupal site.
       children: [
         { label: "Sobre Hyperborea", href: L("/sobre_hyperborea") },
         { label: "Presentación", href: L("/presentacion") },
@@ -55,8 +54,8 @@ export function mainNav(locale: Locale): NavItem[] {
   ];
 }
 
-// The current site lists issues 6, 7, 8 first, then 5 down to 1.
-const MENU_ISSUE_ORDER = [6, 7, 8, 5, 4, 3, 2, 1];
+// Newest issue first (8, 7, … 1); a new issue added to ISSUE_YEARS goes on top.
+const MENU_ISSUE_ORDER = [...ISSUE_NUMBERS].sort((a, b) => b - a);
 
 export function subfooterNav(locale: Locale): NavLink[] {
   const L = (p: string) => `/${locale}${p}`;

@@ -5,6 +5,23 @@ import sitemap from "@astrojs/sitemap";
 // Production domain (the current site's canonical host is www).
 const SITE = "https://www.hyperborea-labtis.org";
 
+// Dev only: `astro dev` serves public/admin/index.html at /admin/index.html but
+// 404s on /admin and /admin/ (trailingSlash "never"). Production (Workers
+// Assets) already serves /admin, so only the dev server needs this rewrite.
+const adminInDev = {
+  name: "admin-in-dev",
+  hooks: {
+    "astro:server:setup": ({ server }) => {
+      server.middlewares.use((req, _res, next) => {
+        if (req.url === "/admin" || req.url?.startsWith("/admin?") || req.url === "/admin/") {
+          req.url = "/admin/index.html";
+        }
+        next();
+      });
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
@@ -25,6 +42,7 @@ export default defineConfig({
     },
   },
   integrations: [
+    adminInDev,
     sitemap({
       // Keyword pages keep their old URLs but were never in the old sitemap.
       filter: (page) => !page.includes("/taxonomy/term/"),

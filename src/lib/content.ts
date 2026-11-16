@@ -101,9 +101,22 @@ export async function papersInIssue(locale: Locale, issue: number): Promise<Pape
   return papers.filter((p) => p.data.issue === issue).sort(inIssueOrder);
 }
 
-export async function papersInSection(locale: Locale, sectionLabel: string): Promise<Paper[]> {
+/** The current issue is the highest issue number among published papers, so
+ * opening a new issue in the CMS moves every section page to it by itself. */
+export async function currentIssue(locale: Locale): Promise<number | undefined> {
   const papers = await papersForLocale(locale);
-  return papers.filter((p) => p.data.section === sectionLabel);
+  const issues = papers.map((p) => p.data.issue).filter((n): n is number => n !== undefined);
+  return issues.length > 0 ? Math.max(...issues) : undefined;
+}
+
+/** Papers of a section in the current issue only (older issues stay reachable
+ * from the issue pages and the keyword pages). */
+export async function papersInSection(locale: Locale, sectionLabel: string): Promise<Paper[]> {
+  const issue = await currentIssue(locale);
+  const papers = await papersForLocale(locale);
+  return papers
+    .filter((p) => p.data.section === sectionLabel && p.data.issue === issue)
+    .sort(inIssueOrder);
 }
 
 const norm = (s: string): string => s.trim().toLowerCase();
@@ -115,16 +128,10 @@ export async function papersWithKeyword(locale: Locale, keyword: string): Promis
   return papers.filter((p) => p.data.keywords.some((k) => norm(k) === wanted));
 }
 
-const HOME_ITEMS = 6;
-
-/** Papers shown on the home page: those with a `featured` position, in that
- * order; with none set, the most recent ones. */
-export async function featuredPapers(locale: Locale): Promise<Paper[]> {
-  const papers = await papersForLocale(locale);
-  const featured = papers
-    .filter((p) => p.data.featured !== undefined)
-    .sort((a, b) => (a.data.featured ?? 0) - (b.data.featured ?? 0));
-  return (featured.length > 0 ? featured : papers).slice(0, HOME_ITEMS);
+/** Papers shown on the home page: every paper of the current issue, in issue order. */
+export async function latestIssuePapers(locale: Locale): Promise<Paper[]> {
+  const issue = await currentIssue(locale);
+  return issue === undefined ? [] : papersInIssue(locale, issue);
 }
 
 export type Publication = { title: string; href: string; image?: string };

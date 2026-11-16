@@ -6,7 +6,6 @@ title: "Del lienzo a la ficción: la écfrasis  como motor narrativo  en La frag
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 4
-featured: 4
 author: "Pablo Unda"
 email: "pablounda8@gmail.com"
 affiliation: "Universidad de Buenos Aires"

@@ -6,7 +6,6 @@ title: "Quietud y reserva del tiempo: la memoria cinematográfica y «los pensam
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 6
-featured: 6
 author: "Florencia Llarrull"
 email: "mfllarrull@unrn.edu.ar"
 affiliation: "Universidad de Río Negro / Sede Andina, CONICET"

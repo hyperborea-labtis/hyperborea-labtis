@@ -6,7 +6,6 @@ title: "Tres obras de vanguardia en Miltín 1934  de Juan Emar. Didáctica, ficc
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 5
-featured: 5
 author: "Andrés Grillo"
 email: "agrilloc@gmail.com"
 affiliation: "Universidad de Chile, Santiago de Chile"

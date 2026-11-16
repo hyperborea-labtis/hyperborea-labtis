@@ -6,7 +6,6 @@ title: "La configuración iconográfica de la cautiva: del esteticismo romántic
 section: "Mare Sugenum"
 issue: 8
 issueOrder: 1
-featured: 1
 author: "Verónica Pérez"
 email: "perezvl@gmail.com"
 affiliation: "Facultad de Filosofía y letras, Universidad de Buenos Aires"
