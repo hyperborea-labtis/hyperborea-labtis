@@ -1,14 +1,17 @@
 ---
-lang: "es"
-translationKey: "265"
-created: "2022-09-08T21:00:00.000Z"
-slug: "estreno-del-ensayo-documental-el-ruido-del-tiempo"
-title: "ESTRENO DEL ENSAYO DOCUMENTAL EL RUIDO DEL TIEMPO "
-publishedDate: "2022-09-08"
-heroImage: "/sites/default/files/ct-articles/7e476976-cebd-4e37-97d5-b23b86bd4a7e.jpeg"
+translationKey: '265'
+title: Estreno del ensayo documental 'El ruido del tiempo'
+slug: estreno-del-ensayo-documental-el-ruido-del-tiempo
+created: 2022-09-08T21:00:00.000Z
+publishedDate: 2022-09-08
+heroImage: /sites/default/files/ct-articles/7e476976-cebd-4e37-97d5-b23b86bd4a7e.jpeg
+pdf: ''
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/es/actividad/estreno-del-ensayo-documental-el-ruido-del-tiempo
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/es/actividad/estreno-del-ensayo-documental-el-ruido-del-tiempo"
+lang: es
 ---
+
 Rodada en la región y con actores-vecinos de la ciudad de Tilcara, *El ruido del tiempo* es una historia de espíritus errantes y un mundo que se ha ido. 
 
 El fantasma del arqueólogo sueco Eric Boman regresa a la tierra que más quiso, la Puna. Allí se enfrentará con sus dudas, reflexiones y contradicciones en compañía del fantasma de Pedro Carpanchay, otro fantasma en pena. 

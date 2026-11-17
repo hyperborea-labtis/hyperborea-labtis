@@ -1,27 +1,34 @@
 ---
-lang: "es"
-translationKey: "363"
-created: "2024-11-05T19:20:00.000Z"
-slug: "semblanza-de-olga-albertovna-svetlakova-363"
-title: "Semblanza de Olga Albértovna Svetlakova"
-section: "41º 9’ S 71º 8’ W"
+translationKey: '363'
+title: Semblanza de Olga Albértovna Svetlakova
+slug: semblanza-de-olga-albertovna-svetlakova-363
+created: 2024-11-05T19:20:00.000Z
+section: 41º 9’ S 71º 8’ W
 issue: 7
 issueOrder: 12
-author: "Anastasia Krutitskaya"
-affiliation: "UNAM, ENES Morelia, México"
+author: Anastasia Krutitskaya
+email: ''
+affiliation: UNAM, ENES Morelia, México
+abstract: ''
 keywords:
-  - "Olga Albértovna Svetlakova"
-  - "Traducción"
-  - "literatura latinoamericana"
-  - "México"
-  - "Unión Soviética"
-  - "Juan Rulfo"
-  - "Teoría de la recepción"
-heroImage: "/sites/default/files/ct-paper/rulfo.png"
-pdf: "/sites/default/files/ct-paper/hyperborea_07_krutitskaya-semblanza_olga_svetlakova.pdf"
+  - Olga Albértovna Svetlakova
+  - Traducción
+  - literatura latinoamericana
+  - México
+  - Unión Soviética
+  - Juan Rulfo
+  - Teoría de la recepción
+receivedDate: ''
+evaluatedDate: ''
+publishedDate: ''
+heroImage: /sites/default/files/ct-paper/rulfo.png
+pdf: /sites/default/files/ct-paper/hyperborea_07_krutitskaya-semblanza_olga_svetlakova.pdf
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/es/paper/semblanza-de-olga-albertovna-svetlakova-363
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/es/paper/semblanza-de-olga-albertovna-svetlakova-363"
+lang: es
 ---
+
 * * *
 
 Albértovna Svetlakova (n. 1956) es crítica literaria y traductora rusa. Trabajó toda su vida en la Facultad de Filología de la Universidad Estatal de San Petersburgo y  formó decenas de generaciones en el campo de la literatura medieval y del Siglo de Oro. Es autora de más de 90 publicaciones, incluyendo la monografía  *Don Quijote de Cervantes. Cuestiones de poética* (1996). Sus intereses giran en torno a la historia de la  novela, historia de los géneros poéticos, la obra de Cervantes, la literatura medieval y del Siglo de Oro, la novela latinoamericana del siglo XX y la recepción de la literatura  escrita en español en Rusia. Tradujo al ruso a Cortázar, Quevedo y Borges.

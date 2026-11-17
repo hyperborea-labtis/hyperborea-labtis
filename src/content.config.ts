@@ -4,6 +4,14 @@ import { glob } from "astro/loaders";
 
 const localeEnum = z.enum(["es", "en", "fr"]);
 
+// Optional date. The CMS saves an empty date widget as `''` (or null), which
+// must mean "no date" instead of failing the build with an invalid date.
+const blankToUndefined = (v: unknown) => (v === "" || v === null ? undefined : v);
+const optionalDate = z.preprocess(blankToUndefined, z.coerce.date().optional());
+// Same for other optional non-text fields an editor may clear in the CMS.
+const optionalPositiveInt = z.preprocess(blankToUndefined, z.number().int().positive().optional());
+const optionalUrl = z.preprocess(blankToUndefined, z.string().url().optional());
+
 // Extra URLs of the old site that must keep working, one path per line, each
 // starting with "/". They become redirects to this entry at build time
 // (scripts/build-redirects.mjs). Not needed for the canonical URL or for
@@ -24,26 +32,26 @@ const papers = defineCollection({
     translationKey: z.string().optional(),
     // Creation timestamp (from Drupal). Listings sort newest-first by it, so the
     // order matches the old site down to the minute; without it `publishedDate` is used.
-    created: z.coerce.date().optional(),
+    created: optionalDate,
     aliases,
     slug: z.string(),
     title: z.string(),
     section: z.string().optional(),
-    issue: z.number().int().positive().optional(),
-    issueOrder: z.number().int().positive().optional(),
+    issue: optionalPositiveInt,
+    issueOrder: optionalPositiveInt,
     author: z.string().optional(),
     email: z.string().optional(),
     affiliation: z.string().optional(),
     abstract: z.string().optional(),
     keywords: z.array(z.string()).default([]),
     // Shown under the paper: reception, evaluation and publication dates.
-    receivedDate: z.coerce.date().optional(),
-    evaluatedDate: z.coerce.date().optional(),
-    publishedDate: z.coerce.date().optional(),
+    receivedDate: optionalDate,
+    evaluatedDate: optionalDate,
+    publishedDate: optionalDate,
     heroImage: z.string().optional(),
     pdf: z.string().optional(),
     draft: z.boolean().default(false),
-    sourceUrl: z.string().url().optional(),
+    sourceUrl: optionalUrl,
   }),
 });
 
@@ -53,15 +61,15 @@ const articles = defineCollection({
   schema: z.object({
     lang: localeEnum.optional(),
     translationKey: z.string().optional(),
-    created: z.coerce.date().optional(),
+    created: optionalDate,
     aliases,
     slug: z.string(),
     title: z.string(),
-    publishedDate: z.coerce.date().optional(),
+    publishedDate: optionalDate,
     heroImage: z.string().optional(),
     pdf: z.string().optional(),
     draft: z.boolean().default(false),
-    sourceUrl: z.string().url().optional(),
+    sourceUrl: optionalUrl,
   }),
 });
 
@@ -75,7 +83,7 @@ const pages = defineCollection({
     slug: z.string(),
     title: z.string(),
     draft: z.boolean().default(false),
-    sourceUrl: z.string().url().optional(),
+    sourceUrl: optionalUrl,
   }),
 });
 
