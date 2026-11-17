@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "366"
+created: "2025-10-20T16:33:56.000Z"
 slug: "presentacion-del-libro-el-patagonia"
 title: "Presentación del libro EL PATAGONIA "
 publishedDate: "2025-10-20"

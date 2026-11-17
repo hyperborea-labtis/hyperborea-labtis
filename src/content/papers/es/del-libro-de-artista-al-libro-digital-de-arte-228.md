@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "228"
+created: "2021-10-24T21:00:50.000Z"
 slug: "del-libro-de-artista-al-libro-digital-de-arte-228"
 title: "Conjugar opuestos hacia un tercer modelo. Del libro de artista al libro digital de arte"
 section: "Afinidades electivas"
@@ -21,7 +22,6 @@ keywords:
   - "Papeles teatrales"
   - "Argentina"
   - "paisaje"
-publishedDate: "2021-10-24"
 heroImage: "/sites/default/files/ct-paper/hyp.4_musitano_0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_musitano-conjugar_opuestos_bosquemadura_art_ebooks.pdf"
 draft: false

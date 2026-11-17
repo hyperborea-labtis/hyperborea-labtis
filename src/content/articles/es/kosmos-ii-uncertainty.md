@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "167"
+created: "2020-06-12T23:08:25.000Z"
 slug: "kosmos-ii-uncertainty"
 title: "Kosmos II, the Uncertainty "
 publishedDate: "2020-06-12"

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "393"
+created: "2025-11-29T02:40:00.000Z"
 slug: "manifestomanifiesto-393"
 title: "Manifesto/Manifiesto"
 section: "Kino LabTIS"
@@ -15,7 +16,6 @@ keywords:
   - "Doug Chomyn"
   - "Oliver Hockenhull"
   - "Manifiesto"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/guzman1.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_haynes_etal.-speed-manifiesto-bilingue.pdf"
 draft: false

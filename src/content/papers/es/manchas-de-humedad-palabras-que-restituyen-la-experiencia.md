@@ -1,13 +1,14 @@
 ---
 lang: "es"
 translationKey: "194"
+created: "2020-10-30T14:37:54.000Z"
+publishedDate: "2020-11-02"
 slug: "manchas-de-humedad-palabras-que-restituyen-la-experiencia"
 title: " Manchas de humedad. palabras que restituyen la experiencia del observador"
 section: "Manet et manebit"
 issue: 3
 issueOrder: 11
 author: "Juan Santander Leal[1]"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/santader_leal_manchas2x.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_santander_leal-manchas-de-humedad-palabras-que-restituyen.pdf"
 draft: false

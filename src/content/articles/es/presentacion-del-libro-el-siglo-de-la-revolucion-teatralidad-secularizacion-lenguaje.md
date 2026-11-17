@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "264"
+created: "2022-08-31T21:14:06.000Z"
 slug: "presentacion-del-libro-el-siglo-de-la-revolucion-teatralidad-secularizacion-lenguaje"
 title: "PRESENTACIÓN DEL LIBRO EL SIGLO DE LA REVOLUCIÓN. TEATRALIDAD, SECULARIZACIÓN, LENGUAJE NUEVO"
 publishedDate: "2022-08-31"

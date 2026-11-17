@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "395"
+created: "2025-11-29T02:38:00.000Z"
 slug: "acerca-sobre-desde-el-cuerpo"
 title: "Acerca/sobre/desde el cuerpo a cuerpo con el territorio que habitamos: lecturas, alianzas y arte en Hilda Zagaglia. De lo inasible a lo visible"
 section: "Afinidades electivas"
@@ -16,7 +17,6 @@ keywords:
   - "libros de arte"
   - "De lo inasible a lo visible"
   - "E-Bosquemadura"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/hilda5_1.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_garione-acerca-sobre-desde-zagaglia.pdf"
 draft: false

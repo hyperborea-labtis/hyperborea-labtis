@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "107"
+created: "2018-10-29T19:00:27.000Z"
+receivedDate: "2018-02-19"
+evaluatedDate: "2018-04-09"
+publishedDate: "2018-10-06"
 slug: "un-estudio-sobre-rayuela-107"
 title: "Del lado de allá: un estudio sobre cómo Rayuela fue traducida al inglés y publicada  en los Estados Unidos"
 section: "41º 9’ S 71º 8’ W"
@@ -17,7 +21,6 @@ keywords:
   - "Rayuela"
   - "Gregory Rabassa"
   - "Hopscotch"
-publishedDate: "2018-10-06"
 heroImage: "/sites/default/files/ct-paper/hyperborea_bracco_hopscotch_intro.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Bracco-Del_lado_de_alla_1.pdf"
 draft: false

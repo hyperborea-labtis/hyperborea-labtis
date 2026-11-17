@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "175"
+created: "2020-10-31T23:16:12.000Z"
+receivedDate: "2020-03-12"
+evaluatedDate: "2020-04-22"
+publishedDate: "2020-11-02"
 slug: "variaciones-en-azul-plastica-y-poetica-de-un-color-175"
 title: "Variaciones en azul: plástica y poética de un color"
 section: "Mare Sugenum"
@@ -23,7 +27,6 @@ keywords:
   - "Novalis"
   - "Vassily Kandinsky"
   - "Michel Pastoreau"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/atkins_poenitz.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_poenitz-variaciones-en-azul-plastica-y-poetica_0.pdf"
 draft: false

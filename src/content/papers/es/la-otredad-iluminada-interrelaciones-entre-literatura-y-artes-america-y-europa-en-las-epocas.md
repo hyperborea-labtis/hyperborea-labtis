@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "157"
+created: "2019-10-19T05:34:51.000Z"
 slug: "la-otredad-iluminada-interrelaciones-entre-literatura-y-artes-america-y-europa-en-las-epocas"
 title: "La otredad iluminada. Interrelaciones entre literatura y artes. América y Europa en las épocas Moderna y Contemporánea (I)"
 section: "Afinidades electivas"
@@ -22,7 +23,6 @@ keywords:
   - "James A. W. Heffernan"
   - "Nueva corónica y buen gobierno"
   - "estudios guadalupanos"
-publishedDate: "2019-10-19"
 heroImage: "/sites/default/files/ct-paper/resenia_manfred.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-manfred-otredad_iluminada_2.pdf"
 draft: false

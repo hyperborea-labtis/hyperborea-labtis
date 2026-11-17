@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "207"
+created: "2020-10-29T19:32:19.000Z"
+publishedDate: "2020-11-02"
 slug: "el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este-207"
 title: "El hombre y el sistema natural  en dos poemas de Ladera este"
 section: "41º 9’ S 71º 8’ W"
@@ -18,7 +20,6 @@ keywords:
   - "lo sagrado y lo profano"
   - "Mircea Eliade"
   - "Tiempo"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/clinton.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_clinton-el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este.pdf"
 draft: false

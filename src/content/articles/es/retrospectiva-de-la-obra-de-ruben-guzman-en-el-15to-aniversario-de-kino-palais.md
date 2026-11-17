@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "301"
+created: "2023-05-05T19:54:25.000Z"
 slug: "retrospectiva-de-la-obra-de-ruben-guzman-en-el-15to-aniversario-de-kino-palais"
 title: "Retrospectiva de Rubén Guzmán en el aniversario del Kino Palais"
 publishedDate: "2023-05-05"

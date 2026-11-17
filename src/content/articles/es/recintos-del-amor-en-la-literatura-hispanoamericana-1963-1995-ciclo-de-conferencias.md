@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "332"
+created: "2024-09-01T01:00:10.000Z"
 slug: "recintos-del-amor-en-la-literatura-hispanoamericana-1963-1995-ciclo-de-conferencias"
 title: "Ciclo de conferencias: Recintos del amor en la literatura hispanoamericana (1963-1995)"
 publishedDate: "2024-09-01"

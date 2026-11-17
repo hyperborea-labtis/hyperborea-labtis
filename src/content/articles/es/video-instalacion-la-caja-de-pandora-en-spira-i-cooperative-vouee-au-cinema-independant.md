@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "120"
+created: "2019-04-04T22:00:00.000Z"
 slug: "video-instalacion-la-caja-de-pandora-en-spira-i-cooperative-vouee-au-cinema-independant"
 title: "VIDEO INSTALACIÓN 'LA CAJA DE PANDORA' en SPIRA I Coopérative vouée au cinéma indépendant, Québec"
 publishedDate: "2019-04-04"

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "83"
+created: "2018-10-29T23:24:40.000Z"
 slug: "sobre-la-traduccion-de-cortazars-hopscotch-and-other-games-83"
 title: "Sobre la traducción de «Cortazar’s Hopscotch and other games» de James E. Irby (1967)"
 section: "41º 9’ S 71º 8’ W"
@@ -8,7 +9,6 @@ issue: 1
 issueOrder: 13
 author: "Daniela Chazarreta"
 affiliation: "Universidad Nacional de la Plata, CONICET"
-publishedDate: "2018-10-29"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introduccio%CC%81n-INDICE.jpeg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introduccion_0.pdf"
 draft: false

@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "388"
+created: "2025-11-29T02:45:00.000Z"
+receivedDate: "2025-07-09"
+evaluatedDate: "2025-11-03"
+publishedDate: "2025-11-28"
 slug: "tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar"
 title: "Tres obras de vanguardia en Miltín 1934  de Juan Emar. Didáctica, ficción y renovación  para las artes plásticas chilenas de 1930"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Max Ernst"
   - "Pablo Piccasso"
   - "Crítica de arte"
-publishedDate: "2025-11-28"
 heroImage: "/sites/default/files/ct-paper/grillo-picasso.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_grillo-tres-obras-de-vanguardia-eman.pdf"
 draft: false

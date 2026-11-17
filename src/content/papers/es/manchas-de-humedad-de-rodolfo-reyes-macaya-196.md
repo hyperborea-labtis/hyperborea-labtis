@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "196"
+created: "2020-10-30T12:37:29.000Z"
+publishedDate: "2020-11-02"
 slug: "manchas-de-humedad-de-rodolfo-reyes-macaya-196"
 title: "Manchas de humedad de Rodolfo Reyes Macaya "
 section: "Manet et manebit"
@@ -11,7 +13,6 @@ keywords:
   - "Manchas de humedad"
   - "Poesía latinoamericana"
   - "Poesía contemporánea"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/reyes_macaya2x.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_toledo_reyes-macaya-manchas-humedad_1.pdf"
 draft: false

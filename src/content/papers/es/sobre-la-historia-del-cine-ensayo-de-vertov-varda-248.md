@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "248"
+created: "2021-10-28T05:00:00.000Z"
 slug: "sobre-la-historia-del-cine-ensayo-de-vertov-varda-248"
 title: "Sobre la historia del cine ensayo: de Vertov a Varda"
 section: "Mare Sugenum"
@@ -29,7 +30,6 @@ keywords:
   - "Inglaterra"
   - "Alexandre Astruc"
   - "Trinh T. Minh-ha"
-publishedDate: "2021-10-28"
 heroImage: "/sites/default/files/ct-paper/corps_flottants_robert_cahen.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_4_corrigan-historia_del_cine_ensayo_de_vertov_a_varda.pdf"
 draft: false

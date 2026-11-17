@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "144"
+created: "2019-11-01T14:43:22.000Z"
 slug: "desafio-para-el-cambio-nueva-sociedad-una-revolucion-en-pausa-144"
 title: "Desafío para el Cambio / Nueva Sociedad. Una revolución en pausa"
 section: "Kino LabTIS"
@@ -19,7 +20,6 @@ keywords:
   - "movimientos sociales"
   - "historia del cine"
   - "film ensayo"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/guzman_challenge_for_change.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-guzman-challenge_for_change_0.pdf"
 draft: false

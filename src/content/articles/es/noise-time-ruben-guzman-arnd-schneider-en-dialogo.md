@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "328"
+created: "2024-04-24T16:52:37.000Z"
 slug: "noise-time-ruben-guzman-arnd-schneider-en-dialogo"
 title: "El ruido del tiempo | Rubén Guzmán & Arnd Schneider en el Kunstnernes Hus"
 publishedDate: "2024-04-24"

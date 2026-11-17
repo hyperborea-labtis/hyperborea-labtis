@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "81"
+created: "2018-10-31T23:11:56.000Z"
 slug: "flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81"
 title: "Flotar en la imagen: Una lectura de la filosofía de Barbara Carnevali"
 section: "Kino LabTIS"
@@ -15,7 +16,6 @@ keywords:
   - "Medios"
   - "Filosofía"
   - "Imagen"
-publishedDate: "2018-10-31"
 heroImage: "/sites/default/files/ct-paper/hyperborea_kino_sverdloff_intro2x.jpg"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81"

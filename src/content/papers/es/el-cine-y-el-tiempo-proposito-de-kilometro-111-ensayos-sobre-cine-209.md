@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "209"
+created: "2020-10-28T11:17:05.000Z"
+publishedDate: "2020-11-02"
 slug: "el-cine-y-el-tiempo-proposito-de-kilometro-111-ensayos-sobre-cine-209"
 title: "El cine y el tiempo. A propósito de Kilómetro  111. Ensayos sobre cine"
 section: "Afinidades electivas"
@@ -17,7 +19,6 @@ keywords:
   - "crítica"
   - "relaciones entre las artes"
   - "Cine documental"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/saakyan.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_lapezzata-cine-y-tiempo-kilometro-111-ensayos.pdf"
 draft: false

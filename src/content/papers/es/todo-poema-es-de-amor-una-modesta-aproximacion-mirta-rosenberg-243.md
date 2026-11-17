@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "243"
+created: "2021-10-26T21:30:00.000Z"
 slug: "todo-poema-es-de-amor-una-modesta-aproximacion-mirta-rosenberg-243"
 title: "Todo poema es de amor: una modesta aproximación a Mirta Rosenberg"
 section: "Manet et manebit"
@@ -13,7 +14,6 @@ keywords:
   - "literatura latinomericana"
   - "Literatura argentina"
   - "Poesía contemporánea"
-publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_anachon.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_nachon-m.rosenberg_todo_poema_es_de_amor.pdf"
 draft: false

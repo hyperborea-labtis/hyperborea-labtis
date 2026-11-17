@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "205"
+created: "2020-10-28T18:03:57.000Z"
+publishedDate: "2020-11-02"
 slug: "de-dragones-lobizones-y-calaveras-entre-lo-real-y-lo-monstruoso"
 title: "De dragones, lobizones y calaveras: entre lo real y lo monstruoso en Lo que más me gusta son los monstruos de Emil Ferris"
 section: "Afinidades electivas"
@@ -17,7 +19,6 @@ keywords:
   - "Will Eisner"
   - "Graphic Novel Manifesto"
   - "1968"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/ferris_accossano.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_accossano-perez_lo-que-mas-me-gusta-son-los-monstruos-de-emil-ferris_0.pdf"
 draft: false

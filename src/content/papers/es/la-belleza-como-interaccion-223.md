@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "223"
+created: "2021-10-28T06:00:00.000Z"
 slug: "la-belleza-como-interaccion-223"
 title: "La belleza como interacción"
 section: "Mare Sugenum"
@@ -22,7 +23,6 @@ keywords:
   - "Clement Greenberg"
   - "Susan Sontag"
   - "Lars Spuybroek"
-publishedDate: "2021-10-28"
 heroImage: "/sites/default/files/ct-paper/captura-de-pantalla-2021-11-12-a-las-10.19.54.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_steiner-belleza_como_interaccion.pdf"
 draft: false

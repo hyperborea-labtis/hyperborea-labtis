@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "118"
+created: "2019-02-04T16:54:37.000Z"
 slug: "workshop-internacional-mas-alla-del-reciclaje-perspectivas-cruzadas-sobre-la-gestion-de"
 title: "Workshop internacional «Más allá del reciclaje: Perspectivas cruzadas sobre la gestión de basura, restos y excedentes»"
 publishedDate: "2019-02-04"

@@ -53,6 +53,7 @@ collections:
       - { name: title, label: Título, widget: string, i18n: true }
       - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
       - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
+      - { name: created, label: Fecha y hora de creación (orden en portada y listados), widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: "HH:mm", picker_utc: true, hint: "Los listados ordenan del más nuevo al más viejo por esta fecha y hora. En contenido importado viene de Drupal: no la cambies. En contenido nuevo déjala vacía (se usa la fecha de publicación)." }
       - name: section
         label: Sección
         widget: select
@@ -76,7 +77,9 @@ collections:
         required: false
         i18n: duplicate
         hint: "Elige del menú (se puede buscar). Si falta una palabra, agrégala antes en «Vocabulario de palabras clave»."
-      - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: receivedDate, label: Fecha de recepción, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: evaluatedDate, label: Fecha de evaluación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, hint: "Se muestra bajo el paper. Déjala vacía si no hay fecha de publicación real.", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
       - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
       - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
@@ -96,6 +99,7 @@ collections:
       - { name: title, label: Título, widget: string, i18n: true }
       - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
       - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
+      - { name: created, label: Fecha y hora de creación (orden en portada y listados), widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: "HH:mm", picker_utc: true, hint: "Los listados ordenan del más nuevo al más viejo por esta fecha y hora. En contenido importado viene de Drupal: no la cambies. En contenido nuevo déjala vacía (se usa la fecha de publicación)." }
       - { name: publishedDate, label: Fecha, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
       - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }

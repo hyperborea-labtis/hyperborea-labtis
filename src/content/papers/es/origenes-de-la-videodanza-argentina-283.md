@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "283"
+created: "2022-12-12T20:00:00.000Z"
+receivedDate: "2022-12-12"
 slug: "origenes-de-la-videodanza-argentina-283"
 title: "Orígenes de la videodanza argentina"
 section: "Kino LabTIS"
@@ -22,7 +24,6 @@ keywords:
   - "Silvina Szperling"
   - "danza contemporánea"
   - "historia de la danza"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/kamien_bohm2.jpg"
 pdf: "/sites/default/files/ct-paper/hypeborea_05_sanchez-origenes_videodanza.pdf"
 draft: false

@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "232"
+created: "2021-10-28T08:00:00.000Z"
+receivedDate: "2021-09-03"
+evaluatedDate: "2021-09-30"
+publishedDate: "2021-11-05"
 slug: "despues-del-naturalismo-zola-fotografo-232"
 title: "Después del Naturalismo: Zola fotógrafo"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "Eugène Atget"
   - "Vanguardia"
   - "Nana"
-publishedDate: "2021-11-05"
 heroImage: "/sites/default/files/ct-paper/hyp.4_bernini_manet.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_bernini-despues_del_naturalismo_zola_fotografo-.pdf"
 draft: false

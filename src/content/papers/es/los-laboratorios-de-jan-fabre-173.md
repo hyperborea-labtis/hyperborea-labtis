@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "173"
+created: "2020-10-31T17:11:05.000Z"
+receivedDate: "2020-02-24"
+evaluatedDate: "2020-04-22"
+publishedDate: "2020-11-02"
 slug: "los-laboratorios-de-jan-fabre-173"
 title: "LOS LABORATORIOS DE JAN FABRE"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Trauerspiel"
   - "Uilenspiegel"
   - "performance"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/ii.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_van-muylem-laboratorios-de-jan-fabre.pdf"
 draft: false

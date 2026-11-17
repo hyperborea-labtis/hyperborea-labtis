@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "71"
+created: "2018-11-01T23:38:27.000Z"
+receivedDate: "2018-03-03"
+evaluatedDate: "2018-07-20"
+publishedDate: "2018-10-18"
 slug: "estudio-sobre-las-nubes-negras-71"
 title: "Estudio sobre las nubes negras en ensayos literarios de John Ruskin y audiovisuales de Werner Herzog y Peter Mettler"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Robert Rosenblum"
   - "Medio ambiente"
   - "Bruno Latour"
-publishedDate: "2018-10-18"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Accossano-A_dry_black_FIG.INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Accossano-Estudio_sobre_las_nubes_negras_0.pdf"
 draft: false

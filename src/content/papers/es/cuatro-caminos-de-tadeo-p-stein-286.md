@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "286"
+created: "2022-12-12T17:00:00.000Z"
 slug: "cuatro-caminos-de-tadeo-p-stein-286"
 title: "Cuatro caminos de Tadeo P. Stein"
 section: "Manet et manebit"
@@ -13,7 +14,6 @@ keywords:
   - "Irlanda Amaro Valdés"
   - "Pablo Stein"
   - "Cuatro caminos"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/hyper_1_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_amaro_valdes-cuatro_caminos_de_stein.pdf"
 draft: false

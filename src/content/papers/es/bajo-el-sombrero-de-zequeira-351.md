@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "351"
+created: "2024-11-05T19:22:00.000Z"
 slug: "bajo-el-sombrero-de-zequeira-351"
 title: "Bajo el sombrero de Zequeira. Sobre tres poemas de Jorge Luis Arcos La Rosa"
 section: "Manet et manebit"
@@ -18,7 +19,6 @@ keywords:
   - "Literatura contemporánea"
   - "De los ínferos"
   - "Manuel de Zequeira y Arango"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/romero_munch.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_7_romero-bajo_el_sombrero_de_zequeira_1.pdf"
 draft: false

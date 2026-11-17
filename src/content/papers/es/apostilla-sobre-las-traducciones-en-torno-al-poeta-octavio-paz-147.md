@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "147"
+created: "2019-10-22T23:47:46.000Z"
 slug: "apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-147"
 title: "Apostilla sobre las traducciones en torno al poeta Octavio Paz"
 section: "41º 9’ S 71º 8’ W"
@@ -15,7 +16,6 @@ keywords:
   - "Enrico Mario Santí"
   - "Klaus Meyer-Minnemann"
   - "México"
-publishedDate: "2019-10-22"
 heroImage: "/sites/default/files/ct-paper/chazarreta_traduccion.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-chazarreta-apostilla_traducciones_paz_0.pdf"
 draft: false

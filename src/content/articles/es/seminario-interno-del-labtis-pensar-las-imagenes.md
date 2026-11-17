@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "365"
+created: "2025-08-23T14:37:03.000Z"
 slug: "seminario-interno-del-labtis-pensar-las-imagenes"
 title: "IV Seminario Interno del LabTIS"
 publishedDate: "2025-08-23"

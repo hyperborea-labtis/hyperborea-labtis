@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "178"
+created: "2020-10-31T18:02:29.000Z"
+receivedDate: "2020-02-23"
+evaluatedDate: "2020-04-16"
+publishedDate: "2020-11-02"
 slug: "notre-tranchee-de-chaque-jour-et-la-machine-excavatrice-les-pieces-cubaines-darmand-gatti-178"
 title: "Notre tranchée de chaque jour et La Machine excavatrice. Les pièces cubaines d’Armand Gatti"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "démythification"
   - "désidentification"
   - "art et politique"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/i_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_dreyer_pieces_cubaines_armand_gatti.pdf"
 draft: false

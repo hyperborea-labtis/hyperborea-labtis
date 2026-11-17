@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "300"
+created: "2023-03-27T23:58:10.000Z"
 slug: "lessai-cinematographique-el-pensamiento-en-imagenes-y-sonidos"
 title: "L'Essai cinématographique: el pensamiento en imágenes y sonidos"
 publishedDate: "2023-03-27"

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "156"
+created: "2019-10-20T05:42:04.000Z"
 slug: "image-et-medium-sur-une-hypothese-de-pascal-quignard-de-bernard-vouilloux-156"
 title: "Image et médium. Sur une hypothèse de Pascal Quignard de Bernard Vouilloux"
 section: "Afinidades electivas"
@@ -15,7 +16,6 @@ keywords:
   - "medio"
   - "Medea"
   - "butoh"
-publishedDate: "2019-10-20"
 heroImage: "/sites/default/files/ct-paper/resenia_lenina.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-lenina-image_medium_b.vouilloux.pdf"
 draft: false

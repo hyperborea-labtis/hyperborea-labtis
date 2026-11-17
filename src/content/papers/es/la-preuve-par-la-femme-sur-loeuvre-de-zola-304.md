@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "304"
+created: "2023-11-07T04:28:00.000Z"
 slug: "la-preuve-par-la-femme-sur-loeuvre-de-zola-304"
 title: "La prueba por medio de la mujer (Sobre L’Œuvre de Zola)"
 section: "Mare Sugenum"
@@ -16,7 +17,6 @@ keywords:
   - "L'Oeuvre"
   - "Claude Lantier"
   - "Paul Cézanne"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/3.steinmetz.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_steinmetz-la-prueba-por-la-mujer.pdf"
 draft: false

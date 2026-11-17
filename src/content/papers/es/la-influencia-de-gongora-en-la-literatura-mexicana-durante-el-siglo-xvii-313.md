@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "313"
+created: "2023-11-07T04:18:00.000Z"
 slug: "la-influencia-de-gongora-en-la-literatura-mexicana-durante-el-siglo-xvii-313"
 title: "La influencia de Góngora en la literatura mexicana durante el siglo diecisiete"
 section: "41º 9’ S 71º 8’ W"
@@ -17,7 +18,6 @@ keywords:
   - "flores poetarum"
   - "Sor Juana Inés de la Cruz"
   - "Manuel de Olibos"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/schons_b.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_schons-gongora.pdf"
 draft: false

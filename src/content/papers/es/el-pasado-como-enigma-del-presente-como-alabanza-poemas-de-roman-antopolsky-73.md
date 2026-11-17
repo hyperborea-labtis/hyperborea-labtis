@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "73"
+created: "2018-10-30T22:34:18.000Z"
 slug: "el-pasado-como-enigma-del-presente-como-alabanza-poemas-de-roman-antopolsky-73"
 title: "El pasado como enigma del presente como alabanza. Poemas de Román Antopolsky "
 section: "Manet et manebit"
@@ -12,7 +13,6 @@ keywords:
   - "Antología"
   - "Literatura contemporánea"
   - "Un Baburnama"
-publishedDate: "2018-10-30"
 heroImage: "/sites/default/files/ct-paper/hyperborea_manet_antopolsky_intro_12x.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea-01-Antopolsky_poemas_Intro_Sverdloff.pdf"
 draft: false

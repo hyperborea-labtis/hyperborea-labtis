@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "216"
+created: "2020-10-31T19:40:28.000Z"
+publishedDate: "2020-11-02"
 slug: "el-teatro-en-los-tiempos-de-la-peste-216"
 title: "El teatro en los tiempos de la peste"
 section: "Mare Sugenum"
@@ -15,7 +17,6 @@ keywords:
   - "cuerpo y representación"
   - "América y Europa"
   - "escena"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/manfred_intro.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_manfred-el-teatro-en-los-tiempos-de-la-peste.pdf"
 draft: false

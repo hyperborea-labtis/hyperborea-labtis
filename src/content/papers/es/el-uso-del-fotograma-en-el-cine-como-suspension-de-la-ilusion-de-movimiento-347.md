@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "347"
+created: "2024-11-05T19:23:00.000Z"
 slug: "el-uso-del-fotograma-en-el-cine-como-suspension-de-la-ilusion-de-movimiento-347"
 title: "El uso del fotograma en el cine como suspensión de la ilusión de movimiento"
 section: "Kino LabTIS"
@@ -27,7 +28,6 @@ keywords:
   - "Jorge Honik"
   - "ensayo/cine ensayo"
   - "montaje"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/pecora_jetee.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_pecora-uso_del_fotograma_en_cine.pdf"
 draft: false

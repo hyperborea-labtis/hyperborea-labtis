@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "277"
+created: "2022-12-12T23:00:00.000Z"
+receivedDate: "2022-02-14"
+evaluatedDate: "2022-04-10"
+publishedDate: "2022-12-22"
 slug: "esas-flores-me-recuerdan-funerales-277"
 title: "\"Esas flores me recuerdan funerales\": un estudio  crítico-genético de los epígrafes de The Buenos Aires Affair en el Archivo Manuel Puig"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "Louis Hay"
   - "Élida Lois"
   - "ARCAS Archivo Manuel Puig"
-publishedDate: "2022-12-22"
 heroImage: "/sites/default/files/ct-paper/villagarcia_greta.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_villagarcia-esas_rosas_me_recuerdan.pdf"
 draft: false

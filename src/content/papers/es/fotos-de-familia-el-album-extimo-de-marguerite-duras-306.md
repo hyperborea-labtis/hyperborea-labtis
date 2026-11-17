@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "306"
+created: "2023-11-07T04:26:00.000Z"
+receivedDate: "2023-07-20"
+evaluatedDate: "2023-09-09"
+publishedDate: "2023-11-25"
 slug: "fotos-de-familia-el-album-extimo-de-marguerite-duras-306"
 title: "Fotos de familia. El álbum éxtimo de Marguerite Duras"
 section: "Mare Sugenum"
@@ -17,7 +21,6 @@ keywords:
   - "Lejeune"
   - "archivo"
   - "literatura francesa"
-publishedDate: "2023-11-25"
 heroImage: "/sites/default/files/ct-paper/5.duras_.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_vogelfang-fotos-de-familia.pdf"
 draft: false

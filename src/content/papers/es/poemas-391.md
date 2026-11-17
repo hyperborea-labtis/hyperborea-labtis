@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "391"
+created: "2025-11-29T02:42:00.000Z"
 slug: "poemas-391"
 title: "Poemas de Laura Petrecca"
 section: "Manet et manebit"
@@ -12,7 +13,6 @@ keywords:
   - "Poesía contemporánea"
   - "Argentina"
   - "piedras"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/petrecca-ruskin_0.png"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/poemas-391"

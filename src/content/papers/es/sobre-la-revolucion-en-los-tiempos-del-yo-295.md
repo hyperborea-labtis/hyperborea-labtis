@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "295"
+created: "2022-12-12T13:00:00.000Z"
 slug: "sobre-la-revolucion-en-los-tiempos-del-yo-295"
 title: "Sobre la Revolución en los tiempos del «yo»"
 section: "Afinidades electivas"
@@ -16,7 +17,6 @@ keywords:
   - "Ana Lía Gabrieloni"
   - "Europa y Argentina"
   - "Francia"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/gabrieloni_revolution.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_gabrieloni-revolucion_en_tiempos_del_yo.pdf"
 draft: false

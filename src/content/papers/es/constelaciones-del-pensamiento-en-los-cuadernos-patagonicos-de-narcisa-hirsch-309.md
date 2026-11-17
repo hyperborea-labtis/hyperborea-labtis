@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "309"
+created: "2023-11-07T04:24:00.000Z"
 slug: "constelaciones-del-pensamiento-en-los-cuadernos-patagonicos-de-narcisa-hirsch-309"
 title: "«All passion spent». Constelaciones del pensamiento en los Cuadernos patagónicos de Narcisa Hirsch"
 section: "Kino LabTIS"
@@ -13,7 +14,6 @@ keywords:
   - "cine experimental"
   - "Argentina y Europa"
   - "Patagonia"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/aigokeros_final.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_gabrieloni-hirsch.pdf"
 draft: false

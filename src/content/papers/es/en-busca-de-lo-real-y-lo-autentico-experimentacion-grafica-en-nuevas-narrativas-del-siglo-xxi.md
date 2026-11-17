@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "201"
+created: "2020-10-31T21:21:41.000Z"
+receivedDate: "2020-04-15"
+evaluatedDate: "2020-06-10"
+publishedDate: "2020-11-02"
 slug: "en-busca-de-lo-real-y-lo-autentico-experimentacion-grafica-en-nuevas-narrativas-del-siglo-xxi"
 title: "En busca de lo real y lo auténtico: Experimentación gráfica en nuevas narrativas del siglo XXI"
 section: "Mare Sugenum"
@@ -19,7 +23,6 @@ keywords:
   - "Georgia Christinidis"
   - "efecto autenticidad"
   - "experimentación gráfica y formal en literatura"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/rawle_mussetta.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_mussetta-en-busca-de-lo-real-y-autentico.pdf"
 draft: false

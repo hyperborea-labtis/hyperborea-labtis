@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "230"
+created: "2021-10-24T20:30:04.000Z"
 slug: "antropologia-de-la-figuracion-de-philippe-descola-230"
 title: "Figurar las articulaciones del mundo: la antropología de la figuración de Philippe Descola"
 section: "Afinidades electivas"
@@ -22,7 +23,6 @@ keywords:
   - "figuración"
   - "agency"
   - "América y Europa"
-publishedDate: "2021-10-24"
 heroImage: "/sites/default/files/ct-paper/captura-de-pantalla-2021-11-09-a-las-17.20.44.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_reyes_macaya-figurar_las_articulaciones_del_mundo_ph._descola.pdf"
 draft: false

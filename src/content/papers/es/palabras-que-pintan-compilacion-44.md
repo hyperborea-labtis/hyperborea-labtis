@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "229"
+created: "2021-10-24T20:45:00.000Z"
 slug: "palabras-que-pintan-compilacion-44"
 title: "Lectura de imágenes y palabras que pintan. Una compilación de estudios sobre el tránsito de las artes hermanas a la interdisciplina"
 section: "Afinidades electivas"
@@ -20,7 +21,6 @@ keywords:
   - "W. J. T. Mitchell"
   - "Estética"
   - "Arte"
-publishedDate: "2021-10-24"
 heroImage: "/sites/default/files/ct-paper/hyp_4_tomas.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_tomas_lectura_de_imagenes_y_palabras_que_pintan_artes_hermanas.pdf"
 draft: false

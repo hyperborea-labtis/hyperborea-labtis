@@ -1,12 +1,12 @@
 ---
 lang: "es"
 translationKey: "394"
+created: "2025-11-29T02:39:00.000Z"
 slug: "manifesto-394"
 title: "Manifesto. Reproducción facsimilar del original"
 section: "Kino LabTIS"
 issue: 8
 issueOrder: 11
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/speed-2.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_haynes_etal.-speed-manifesto-1987-facsimil.pdf"
 draft: false

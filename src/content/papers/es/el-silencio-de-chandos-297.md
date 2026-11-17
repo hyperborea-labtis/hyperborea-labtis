@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "297"
+created: "2022-12-12T12:30:00.000Z"
 slug: "el-silencio-de-chandos-297"
 title: "El silencio de Chandos"
 section: "Afinidades electivas"
@@ -15,7 +16,6 @@ keywords:
   - "Rodolfo Reyes Macaya"
   - "Viena fin-de-siècle"
   - "Ensayo"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/reyes_imagen-2.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_reyes-el_silencio_de_chandos.pdf"
 draft: false

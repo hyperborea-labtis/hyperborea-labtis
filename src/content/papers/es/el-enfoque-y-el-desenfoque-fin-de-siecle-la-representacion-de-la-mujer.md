@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "385"
+created: "2025-11-29T02:48:00.000Z"
+receivedDate: "2025-07-18"
+evaluatedDate: "2025-09-14"
+publishedDate: "2025-11-28"
 slug: "el-enfoque-y-el-desenfoque-fin-de-siecle-la-representacion-de-la-mujer"
 title: "El enfoque y el desenfoque fin-de-siècle:  la representación de la mujer  entre Villiers y Charcot"
 section: "Mare Sugenum"
@@ -22,7 +26,6 @@ keywords:
   - "visión"
   - "cultura visual"
   - "L'Ève future"
-publishedDate: "2025-11-28"
 heroImage: "/sites/default/files/ct-paper/zori_0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_zori-representacion-mujer-villiers-charcot.pdf"
 draft: false

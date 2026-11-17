@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "307"
+created: "2023-11-07T04:26:00.000Z"
+receivedDate: "2023-10-23"
+evaluatedDate: "2023-11-03"
+publishedDate: "2023-11-25"
 slug: "el-espacio-natural-en-la-poesia-de-alice-oswald-307"
 title: "El espacio natural en la poesía de Alice Oswald"
 section: "Mare Sugenum"
@@ -19,7 +23,6 @@ keywords:
   - "jardines"
   - "medioambiente"
   - "Poesía contemporánea"
-publishedDate: "2023-11-25"
 heroImage: "/sites/default/files/ct-paper/6.oswald.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_araujo-alice-oswald.pdf"
 draft: false

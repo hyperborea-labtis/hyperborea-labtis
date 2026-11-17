@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "165"
+created: "2020-05-27T13:22:29.000Z"
 slug: "modos-contemporaneos-de-produccion-escenica-distinguido-con-beca-del-fna"
 title: "Modos Contemporáneos de Producción Escénica distinguido con beca del FNA"
 publishedDate: "2020-05-27"

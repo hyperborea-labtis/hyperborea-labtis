@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "317"
+created: "2023-11-02T16:15:23.000Z"
 slug: "vii-seminario-internacional-texto-imagen-sociedad-artes-en-relacion"
 title: "VII Simposio internacional \"Texto, imagen & sociedad [artes en relación]\""
 publishedDate: "2023-11-02"

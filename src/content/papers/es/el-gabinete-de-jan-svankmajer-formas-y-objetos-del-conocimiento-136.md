@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "136"
+created: "2019-11-01T18:44:50.000Z"
+receivedDate: "2019-04-18"
+evaluatedDate: "2019-06-12"
+publishedDate: "2019-11-01"
 slug: "el-gabinete-de-jan-svankmajer-formas-y-objetos-del-conocimiento-136"
 title: "El Gabinete de Jan Švankmajer. Formas y objetos del conocimiento"
 section: "Mare Sugenum"
@@ -18,7 +22,6 @@ keywords:
   - "Theatrum Naturalis"
   - "cultura visual"
   - "museo"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/hceliz_coorte.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-hernandez_celiz-gabinetes_curiosidades_svankmajer_3.pdf"
 draft: false

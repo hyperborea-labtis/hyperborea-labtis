@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "397"
+created: "2025-11-29T02:36:00.000Z"
 slug: "el-escenario-como-utero-397"
 title: "El Escenario como Útero: reseña  sobre una performance de Astrid Gómez Grosschadl"
 section: "Afinidades electivas"
@@ -15,7 +16,6 @@ keywords:
   - "Astrid Gómez Grosschadl"
   - "sexi, cálida y 3d"
   - "materialidad"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/roberto.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_roberto-escenario-como-utero-grosschadl.pdf"
 draft: false

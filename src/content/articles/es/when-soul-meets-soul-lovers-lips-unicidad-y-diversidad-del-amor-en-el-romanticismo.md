@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "331"
+created: "2024-08-31T21:15:45.000Z"
 slug: "when-soul-meets-soul-lovers-lips-unicidad-y-diversidad-del-amor-en-el-romanticismo"
 title: "“When soul meets soul on lovers’ lips.” Unicidad y diversidad del amor en el Romanticismo"
 publishedDate: "2024-08-31"

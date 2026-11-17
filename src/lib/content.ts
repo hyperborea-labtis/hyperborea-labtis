@@ -13,11 +13,12 @@ function langOf(entry: Paper | Article | Page): Locale {
   return (entry.data.lang ?? (entry.id.split("/")[0] as Locale)) as Locale;
 }
 
-function byDateDesc(a: { data: { publishedDate?: Date } }, b: { data: { publishedDate?: Date } }): number {
-  const da = a.data.publishedDate?.getTime() ?? 0;
-  const db = b.data.publishedDate?.getTime() ?? 0;
-  return db - da;
-}
+// Newest-first key for listings: the Drupal creation timestamp when known (exact to
+// the minute, so order matches the old site), else the publication date.
+type Dated = { data: { created?: Date; publishedDate?: Date; translationKey?: string } };
+const newestKey = (e: Dated): number => (e.data.created ?? e.data.publishedDate)?.getTime() ?? 0;
+const newestFirst = (a: Dated, b: Dated): number =>
+  newestKey(b) - newestKey(a) || (Number(b.data.translationKey) || 0) - (Number(a.data.translationKey) || 0);
 
 /**
  * One entry per slug for a locale: prefer the locale's own version, then the
@@ -44,7 +45,7 @@ function pickByLocale<T extends Paper | Article | Page>(entries: T[], locale: Lo
 
 export async function papersForLocale(locale: Locale): Promise<Paper[]> {
   const papers = await getCollection("papers", (e) => !e.data.draft);
-  return pickByLocale(papers, locale).sort(byDateDesc);
+  return pickByLocale(papers, locale).sort(newestFirst);
 }
 
 export async function paperBySlug(locale: Locale, slug: string): Promise<Paper | undefined> {
@@ -54,7 +55,7 @@ export async function paperBySlug(locale: Locale, slug: string): Promise<Paper |
 
 export async function articlesForLocale(locale: Locale): Promise<Article[]> {
   const articles = await getCollection("articles", (e) => !e.data.draft);
-  return pickByLocale(articles, locale).sort(byDateDesc);
+  return pickByLocale(articles, locale).sort(newestFirst);
 }
 
 export async function articleBySlug(locale: Locale, slug: string): Promise<Article | undefined> {
@@ -143,26 +144,18 @@ export async function papersWithKeyword(locale: Locale, keyword: string): Promis
 /** Every paper of a section, whatever its issue, newest first (ties: highest Drupal node id first). */
 export async function papersInSectionNewestFirst(locale: Locale, sectionLabel: string): Promise<Paper[]> {
   const papers = await papersForLocale(locale);
-  const nid = (p: Paper) => Number(p.data.translationKey) || 0;
-  return papers
-    .filter((p) => p.data.section === sectionLabel)
-    .sort((a, b) => (b.data.publishedDate?.getTime() ?? 0) - (a.data.publishedDate?.getTime() ?? 0) || nid(b) - nid(a));
+  return papers.filter((p) => p.data.section === sectionLabel).sort(newestFirst);
 }
 
 export type Publication = { title: string; href: string; image?: string };
 
-/** Every paper and activity (the `papers` and `articles` collections), newest first
- * (ties: highest Drupal node id first). */
+/** Every paper and activity (the `papers` and `articles` collections), newest first. */
 export async function latestPublications(locale: Locale): Promise<Publication[]> {
   const [papers, articles] = await Promise.all([papersForLocale(locale), articlesForLocale(locale)]);
-  const nid = (e: Paper | Article) => Number(e.data.translationKey) || 0;
   const rows = [
     ...papers.map((e) => ({ e, href: `/${locale}/paper/${e.data.slug}` })),
     ...articles.map((e) => ({ e, href: `/${locale}/actividad/${e.data.slug}` })),
-  ].sort(
-    (a, b) =>
-      (b.e.data.publishedDate?.getTime() ?? 0) - (a.e.data.publishedDate?.getTime() ?? 0) || nid(b.e) - nid(a.e),
-  );
+  ].sort((a, b) => newestFirst(a.e, b.e));
   return rows.map(({ e, href }) => ({ title: e.data.title, href, image: e.data.heroImage }));
 }
 
@@ -172,9 +165,8 @@ export async function latestPublications(locale: Locale): Promise<Publication[]>
 export async function homePublications(locale: Locale): Promise<Publication[]> {
   const sections = new Set(SECTIONS.map((s) => s.label));
   const papers = (await papersForLocale(locale)).filter((p) => p.data.section && sections.has(p.data.section));
-  const nid = (e: Paper) => Number(e.data.translationKey) || 0;
   return [...papers]
-    .sort((a, b) => (b.data.publishedDate?.getTime() ?? 0) - (a.data.publishedDate?.getTime() ?? 0) || nid(b) - nid(a))
+    .sort(newestFirst)
     .slice(0, PAGE_SIZE)
     .map((e) => ({ title: e.data.title, href: `/${locale}/paper/${e.data.slug}`, image: e.data.heroImage }));
 }

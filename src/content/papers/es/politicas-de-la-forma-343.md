@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "343"
+created: "2024-11-05T19:27:00.000Z"
+receivedDate: "2024-10-17"
+evaluatedDate: "2024-10-25"
+publishedDate: "2024-11-26"
 slug: "politicas-de-la-forma-343"
 title: "Políticas de la forma. Las Escuelas Nacionales de Arte de La Habana, entre la arquitectura, la literatura y el posmodernismo"
 section: "Mare Sugenum"
@@ -25,7 +29,6 @@ keywords:
   - "Alamar"
   - "Revolution of Forms. Cuba’s Forgotten Art Schools"
   - "Escuelas de Arte de La Habana"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/silva.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_silva-politicas_de_la_forma.pdf"
 draft: false

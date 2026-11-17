@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "279"
+created: "2022-12-12T22:00:00.000Z"
 slug: "dos-formas-de-la-perdida-279"
 title: "Dos formas de la pérdida: Una vida humilde de Alexndr Sokurov y “El jardín” de Elena Garro"
 section: "Kino LabTIS"
@@ -18,7 +19,6 @@ keywords:
   - "Elena Garro"
   - "Poesía e imagen"
   - "ubi sunt"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/chavez_humble_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_chavez-dos_formas_perdida.pdf"
 draft: false

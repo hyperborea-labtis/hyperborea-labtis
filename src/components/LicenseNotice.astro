@@ -1,0 +1,19 @@
+---
+// Creative Commons notice shown under every paper (a block of the old site that
+// only appears on papers; the site-wide statement lives in the footer).
+import { useTranslations, type Locale } from "../i18n/config";
+
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const license = "https://creativecommons.org/licenses/by-nc-nd/3.0/es";
+---
+
+<div class="hb-license">
+  <a href={license} rel="license noopener" target="_blank">
+    <img src="/site/cc-88x31.png" alt={t("license.alt")} width="88" height="31" loading="lazy" />
+  </a>
+  <p>{t("license.text")} <a href={license} rel="license noopener" target="_blank">{t("license.name")}</a>.</p>
+</div>

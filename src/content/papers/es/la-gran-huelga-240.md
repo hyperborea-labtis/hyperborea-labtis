@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "240"
+created: "2021-10-27T07:00:51.000Z"
 slug: "la-gran-huelga-240"
 title: "La gran huelga"
 section: "Kino LabTIS"
@@ -18,7 +19,6 @@ keywords:
   - "ficción"
   - "Documental"
   - "literatura alemana"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/hyp.4_kinopinthus_3.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_p.zech-la_gran_huelga.pdf"
 draft: false

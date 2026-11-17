@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "311"
+created: "2023-11-07T04:20:00.000Z"
 slug: "nevermore-311"
 title: "Nevermore. [Interludio y capítulo iv]"
 section: "Manet et manebit"
@@ -17,7 +18,6 @@ keywords:
   - "Virginia Woolf"
   - "\"Time Passes\""
   - "To the Lighthouse"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/11.wajsbrot.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_wajsbrot-nevermore-iv.pdf"
 draft: false

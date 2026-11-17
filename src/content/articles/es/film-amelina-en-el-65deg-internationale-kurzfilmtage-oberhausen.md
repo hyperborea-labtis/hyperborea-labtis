@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "121"
+created: "2019-05-06T20:57:37.000Z"
 slug: "film-amelina-en-el-65deg-internationale-kurzfilmtage-oberhausen"
 title: "Film ‹amelina› en el 65° Internationale Kurzfilmtage Oberhausen"
 publishedDate: "2019-05-06"

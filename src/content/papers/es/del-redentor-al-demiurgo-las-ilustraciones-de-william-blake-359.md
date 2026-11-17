@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "359"
+created: "2024-11-05T19:28:00.000Z"
+receivedDate: "2024-09-16"
+evaluatedDate: "2024-10-12"
+publishedDate: "2024-11-26"
 slug: "del-redentor-al-demiurgo-las-ilustraciones-de-william-blake-359"
 title: "Del Redentor al Demiurgo: Las ilustraciones de William Blake vistas a través de las Meditaciones poéticas de José Joaquín de Mora"
 section: "Mare Sugenum"
@@ -23,7 +27,6 @@ keywords:
   - "España"
   - "Graveyard Poets"
   - "Enlightment"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/rucalvo_blake.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_paolini_rucavado-redentor_al_demiurgo_ilustraciones_blake.pdf"
 draft: false

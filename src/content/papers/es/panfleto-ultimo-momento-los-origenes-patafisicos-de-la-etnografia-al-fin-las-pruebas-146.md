@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "146"
+created: "2019-11-01T13:15:35.000Z"
 slug: "panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146"
 title: "Panfleto. Último momento. Los orígenes patafísicos de la etnografía: al fin las pruebas"
 section: "Kino LabTIS"
@@ -23,7 +24,6 @@ keywords:
   - "pataetnología"
   - "Ivan Illich"
   - "refunctionning"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/ubu_roi_1.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-muller-origines_patafisicos_etnografia_2.pdf"
 draft: false

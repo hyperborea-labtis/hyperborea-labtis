@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "158"
+created: "2019-10-18T05:30:45.000Z"
 slug: "el-pensamiento-ecfrastico-y-la-potencia-liberadora-de-la-imaginacion-interrelaciones-entre"
 title: "El pensamiento ecfrástico y la potencia liberadora de la imaginación. Interrelaciones entre literatura y artes. América y Europa en las épocas Moderna y Contemporánea (II)"
 section: "Afinidades electivas"
@@ -24,7 +25,6 @@ keywords:
   - "Th. Adorno"
   - "James A. W. Heffernan"
   - "estudios guadalupanos"
-publishedDate: "2019-10-18"
 heroImage: "/sites/default/files/ct-paper/resenia_navarro.2.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-navarro-el_pensamiento_ecfrastico-.pdf"
 draft: false

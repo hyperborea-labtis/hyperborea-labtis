@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "77"
+created: "2015-09-17T17:00:00.000Z"
 slug: "ii-simposio-texto-imagen-sociedad-artes-en-relacion"
 title: "II Simposio \"Texto, imagen & sociedad [artes en relación]\""
 publishedDate: "2015-09-17"

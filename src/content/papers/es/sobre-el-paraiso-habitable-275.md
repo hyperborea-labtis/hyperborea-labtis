@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "275"
+created: "2022-12-12T23:30:00.000Z"
 slug: "sobre-el-paraiso-habitable-275"
 title: "El paraíso habitable. Reflexiones sobre la belleza y el arte de los jardines"
 section: "Mare Sugenum"
@@ -20,7 +21,6 @@ keywords:
   - "naturaleza y cultura"
   - "jardines"
   - "Eugène Atget"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/atget_martella_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_martella-el_paraiso_habitable.pdf"
 draft: false

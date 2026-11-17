@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "170"
+created: "2020-08-28T11:41:01.000Z"
 slug: "pelicula-civilizacion-en-el-centenario-de-leon-ferrari"
 title: "PELÍCULA 'CIVILIZACIÓN' EN EL CENTENARIO DE LEON FERRARI"
 publishedDate: "2020-08-28"

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "363"
+created: "2024-11-05T19:20:00.000Z"
 slug: "semblanza-de-olga-albertovna-svetlakova-363"
 title: "Semblanza de Olga Albértovna Svetlakova"
 section: "41º 9’ S 71º 8’ W"
@@ -16,7 +17,6 @@ keywords:
   - "Unión Soviética"
   - "Juan Rulfo"
   - "Teoría de la recepción"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/rulfo.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_krutitskaya-semblanza_olga_svetlakova.pdf"
 draft: false

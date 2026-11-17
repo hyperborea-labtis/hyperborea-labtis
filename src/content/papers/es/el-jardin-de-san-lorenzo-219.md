@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "219"
+created: "2021-10-27T06:06:00.000Z"
 slug: "el-jardin-de-san-lorenzo-219"
 title: "El jardín de San Lorenzo y el jardín de Prospect Cottage. Amplificaciones, miradas múltiples y reformulaciones de la noción «naturaleza»"
 section: "Kino LabTIS"
@@ -23,7 +24,6 @@ keywords:
   - "Malcolm Budd"
   - "arte y naturaleza"
   - "laisse de mer"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/hyp.4._pascale_jarman.png"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/el-jardin-de-san-lorenzo-219"

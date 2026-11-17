@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "263"
+created: "2022-08-26T20:53:48.000Z"
 slug: "proyeccion-de-los-satiros-rastreadores-en-espacio-la-bayer-experimental"
 title: "PROYECCIÓN DE LOS (SÁTIROS) RASTREADORES EN ESPACIO LA BAYER EXPERIMENTAL "
 publishedDate: "2022-08-26"

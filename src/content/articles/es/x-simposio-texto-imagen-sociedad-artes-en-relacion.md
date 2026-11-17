@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "399"
+created: "2026-10-22T21:54:00.000Z"
 slug: "x-simposio-texto-imagen-sociedad-artes-en-relacion"
 title: "X Simposio Texto, imagen & sociedad [artes en relación]"
 publishedDate: "2026-10-22"

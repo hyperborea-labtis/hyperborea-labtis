@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "260"
+created: "2021-10-24T19:50:00.000Z"
 slug: "jornadas-200-anos-joseph-de-maistre"
 title: "Jornadas 200 años Joseph de Maistre"
 publishedDate: "2021-10-24"

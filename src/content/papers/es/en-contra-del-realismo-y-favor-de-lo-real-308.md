@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "308"
+created: "2023-11-07T04:22:00.000Z"
 slug: "en-contra-del-realismo-y-favor-de-lo-real-308"
 title: "«En contra del realismo y a favor de lo real.» Entrevista inédita a Alain Robbe-Grillet (1922-2008)"
 section: "Kino LabTIS"
@@ -18,7 +19,6 @@ keywords:
   - "Marguerite Duras"
   - "historia del cine"
   - "nouveau roman"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/entrevista.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_guzman-robbe-grillet.pdf"
 draft: false

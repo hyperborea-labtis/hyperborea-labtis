@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "362"
+created: "2024-11-04T10:40:11.000Z"
 slug: "viii-simposio-internacional-texto-imagen-sociedad-artes-en-relacion-0"
 title: "VIII Simposio Internacional Texto, imagen & sociedad [artes en relación]"
 publishedDate: "2024-11-04"

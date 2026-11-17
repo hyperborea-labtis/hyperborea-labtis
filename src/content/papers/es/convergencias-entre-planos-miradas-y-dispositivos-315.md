@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "315"
+created: "2023-11-07T04:16:00.000Z"
 slug: "convergencias-entre-planos-miradas-y-dispositivos-315"
 title: "Convergencias entre planos, miradas y dispositivos.  Un libro, complemento del cine expandido"
 section: "Afinidades electivas"
@@ -22,7 +23,6 @@ keywords:
   - "Maravilla Cine"
   - "Raymond Beluga Studio"
   - "Adriana Musitano"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/15.lapezatta.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_lapezatta-guzman.pdf"
 draft: false

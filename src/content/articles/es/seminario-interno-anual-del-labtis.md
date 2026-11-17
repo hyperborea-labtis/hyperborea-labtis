@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "330"
+created: "2024-08-23T13:24:12.000Z"
 slug: "seminario-interno-anual-del-labtis"
 title: "III Seminario interno del LabTIS"
 publishedDate: "2024-08-23"

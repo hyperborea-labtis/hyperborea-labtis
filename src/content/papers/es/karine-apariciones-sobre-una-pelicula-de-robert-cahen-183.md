@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "183"
+created: "2020-10-30T17:22:55.000Z"
+publishedDate: "2020-11-02"
 slug: "karine-apariciones-sobre-una-pelicula-de-robert-cahen-183"
 title: "Karine. apariciones. Sobre una película de Robert Cahen"
 section: "Kino LabTIS"
@@ -18,7 +20,6 @@ keywords:
   - "cine y memoria"
   - "imagen-tiempo"
   - "filiaciones"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/karine_fotograma_1.jpg"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/karine-apariciones-sobre-una-pelicula-de-robert-cahen-183"

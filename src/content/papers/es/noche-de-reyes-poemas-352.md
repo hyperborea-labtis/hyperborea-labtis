@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "352"
+created: "2024-11-05T19:21:00.000Z"
 slug: "noche-de-reyes-poemas-352"
 title: "Noche de Reyes. Poemas"
 section: "Manet et manebit"
@@ -13,7 +14,6 @@ keywords:
   - "Poesía latinoamericana"
   - "Literatura contemporánea"
   - "Fina García-Marruz"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/arcos_munch.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_arcos-noche_de_reyes.pdf"
 draft: false

@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "341"
+created: "2024-11-05T19:30:00.000Z"
+publishedDate: "2024-11-26"
 slug: "reverence-la-pussiere-341"
 title: "Reverenciar el polvo. W. G. Sebald y el archivo"
 section: "Mare Sugenum"
@@ -23,7 +25,6 @@ keywords:
   - "serendipia"
   - "melancolía"
   - "pasado futuro"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/pic_sebald.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_pic-reverenciar_el_polvo_sebald_archivo_0.pdf"
 draft: false

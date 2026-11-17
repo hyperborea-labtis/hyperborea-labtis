@@ -208,24 +208,6 @@ async function issueOrderOf(issue, slug) {
   return i === -1 ? undefined : i + 1;
 }
 
-// The six papers on the home page are curated in Drupal (promoted nodes) and,
-// like issue order, are not derivable from a field: read them from the home
-// page and store the position as `featured`.
-let homeSlugs;
-async function featuredOf(slug) {
-  if (!homeSlugs) {
-    try {
-      const res = await fetch(`${ORIGIN}/es`, { redirect: "follow" });
-      const html = res.ok ? await res.text() : "";
-      homeSlugs = [...html.matchAll(/<h2[^>]*>\s*<a href="[^"]*\/paper\/([^"/?#]+)/g)].map((m) => m[1]);
-    } catch {
-      homeSlugs = [];
-    }
-  }
-  const i = homeSlugs.indexOf(slug);
-  return i === -1 ? undefined : i + 1;
-}
-
 async function importType({ collection, drupalType, includes, map }) {
   for (const lang of LANGS) {
     // Page size kept at 20: Drupal errors out serving 50 nodes with several
@@ -303,13 +285,18 @@ async function run() {
         // Hyperborea issue number (Drupal: field_publicacion_hyperborea, 1–8).
         issue: a.field_publicacion_hyperborea ?? undefined,
         issueOrder: await issueOrderOf(a.field_publicacion_hyperborea, slug),
-        featured: lang === "es" ? await featuredOf(slug) : undefined,
         author,
         email,
         affiliation,
         abstract,
         keywords,
-        publishedDate: a.field_fecha_publicado || a.created?.slice(0, 10),
+        // Drupal creation timestamp: listings sort by it (see src/lib/content.ts).
+        created: a.created ? new Date(a.created).toISOString() : undefined,
+        // Dates shown under the paper. Only the real Drupal fields: no fallback to
+        // the node's creation date (84 papers have no publication date there).
+        receivedDate: a.field_fecha_de_recepcion || undefined,
+        evaluatedDate: a.field_fecha_de_evaluacion || undefined,
+        publishedDate: a.field_fecha_publicado || undefined,
         heroImage,
         pdf,
         draft: a.status === false,
@@ -350,6 +337,7 @@ async function run() {
         translationKey: String(nid),
         slug,
         title: a.title,
+        created: a.created ? new Date(a.created).toISOString() : undefined,
         publishedDate: a.created?.slice(0, 10),
         heroImage,
         pdf,

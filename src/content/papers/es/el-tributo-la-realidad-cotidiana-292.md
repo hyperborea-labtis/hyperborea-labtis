@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "292"
+created: "2022-12-12T15:00:00.000Z"
 slug: "el-tributo-la-realidad-cotidiana-292"
 title: "El tributo a la realidad cotidiana en Fragmentos a su imán de José Lezama Lima"
 section: "41º 9’ S 71º 8’ W"
@@ -18,7 +19,6 @@ keywords:
   - "Imagen"
   - "tokonoma"
   - "letras cubanas"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/lutz_helmut.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_lutz-el_tributo_a_la_realidad_cotidiana.pdf"
 draft: false

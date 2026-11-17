@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "154"
+created: "2019-10-29T04:26:11.000Z"
 slug: "v-simposio-internacional-texto-imagen-y-sociedad-artes-en-relacion"
 title: "V Simposio internacional \"Texto, imagen y sociedad [artes en relación]\""
 publishedDate: "2019-10-29"

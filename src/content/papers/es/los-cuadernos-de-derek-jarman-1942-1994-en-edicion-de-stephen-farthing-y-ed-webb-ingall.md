@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "204"
+created: "2020-10-28T20:27:56.000Z"
+publishedDate: "2020-11-02"
 slug: "los-cuadernos-de-derek-jarman-1942-1994-en-edicion-de-stephen-farthing-y-ed-webb-ingall"
 title: "Los cuadernos de Derek Jarman (1942-1994) en edición de Stephen Farthing y Ed Webb-Ingall: a delphinium, Blue, upon his grave"
 section: "Afinidades electivas"
@@ -18,7 +20,6 @@ keywords:
   - "Stephen Farthing"
   - "Ed Webb-Ingall"
   - "jardines"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/jarman_wake.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_gabrieloni-derek-jarmans-sketchbooks.pdf"
 draft: false

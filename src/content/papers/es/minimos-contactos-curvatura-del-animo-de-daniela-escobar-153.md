@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "153"
+created: "2019-10-23T23:59:51.000Z"
 slug: "minimos-contactos-curvatura-del-animo-de-daniela-escobar-153"
 title: "Mínimos contactos: Curvatura del ánimo de Daniela Escobar"
 section: "Manet et manebit"
@@ -17,7 +18,6 @@ keywords:
   - "editoriales independientes"
   - "Curvatura del ánimo"
   - "diseño"
-publishedDate: "2019-10-23"
 heroImage: "/sites/default/files/ct-paper/9fff9d49-82aa-4cc5-ba7d-5c50fa265990.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea-02-escobar-reyes_curvatura_animo_0.pdf"
 draft: false

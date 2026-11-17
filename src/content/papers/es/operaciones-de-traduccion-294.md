@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "294"
+created: "2022-12-12T14:00:00.000Z"
 slug: "operaciones-de-traduccion-294"
 title: "Operaciones de traducción"
 section: "Afinidades electivas"
@@ -17,7 +18,6 @@ keywords:
   - "Américo Cristófalo"
   - "Emilio Bernini"
   - "Europa y Argentina"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/espeche_rev4.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_espeche-operaciones_de_traduccion.pdf"
 draft: false

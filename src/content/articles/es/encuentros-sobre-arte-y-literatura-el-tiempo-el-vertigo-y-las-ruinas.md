@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "266"
+created: "2022-11-11T23:10:21.000Z"
 slug: "encuentros-sobre-arte-y-literatura-el-tiempo-el-vertigo-y-las-ruinas"
 title: "Encuentros sobre arte y literatura \"EL TIEMPO, EL VÉRTIGO Y LAS RUINAS\" "
 publishedDate: "2022-11-11"

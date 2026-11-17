@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "271"
+created: "2022-12-13T01:30:00.000Z"
 slug: "proposito-de-la-candor-lucis-aeternae-271"
 title: "A propósito de la Candor lucis aeternae. Una aproximación iconográfica"
 section: "Mare Sugenum"
@@ -28,7 +29,6 @@ keywords:
   - "Franz Liszt"
   - "Verdi"
   - "Paul August van Klenau"
-publishedDate: "2022-12-13"
 heroImage: "/sites/default/files/ct-paper/burucua_dante.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_burucua-proposito_de_candor_lucis_aeternae.pdf"
 draft: false

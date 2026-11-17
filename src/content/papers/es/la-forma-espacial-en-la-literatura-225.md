@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "225"
+created: "2021-10-28T04:00:00.000Z"
 slug: "la-forma-espacial-en-la-literatura-225"
 title: "La forma espacial en la literatura: hacia una teoría general"
 section: "Mare Sugenum"
@@ -27,7 +28,6 @@ keywords:
   - "Gaston Bachelard"
   - "Paul Ricoeur"
   - "memoria"
-publishedDate: "2021-10-28"
 heroImage: "/sites/default/files/ct-paper/hyp.4_mitchell.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_mitchell-forma_espacial_literatura_teoria_general.pdf"
 draft: false

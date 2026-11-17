@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "310"
+created: "2023-11-07T04:21:00.000Z"
 slug: "introduccion-nevermore-de-cecile-wajsbrot-310"
 title: "La presencia y la palabra. Nevermore (2021) de Cécile Wajsbrot"
 section: "Manet et manebit"
@@ -16,7 +17,6 @@ keywords:
   - "To the Lighthouse"
   - "\"Time Passes”(843)"
   - "Traducción"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/10.manet__0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_gabrieloni-la-presencia-y-palabra.pdf"
 draft: false

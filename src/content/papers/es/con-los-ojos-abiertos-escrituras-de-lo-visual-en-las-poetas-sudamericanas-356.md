@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "356"
+created: "2024-11-05T19:18:00.000Z"
 slug: "con-los-ojos-abiertos-escrituras-de-lo-visual-en-las-poetas-sudamericanas-356"
 title: "Con los ojos abiertos. Escrituras de lo visual en las poetas sudamericanas"
 section: "Afinidades electivas"
@@ -21,7 +22,6 @@ keywords:
   - "Alejandra Pizarnik"
   - "Juana Bignozzi"
   - "Alicia Genovese"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/punte_junquillo.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_punte-con_los_ojos_abiertos.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "246"
+created: "2021-10-27T06:03:04.000Z"
 slug: "cine-danza-y-pixeles-derivaciones-de-la-videodanza-246"
 title: "Cine, danza y píxeles. Derivaciones de la videodanza"
 section: "Kino LabTIS"
@@ -26,7 +27,6 @@ keywords:
   - "Michael Langan"
   - "Terah Maher"
   - "Daniel Böhm"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/captura-de-pantalla-2021-11-12-a-las-15.37.10.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_4_konig-roberto-derivaciones_videodanza.pdf"
 draft: false

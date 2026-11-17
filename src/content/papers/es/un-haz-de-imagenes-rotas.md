@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "396"
+created: "2025-11-29T02:37:00.000Z"
 slug: "un-haz-de-imagenes-rotas"
 title: "«Un haz de imágenes rotas»  Reseña de Ruinas, vestigios, restos.  Hacia una definición de una estética de la degradación en la literatura y cultura inglesas"
 section: "Afinidades electivas"
@@ -14,7 +15,6 @@ keywords:
   - "crítica literaria"
   - "Lucas Margarit"
   - "María Inés Castagnino"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/accossano_2.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_accossano-perez-ruinas-vestigios-restos-margarit-castagnino.pdf"
 draft: false

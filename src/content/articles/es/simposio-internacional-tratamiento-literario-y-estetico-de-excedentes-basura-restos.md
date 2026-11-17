@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "116"
+created: "2018-08-21T19:25:45.000Z"
 slug: "simposio-internacional-tratamiento-literario-y-estetico-de-excedentes-basura-restos"
 title: "Simposio internacional \"Tratamiento literario y estético de excedentes, basura, restos\""
 publishedDate: "2018-08-21"

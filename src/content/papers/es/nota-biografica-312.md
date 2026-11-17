@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "312"
+created: "2023-11-07T04:19:00.000Z"
 slug: "nota-biografica-312"
 title: "Dorothy Schons. Nota biográfica"
 section: "41º 9’ S 71º 8’ W"
@@ -13,7 +14,6 @@ keywords:
   - "Góngora"
   - "Literatura mexicana"
   - "literaturas comparadas"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/schons_a.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_ameyalli-stein-dorothy-schons.pdf"
 draft: false

@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "125"
+created: "2019-11-01T20:17:19.000Z"
+receivedDate: "2019-04-26"
+evaluatedDate: "2019-06-06"
+publishedDate: "2019-11-01"
 slug: "el-dinggedicht-en-la-crisis-de-la-representacion-un-ejemplo-del-poeta-paul-zech-125"
 title: "El Dinggedicht en la crisis de la representación.   Un ejemplo del poeta Paul Zech"
 section: "Mare Sugenum"
@@ -22,7 +26,6 @@ keywords:
   - "Simultantechnik"
   - "Nueva Objetividad"
   - "objeto-poema"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/sufotinsky_schiele.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-sufotinsky-dinggedicht_zech_1.pdf"
 draft: false

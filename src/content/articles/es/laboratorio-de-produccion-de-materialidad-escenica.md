@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "111"
+created: "2018-11-24T01:53:31.000Z"
 slug: "laboratorio-de-produccion-de-materialidad-escenica"
 title: "Laboratorio de Producción de Materialidad Escénica"
 publishedDate: "2018-11-24"

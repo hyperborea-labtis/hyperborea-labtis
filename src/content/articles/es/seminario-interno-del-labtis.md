@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "398"
+created: "2026-07-28T17:11:51.000Z"
 slug: "seminario-interno-del-labtis"
 title: "V Seminario Interno del LabTIS "
 publishedDate: "2026-07-28"

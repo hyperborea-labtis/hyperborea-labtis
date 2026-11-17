@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "79"
+created: "2013-11-11T13:00:00.000Z"
 slug: "patagonia-festival-internacional-documental-experimental"
 title: "Patagonia Festival Internacional Documental Experimental"
 publishedDate: "2013-11-11"

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "217"
+created: "2021-08-20T22:00:00.000Z"
 slug: "encuentro-de-arte-y-literatura-les-musees-imaginaires"
 title: "Encuentro de arte y literatura: \"les musées imaginaires\""
 publishedDate: "2021-08-20"

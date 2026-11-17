@@ -22,6 +22,9 @@ const papers = defineCollection({
   schema: z.object({
     lang: localeEnum.optional(),
     translationKey: z.string().optional(),
+    // Creation timestamp (from Drupal). Listings sort newest-first by it, so the
+    // order matches the old site down to the minute; without it `publishedDate` is used.
+    created: z.coerce.date().optional(),
     aliases,
     slug: z.string(),
     title: z.string(),
@@ -33,6 +36,9 @@ const papers = defineCollection({
     affiliation: z.string().optional(),
     abstract: z.string().optional(),
     keywords: z.array(z.string()).default([]),
+    // Shown under the paper: reception, evaluation and publication dates.
+    receivedDate: z.coerce.date().optional(),
+    evaluatedDate: z.coerce.date().optional(),
     publishedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
     pdf: z.string().optional(),
@@ -47,6 +53,7 @@ const articles = defineCollection({
   schema: z.object({
     lang: localeEnum.optional(),
     translationKey: z.string().optional(),
+    created: z.coerce.date().optional(),
     aliases,
     slug: z.string(),
     title: z.string(),

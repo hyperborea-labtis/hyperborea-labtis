@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "192"
+created: "2020-10-31T22:15:32.000Z"
+receivedDate: "2020-02-26"
+evaluatedDate: "2020-04-28"
+publishedDate: "2020-11-02"
 slug: "visiones-melancolicas-sebald-y-las-imagenes-historico-naturales-de-la-destruccion-192"
 title: "Visiones melancólicas: Sebald y las imágenes histórico-naturales de la destrucción"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "bruce chatwin"
   - "imagen-tiempo"
   - "cine de autor"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/durer_villavicencio.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_villavicencio-visiones-melancolicas-sebald-y-las-imagenes.pdf"
 draft: false

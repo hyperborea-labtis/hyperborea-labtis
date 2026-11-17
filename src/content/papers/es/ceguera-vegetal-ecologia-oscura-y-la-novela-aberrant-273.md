@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "273"
+created: "2022-12-13T00:00:00.000Z"
+receivedDate: "2022-08-21"
+evaluatedDate: "2022-09-21"
+publishedDate: "2022-12-22"
 slug: "ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273"
 title: "Ceguera vegetal, ecología oscura y la novela Aberrant: puntos de fuga en un mundo cosificado"
 section: "Mare Sugenum"
@@ -25,7 +29,6 @@ keywords:
   - "Marek Šindelka"
   - "Aberrant"
   - "textos e imágenes"
-publishedDate: "2022-12-22"
 heroImage: "/sites/default/files/ct-paper/leyro_dry_orchid.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_leyro-ceguera_vegetal.pdf"
 draft: false

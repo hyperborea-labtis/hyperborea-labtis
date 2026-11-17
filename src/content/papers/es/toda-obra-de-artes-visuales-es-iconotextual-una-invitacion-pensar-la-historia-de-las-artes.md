@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "181"
+created: "2020-10-31T20:04:29.000Z"
+receivedDate: "2020-04-18"
+evaluatedDate: "2020-06-06"
+publishedDate: "2020-11-02"
 slug: "toda-obra-de-artes-visuales-es-iconotextual-una-invitacion-pensar-la-historia-de-las-artes"
 title: "Toda obra de artes visuales es iconotextual: una invitación a pensar la historia de las artes visuales desde la relación entre las obras y sus títulos"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "título"
   - "Impresionismo"
   - "abstracción pictórica"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/collier_giovine.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_giovine-toda-obra-de-arte-visuales-es-iconotextual.pdf"
 draft: false

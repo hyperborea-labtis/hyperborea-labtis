@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "92"
+created: "2018-10-31T20:06:47.000Z"
+receivedDate: "2018-03-22"
+evaluatedDate: "2018-06-12"
+publishedDate: "2018-11-02"
 slug: "las-formas-del-rio-una-antologia-posible-del-cine-ensayo-argentino-92"
 title: "LAS FORMAS DEL RÍO: UNA ANTOLOGÍA POSIBLE DEL CINE-ENSAYO ARGENTINO"
 section: "Kino LabTIS"
@@ -19,7 +23,6 @@ keywords:
   - "Narcisa Hirsch"
   - "Rubén Guzmán"
   - "Antonio Weinrichter"
-publishedDate: "2018-11-02"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Gattas_Vargas-Formas_del_rio_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyyperborea_01-Gattas_Vargas-Formas_del_rio_1.pdf"
 draft: false

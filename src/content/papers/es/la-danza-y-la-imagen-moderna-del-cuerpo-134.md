@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "134"
+created: "2019-11-01T19:20:36.000Z"
+receivedDate: "2019-04-29"
+evaluatedDate: "2019-06-22"
+publishedDate: "2019-11-01"
 slug: "la-danza-y-la-imagen-moderna-del-cuerpo-134"
 title: "La danza y la imagen moderna del cuerpo. Un estudio sobre la conformación del baile solista en Alemania"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Paul Isenfels"
   - "Alfred Ohlen"
   - "identidad móvil"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/138419d5-9d53-46a2-a0d8-5560c58e4d11.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-vignolo-solo_danza_weimar__1.pdf"
 draft: false

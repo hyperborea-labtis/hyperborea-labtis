@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "305"
+created: "2023-11-07T04:27:00.000Z"
+receivedDate: "2023-03-20"
+evaluatedDate: "2023-04-09"
+publishedDate: "2023-11-25"
 slug: "del-surnaturalismo-artaud-la-revuelta-de-la-poesia-moderna-305"
 title: "Del surnaturalismo a Artaud: la revuelta de la poesía moderna  contra la imagen de una naturaleza despotenciada"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "literatura francesa"
   - "Hans-Robert Jauss"
   - "Poesía"
-publishedDate: "2023-11-25"
 heroImage: "/sites/default/files/ct-paper/4.percia.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_percia-del-surnaturalismo-a-artaud.pdf"
 draft: false

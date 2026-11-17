@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "42"
+created: "2008-11-05T14:00:00.000Z"
 slug: "coloquio-internacional-ut-pictura-poesis-las-palabras-y-las-imagenes-en-la-literatura-y"
 title: "COLOQUIO INTERNACIONAL \"UT PICTURA POESIS. LAS PALABRAS Y LAS IMÁGENES EN LA LITERATURA Y EL ARTE\""
 publishedDate: "2008-11-05"

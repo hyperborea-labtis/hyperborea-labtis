@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "390"
+created: "2025-11-29T02:43:00.000Z"
 slug: "poemas-piedras-imagenes-390"
 title: "POEMAS, PIEDRAS, IMÁGENES"
 section: "Manet et manebit"
@@ -14,7 +15,6 @@ keywords:
   - "naturaleza"
   - "piedras"
   - "Ósip Mandelstam"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/petrecca6.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_petrecca-laura-poemas-piedras-imagenes.pdf"
 draft: false

@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "344"
+created: "2024-11-05T19:26:00.000Z"
+receivedDate: "2024-06-29"
+evaluatedDate: "2024-08-08"
+publishedDate: "2024-11-26"
 slug: "corolario-mortuorio-en-la-investigacion-de-la-imagen-344"
 title: "Corolario mortuorio en la investigación de la imagen: El enfoque medial de Hans Belting"
 section: "Mare Sugenum"
@@ -26,7 +30,6 @@ keywords:
   - "Bildwissenschaft"
   - "Bildanthropologie"
   - "técnica y percepción"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/brieba_junquillo.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_brieba-corolario_mortuorio_enfoque_medial_belting.pdf"
 draft: false

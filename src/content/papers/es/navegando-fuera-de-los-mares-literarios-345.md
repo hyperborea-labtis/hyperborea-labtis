@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "345"
+created: "2024-11-05T19:29:00.000Z"
+receivedDate: "2024-06-24"
+evaluatedDate: "2024-07-28"
+publishedDate: "2024-11-26"
 slug: "navegando-fuera-de-los-mares-literarios-345"
 title: "Navegando fuera de los mares literarios: un acercamiento al universo transmedia de One Piece"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "anime"
   - "Henry Jenkins III"
   - "Weekly Shōnen Jump"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/bergonce_sea.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_bergonce-acercamiento-transmedia-one-piece.pdf"
 draft: false

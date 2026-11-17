@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "302"
+created: "2023-11-07T04:29:00.000Z"
 slug: "iii-motivacion-y-funcion-de-la-permanencia-en-el-locus-terribilis-302"
 title: "Motivación y función de la permanencia en el locus terribilis"
 section: "Mare Sugenum"
@@ -20,7 +21,6 @@ keywords:
   - "Hans von Grimmelshausen"
   - "literatura alemana"
   - "Barroco"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/2.garber.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_garber-locus-terribilis.pdf"
 draft: false

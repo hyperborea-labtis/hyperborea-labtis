@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "214"
+created: "2020-10-29T18:26:24.000Z"
+publishedDate: "2020-11-02"
 slug: "poetica-del-apocalipsis-figura-espacial-e-indeterminacion-la-prosa-de-octavio-paz"
 title: "Poética del apocalipsis, figura espacial e indeterminación: la prosa de Octavio Paz en la década de 1960"
 section: "41º 9’ S 71º 8’ W"
@@ -21,7 +23,6 @@ keywords:
   - "Maurice Blanchot"
   - "Ensayo"
   - "América y Europa"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/stanton_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_stanton-poetica-apocalipsis-prosa-de-paz-1960.pdf"
 draft: false

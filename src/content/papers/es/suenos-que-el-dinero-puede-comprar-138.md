@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "138"
+created: "2019-11-01T17:23:48.000Z"
 slug: "suenos-que-el-dinero-puede-comprar-138"
 title: "Sueños que el dinero puede comprar. Un pequeño pétalo del manojo de mentiras de Hans Richter"
 section: "Kino LabTIS"
@@ -16,7 +17,6 @@ keywords:
   - "Nazismo"
   - "Werner Graeff"
   - "censura"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/78091f35-ccd0-4f92-8e4a-8c221c9ae40b.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-petzke-suenos_dinero_puede_comprar_richter-_0.pdf"
 draft: false

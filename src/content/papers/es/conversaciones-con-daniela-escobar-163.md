@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "163"
+created: "2019-10-23T08:09:15.000Z"
 slug: "conversaciones-con-daniela-escobar-163"
 title: "Conversaciones con Daniela Escobar. «No hablar por el otro, sino con, o través de,  escuchar más»"
 section: "Manet et manebit"
@@ -21,7 +22,6 @@ keywords:
   - "Rachilde"
   - "Juan Santader Leal"
   - "diseño"
-publishedDate: "2019-10-23"
 heroImage: "/sites/default/files/ct-paper/reyes_bernini_1.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea-02-escobar-reyes_conversaciones_4.pdf"
 draft: false

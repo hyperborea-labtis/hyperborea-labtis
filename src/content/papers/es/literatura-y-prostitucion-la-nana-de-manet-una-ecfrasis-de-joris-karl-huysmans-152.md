@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "152"
+created: "2019-11-01T12:35:21.000Z"
 slug: "literatura-y-prostitucion-la-nana-de-manet-una-ecfrasis-de-joris-karl-huysmans-152"
 title: "Literatura y prostitución: «la Nana de Manet», una écfrasis de Joris-Karl Huysmans"
 section: "Manet et manebit"
@@ -22,7 +23,6 @@ keywords:
   - "L'Artiste"
   - "Nana"
   - "traducción"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/1d68b65c-800a-4174-a6be-f4996afa7095.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-sverdloff-huysmans_nana_manet_0.pdf"
 draft: false

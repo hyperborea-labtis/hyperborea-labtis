@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "74"
+created: "2018-10-30T23:37:55.000Z"
 slug: "deshechos-por-la-sal-poemas-de-juan-santander-leal-74"
 title: "Deshechos por la sal. Poemas de Juan Santander Leal"
 section: "Manet et manebit"
@@ -14,7 +15,6 @@ keywords:
   - "Deshechos por la sal"
   - "Hijos únicos"
   - "Cuarzo"
-publishedDate: "2018-10-30"
 heroImage: "/sites/default/files/ct-paper/hyperborea_manet_leal_poemas_intro_12x.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea-01-Santander_Leal_poemas_Intro_R.Macaya.pdf"
 draft: false

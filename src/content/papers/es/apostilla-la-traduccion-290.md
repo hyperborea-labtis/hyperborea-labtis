@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "290"
+created: "2022-12-12T16:00:00.000Z"
 slug: "apostilla-la-traduccion-290"
 title: "Apostilla a la traducción de \"The Tribute to Everyday Reality in José Lezama Lima's Fragmentos a su imán\" de Robyn R. Lutz"
 section: "41º 9’ S 71º 8’ W"
@@ -15,7 +16,6 @@ keywords:
   - "Robyn R. Lutz"
   - "Poesía"
   - "Traducción"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/chazarreta_helmut.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_chazarreta-apostilla-a-traduccion.pdf"
 draft: false

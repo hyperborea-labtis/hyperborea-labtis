@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "259"
+created: "2021-10-26T16:15:00.000Z"
 slug: "espacio-e-imaginacion-la-construccion-de-la-leyenda-de-el-dorado-en-discovery-de-sir-walter"
 title: "Espacio e imaginación: la construcción de la leyenda de El Dorado en The Discovery de Sir Walter Raleigh"
 section: "41º 9’ S 71º 8’ W"
@@ -24,7 +25,6 @@ keywords:
   - "Michel Pouyllau"
   - "América y Europa"
   - "El Dorado"
-publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_rusiani_0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_rusiani_espacio_e_imaginacion_el_dorado_sir_raleigh.pdf"
 draft: false

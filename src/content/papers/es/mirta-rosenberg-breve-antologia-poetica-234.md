@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "234"
+created: "2021-10-26T21:17:58.000Z"
 slug: "mirta-rosenberg-breve-antologia-poetica-234"
 title: "Mirta Rosenberg. Breve antología poética"
 section: "Manet et manebit"
@@ -20,7 +21,6 @@ keywords:
   - "Paisaje interior 2012"
   - "Cuaderno de oficio 2016"
   - "Editorial Bajo la Luna"
-publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_rosenberg.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_rosenberg-breve_antologia_poetica.pdf"
 draft: false

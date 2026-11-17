@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "348"
+created: "2024-11-05T19:24:00.000Z"
 slug: "carl-mayer-una-luz-sensible-348"
 title: "Carl Mayer: una luz sensible"
 section: "Kino LabTIS"
@@ -25,7 +26,6 @@ keywords:
   - "Guido Seeber"
   - "Karl Freund"
   - "Walther Ruttmann"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/1_sylvester.a.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_guzman-carl-mayer_luz_sensible.pdf"
 draft: false

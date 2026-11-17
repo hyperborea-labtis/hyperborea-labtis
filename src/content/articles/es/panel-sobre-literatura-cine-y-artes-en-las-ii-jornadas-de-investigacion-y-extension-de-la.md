@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "329"
+created: "2024-05-13T06:42:57.000Z"
 slug: "panel-sobre-literatura-cine-y-artes-en-las-ii-jornadas-de-investigacion-y-extension-de-la"
 title: "Panel del LabTIS en las II Jornadas de Investigación y Extensión de la Sede Andina/UNRN"
 publishedDate: "2024-05-13"

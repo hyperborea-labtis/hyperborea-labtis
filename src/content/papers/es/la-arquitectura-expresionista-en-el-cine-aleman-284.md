@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "284"
+created: "2022-12-12T19:00:00.000Z"
 slug: "la-arquitectura-expresionista-en-el-cine-aleman-284"
 title: "La arquitectura expresionista en el cine alemán"
 section: "Kino LabTIS"
@@ -24,7 +25,6 @@ keywords:
   - "Paul Wegener"
   - "Hermann Finsterlin"
   - "Robert Wienne"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/guzman_imagen-2.jpg"
 pdf: "/sites/default/files/ct-paper/hypeborea_05_guzman-arquitectura_expresionista_cine_aleman.pdf"
 draft: false

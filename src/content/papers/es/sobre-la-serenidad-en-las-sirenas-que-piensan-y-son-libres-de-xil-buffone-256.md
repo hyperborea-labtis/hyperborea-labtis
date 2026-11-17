@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "256"
+created: "2021-10-24T20:00:00.000Z"
 slug: "sobre-la-serenidad-en-las-sirenas-que-piensan-y-son-libres-de-xil-buffone-256"
 title: "Sobre la serenidad en las sirenas que piensan y son libres de Xil Buffone"
 section: "Afinidades electivas"
@@ -20,7 +21,6 @@ keywords:
   - "instalacíón"
   - "sirenas"
   - "mito"
-publishedDate: "2021-10-24"
 heroImage: "/sites/default/files/ct-paper/hyp.4_xilb_tapa.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_gabrieloni-sirenas_serenas_xil_buffone.pdf"
 draft: false

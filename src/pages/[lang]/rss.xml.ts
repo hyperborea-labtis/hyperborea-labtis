@@ -20,7 +20,7 @@ export const GET: APIRoute = async ({ params, site }) => {
     ...papers.map((p) => ({
       title: p.data.title,
       path: `/${lang}/paper/${p.data.slug}`,
-      date: p.data.publishedDate,
+      date: p.data.publishedDate ?? p.data.created,
       summary: p.data.abstract,
     })),
     ...articles.map((a) => ({

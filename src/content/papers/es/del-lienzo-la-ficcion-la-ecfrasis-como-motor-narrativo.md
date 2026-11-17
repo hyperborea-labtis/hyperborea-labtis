@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "387"
+created: "2025-11-29T02:46:00.000Z"
+receivedDate: "2025-06-24"
+evaluatedDate: "2025-09-09"
+publishedDate: "2025-11-28"
 slug: "del-lienzo-la-ficcion-la-ecfrasis-como-motor-narrativo"
 title: "Del lienzo a la ficción: la écfrasis  como motor narrativo  en La fragata de las máscaras (1996)  de Tomás de Mattos "
 section: "Mare Sugenum"
@@ -22,7 +26,6 @@ keywords:
   - "literatura y pintura"
   - "Gérard Genette"
   - "James A. W. Heffernan"
-publishedDate: "2025-11-28"
 heroImage: "/sites/default/files/ct-paper/unda6.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_unda-lienzo-ficcion-mattos.pdf"
 draft: false

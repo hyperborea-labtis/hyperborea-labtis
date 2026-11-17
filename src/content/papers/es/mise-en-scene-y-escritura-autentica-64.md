@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "64"
+created: "2018-11-01T19:22:18.000Z"
+receivedDate: "2018-04-24"
+evaluatedDate: "2018-05-30"
+publishedDate: "2018-11-02"
 slug: "mise-en-scene-y-escritura-autentica-64"
 title: "Mise-en-scène y escritura auténtica"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "montaje"
   - "Documental"
   - "imagen-tiempo"
-publishedDate: "2018-11-02"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Llarull-Mise_en_scene-Fig01.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Llarrull-Mise_en_scene.pdf"
 draft: false

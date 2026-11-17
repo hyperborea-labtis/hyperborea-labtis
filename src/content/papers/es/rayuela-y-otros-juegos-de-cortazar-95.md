@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "95"
+created: "2018-10-29T20:00:50.000Z"
 slug: "rayuela-y-otros-juegos-de-cortazar-95"
 title: "Rayuela y otros juegos de Cortázar"
 section: "41º 9’ S 71º 8’ W"
@@ -15,7 +16,6 @@ keywords:
   - "Rayuela"
   - "Literatura argentina"
   - "boom latinoamericano"
-publishedDate: "2018-10-29"
 heroImage: "/sites/default/files/ct-paper/hyperborea_41_9_irby_introduccion2x.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Irby-Rayuela_y_otros_juegos_0.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "354"
+created: "2024-11-05T19:19:00.000Z"
 slug: "rulfo-en-ruso-traducciones-de-p-n-glazova-medio-siglo-despues-354"
 title: "Rulfo en ruso: traducciones de Perla Natánovna Glázova medio siglo después"
 section: "41º 9’ S 71º 8’ W"
@@ -23,7 +24,6 @@ keywords:
   - "Literatura mexicana"
   - "Olga Albértovna Svetlakova"
   - "estudios latinoamericanos en la URSS"
-publishedDate: "2024-11-05"
 heroImage: "/sites/default/files/ct-paper/rulfo_3.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_svetlakova-rulfo_en_ruso_traducciones_de_perla_glazova.pdf"
 draft: false

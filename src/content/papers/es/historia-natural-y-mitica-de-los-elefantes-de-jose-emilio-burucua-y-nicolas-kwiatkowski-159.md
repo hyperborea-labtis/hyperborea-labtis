@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "159"
+created: "2019-10-21T05:43:54.000Z"
 slug: "historia-natural-y-mitica-de-los-elefantes-de-jose-emilio-burucua-y-nicolas-kwiatkowski-159"
 title: "Historia natural y mítica de los elefantes de José Emilio Burucúa y Nicolás Kwiatkowski"
 section: "Afinidades electivas"
@@ -21,7 +22,6 @@ keywords:
   - "Renacimiento"
   - "siglo XVIII"
   - "Nachbelen"
-publishedDate: "2019-10-21"
 heroImage: "/sites/default/files/ct-paper/resenia_to_be_gabrieloni.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-gabrieloni-historia_natural_mitica_elefantes_4.pdf"
 draft: false

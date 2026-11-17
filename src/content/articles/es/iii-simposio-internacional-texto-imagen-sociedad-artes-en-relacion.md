@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "78"
+created: "2016-11-10T17:00:00.000Z"
 slug: "iii-simposio-internacional-texto-imagen-sociedad-artes-en-relacion"
 title: "III Simposio internacional \"Texto, imagen & sociedad [artes en relación]\""
 publishedDate: "2016-11-10"

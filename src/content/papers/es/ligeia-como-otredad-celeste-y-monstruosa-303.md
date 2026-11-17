@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "303"
+created: "2023-11-07T04:30:00.000Z"
+receivedDate: "2023-05-23"
+evaluatedDate: "2023-06-05"
+publishedDate: "2023-11-25"
 slug: "ligeia-como-otredad-celeste-y-monstruosa-303"
 title: "«Ligeia» como otredad celeste y monstruosa. Interpretación artística de Wilfried Sätty "
 section: "Mare Sugenum"
@@ -16,7 +20,6 @@ keywords:
   - "Romanticismo"
   - "ilustración"
   - "Género"
-publishedDate: "2023-11-25"
 heroImage: "/sites/default/files/ct-paper/1.ligeia.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_martinez-ruiz-ligeia.pdf"
 draft: false

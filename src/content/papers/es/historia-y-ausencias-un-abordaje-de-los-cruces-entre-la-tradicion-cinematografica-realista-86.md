@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "86"
+created: "2018-11-01T22:45:08.000Z"
+receivedDate: "2018-04-16"
+evaluatedDate: "2018-05-10"
+publishedDate: "2018-10-26"
 slug: "historia-y-ausencias-un-abordaje-de-los-cruces-entre-la-tradicion-cinematografica-realista-86"
 title: "Historia y ausencias. Cruces entre la tradición cinematográfica realista y los procesos de ficcionalización en dos films de Víctor Erice"
 section: "Mare Sugenum"
@@ -18,7 +22,6 @@ keywords:
   - "memoria"
   - "Frank Kermode"
   - "mito"
-publishedDate: "2018-10-26"
 heroImage: "/sites/default/files/ct-paper/hyperborea_mare_sugenum_zori_intro_02x.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Zori-Historia_y_ausencias_1.pdf"
 draft: false

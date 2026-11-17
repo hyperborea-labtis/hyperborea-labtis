@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "130"
+created: "2019-11-02T12:00:00.000Z"
+receivedDate: "2019-04-30"
+evaluatedDate: "2019-05-31"
+publishedDate: "2019-10-30"
 slug: "una-imagen-y-mas-de-mil-palabras-el-legado-de-varney-vampyre-or-feast-blood-1845-1847-130"
 title: "Una imagen y más de mil palabras: El legado de Varney, the Vampyre or, The Feast of Blood (1845-1847)"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "Friedrich Whilhelm Murnau"
   - "Werner Herzog"
   - "cuerpo y representación"
-publishedDate: "2019-10-30"
 heroImage: "/sites/default/files/ct-paper/de68c104-9f9f-4267-b31b-a502744099af.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-coria_nogueira-legado_varney_vampire_3.pdf"
 draft: false

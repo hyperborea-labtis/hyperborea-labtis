@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "389"
+created: "2025-11-29T02:44:00.000Z"
+receivedDate: "2025-10-26"
+evaluatedDate: "2025-11-07"
+publishedDate: "2025-11-28"
 slug: "quietud-y-reserva-del-tiempo-la-memoria-cinematografica"
 title: "Quietud y reserva del tiempo: la memoria cinematográfica y «los pensamientos de una persona cualquiera en medio del mundo» en Le Mystère Koumiko (1965)"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Imagen"
   - "memoria"
   - "historia cultural"
-publishedDate: "2025-11-28"
 heroImage: "/sites/default/files/ct-paper/llarrull_marker_0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_llarrull-quietud-y-reserva-del-tiempo-koumiko.pdf"
 draft: false

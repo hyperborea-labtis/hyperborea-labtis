@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "235"
+created: "2021-10-27T07:45:00.000Z"
 slug: "das-kinobuch-un-temprano-intento-de-expandir-el-cine-235"
 title: "Das Kinobuch, un temprano intento de expandir el cine"
 section: "Kino LabTIS"
@@ -21,7 +22,6 @@ keywords:
   - "Béla Balázs"
   - "Rudolf Arnheim"
   - "Vanguardia"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/hyp.4_kinopinthus_0.png"
 pdf: "/sites/default/files/ct-paper/hypeborea_4_guzman-introduccion_pinthus_kinobuch-.pdf"
 draft: false

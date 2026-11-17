@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "123"
+created: "2019-11-02T11:50:00.000Z"
+receivedDate: "2019-04-26"
+evaluatedDate: "2019-07-28"
+publishedDate: "2019-10-31"
 slug: "fiascos-y-super-fiascos-antimodernismo-en-la-obra-de-saki-123"
 title: "«Fiascos y Super-fiascos»: antimodernismo en la obra de Saki"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Grafton Gallery"
   - "Crítica de arte"
   - "Roger Fry"
-publishedDate: "2019-10-31"
 heroImage: "/sites/default/files/ct-paper/ba20b062-2e90-4da0-be14-97cf9fea481e.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-araujo-saki-antimodernista_1.pdf"
 draft: false

@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "268"
+created: "2022-12-13T02:00:00.000Z"
+receivedDate: "2022-05-01"
+evaluatedDate: "2022-06-15"
+publishedDate: "2022-12-22"
 slug: "la-trascendencia-de-la-materialidad-268"
 title: "La trascendencia de la materialidad.  Revisión escultórica a partir del poema ecfrástico «Torso arcaico de Apolo»"
 section: "Mare Sugenum"
@@ -23,7 +27,6 @@ keywords:
   - "Europa"
   - "literatura alemana"
   - "Poesía contemporánea"
-publishedDate: "2022-12-22"
 heroImage: "/sites/default/files/ct-paper/ordunio_seoanemuseum.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_orduno-trascendencia_de_la_materialidad.pdf"
 draft: false

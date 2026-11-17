@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "299"
+created: "2022-12-12T12:00:00.000Z"
 slug: "resena-de-ensayos-de-filosofia-romantica-de-la-naturaleza-299"
 title: "Reseña de Ensayos de filosofía romántica de la naturaleza"
 section: "Afinidades electivas"
@@ -17,7 +18,6 @@ keywords:
   - "Alemania"
   - "Traducción"
   - "Romanticismo"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/rivas_humboldt4.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_rivas-resenia_de_ensayos_filosofia_romantica.pdf"
 draft: false

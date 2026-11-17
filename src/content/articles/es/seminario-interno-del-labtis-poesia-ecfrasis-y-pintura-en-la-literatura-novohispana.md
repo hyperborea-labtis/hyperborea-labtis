@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "316"
+created: "2023-11-01T17:40:24.000Z"
 slug: "seminario-interno-del-labtis-poesia-ecfrasis-y-pintura-en-la-literatura-novohispana"
 title: "SEMINARIO INTERNO DEL LABTIS: poesía, écfrasis y pintura en la literatura novohispana durante el siglo XVII"
 publishedDate: "2023-11-01"

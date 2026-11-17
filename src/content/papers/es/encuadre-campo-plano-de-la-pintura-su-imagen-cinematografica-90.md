@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "90"
+created: "2018-10-31T16:57:49.000Z"
 slug: "encuadre-campo-plano-de-la-pintura-su-imagen-cinematografica-90"
 title: "Encuadre, campo, plano: de la pintura a su imagen cinematográfica"
 section: "Kino LabTIS"
@@ -20,7 +21,6 @@ keywords:
   - "Henry-Georges Clouzot"
   - "Cine y pintura"
   - "Nelson Goodman"
-publishedDate: "2018-10-31"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Vouilloux-Encuadre_campo_plano_IMAGEN_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Vouilloux-Encuadre_campo_plano_2.pdf"
 draft: false

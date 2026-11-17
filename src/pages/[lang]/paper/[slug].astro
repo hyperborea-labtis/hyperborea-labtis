@@ -3,6 +3,8 @@ import type { GetStaticPaths } from "astro";
 import { render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
+import PaperMeta from "../../../components/PaperMeta.astro";
+import LicenseNotice from "../../../components/LicenseNotice.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { papersForLocale, paperBySlug, norm } from "../../../lib/content";
 import { ALL_SECTIONS } from "../../../data/nav";
@@ -84,11 +86,8 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
           </div>
         )}
 
-        {d.pdf && (
-          <p class="hb-pdf">
-            <a href={d.pdf} target="_blank" rel="noopener">{t("paper.pdf")}</a>
-          </p>
-        )}
+        <PaperMeta lang={lang} paper={paper} />
+        <LicenseNotice lang={lang} />
       </article>
     </div>
   </div>

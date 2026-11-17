@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "72"
+created: "2018-11-01T20:53:56.000Z"
+receivedDate: "2018-04-10"
+evaluatedDate: "2018-06-11"
+publishedDate: "2018-11-02"
 slug: "la-diaspora-del-otro-es-la-mia-propia-72"
 title: "La diáspora del otro es la mía propia: Récits d’Ellis Island y W ou le souvenir d’enfance de Georges Perec"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "Diáspora"
   - "W ou le Souvenir d’enfance"
   - "Récits d’Ellis Island"
-publishedDate: "2018-11-02"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Reyes-Diaspora_del_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Reyes-la-diaspora-del-otro-es-la-mia-propia_1.pdf"
 draft: false

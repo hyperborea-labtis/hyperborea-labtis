@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "140"
+created: "2019-11-01T16:37:53.000Z"
 slug: "narratives-actuality-early-twentieth-century-film-and-literature-140"
 title: "Narratives of Actuality in Early Twentieth Century Film and Literature"
 section: "Kino LabTIS"
@@ -18,7 +19,6 @@ keywords:
   - "Humphrey Jennings"
   - "Djuna Barnes"
   - "history and art"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/radyk_jennings.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-radyk-narratives_of_actuality_1.pdf"
 draft: false

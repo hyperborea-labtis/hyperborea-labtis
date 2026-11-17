@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "326"
+created: "2023-11-07T04:23:00.000Z"
 slug: "aigokeros"
 title: "Aigokeros. Cuadernos patagónicos (Fragmentos)"
 section: "Kino LabTIS"
@@ -15,7 +16,6 @@ keywords:
   - "Rubén Guzmán"
   - "cine experimental"
   - "Patagonia"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/aigokeros_b.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_hirsch-aigokeros.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "296"
+created: "2022-12-12T11:00:00.000Z"
 slug: "sobre-la-videoinstalacion-don-quijote-296"
 title: "Videoinstalación Don Quijote: Tristes figuras, de Mieke Bal"
 section: "Afinidades electivas"
@@ -19,7 +20,6 @@ keywords:
   - "Jorge Luis Borges"
   - "Pierre Menard"
   - "textos e imágenes"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/bal_sund.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_05_mussettta_belfanti-videoinstalancion.pdf"
 draft: false

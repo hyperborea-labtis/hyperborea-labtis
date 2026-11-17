@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "267"
+created: "2022-11-24T20:24:09.000Z"
 slug: "vi-simposio-internacional-texto-imagen-sociedad-artes-en-relacion"
 title: "VI SIMPOSIO INTERNACIONAL \"TEXTO, IMAGEN & SOCIEDAD [ARTES EN RELACIÓN]\""
 publishedDate: "2022-11-24"

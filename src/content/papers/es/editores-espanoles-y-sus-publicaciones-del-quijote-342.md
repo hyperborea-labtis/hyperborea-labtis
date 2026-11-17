@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "342"
+created: "2024-11-05T19:25:00.000Z"
+receivedDate: "2024-07-31"
+evaluatedDate: "2024-10-19"
+publishedDate: "2024-11-26"
 slug: "editores-espanoles-y-sus-publicaciones-del-quijote-342"
 title: "Los editores españoles y sus publicaciones del Quijote en Argentina durante el franquismo: la edición de EMECÉ, ilustrada por Salvador Dalí y Carlos Alonso (1957 y 1958)"
 section: "Mare Sugenum"
@@ -24,7 +28,6 @@ keywords:
   - "lectura"
   - "exilio"
   - "literatura española"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/calabrese_dali.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_calabrese-editores_espanoles_quijote_dali_alonso.pdf"
 draft: false

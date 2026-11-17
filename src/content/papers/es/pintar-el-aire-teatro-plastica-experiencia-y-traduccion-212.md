@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "212"
+created: "2020-10-31T16:05:03.000Z"
+receivedDate: "2020-03-03"
+evaluatedDate: "2020-04-22"
+publishedDate: "2020-11-02"
 slug: "pintar-el-aire-teatro-plastica-experiencia-y-traduccion-212"
 title: "Pintar el aire. Teatro, plástica, experiencia y traducción"
 section: "Mare Sugenum"
@@ -24,7 +28,6 @@ keywords:
   - "transfixión"
   - "Traducción"
   - "Heiner Müller"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/iii-fobbio_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_fobbio-pintar-el-aire-teatro-plastica-experiencia-traduccion.pdf"
 draft: false

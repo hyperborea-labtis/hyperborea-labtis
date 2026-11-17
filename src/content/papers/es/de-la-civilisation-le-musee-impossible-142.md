@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "142"
+created: "2019-11-01T15:50:36.000Z"
 slug: "de-la-civilisation-le-musee-impossible-142"
 title: "De la Civilisation. Le musée impossible"
 section: "Kino LabTIS"
@@ -19,7 +20,6 @@ keywords:
   - "abstraction"
   - "Georges Bataille"
   - "Simone Weil"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/guzman_ferrari.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-gabrieloni-civilisation_musees_impossibles.pdf"
 draft: false

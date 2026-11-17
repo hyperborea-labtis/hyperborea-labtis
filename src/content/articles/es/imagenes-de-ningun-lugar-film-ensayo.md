@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "114"
+created: "2016-11-12T22:35:13.000Z"
 slug: "imagenes-de-ningun-lugar-film-ensayo"
 title: "Imágenes de ningún lugar [film ensayo]"
 publishedDate: "2016-11-12"

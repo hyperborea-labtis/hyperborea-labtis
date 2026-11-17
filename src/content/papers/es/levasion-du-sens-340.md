@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "340"
+created: "2024-11-05T19:31:00.000Z"
+receivedDate: "2024-06-24"
+evaluatedDate: "2024-07-28"
+publishedDate: "2024-11-26"
 slug: "levasion-du-sens-340"
 title: "L’évasion du sens. L’image en littérature et les limites du langage chez Maurice Blanchot"
 section: "Mare Sugenum"
@@ -20,7 +24,6 @@ keywords:
   - "Michel Foucault"
   - "Stéphane Mallarmé"
   - "conciencia"
-publishedDate: "2024-11-26"
 heroImage: "/sites/default/files/ct-paper/olivares.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_07_olivares-evasion_du_sens_image_litterature_blanchot.pdf"
 draft: false

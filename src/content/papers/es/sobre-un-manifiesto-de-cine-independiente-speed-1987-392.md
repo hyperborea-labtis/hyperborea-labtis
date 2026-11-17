@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "392"
+created: "2025-11-29T02:41:00.000Z"
 slug: "sobre-un-manifiesto-de-cine-independiente-speed-1987-392"
 title: "Sobre un manifiesto  de cine independiente — Speed (1987)"
 section: "Kino LabTIS"
@@ -18,7 +19,6 @@ keywords:
   - "Manifiesto"
   - "Vanguardia"
   - "arte y política"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/speed5.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_guzman-sobre-manifiesto-cine-independiente-speed-1987.pdf"
 draft: false

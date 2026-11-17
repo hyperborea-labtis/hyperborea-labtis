@@ -968,12 +968,28 @@
 }
 .hb-tag-list a:hover { border-color: var(--hb-yellow); background: var(--hb-yellow); }
 
+/* PDF button (activities) */
 .hb-pdf { margin-top: 2em; }
 .hb-pdf a {
   display: inline-block; padding: 11px 20px; border: 2px solid var(--hb-yellow);
   border-radius: 40px; color: #000; font-weight: 700; text-transform: uppercase; font-size: 13.92px;
 }
 .hb-pdf a:hover { background: var(--hb-yellow); }
+
+/* Paper footer: dates / issue / file, then the license */
+.hb-paper-meta { margin: 2em 0 0; }
+.hb-paper-meta div { display: flex; flex-wrap: wrap; gap: 0 8px; line-height: 1.7; }
+.hb-paper-meta dt { font-weight: 700; }
+.hb-paper-meta dd { margin: 0; font-weight: 300; }
+.hb-paper-meta a { color: var(--hb-yellow); }
+.hb-paper-meta a:hover { text-decoration: underline; }
+.hb-file { display: inline-flex; align-items: center; gap: 6px; overflow-wrap: anywhere; }
+.hb-file svg { flex: none; color: #c0392b; }
+.hb-license { margin-top: 1.6em; }
+.hb-article .hb-license img { display: block; margin: 0 0 4px; }
+.hb-license p { margin: 0; font-size: 0.95em; font-weight: 300; }
+.hb-license a { color: var(--hb-ink); border-bottom: 1px solid var(--hb-yellow); }
+.hb-license a:hover { color: var(--hb-yellow); }
 
 /* Activities listing */
 .hb-activity-list { list-style: none; margin: 0; padding: 0; max-width: 1000px; }

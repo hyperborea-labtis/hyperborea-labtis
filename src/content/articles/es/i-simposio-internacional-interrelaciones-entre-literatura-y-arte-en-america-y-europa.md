@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "76"
+created: "2011-12-15T13:00:00.000Z"
 slug: "i-simposio-internacional-interrelaciones-entre-literatura-y-arte-en-america-y-europa"
 title: "I Simposio Internacional «Interrelaciones entre literatura y arte en América y Europa»"
 publishedDate: "2011-12-15"

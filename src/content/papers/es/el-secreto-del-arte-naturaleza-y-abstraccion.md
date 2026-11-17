@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "386"
+created: "2025-11-29T02:47:00.000Z"
 slug: "el-secreto-del-arte-naturaleza-y-abstraccion"
 title: "El «secreto» del arte: naturaleza y abstracción  en Secreto de un hombre de Franz Werfel"
 section: "Mare Sugenum"
@@ -24,7 +25,6 @@ keywords:
   - "E. T. A. Hoffmann"
   - "El salón de Artus"
   - "representación"
-publishedDate: "2025-11-29"
 heroImage: "/sites/default/files/ct-paper/poenitz-2_0.png"
 pdf: "/sites/default/files/ct-paper/hypeborea_08_poenitz-naturaleza-y-abstraccion-werfel.pdf"
 draft: false

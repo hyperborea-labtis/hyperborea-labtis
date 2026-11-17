@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "151"
+created: "2019-10-22T22:32:33.000Z"
 slug: "octavio-paz-la-busqueda-de-la-otredad-y-el-presente-151"
 title: "Octavio Paz: la búsqueda de la Otredad y el presente"
 section: "41º 9’ S 71º 8’ W"
@@ -21,7 +22,6 @@ keywords:
   - "poesía universalista"
   - "otredad"
   - "contracultura"
-publishedDate: "2019-10-22"
 heroImage: "/sites/default/files/ct-paper/img-0505.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-santi-octavio_paz_busqueda_otredad_presente.pdf"
 draft: false

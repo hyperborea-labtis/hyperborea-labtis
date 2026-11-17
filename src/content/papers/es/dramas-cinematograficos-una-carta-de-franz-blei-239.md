@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "239"
+created: "2021-10-27T07:15:00.000Z"
 slug: "dramas-cinematograficos-una-carta-de-franz-blei-239"
 title: "Dramas cinematográficos. Una carta de Franz Blei"
 section: "Kino LabTIS"
@@ -20,7 +21,6 @@ keywords:
   - "Europa"
   - "cine de autor"
   - "Alemania"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/hyp.4_kinopinthus_2.png"
 pdf: "/sites/default/files/ct-paper/hypeborea_4_blei_carta.pdf"
 draft: false

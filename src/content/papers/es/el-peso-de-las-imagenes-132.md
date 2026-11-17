@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "132"
+created: "2019-11-01T22:56:20.000Z"
+receivedDate: "2019-04-27"
+evaluatedDate: "2019-06-28"
+publishedDate: "2019-11-01"
 slug: "el-peso-de-las-imagenes-132"
 title: "«El peso de las imágenes»: interrelaciones entre palabras e imágenes en tres novelas de Alejo Carpentier"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Miguel Rojas Mix"
   - "Roberto González Echevarría"
   - "letras cubanas"
-publishedDate: "2019-11-01"
 heroImage: "/sites/default/files/ct-paper/7e334901-1b03-4077-8d8d-86d3a80531d1.jpeg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-toledo-textos_imagenes_carpentier_4.pdf"
 draft: false

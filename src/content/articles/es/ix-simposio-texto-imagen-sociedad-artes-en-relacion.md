@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "367"
+created: "2025-11-06T16:47:41.000Z"
 slug: "ix-simposio-texto-imagen-sociedad-artes-en-relacion"
 title: "IX SIMPOSIO \"TEXTO, IMAGEN & SOCIEDAD [ARTES EN RELACIÓN]\""
 publishedDate: "2025-11-06"

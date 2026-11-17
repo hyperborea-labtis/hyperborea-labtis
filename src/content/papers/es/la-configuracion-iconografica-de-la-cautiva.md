@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "384"
+created: "2025-11-29T02:49:00.000Z"
+receivedDate: "2025-10-27"
+evaluatedDate: "2025-11-07"
+publishedDate: "2025-11-28"
 slug: "la-configuracion-iconografica-de-la-cautiva"
 title: "La configuración iconográfica de la cautiva: del esteticismo romántico a la construcción ideológica del imaginario nacional argentino"
 section: "Mare Sugenum"
@@ -21,7 +25,6 @@ keywords:
   - "Johann Moritz Rugendas"
   - "Juan Manuel Blanes"
   - "ut pictura poesis"
-publishedDate: "2025-11-28"
 heroImage: "/sites/default/files/ct-paper/perez.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_08_perez-configuracion-iconografica-la-cautiva-.pdf"
 draft: false

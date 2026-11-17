@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "149"
+created: "2019-10-22T22:05:23.000Z"
 slug: "octavio-paz-en-los-anos-treinta-reconstruccion-de-una-vanguardia-mexicana-149"
 title: "Octavio Paz en los años treinta: reconstrucción de una vanguardia mexicana"
 section: "41º 9’ S 71º 8’ W"
@@ -21,7 +22,6 @@ keywords:
   - "Luna Silvestre"
   - "Barandal"
   - "arte por el arte"
-publishedDate: "2019-10-22"
 heroImage: "/sites/default/files/ct-paper/img-0504.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-meyer_minnemann_paz_vanguardia_mexicana_0.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "253"
+created: "2021-10-26T16:13:30.000Z"
 slug: "la-conquista-de-lo-inutil-las-geografias-imaginarias-de-el-dorado-253"
 title: "La conquista de lo inútil. Las geografías imaginarias de El Dorado [1]"
 section: "41º 9’ S 71º 8’ W"
@@ -24,7 +25,6 @@ keywords:
   - "Cándido"
   - "Sir Walter Raleigh"
   - "espacio"
-publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_eldorado.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_ales-pouyllau-conquista_inutil_geografias_imaginarias_el_dorado.pdf"
 draft: false

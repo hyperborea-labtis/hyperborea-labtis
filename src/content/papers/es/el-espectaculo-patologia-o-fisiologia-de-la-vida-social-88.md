@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "88"
+created: "2018-10-31T22:06:46.000Z"
 slug: "el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88"
 title: "El espectáculo: ¿patología o fisiología de la vida social?"
 section: "Kino LabTIS"
@@ -19,7 +20,6 @@ keywords:
   - "Imagen"
   - "Medios de comunicación"
   - "crítica"
-publishedDate: "2018-10-31"
 heroImage: "/sites/default/files/ct-paper/Kino_Sverdloff%20Traduccio%CC%81n%20Carnevali_IMAGEN_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Carnevali-El_espectaculo_2.pdf"
 draft: false

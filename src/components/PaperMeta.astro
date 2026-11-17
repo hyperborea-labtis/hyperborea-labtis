@@ -1,0 +1,67 @@
+---
+// Footer data of a paper, as on the old site: reception / evaluation /
+// publication dates, issue and the original PDF. Each row shows only when the
+// paper has the data (84 of 137 have no publication date in Drupal).
+import { useTranslations, type Locale } from "../i18n/config";
+import type { Paper } from "../lib/content";
+
+interface Props {
+  lang: Locale;
+  paper: Paper;
+}
+const { lang, paper } = Astro.props;
+const t = useTranslations(lang);
+const d = paper.data;
+
+// "27 Octubre 2025": the old site capitalizes the month and drops the "de".
+const month = new Intl.DateTimeFormat(lang, { month: "long", timeZone: "UTC" });
+const fmt = (date: Date): string => {
+  const m = month.format(date);
+  return `${date.getUTCDate()} ${m.charAt(0).toUpperCase()}${m.slice(1)} ${date.getUTCFullYear()}`;
+};
+
+const dates = [
+  { label: t("paper.received"), date: d.receivedDate },
+  { label: t("paper.evaluated"), date: d.evaluatedDate },
+  { label: t("paper.published"), date: d.publishedDate },
+];
+const fileName = d.pdf ? decodeURIComponent(d.pdf.split("/").pop() ?? d.pdf) : undefined;
+const hasAny = dates.some((r) => r.date) || d.issue !== undefined || d.pdf;
+---
+
+{
+  hasAny && (
+    <dl class="hb-paper-meta">
+      {dates.map(
+        (r) =>
+          r.date && (
+            <div>
+              <dt>{r.label}:</dt>
+              <dd><time datetime={r.date.toISOString().slice(0, 10)}>{fmt(r.date)}</time></dd>
+            </div>
+          ),
+      )}
+      {d.issue !== undefined && (
+        <div>
+          <dt>{t("paper.issue")}:</dt>
+          <dd><a href={`/${lang}/numero-${d.issue}`}>{t("paper.issueNumber")} {String(d.issue).padStart(2, "0")}</a></dd>
+        </div>
+      )}
+      {d.pdf && (
+        <div>
+          <dt>{t("paper.file")}:</dt>
+          <dd>
+            <a class="hb-file" href={d.pdf} target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+                <path d="M3 1h7l3 3v11H3z" fill="#fff" stroke="currentColor" stroke-width="1" />
+                <path d="M10 1v3h3" fill="none" stroke="currentColor" stroke-width="1" />
+                <path d="M5 11h6M5 13h4" stroke="currentColor" stroke-width="1.2" />
+              </svg>
+              {fileName}
+            </a>
+          </dd>
+        </div>
+      )}
+    </dl>
+  )
+}

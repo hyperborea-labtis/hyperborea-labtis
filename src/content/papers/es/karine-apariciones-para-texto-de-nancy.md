@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "190"
+created: "2020-10-30T16:16:21.000Z"
+publishedDate: "2020-11-02"
 slug: "karine-apariciones-para-texto-de-nancy"
 title: "Karine. apariciones. Para un texto de Jean-Luc Nancy"
 section: "Kino LabTIS"
@@ -18,7 +20,6 @@ keywords:
   - "Juliette Bort"
   - "Claude Rubon"
   - "Jean-Luc Nancy"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/karine_fotograma_2.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_cahen-karine-apariciones_0_compressed.pdf"
 draft: false

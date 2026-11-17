@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "288"
+created: "2022-12-12T16:50:00.000Z"
 slug: "cuatro-caminos-288"
 title: "Cuatro caminos"
 section: "Manet et manebit"
@@ -11,7 +12,6 @@ keywords:
   - "Poesía contemporánea"
   - "Tadeo Stein"
   - "Cuatro caminos"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/hyper_2_0.jpg"
 pdf: "/sites/default/files/ct-paper/hypeborea_05_stein-cuatro_caminos.pdf"
 draft: false

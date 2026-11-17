@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "281"
+created: "2022-12-12T21:00:00.000Z"
 slug: "la-voluntad-de-las-ovejas-281"
 title: "La voluntad de las ovejas: la poética de la elegía pastoral en dos obras audiovisuales"
 section: "Kino LabTIS"
@@ -23,7 +24,6 @@ keywords:
   - "Arise!"
   - "Las estaciones"
   - "Artavazd Peleshyan"
-publishedDate: "2022-12-12"
 heroImage: "/sites/default/files/ct-paper/jaufmann_seasons_0.jpg"
 pdf: "/sites/default/files/ct-paper/hypeborea_05_jaufmann-la_voluntad_de_las_ovejas.pdf"
 draft: false

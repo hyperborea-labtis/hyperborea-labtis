@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "75"
+created: "2018-03-10T21:00:00.000Z"
 slug: "espacio-de-creacion-e-investigacion-de-las-artes"
 title: "Espacio de creación e investigación de las artes"
 publishedDate: "2018-03-10"

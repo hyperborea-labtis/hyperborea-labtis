@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "215"
+created: "2020-10-29T20:21:22.000Z"
+publishedDate: "2020-11-02"
 slug: "apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215"
 title: "Apostilla sobre las traducciones en torno al poeta Octavio Paz. Segunda entrega"
 section: "41º 9’ S 71º 8’ W"
@@ -8,7 +10,6 @@ issue: 3
 issueOrder: 13
 author: "Daniela Evangelina Chazarreta"
 affiliation: "Universidad Nacional de la Plata, CONICET"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/chazarreta_intro2.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_chazarreta_apostilla-traducciones-octavio-paz_0.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "251"
+created: "2021-10-26T16:30:36.000Z"
 slug: "apostilla-la-leyenda-de-el-dorado-y-la-emergencia-de-lo-imaginario-en-america-latina-251"
 title: "Apostilla. La leyenda de «El Dorado» y la emergencia de lo imaginario en América Latina"
 section: "41º 9’ S 71º 8’ W"
@@ -22,7 +23,6 @@ keywords:
   - "“nuevo mundo”"
   - "América y Europa"
   - "Traducción"
-publishedDate: "2021-10-26"
 heroImage: "/sites/default/files/ct-paper/hyp.4_chazarreta-1_0.png"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_chazarreta-apostilla_leyenda_el_dorado_imaginario_america.pdf"
 draft: false

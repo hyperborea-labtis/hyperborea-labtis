@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "222"
+created: "2021-10-28T07:00:00.000Z"
 slug: "el-encuadre-de-la-vida-moderna-manet-watteau-y-la-pintura-de-genero-222"
 title: "El encuadre de la vida moderna: Manet, Watteau y la pintura de género"
 section: "Mare Sugenum"
@@ -22,7 +23,6 @@ keywords:
   - "espacio plástico"
   - "color"
   - "pintura de género"
-publishedDate: "2021-10-28"
 heroImage: "/sites/default/files/ct-paper/hyp.4_scott.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_04_scott-encuadre_de_la_vida_moderna_manet_watteau.pdf"
 draft: false

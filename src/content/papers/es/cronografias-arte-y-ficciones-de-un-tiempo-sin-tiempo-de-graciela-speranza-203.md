@@ -1,6 +1,8 @@
 ---
 lang: "es"
 translationKey: "203"
+created: "2020-10-28T12:40:29.000Z"
+publishedDate: "2020-11-02"
 slug: "cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo-de-graciela-speranza-203"
 title: "Cronografías: arte y ficciones de un tiempo sin tiempo de Graciela Speranza"
 section: "Afinidades electivas"
@@ -18,7 +20,6 @@ keywords:
   - "Anne Carson"
   - "Adrián Villar Rojas"
   - "Patricio Pron"
-publishedDate: "2020-11-02"
 heroImage: "/sites/default/files/ct-paper/time_passes_22x.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03-fantin-cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo.pdf"
 draft: false

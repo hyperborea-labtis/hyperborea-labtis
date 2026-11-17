@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "241"
+created: "2021-10-27T07:30:02.000Z"
 slug: "la-obra-cinematografica-introduccion-para-visionarios-y-reflexivos-241"
 title: "La obra cinematográfica. Introducción para «visionarios» y «reflexivos»"
 section: "Kino LabTIS"
@@ -16,7 +17,6 @@ keywords:
   - "Europa"
   - "cine de autor"
   - "Alemania"
-publishedDate: "2021-10-27"
 heroImage: "/sites/default/files/ct-paper/hyp.4_kinopinthus_1.png"
 pdf: "/sites/default/files/ct-paper/hypeborea_4_pinthus-la_obra_cinematografica.pdf"
 draft: false

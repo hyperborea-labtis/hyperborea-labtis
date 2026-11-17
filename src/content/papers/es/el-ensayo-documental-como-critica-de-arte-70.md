@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "70"
+created: "2018-11-01T23:00:04.000Z"
+receivedDate: "2018-04-26"
+evaluatedDate: "2018-05-22"
+publishedDate: "2018-10-28"
 slug: "el-ensayo-documental-como-critica-de-arte-70"
 title: "El ensayo documental como crítica de arte: traducción audiovisual de la pintura y recuperación del tableau vivant"
 section: "Mare Sugenum"
@@ -19,7 +23,6 @@ keywords:
   - "Jean-Luc Godard"
   - "Eve Sussman"
   - "Raúl Perrone"
-publishedDate: "2018-10-28"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Tomas-El_ensayo_documental-Fig01_0.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_01-tomas-el_ensayo_documental.pdf"
 draft: false

@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "314"
+created: "2023-11-07T04:17:00.000Z"
 slug: "los-espacios-blancos-en-las-fotografias-314"
 title: "Los espacios blancos en las fotografías. Atlas (2021) y el registro como vacío"
 section: "Afinidades electivas"
@@ -18,7 +19,6 @@ keywords:
   - "Christofredo Jakob"
   - "Jean-Luc Nancy"
   - "Argentina"
-publishedDate: "2023-11-07"
 heroImage: "/sites/default/files/ct-paper/14.atlas_.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_06_zori-los-espacios-blancos-en-las-fotografias.pdf"
 draft: false

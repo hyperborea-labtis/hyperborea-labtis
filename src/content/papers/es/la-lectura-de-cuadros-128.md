@@ -1,6 +1,7 @@
 ---
 lang: "es"
 translationKey: "128"
+created: "2019-11-02T12:50:46.000Z"
 slug: "la-lectura-de-cuadros-128"
 title: "La lectura de cuadros"
 section: "Mare Sugenum"
@@ -18,7 +19,6 @@ keywords:
   - "Louis Marin"
   - "W. J. T. Mitchell"
   - "arte contemporáneo"
-publishedDate: "2019-11-02"
 heroImage: "/sites/default/files/ct-paper/heffernan_whistler.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_02-heffernan-lectura_de_cuadros_3.pdf"
 draft: false

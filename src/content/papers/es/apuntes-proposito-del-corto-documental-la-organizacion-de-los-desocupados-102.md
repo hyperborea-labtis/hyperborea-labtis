@@ -1,6 +1,10 @@
 ---
 lang: "es"
 translationKey: "102"
+created: "2018-10-31T18:16:33.000Z"
+receivedDate: "2018-02-05"
+evaluatedDate: "2018-04-14"
+publishedDate: "2018-10-22"
 slug: "apuntes-proposito-del-corto-documental-la-organizacion-de-los-desocupados-102"
 title: "Apuntes a propósito del corto documental  La organización de los desocupados"
 section: "Kino LabTIS"
@@ -14,7 +18,6 @@ keywords:
   - "Historia"
   - "Movimiento obrero"
   - "LEMA LabTIS"
-publishedDate: "2018-10-22"
 heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Desocupados_fig01_IMAGEN_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Benclowicz-Intro_Documental_0.pdf"
 draft: false
