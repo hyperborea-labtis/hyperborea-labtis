@@ -5,6 +5,7 @@ import PageTitle from "../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ISSUE_NUMBERS, issueTitle } from "../../data/issues";
 import { papersInIssue } from "../../lib/content";
+import { splitAuthor } from "../../lib/author";
 
 export const getStaticPaths = (() =>
   locales.flatMap((lang) =>
@@ -31,7 +32,7 @@ const pad = String(n).padStart(2, "0");
               <h2 class="hb-toc-title">
                 <a href={`/${lang}/paper/${p.data.slug}`}>{p.data.title}</a>
               </h2>
-              {p.data.author && <h3 class="hb-toc-author">{p.data.author}</h3>}
+              {p.data.author && <h3 class="hb-toc-author">{splitAuthor(p.data.author).name}</h3>}
               <p class="hb-toc-meta">
                 {t("issue.published")}: {t("issue.number")} {pad}
                 {p.data.publishedDate && (

@@ -17,6 +17,7 @@
     "verify": "node scripts/verify.mjs"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.10",
     "@astrojs/sitemap": "^3.7.5",
     "@fontsource/lato": "^5.3.0",
     "astro": "^7.4.12"

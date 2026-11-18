@@ -260,7 +260,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: var(--hb-slate);
+  background: #000;
   z-index: 499;
 }
 
@@ -628,7 +628,13 @@
 
 /* ---------- Node / article ---------- */
 .hb-article {
-  padding-bottom: 20px;
+  padding: 100px;
+}
+
+@media (max-width: 991px) {
+  .hb-article {
+    padding: 40px 24px;
+  }
 }
 
 .hb-article .field--name-field-image,
@@ -701,10 +707,21 @@
 
 .hb-article a {
   color: var(--hb-yellow);
+  overflow-wrap: anywhere;
 }
 
 .hb-article a:hover {
   text-decoration: underline;
+}
+
+/* Footnote targets: keep the note clear of the fixed header and flag it. */
+.hb-article [id] {
+  scroll-margin-top: 110px;
+}
+
+.hb-article p:target {
+  background: rgba(255, 215, 0, 0.12);
+  outline: 8px solid rgba(255, 215, 0, 0.12);
 }
 
 .hb-article hr {

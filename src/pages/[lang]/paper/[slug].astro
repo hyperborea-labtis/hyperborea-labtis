@@ -9,6 +9,7 @@ import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { papersForLocale, paperBySlug, norm } from "../../../lib/content";
 import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
+import { splitAuthor, noteAnchor } from "../../../lib/author";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -28,6 +29,7 @@ const paper = await paperBySlug(lang, slug);
 if (!paper) return Astro.redirect(`/${lang}`);
 const { Content } = await render(paper);
 const d = paper.data;
+const authorParts = splitAuthor(d.author ?? "");
 
 // Category (section) and keywords shown after the article, like the old site:
 // the section links to its page, each keyword to its /taxonomy/term/<id> page.
@@ -61,7 +63,8 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
 
         {d.author && (
           <p class="hb-article-author text-align-right">
-            {d.author}
+            {authorParts.name}
+            {authorParts.note && (<a href={`#${noteAnchor(authorParts.note)}`}>[{authorParts.note}]</a>)}
             {d.email && (<><br />{d.email}</>)}
             {d.affiliation && (<><br />{d.affiliation}</>)}
           </p>

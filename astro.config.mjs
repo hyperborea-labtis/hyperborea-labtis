@@ -3,6 +3,8 @@ import { defineConfig } from "astro/config";
 import fs from "node:fs";
 import path from "node:path";
 import sitemap from "@astrojs/sitemap";
+import { satteri } from "@astrojs/markdown-satteri";
+import { footnotes } from "./src/plugins/footnotes.mjs";
 
 // Production domain (the current site's canonical host is www).
 const SITE = "https://www.hyperborea-labtis.org";
@@ -45,6 +47,9 @@ export default defineConfig({
   // URLs must stay identical to the current Drupal site: no trailing slash
   // (/es/paper/x) and one .html file per page, which Cloudflare Pages serves at
   // the extensionless URL without redirecting.
+  // Footnote links (#01) lost their targets in the import; rebuilt at render time.
+  // `satteri()` is Astro's default Markdown processor; this only adds the plugin.
+  markdown: { processor: satteri({ hastPlugins: [footnotes] }) },
   trailingSlash: "never",
   build: { format: "file" },
   redirects: { "/": "/es" },

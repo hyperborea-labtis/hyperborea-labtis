@@ -118,7 +118,7 @@ Tal como está, con sus cualidades y sus defectos, esta tela vive y es superior 
 
 ## *Notas*
 
-*\[1\] «*Je vais être obligé de recourir aux grands remèdes pour me secouer le spleen, lupanars de la rue Feydeau avec d’étincelants bas de soie et lecture renouvelée de Baudelaire!*»* le decía Huysmans en una carta a Hannon del 17 de octubre 1878 (citado en Huysmans 1192).
+\[1\] *«Je vais être obligé de recourir aux grands remèdes pour me secouer le spleen, lupanars de la rue Feydeau avec d’étincelants bas de soie et lecture renouvelée de Baudelaire!»* le decía Huysmans en una carta a Hannon del 17 de octubre 1878 (citado en Huysmans 1192).
 
 \[2\] *J*oris-Karl Huysmans. «La Nana de Manet». *Œuvres complètes*. Tome I - 1867-1879. Dir. Pierre Glaudes y Jean-Marie Seillan, Ed. Jean-Marie Seillan, Aude Jeannerod, Mireille Dottin-Orsini, Éléonore Reverzy. París: Classiques Garnier, 2017.
 

@@ -32,6 +32,8 @@ Las URLs son idénticas a las del sitio Drupal original (sin barra final: `/es/p
 - `src/content/{papers,articles,pages}/{es,en,fr}/<slug>.md`
 - Orden dentro de un número: `issueOrder`. Portada: `featured` (1–6). Nuevo número: agregar su año en `src/data/issues.ts`.
 - Secciones válidas: ver `src/data/nav.ts` (el campo `section` es una lista cerrada en el CMS).
+- Notas al pie: se escriben como párrafos que empiezan por `[1] texto` (o `[*]`, `[**]`), bajo un título «Notas», y se enlazan desde el texto con `[[1]](#01)`. No hace falta escribir ningún `id`: `src/plugins/footnotes.mjs` se lo agrega a la nota al generar la página (la migración desde Drupal había perdido esos destinos). Si un link `#NN` no tiene nota con ese número, `npm run verify` lo lista en el check 6b.
+  - Cada nota numerada recibe el id `01`, `02`… (aunque nada la enlace). Por eso el campo `author` puede terminar en `[1]` (p. ej. `Anthony Stanton[1]`): la página del paper lo muestra como link a la nota 1 y los listados de número muestran solo el nombre (`src/lib/author.ts`).
 
 ## Editores (Sveltia CMS)
 
@@ -64,7 +66,7 @@ Mientras tanto el Worker responde 503 (`not_configured`) y la página muestra un
 
 ## Verificación
 
-`npm run verify` ejecuta: build + type check, conteos contra Drupal, integridad de archivos, frontmatter/slugs/secciones, i18n, enlaces internos (sin barra final, sin rotos), configuración del CMS, índice de búsqueda y **paridad de URLs con el sitio antiguo**. Sale con código 1 si algo falla.
+`npm run verify` ejecuta: build + type check, conteos contra Drupal, integridad de archivos, frontmatter/slugs/secciones, i18n, enlaces internos (sin barra final, sin rotos; y avisa de los `#enlaces` dentro de una página sin destino), configuración del CMS, índice de búsqueda y **paridad de URLs con el sitio antiguo**. Sale con código 1 si algo falla.
 
 ### Buscador (`/es/buscar`)
 

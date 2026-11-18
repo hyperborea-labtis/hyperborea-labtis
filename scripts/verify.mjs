@@ -243,6 +243,23 @@ if (OFFLINE) {
   }
   const items = [...broken].map(([h, from]) => `${h}  (first seen in ${from.replace(/ — .*/, "")})${from.includes(" — ") ? " —" + from.split(" —")[1] : ""}`);
   record("6. Internal links/assets in dist", items.length ? "fail" : "pass", `${total} references in ${pages.length} pages, ${items.length} distinct broken`, items);
+
+  // 6b. #fragment links inside a page (footnotes, ToC) must have a matching id/name.
+  const dangling = [];
+  let fragTotal = 0;
+  for (const f of pages) {
+    const html = fs.readFileSync(f, "utf8");
+    const targets = new Set([...html.matchAll(/\b(?:id|name)="([^"]*)"/g)].map((m) => m[1]));
+    const missing = new Set();
+    for (const m of html.matchAll(/<a\b[^>]*?\bhref="#([^"]+)"/g)) {
+      fragTotal++;
+      let frag = m[1];
+      try { frag = decodeURIComponent(frag); } catch { /* keep raw */ }
+      if (!targets.has(frag) && !targets.has(m[1])) missing.add(m[1]);
+    }
+    if (missing.size) dangling.push(`${relf(f).replace("dist/", "/")}  →  ${[...missing].map((x) => "#" + x).join(" ")}`);
+  }
+  record("6b. In-page anchors (#fragment) in dist", dangling.length ? "warn" : "pass", `${fragTotal} #links, ${dangling.length} pages with a missing target`, dangling);
 }
 
 // ---------- 7. CMS config ----------
