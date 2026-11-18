@@ -588,6 +588,9 @@
   display: block;
   width: 100%;
   height: auto;
+  /* Drupal served every card image cropped to 750x500 (image style "large"). */
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 .hb-card-overlay {
@@ -614,7 +617,8 @@
   margin: 16px 0 0;
   font-size: 17.92px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.2;
+  text-transform: uppercase;
   color: var(--hb-ink);
 }
 
@@ -1007,16 +1011,6 @@
 .hb-license p { margin: 0; font-size: 0.95em; font-weight: 300; }
 .hb-license a { color: var(--hb-ink); border-bottom: 1px solid var(--hb-yellow); }
 .hb-license a:hover { color: var(--hb-yellow); }
-
-/* Activities listing */
-.hb-activity-list { list-style: none; margin: 0; padding: 0; max-width: 1000px; }
-.hb-activity {
-  padding: 18px 0; border-bottom: 1px solid #eee;
-  display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap;
-}
-.hb-activity time { color: var(--hb-yellow); font-weight: 700; font-size: 0.85em; flex: 0 0 90px; }
-.hb-activity a { color: var(--hb-ink); font-weight: 700; font-size: 1.05em; }
-.hb-activity a:hover { color: var(--hb-yellow); }
 
 /* Issue table of contents (/numero-N) */
 .hb-toc { list-style: none; margin: 0; padding: 0; }

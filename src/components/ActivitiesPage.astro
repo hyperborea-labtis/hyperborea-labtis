@@ -1,0 +1,40 @@
+---
+// One page of the activities list ("Actividades culturales y académicas"): a 3-column
+// card grid like the old Drupal view, 6 per page, newest first. Page 1 is
+// /{lang}/actividades (same URL as the current site); the rest are /{lang}/actividades/N.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "./PageTitle.astro";
+import PaperCard from "./PaperCard.astro";
+import Pager from "./Pager.astro";
+import type { Locale } from "../i18n/config";
+import { articlesForLocale, paginate } from "../lib/content";
+
+interface Props {
+  lang: Locale;
+  page: number;
+}
+const { lang, page } = Astro.props;
+const titles: Record<Locale, string> = {
+  es: "Actividades culturales y académicas",
+  en: "Cultural and academic activities",
+  fr: "Activités culturelles et académiques",
+};
+const { items, totalPages } = paginate(await articlesForLocale(lang), page);
+const path = page === 1 ? "/actividades" : `/actividades/${page}`;
+---
+
+<BaseLayout title={`${titles[lang]} | Hyperborea`} lang={lang} path={path}>
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text={titles[lang]} />
+      <div class="hb-grid">
+        {
+          items.map((a) => (
+            <PaperCard title={a.data.title} href={`/${lang}/actividad/${a.data.slug}`} image={a.data.heroImage} columns={3} />
+          ))
+        }
+      </div>
+      <Pager lang={lang} base={`/${lang}/actividades`} current={page} total={totalPages} />
+    </div>
+  </div>
+</BaseLayout>
