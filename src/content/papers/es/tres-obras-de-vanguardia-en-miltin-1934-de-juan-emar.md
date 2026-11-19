@@ -244,7 +244,7 @@ Es de notar que toda esta cuestión de las artes visuales (su misión, la razón
 ## Referencia electrónica
 
 Grillo, Andrés. «Tres obras de vanguardia en *Miltín 1934* de Juan Emar: didáctica, ficción y renovación para las artes plásticas chilenas de 1930.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 78–96.  
-URL: [https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar](https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar) [](<https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar >)  
+URL: [https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar](https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar) [](https://www.hyperborea-labtis.org/es/paper/tres-obras-de-vanguardia-en-miltin-1934-de-juan-emar)  
 DOI: [https://doi.org/10.5281/zenodo.17664366](https://doi.org/10.5281/zenodo.17664366)
 
 * * *

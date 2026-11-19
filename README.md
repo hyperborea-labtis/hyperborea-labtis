@@ -34,6 +34,7 @@ Las URLs son idénticas a las del sitio Drupal original (sin barra final: `/es/p
 - Secciones válidas: ver `src/data/nav.ts` (el campo `section` es una lista cerrada en el CMS).
 - Notas al pie: se escriben como párrafos que empiezan por `[1] texto` (o `[*]`, `[**]`), bajo un título «Notas», y se enlazan desde el texto con `[[1]](#01)`. No hace falta escribir ningún `id`: `src/plugins/footnotes.mjs` se lo agrega a la nota al generar la página (la migración desde Drupal había perdido esos destinos). Si un link `#NN` no tiene nota con ese número, `npm run verify` lo lista en el check 6b.
   - Cada nota numerada recibe el id `01`, `02`… (aunque nada la enlace). Por eso el campo `author` puede terminar en `[1]` (p. ej. `Anthony Stanton[1]`): la página del paper lo muestra como link a la nota 1 y los listados de número muestran solo el nombre (`src/lib/author.ts`).
+- HTML dentro del Markdown: `src/plugins/sanitize.mjs` lo limpia al generar la página (lista blanca de etiquetas y atributos; se eliminan `<script>`, `<iframe>`, `on*=`, `style=` y URLs `javascript:`). Usa solo lo que el contenido ya usa (figuras, tablas, `<a id>`). `npm test` cubre las reglas y el check 6c de `verify` revisa `dist/`. Un enlace Markdown con espacios dentro de `<…>` (`[x](< https://…>)`) genera una URL rota con `%20`: escríbelo sin espacios.
 
 ## Editores (Sveltia CMS)
 
@@ -57,12 +58,13 @@ El sitio es un Worker (`wrangler.jsonc`): sirve `dist/` como archivos estáticos
 
 ### Formulario de contacto (`/es/contact`)
 
-`worker/index.ts` envía el correo con Cloudflare Email Service (binding `send_email` llamado `EMAIL`, ya declarado en `wrangler.jsonc`). Falta:
+`worker/index.ts` envía el correo con Cloudflare Email Service (binding `send_email` llamado `EMAIL`, ya declarado en `wrangler.jsonc`) y lo protege con **Cloudflare Turnstile**, un límite de **5 envíos por minuto por IP** (binding `CONTACT_LIMITER`), verificación de `Origin` (solo el propio sitio), tope de 16 KB y honeypot. El destinatario es siempre `CONTACT_TO`; nada del formulario lo controla. Para activarlo:
 
 1. Dominio habilitado para envío: `npx wrangler email sending enable <dominio>` (debe estar en Cloudflare).
-2. Dos **secretos** del Worker (no van en el repo, que es público): `CONTACT_TO` (buzón que recibe los mensajes) y `CONTACT_FROM` (dirección del dominio habilitado). `npx wrangler secret put CONTACT_TO` y `npx wrangler secret put CONTACT_FROM`, o en el dashboard: Worker → Settings → Variables and Secrets → tipo *Secret*.
+2. **Widget de Turnstile** (dashboard → Turnstile → Add widget, con los hostnames del sitio). La **clave del sitio** es pública: va como variable de build `PUBLIC_TURNSTILE_SITEKEY` (Workers Builds → Variables). Sin ella la página muestra «formulario no disponible» en lugar del formulario: ese es el estado *suspendido*.
+3. Tres **secretos** del Worker (no van en el repo, que es público): `CONTACT_TO` (buzón que recibe los mensajes), `CONTACT_FROM` (dirección del dominio habilitado) y `TURNSTILE_SECRET` (clave secreta del widget). `npx wrangler secret put CONTACT_TO`, etc., o en el dashboard: Worker → Settings → Variables and Secrets → tipo *Secret*. Si falta alguno el Worker responde 503 (`not_configured`).
 
-Mientras tanto el Worker responde 503 (`not_configured`) y la página muestra un error al enviar.
+Probar en local: copiar `.env.example` a `.env` con la clave de pruebas de Turnstile (`1x00000000000000000000AA`, siempre aprueba), crear `.dev.vars` (ignorado por git) con `CONTACT_TO`, `CONTACT_FROM` y `TURNSTILE_SECRET=1x0000000000000000000000000000000AA`, ejecutar `npm run build` y `npx wrangler dev`. Los tipos del Worker (`Env`) se generan con `npm run types` desde `wrangler.jsonc`; no se escriben a mano. Los errores del Worker se ven con `npx wrangler tail` (sin datos personales en los logs).
 
 ## Verificación
 

@@ -138,7 +138,7 @@ El jardín es el espacio de las delicias y de los padecimientos, tal como figura
 -   Bachelard, Gastón. *La poética del espacio*. Trad. Ernestina de Champourcin, Argentina: FCE, 2000.
 -   Beruete, Santiago. *Jardinosofía. Una historia filosófica de los jardines*. Valencia: Turner, 2016.
 -   Budd, Malcolm. *La apreciación estética de la naturaleza*. Trad. María del Mar Rosa Martínez. Madrid: Antonio Machado, 2014.
--   Clément, Gilles. «Jardín: artificio y genio natural», [http://www.herbanova.es/pdf/conf-gilles-clement-2012.pdf](<http://www.herbanova.es/pdf/conf-gilles-clement-2012.pdf >) (22/02/21).
+-   Clément, Gilles. «Jardín: artificio y genio natural», [http://www.herbanova.es/pdf/conf-gilles-clement-2012.pdf](http://www.herbanova.es/pdf/conf-gilles-clement-2012.pdf) (22/02/21).
 -   \_\_. «Gilles Clément, jardinero». [http://www.entrejardines.uy/wp-content/uploads/2017/07/Gilles-Clement.pdf](https://www.entrejardines.uy/wp-content/uploads/2017/07/Gilles-Clement.pdf), (22/02/21)
 -   \_\_. «El hombre que domesticó la maleza», (Entrevista Patricia Ciriani). *Línea. Arquitectura, interiorismo, diseño y arte.* *Dossier*. 2014: 67-70.
 -   \_\_. «Workshop Gilles Clément: charla Gilles Clément 02», 53’: 39’’, [youtube.com/watch?v=uGz5taYqqcM](https://www.youtube.com/watch?v=uGz5taYqqcM&ab_channel=fundacionjuanadevega) (22/02/21).

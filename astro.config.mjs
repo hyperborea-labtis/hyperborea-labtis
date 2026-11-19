@@ -5,6 +5,7 @@ import path from "node:path";
 import sitemap from "@astrojs/sitemap";
 import { satteri } from "@astrojs/markdown-satteri";
 import { footnotes } from "./src/plugins/footnotes.mjs";
+import { sanitize } from "./src/plugins/sanitize.mjs";
 
 // Production domain (the current site's canonical host is www).
 const SITE = "https://www.hyperborea-labtis.org";
@@ -48,10 +49,35 @@ export default defineConfig({
   // (/es/paper/x) and one .html file per page, which Cloudflare Pages serves at
   // the extensionless URL without redirecting.
   // Footnote links (#01) lost their targets in the import; rebuilt at render time.
-  // `satteri()` is Astro's default Markdown processor; this only adds the plugin.
-  markdown: { processor: satteri({ hastPlugins: [footnotes] }) },
+  // Raw HTML in Markdown is sanitized first (scripts, handlers, javascript: URLs).
+  // `satteri()` is Astro's default Markdown processor; this only adds the plugins.
+  markdown: { processor: satteri({ hastPlugins: [sanitize, footnotes] }) },
   trailingSlash: "never",
   build: { format: "file" },
+  // Never inline assets as data: URIs (fonts included): keeps the CSP free of `data:`
+  // and the render-blocking stylesheet small; files cache on their own.
+  vite: { build: { assetsInlineLimit: 0 } },
+  // Content-Security-Policy as a <meta> on every page: Astro hashes the inline
+  // scripts/styles it emits, so no 'unsafe-inline' is needed. Pagefind's search
+  // runs WebAssembly (hence 'wasm-unsafe-eval'). frame-ancestors and the headers a
+  // <meta> cannot carry live in public/_headers. /admin has its own CSP there.
+  security: {
+    csp: {
+      algorithm: "SHA-256",
+      directives: [
+        "default-src 'self'",
+        "img-src 'self' data:",
+        "font-src 'self'",
+        "connect-src 'self' https://challenges.cloudflare.com",
+        "frame-src https://challenges.cloudflare.com",
+        "object-src 'none'",
+        "base-uri 'self'",
+        "form-action 'self'",
+      ],
+      // challenges.cloudflare.com: the Turnstile widget on the contact form.
+      scriptDirective: { resources: ["'self'", "'wasm-unsafe-eval'", "https://challenges.cloudflare.com"] },
+    },
+  },
   redirects: { "/": "/es" },
   // Three-language site: Spanish (default), English, French — matching the
   // source Drupal (/es, /en, /fr). Every locale is prefixed, like the source.

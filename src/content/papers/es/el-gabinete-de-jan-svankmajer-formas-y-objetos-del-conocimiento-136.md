@@ -203,7 +203,7 @@ Es probable que gran parte de la idea contemporánea sobre los «gabinetes», en
 
 ## Notas
 
-\[1\] Es decir: gabinetes o cámaras —habitaciones— de arte; gabinetes de tesoros; gabinetes de historia; y cámara de maravillas, respectivamente. Esta tipificación está tomada de «History of the *Wunderkammer* (cabinet of curiosities)», que formaba parte de los textos curatoriales realizados con ocasión de la exposición del artista Mark Dion, «Tate Thames Dig» (1999). [http://www.tate.org.uk/learn/online-resources/mark-dion-tate-thames-dig/wunderkammen](<http://www.tate.org.uk/learn/online-resources/mark-dion-tate-thames-dig/wunderkammen >) (02/07/17) (se respeta el orden dado por el autor del texto).  
+\[1\] Es decir: gabinetes o cámaras —habitaciones— de arte; gabinetes de tesoros; gabinetes de historia; y cámara de maravillas, respectivamente. Esta tipificación está tomada de «History of the *Wunderkammer* (cabinet of curiosities)», que formaba parte de los textos curatoriales realizados con ocasión de la exposición del artista Mark Dion, «Tate Thames Dig» (1999). [http://www.tate.org.uk/learn/online-resources/mark-dion-tate-thames-dig/wunderkammen](http://www.tate.org.uk/learn/online-resources/mark-dion-tate-thames-dig/wunderkammen) (02/07/17) (se respeta el orden dado por el autor del texto).  
 Salvo indicación contraria, las traducciones anteriores y a continuación presentes en este texto son propias.
 
 \[2\] Por ejemplo, en la reseña del libro compilado por Arthur MacGregor (2015), *The Cobbe Cabinet of Curiosities : an Anglo-Irish Country House Museum*, Dora Thornton utiliza los términos «*collection*», «*private collection*» y «*The Cobbe ark*», evocando los gabinetes de curiosidades como un fenómeno propio del siglo XVIII y del contexto de familias aristocráticas y de la alta burguesía europeas. Por ejemplo, en la presentación del Programa «*Opening the Cabinet of Curiosities*» del Victoria & Albert Museum en Londres (2017), que aborda tanto el coleccionismo privado y público, como el origen de los museos y galerías. Véase [https://www.vam.ac.uk/research/projects/opening-the-cabinet-of-curiosities#overview](https://www.vam.ac.uk/research/projects/opening-the-cabinet-of-curiosities#overview) (14/11/18)
@@ -212,7 +212,7 @@ Salvo indicación contraria, las traducciones anteriores y a continuación prese
 
 \[4\] Las imágenes pueden encontrarse en el Archivo documental de la Universidad de Estrasburgo, Francia. [http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207](http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207) (22/10/18).
 
-\[5\] Museo de Historia en Kassel, Alemania. [http://www.museumsgeschichte.uni-kassel.de/vor-dem-museum/](<http://www.museumsgeschichte.uni-kassel.de/vor-dem-museum/ >) (22/10/18).
+\[5\] Museo de Historia en Kassel, Alemania. [http://www.museumsgeschichte.uni-kassel.de/vor-dem-museum/](http://www.museumsgeschichte.uni-kassel.de/vor-dem-museum/) (22/10/18).
 
 \[6\] Imagen ampliada por el servicio digital de la Österreichische Nationalbibliothek (Biblioteca Nacional de Austria). [http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO\_%2BZ178517706](http://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ178517706) (25/10/18).
 
@@ -220,14 +220,14 @@ Salvo indicación contraria, las traducciones anteriores y a continuación prese
 
 \[8\] Véase dicho texto (cuya autoría no es recuperable en castellano) en el «Archivo» del Museo, [http://www.kunstkamera.ru/files/lib/978-5-88431-194-7/978-5-88431-194-7\_04.pdf](http://www.kunstkamera.ru/files/lib/978-5-88431-194-7/978-5-88431-194-7_04.pdf) (10/02/19).
 
-\[9\] Véase también «The Embalming Jars of Frederik Ruysch» en *The Public Domain Review*. [https://publicdomainreview.org/collections/the-embalming-jars-of-frederik-ruysch/](<https://publicdomainreview.org/collections/the-embalming-jars-of-frederik-ruysch/ >) (10/2/2019).
+\[9\] Véase también «The Embalming Jars of Frederik Ruysch» en *The Public Domain Review*. [https://publicdomainreview.org/collections/the-embalming-jars-of-frederik-ruysch/](https://publicdomainreview.org/collections/the-embalming-jars-of-frederik-ruysch/) (10/2/2019).
 
 \[10\] Acerca del arte contemporáneo y su relación con lo abyecto, lo monstruoso o mórbido, veáse *Estéticas de lo extremo* editado por Elena Oliveras (2013).
 
 ## Bibliografía
 
 -   Baratas Díaz y González Bueno «De gabinete a *science center*: 500 años de coleccionismo en Historia Natural».*Museos y colecciones de Historia Natural. Investigación, educación y difusión*. Memorias de la Real Sociedad Española de Historia Natural, Segunda época, Tomo XI, 2013.
--   Besler, Basil. *Fasciculus rariorum et aspectu dignorum varii generis*. Nuremberg: publicado por el autor, 1616. [http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207](<http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207 >) (22/10/18).
+-   Besler, Basil. *Fasciculus rariorum et aspectu dignorum varii generis*. Nuremberg: publicado por el autor, 1616. [http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207](http://docnum.u-strasbg.fr/cdm/ref/collection/coll13/id/13207) (22/10/18).
 -   Bettina Dietz & Thomas Nutz. *Curieuses. The Aesthetics of Curiosity and Elite Lifestyle in Eighteenth-Century Paris*. Munich: Ludwig-Maximilians-Universität, 2005.
 -   Blanco, Miguel Ángel. *Historias Naturales*. Museo Nacional del Prado, España, en 2014.
 -   Bleichmar, Daniela. «Looking at exótica in Baroque Collections: The object, the viewer, and the collection as a space».*The gentleman, the virtuoso, the inquirer: Vincencio Juan de Lastanosa and the Art of Collecting in Early Modern Spain* Eds. Mar Rey-Bueno y Miguel López-Pérez. Middlesex: Cambridge Scholars, 2008.
@@ -236,13 +236,13 @@ Salvo indicación contraria, las traducciones anteriores y a continuación prese
 -   DaCosta Kaufmann, T. *Arcimboldo. Visual Jokes, Natural History, and Still-Life Painting*. Chicago: U of Chicago P, 2009.
 -   De Clerq, Steven. «Museums as a mirror of society: a darwinian look at the development of museums and collection of science». 2003 UMAC Proceedings. 57–65.
 -   Ferino-Pagden, Sylvia. *Arcimboldo: 1526-1593: Nature and Fantasy*. Washington: National Gallery of Art, 2010.
--   Fernández Riquelme, Sergio. «La construcción histórica y cultural del Imperio ruso. De Pedro el Grande a Alejandro III». *La razón histórica. Revista hispanoamericana de Historia de las Ideas*. 26 (2014): 255-287. [https://www.revistalarazonhistorica.com/26-15](<https://www.revistalarazonhistorica.com/26-15 >) (15/10/18).
+-   Fernández Riquelme, Sergio. «La construcción histórica y cultural del Imperio ruso. De Pedro el Grande a Alejandro III». *La razón histórica. Revista hispanoamericana de Historia de las Ideas*. 26 (2014): 255-287. [https://www.revistalarazonhistorica.com/26-15](https://www.revistalarazonhistorica.com/26-15) (15/10/18).
 -   Ferrer Ventosa, Roger. «Como actores en el gran teatro del mundo». *Laocoonte. Revista de Estética y Teoría de las Artes*. 4 (2017). [https://ojs.uv.es/index.php/LAOCOONTE/article/view/10271](https://ojs.uv.es/index.php/LAOCOONTE/article/view/10271). (12/10/18).
 -   Imperato, Ferrante. *Historia Naturale*. Venecia: Preflo Combi & La Noù, 1672. [https://archive.org/details/bub\_gb\_KK-N2zlVJW8C/page/n7](https://archive.org/details/bub_gb_KK-N2zlVJW8C/page/n7) (15/9/18).
 -   Levinus, Vincent. *Wondertooneel der nature, geopent in eene korte beschryvinge der hoofddeelen van de byzondere zeldsaamheden daar in begrepen; in orde gebragt en bewaart*. Ámsterdam: François Halma, 1705. [https://archive.org/details/Wondertooneelde00Vinc/page/18](https://archive.org/details/Wondertooneelde00Vinc/page/18) (07/9/18).
 -   Müsch, Irmgard. «La colección de ejemplares naturales de Albertus Seba y su inventario de imágenes». *Albertus Seba Cabinet of Natural Curiosities*. Colonia: Taschen Bibliotheca Universalis, 2015.
 -   Olivera, Elena (ed.). *Estéticas de lo extremo. Nuevos paradigmas en el arte contemporáneo y sus manifestaciones latinoamericanas*. Buenos Aires: Emecé, 2013.
--   Rumphius, Georgius Everhardus. *Rumphi D‘Amboinsche rariteitkamer*. Amsterdam: François Halma, 1705. [https://archive.org/details/DAmboinscheRari00Rump/page/n7](<https://archive.org/details/DAmboinscheRari00Rump/page/n7 >) (20/10/18).
+-   Rumphius, Georgius Everhardus. *Rumphi D‘Amboinsche rariteitkamer*. Amsterdam: François Halma, 1705. [https://archive.org/details/DAmboinscheRari00Rump/page/n7](https://archive.org/details/DAmboinscheRari00Rump/page/n7) (20/10/18).
 -   Ruysch, Frederick. *Thesaurus Animalium Primus*. Ámsterdam: Joannem Wolters, 1710. [https://www.biodiversitylibrary.org/item/94885#page/111/mode/1up](https://www.biodiversitylibrary.org/item/94885#page/111/mode/1up) (10/2/2019).
 -   Seba, Albertus. *Cabinet of Natural Curiosities*. Colonia: Taschen Bibliotheca Universalis, 2015.
 -   \_\_\_. *Locupletissimi Rerum Naturalium Thesauri*. Ámsterdam: Apud J. Wetstenium, & Gul. Smith, & Janssonio-Waesbergios, 1734.

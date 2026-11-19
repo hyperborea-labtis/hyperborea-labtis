@@ -120,7 +120,7 @@ Traducción: Ana Lía Gabrieloni / Rubén Guzmán
 ## Referencia electrónica
 
 Haynes, Scott, Oliver Hockenhull y Doug Chomyn. «Manifesto/Manifiesto.»  *Hyperborea. Revista de ensayo y creación,*  no. 8, 2028, pp. 127–135. Traducción del original en *Speed,* no. 1, 1987, pp. 127–35.  
-URL: [](<https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393 >)[https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393](https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393) [](<https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393 >)  
+URL: [](https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393)[https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393](https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393) [](https://www.hyperborea-labtis.org/es/paper/manifestomanifiesto-393)  
 DOI: [https://doi.org/10.5281/zenodo.17739901](https://doi.org/10.5281/zenodo.17739901)
 
 *Imagen superior: fotograma de* Clouds*, dirigido por Fumiko Klyooka y Scott Hayens, 1985, película en 16 mm.*

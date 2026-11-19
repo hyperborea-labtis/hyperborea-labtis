@@ -77,7 +77,7 @@ Estas últimas podrían ser las preguntas que, a grandes rasgos, guían una comp
 ## Referencia electrónica
 
 Accossano Pérez, Natalia A. «“Un haz de imágenes rotas.” Reseña de *Ruinas, vestigios, restos. Hacia una definición de una estética de la degradación en la literatura y cultura inglesas*, compilado por Lucas Margarit y María Inés Castagnino.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 147–52.  
-URL: [](<https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas >)[https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas](https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas) [](<https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas >)  
+URL: [](https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas)[https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas](https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas) [](https://www.hyperborea-labtis.org/es/paper/un-haz-de-imagenes-rotas)  
 DOI: [https://doi.org/10.5281/zenodo.17664658](https://doi.org/10.5281/zenodo.17664658)
 
 * * *

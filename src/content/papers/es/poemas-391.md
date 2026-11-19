@@ -89,7 +89,7 @@ pero acaso no.
 ## Referencia electrónica
 
 Petrecca, Laura. «Poemas.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 118–24.  
-URL: [https://www.hyperborea-labtis.org/es/paper/poemas-391](https://www.hyperborea-labtis.org/es/paper/poemas-391) [](<https://www.hyperborea-labtis.org/es/paper/poemas-391 >)  
+URL: [https://www.hyperborea-labtis.org/es/paper/poemas-391](https://www.hyperborea-labtis.org/es/paper/poemas-391) [](https://www.hyperborea-labtis.org/es/paper/poemas-391)  
 DOI: [https://doi.org/10.5281/zenodo.17664612](https://doi.org/10.5281/zenodo.17664612)
 
 * * *

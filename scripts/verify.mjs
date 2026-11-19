@@ -260,6 +260,40 @@ if (OFFLINE) {
     if (missing.size) dangling.push(`${relf(f).replace("dist/", "/")}  →  ${[...missing].map((x) => "#" + x).join(" ")}`);
   }
   record("6b. In-page anchors (#fragment) in dist", dangling.length ? "warn" : "pass", `${fragTotal} #links, ${dangling.length} pages with a missing target`, dangling);
+
+  // 6c. Nothing executable may come from the content: only Astro's own module scripts
+  // (the CSP hashes them), no event-handler attributes, no javascript:/data: links, no
+  // iframe/object/embed. Also catches links whose URL starts with an encoded space
+  // (`href="%20https://…"`, from `[x](< https://…>)` in Markdown): they never work.
+  // 6d. Every real page carries the CSP <meta> (redirect stubs are exempt).
+  // Standalone pages outside BaseLayout, reviewed by hand: /admin (its own CSP lives in
+  // public/_headers; the CMS script is pinned with SRI) and the legacy search redirect
+  // (/{lang}/search/node: a fixed inline script that only reads ?keys=).
+  const EXEMPT = /^\/(admin\/index|(es|en|fr)\/search\/node)\.html$/;
+  const unsafe = [];
+  const noCsp = [];
+  for (const f of pages) {
+    const html = fs.readFileSync(f, "utf8");
+    const rel = relf(f).replace("dist/", "/");
+    if (EXEMPT.test(rel)) continue;
+    const issues = new Set();
+    for (const m of html.matchAll(/<script\b([^>]*)>/gi)) {
+      const attrs = m[1];
+      const isModule = /\btype="module"/.test(attrs);
+      const src = /\bsrc="([^"]*)"/.exec(attrs)?.[1];
+      const turnstile = src === "https://challenges.cloudflare.com/turnstile/v0/api.js"; // contact form widget
+      if (!turnstile && (!isModule || (src && !src.startsWith("/_astro/")))) issues.add(`<script${attrs.slice(0, 50)}>`);
+    }
+    for (const m of html.matchAll(/<(?!\/)[a-z][^>]*?\son[a-z]+\s*=/gi)) issues.add(`event handler in ${m[0].slice(0, 50)}`);
+    for (const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*"\s*(?:javascript|vbscript|data:text)[^"]{0,30}/gi)) issues.add(m[0].slice(0, 60));
+    for (const m of html.matchAll(/<(?:iframe|object|embed|applet)\b/gi)) issues.add(m[0]);
+    for (const m of html.matchAll(/\bhref="(?:%20|\s)[^"]{0,40}/g)) issues.add(`link with leading space: ${m[0].slice(0, 60)}`);
+    if (issues.size) unsafe.push(`${rel}  →  ${[...issues].slice(0, 3).join(" · ")}`);
+    const stub = /http-equiv="refresh"/i.test(html) && html.length < 2000;
+    if (!stub && !/http-equiv="content-security-policy"/i.test(html)) noCsp.push(rel);
+  }
+  record("6c. No unsafe HTML or broken-link patterns in dist", unsafe.length ? "fail" : "pass", `${pages.length} pages scanned, ${unsafe.length} with issues`, unsafe);
+  record("6d. CSP <meta> on every page", noCsp.length ? "fail" : "pass", `${noCsp.length} pages without it`, noCsp);
 }
 
 // ---------- 7. CMS config ----------

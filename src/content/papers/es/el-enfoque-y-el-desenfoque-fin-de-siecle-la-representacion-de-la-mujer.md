@@ -250,7 +250,7 @@ Nuestro artículo se inauguró con la afirmación de una paradoja: el advenimien
 ## Referencia electrónica
 
 Zori, Paula. «El enfoque y el desenfoque *fin-de-siècle*: la representación de la mujer entre Villiers y Charcot.» **Hyperborea. Revista de ensayo y creación,** no. 8, 2025, pp. 18–48.  
-URL: [https://www.hyperborea-labtis.org/es/paper/el-enfoque-y-el-desenfoque-fin-de-siecle-la-representacion-de-la-mujer](<https://www.hyperborea-labtis.org/es/paper/el-enfoque-y-el-desenfoque-fin-de-siecle-la-representacion-de-la-mujer >)   
+URL: [https://www.hyperborea-labtis.org/es/paper/el-enfoque-y-el-desenfoque-fin-de-siecle-la-representacion-de-la-mujer](https://www.hyperborea-labtis.org/es/paper/el-enfoque-y-el-desenfoque-fin-de-siecle-la-representacion-de-la-mujer)   
 DOI: [https://doi.org/10.5281/zenodo.17664454](https://doi.org/10.5281/zenodo.17664454)
 
 * * *

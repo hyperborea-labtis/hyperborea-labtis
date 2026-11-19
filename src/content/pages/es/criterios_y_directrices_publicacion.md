@@ -110,7 +110,7 @@ Artículo en el número especial de una revista:
 
 Recursos textuales en la internet:
 
-         Cohen, Marcel. «La sphère de Magdebourg». remue.net, 2011, [https://remue.net/La-sphere-de-Magdebourg-par-Marcel-Cohen](< https://remue.net/La-sphere-de-Magdebourg-par-Marcel-Cohen>).
+         Cohen, Marcel. «La sphère de Magdebourg». remue.net, 2011, [https://remue.net/La-sphere-de-Magdebourg-par-Marcel-Cohen](https://remue.net/La-sphere-de-Magdebourg-par-Marcel-Cohen).
 
 En las obras sin fecha de publicación en la internet, debe agregarse al final de la referencia con el DOI o URL: «Consultado el 14 de julio de 2022.»
 

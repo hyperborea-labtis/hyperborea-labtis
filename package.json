@@ -10,11 +10,14 @@
     "build": "astro build && pagefind --site dist && node scripts/build-redirects.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check",
+    "check": "astro check && npm run check:worker",
     "import": "node scripts/import-drupal.mjs",
     "import:all": "node scripts/import-drupal.mjs --all",
     "import:terms": "node scripts/import-keyword-terms.mjs",
-    "verify": "node scripts/verify.mjs"
+    "verify": "node scripts/verify.mjs",
+    "test": "node --test tests/",
+    "types": "wrangler types worker/worker-configuration.d.ts",
+    "check:worker": "npm run types --silent && tsc -p worker/tsconfig.json"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",

@@ -199,7 +199,7 @@ De esta manera, si consideramos las producciones de vampiros que suceden a *Varn
 -   Bleiler, E. F. «Introduction to the Dover Edition \[1970\]». *Varney the Vampyre or, The Feast of Blood*. Au. James Malcolm Rymer o Thomas Peckett Prest. Mineola, New York: Dover Publications, 2015.
 -   Collins, Dick. «Introduction to the Revised Edition».*The String of Pearls* Au. James Malcolm Rymer. London: Wordsworth Editions, 2010.
 -   Fischer, Ernst. *The necessity of art. A Marxist approach*. Harmondsworth, Middlesex: Penguin Books, 1971.
--   Flanders, Judith. «Penny Dreadfuls». British Library Web. [https://www.bl.uk/romantics-and-victorians/articles/penny-dreadfuls](<https://www.bl.uk/romantics-and-victorians/articles/penny-dreadfuls >) (15/02/19).
+-   Flanders, Judith. «Penny Dreadfuls». British Library Web. [https://www.bl.uk/romantics-and-victorians/articles/penny-dreadfuls](https://www.bl.uk/romantics-and-victorians/articles/penny-dreadfuls) (15/02/19).
 -   Gagnier, Regenia. «Money, the Economy and Social Class». *A Companion to the Victorian Novel*. Eds. Patrick Brantlinger y William B. Thesing. Oxford \[England\]; Malden, Mass.: Blackwell, 2013.
 -   Herr, Curt. «Introduction». *Varney, the Vampyre*. Au. James Malcolm Rymer. Crestline, California: Zittaw Press, 2008.
 -   James, Louis. *Fiction for the Working Man 1830-50: A Study of the Literature Produced for the Working Classes in Early Victorian Urban England*. Brighton: Edward Everett Root, 2017.
@@ -211,7 +211,7 @@ De esta manera, si consideramos las producciones de vampiros que suceden a *Varn
 -   Moretti, Franco. «Dialectic of Fear». *Signs taken for Wonders: Essays in the Sociology of Literary Forms*. Trad. Susan Fischer, David Forgacs y David Miller. Londres/Nueva York: Verso, 1997.
 -   Nystrom, Lisa. «Blood, Lust, and the Fe/Male Narrative in *Bram Stoker’s Dracula* (1992) and the Novel (1897)». *Draculas, Vampires, and Other Undead Forms: Essays on Gender, Race and Culture*. Eds. John Edgar Browning y Carolina Joan (Kay) Picart. Plymouth: The Scarecrow Press, 2009.
 -   Rymer, James Malcolm o Thomas Peckett Prest. *Varney the Vampyre or, The Feast of Blood*. Mineola, New York: Dover Publications, 2015.
--   Smith, Helen. *New Light on Sweeney Todd, Thomas Peckett Prest, James Malcolm Rymer and Elizabeth Caroline Grey*. London: Jarndyce, 2002. [http://www.edwardlloyd.org/resources/helen-smith.pdf](<http://www.edwardlloyd.org/resources/helen-smith.pdf >) (15/02/19).
+-   Smith, Helen. *New Light on Sweeney Todd, Thomas Peckett Prest, James Malcolm Rymer and Elizabeth Caroline Grey*. London: Jarndyce, 2002. [http://www.edwardlloyd.org/resources/helen-smith.pdf](http://www.edwardlloyd.org/resources/helen-smith.pdf) (15/02/19).
 -   Taunton, Matthew \[2014\]. «Print Culture». British Library Web. [https://www.bl.uk/romantics-and-victorians/articles/print-culture](https://www.bl.uk/romantics-and-victorians/articles/print-culture) (15/02/19).
 -   Twitchell, James B. *The Living Dead: A Study of the Vampire in Romantic Literature*. Durham: Duke University Press Books, 1981.
 -   Vest, Elizabeth y Elisabeth-Christine Muelsch. «The Role of Nosferatu in the development of Gender Identity, Sexuality and Androgyny in Vampire Film». *Crius: Angelo State Undergraduate Research Journal* 3.1 (2015).

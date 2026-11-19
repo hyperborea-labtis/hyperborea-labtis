@@ -39,7 +39,7 @@ En la **segunda jornada del ciclo**, las ideas sobre el progreso y la humanidad
 
 * * *
 
-Enlace ZOOM: [https://us02web.zoom.us/j/7763640712?pwd=ZWlZY0hHN0NxTjJDdzBjbjViLzhXZz09](< https://us02web.zoom.us/j/7763640712?pwd=ZWlZY0hHN0NxTjJDdzBjbjViLzhXZz09>)
+Enlace ZOOM: [https://us02web.zoom.us/j/7763640712?pwd=ZWlZY0hHN0NxTjJDdzBjbjViLzhXZz09](https://us02web.zoom.us/j/7763640712?pwd=ZWlZY0hHN0NxTjJDdzBjbjViLzhXZz09)
 
 ![Alliance](/sites/default/files/inline-images/alliance_logo_bariloche.png)
 
