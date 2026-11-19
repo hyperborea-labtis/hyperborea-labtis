@@ -7,8 +7,9 @@ import { satteri } from "@astrojs/markdown-satteri";
 import { footnotes } from "./src/plugins/footnotes.mjs";
 import { sanitize } from "./src/plugins/sanitize.mjs";
 
-// Production domain (the current site's canonical host is www).
-const SITE = "https://www.hyperborea-labtis.org";
+// Production domain: the apex, hyperborea-labtis.org (the old Drupal site's canonical
+// link uses it). `www` also answers there today; at launch it must 301 to the apex.
+const SITE = "https://hyperborea-labtis.org";
 
 // Dev-server helpers (neither runs in the build nor in production):
 // - `astro dev` serves public/admin/index.html at /admin/index.html but 404s on
