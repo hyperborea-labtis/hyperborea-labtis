@@ -6,6 +6,7 @@ import Pager from "./Pager.astro";
 import type { Locale } from "../i18n/config";
 import type { Section } from "../data/nav";
 import { papersInSection, papersInSectionNewestFirst, paginate } from "../lib/content";
+import { sectionDescription, pageSuffix, withPage } from "../lib/descriptions";
 
 interface Props {
   lang: Locale;
@@ -17,15 +18,21 @@ interface Props {
 const { lang, section, page = 1 } = Astro.props;
 // Most sections show the current issue only. `allIssues` sections (Afinidades
 // electivas) show everything, newest first, paginated.
-const paged = section.allIssues
-  ? paginate(await papersInSectionNewestFirst(lang, section.label), page)
-  : undefined;
-const papers = paged ? paged.items : await papersInSection(lang, section.label);
+const all = section.allIssues
+  ? await papersInSectionNewestFirst(lang, section.label)
+  : await papersInSection(lang, section.label);
+const paged = section.allIssues ? paginate(all, page) : undefined;
+const papers = paged ? paged.items : all;
 const base = `/${lang}/${section.path}`;
 const path = page === 1 ? `/${section.path}` : `/${section.path}/${page}`;
 ---
 
-<BaseLayout title={`${section.label} | Hyperborea`} lang={lang} path={path}>
+<BaseLayout
+  title={page === 1 ? section.label : `${section.label} — ${pageSuffix(lang, page)}`}
+  description={withPage(sectionDescription(lang, { label: section.label, count: all.length }), lang, page)}
+  lang={lang}
+  path={path}
+>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={section.label} />

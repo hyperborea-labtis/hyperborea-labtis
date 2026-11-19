@@ -9,6 +9,8 @@ import Footer from "../components/Footer.astro";
 import { locales, type Locale } from "../i18n/config";
 import { absoluteUrl, ogLocale, resolveHead } from "../lib/seo";
 import { INDEXABLE } from "../lib/indexing";
+import { pageTitle, tidy } from "../lib/meta-text";
+import { siteDescription } from "../lib/descriptions";
 
 interface Props {
   title: string;
@@ -24,29 +26,38 @@ interface Props {
   alternates?: readonly Locale[];
   /** Keep the page out of search results (search, 404…). */
   noindex?: boolean;
+  /** Locale-relative path of the page this one duplicates: canonical points there, this page is noindex. */
+  canonicalPath?: string;
   /** Emit no canonical, hreflang or og:url (the 404 page has no address of its own). */
   canonical?: boolean;
   /** Social image: a site-relative path such as a paper's hero image. Default: the logo card. */
   image?: string;
   ogType?: "website" | "article";
+  /** Append " | Hyperborea" to `title` (when it stays short). Off for the home page, whose title is the brand. */
+  brand?: boolean;
 }
 
 const {
   title,
-  description = "Hyperborea — Revista de Ensayo y Creación.",
+  description,
   lang,
   path = "",
   footerVariant = "minimal",
   contentLang,
   alternates,
   noindex = false,
+  canonicalPath,
   canonical = true,
   image,
   ogType = "website",
+  brand = true,
 } = Astro.props;
+const metaDescription = description ?? siteDescription(lang);
+const cleanTitle = tidy(title);
+const fullTitle = brand ? pageTitle(cleanTitle) : cleanTitle;
 
 const site = Astro.site!;
-const head = resolveHead({ lang, path, site, locales, indexable: INDEXABLE, contentLang, alternates, noindex });
+const head = resolveHead({ lang, path, site, locales, indexable: INDEXABLE, contentLang, alternates, noindex, canonicalPath });
 const imageUrl = absoluteUrl(image || "/og-default.png", site);
 const otherLocales = head.hreflang
   .filter((h) => h.hreflang !== "x-default" && h.hreflang !== lang)
@@ -58,23 +69,23 @@ const otherLocales = head.hreflang
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={metaDescription} />
     <meta name="robots" content={head.robots} />
     {canonical && <link rel="canonical" href={head.canonical} />}
     {canonical && head.hreflang.map((h) => <link rel="alternate" hreflang={h.hreflang} href={h.href} />)}
 
     <meta property="og:site_name" content="Hyperborea" />
     <meta property="og:type" content={ogType} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={metaDescription} />
     {canonical && <meta property="og:url" content={head.canonical} />}
     <meta property="og:image" content={imageUrl} />
     <meta property="og:locale" content={ogLocale(lang)} />
     {otherLocales.map((l) => <meta property="og:locale:alternate" content={l} />)}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={imageUrl} />
 
     <meta name="theme-color" content="#000000" />

@@ -434,7 +434,8 @@ if (OFFLINE) {
   const sitemapUrls = fs.existsSync(sitemapFile) ? [...read(sitemapFile).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]) : [];
   const origin = sitemapUrls.length ? new URL(sitemapUrls[0]).origin : "";
 
-  /** @type {Map<string, { robots: string | undefined, canonicals: string[], hreflang: Map<string, string> }>} */
+  const decode = (t) => t.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+  /** @type {Map<string, { robots: string | undefined, canonicals: string[], title: string, description: string, hreflang: Map<string, string> }>} */
   const info = new Map();
   for (const f of walk(DIST, (x) => x.endsWith(".html"))) {
     const rel = "/" + path.relative(DIST, f).split(path.sep).join("/");
@@ -445,6 +446,8 @@ if (OFFLINE) {
     info.set(rel.replace(/\.html$/, ""), {
       robots: /<meta name="robots" content="([^"]*)"/.exec(html)?.[1],
       canonicals: [...html.matchAll(/<link rel="canonical" href="([^"]*)"/g)].map((m) => m[1]),
+      title: decode(/<title>([^<]*)<\/title>/.exec(html)?.[1] ?? ""),
+      description: decode(/<meta name="description" content="([^"]*)"/.exec(html)?.[1] ?? ""),
       hreflang: new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]])),
     });
   }
@@ -503,6 +506,25 @@ if (OFFLINE) {
     if (indexable && /noindex/.test(p.robots ?? "")) add(`sitemap: ${pth} is noindex`);
   }
   record("10. SEO head (canonical, robots, hreflang, sitemap)", problems.length ? "fail" : "pass", `${info.size} pages, ${sitemapUrls.length} sitemap URLs, ${problems.length} problems`, problems);
+  // 11. Titles and descriptions: present, sized for search results, and not repeated between
+  // pages that are their own canonical (an untranslated /en copy legitimately repeats /es).
+  const meta = [];
+  const dupTitle = new Map();
+  const dupDesc = new Map();
+  for (const [url, p] of info) {
+    if (!p.title.trim()) meta.push(`${url}: empty <title>`);
+    if (!p.description.trim()) meta.push(`${url}: no meta description`);
+    else if (p.description.length < 40 || p.description.length > 170) meta.push(`${url}: description is ${p.description.length} characters (40–170)`);
+    if (p.canonicals[0] !== `${origin}${url}`) continue; // not its own canonical
+    const lang = url.split("/")[1].replace(".html", "");
+    for (const [key, map] of [[p.title, dupTitle], [p.description, dupDesc]]) {
+      const k = `${lang}|${key}`;
+      map.set(k, [...(map.get(k) ?? []), url]);
+    }
+  }
+  const dups = (map, what) => [...map.values()].filter((u) => u.length > 1).map((u) => `${what} repeated: ${u.slice(0, 3).join(" , ")}${u.length > 3 ? ` (+${u.length - 3})` : ""}`);
+  meta.push(...dups(dupTitle, "title"), ...dups(dupDesc, "description"));
+  record("11. Titles and meta descriptions", meta.length ? "fail" : "pass", `${info.size} pages, ${meta.length} problems`, meta);
   record(
     "10b. Indexing mode",
     indexable ? "pass" : "warn",

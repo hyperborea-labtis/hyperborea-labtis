@@ -10,6 +10,7 @@ import SectionPage from "../../components/SectionPage.astro";
 import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ALL_SECTIONS } from "../../data/nav";
 import { pagesForLocale, pageBySlug, contentLangOf, realLocales } from "../../lib/content";
+import { textDescription } from "../../lib/descriptions";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -39,7 +40,8 @@ const alternates = page ? ((await realLocales("pages")).get(slug) ?? [contentLan
 {
   page && Content && (
     <BaseLayout
-      title={`${page.data.title} | Hyperborea`}
+      title={page.data.title}
+      description={textDescription(lang, { body: page.body ?? "", title: page.data.title })}
       lang={lang}
       path={`/${slug}`}
       contentLang={contentLang}

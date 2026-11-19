@@ -3,7 +3,8 @@ import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../i18n/config";
-import { ISSUE_NUMBERS, issueTitle } from "../../data/issues";
+import { ISSUE_NUMBERS, ISSUE_YEARS, issueTitle } from "../../data/issues";
+import { issueDescription } from "../../lib/descriptions";
 import { papersInIssue } from "../../lib/content";
 import { splitAuthor } from "../../lib/author";
 
@@ -20,7 +21,13 @@ const papers = await papersInIssue(lang, n);
 const pad = String(n).padStart(2, "0");
 ---
 
-<BaseLayout title={`${title} | Hyperborea`} lang={lang} path={`/numero-${n}`}>
+<BaseLayout
+  title={title}
+  brand={false}
+  description={issueDescription(lang, { n, year: ISSUE_YEARS[n]!, count: papers.length })}
+  lang={lang}
+  path={`/numero-${n}`}
+>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={title} />

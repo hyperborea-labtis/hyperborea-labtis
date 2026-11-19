@@ -9,8 +9,9 @@ import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../../components/PageTitle.astro";
 import PaperCard from "../../../../components/PaperCard.astro";
 import { locales, type Locale } from "../../../../i18n/config";
-import { papersWithKeyword } from "../../../../lib/content";
-import { keywordPages } from "../../../../lib/keywords";
+import { papersWithKeyword, norm } from "../../../../lib/content";
+import { keywordPages, termIdByName } from "../../../../lib/keywords";
+import { keywordDescription, keywordTitle } from "../../../../lib/descriptions";
 
 export const getStaticPaths = (async () => {
   return locales.flatMap((lang) =>
@@ -22,10 +23,14 @@ const lang = Astro.params.lang as Locale;
 const { tid } = Astro.params;
 const { name } = Astro.props;
 const papers = await papersWithKeyword(lang, name);
+// Merged Drupal ids (`alsoTids`) keep their URLs but duplicate the primary term's page.
+const primaryId = termIdByName.get(norm(name)) ?? tid;
 ---
 
 <BaseLayout
-  title={`${name} | Hyperborea`}
+  title={keywordTitle(lang, name)}
+  canonicalPath={`/taxonomy/term/${primaryId}`}
+  description={keywordDescription(lang, { name, count: papers.length })}
   lang={lang}
   path={`/taxonomy/term/${tid}`}
   contentLang="es"

@@ -81,3 +81,19 @@ test("isIndexableBuild: only an explicit PUBLIC_INDEXABLE=true on main (or outsi
   assert.equal(isIndexableBuild({ PUBLIC_INDEXABLE: "true", WORKERS_CI_BRANCH: "main" }), true);
   assert.equal(isIndexableBuild({ PUBLIC_INDEXABLE: "true", WORKERS_CI_BRANCH: "feat/x" }), false);
 });
+
+test("a duplicate page (same content as another URL): canonical to the primary, noindex, no hreflang", () => {
+  const h = resolveHead({ ...base, lang: "es", path: "/taxonomy/term/59", canonicalPath: "/taxonomy/term/334", contentLang: "es", alternates: ["es"] });
+  assert.equal(h.canonical, "https://hyperborea-labtis.org/es/taxonomy/term/334");
+  assert.equal(h.robots, "noindex, follow");
+  assert.deepEqual(h.hreflang, []);
+  // the primary itself is a normal page
+  const primary = resolveHead({ ...base, lang: "es", path: "/taxonomy/term/334", canonicalPath: "/taxonomy/term/334", contentLang: "es", alternates: ["es"] });
+  assert.equal(primary.canonical, "https://hyperborea-labtis.org/es/taxonomy/term/334");
+  assert.match(primary.robots, /^index/);
+});
+
+test("a duplicate under /en points at the primary in Spanish", () => {
+  const h = resolveHead({ ...base, lang: "en", path: "/taxonomy/term/59", canonicalPath: "/taxonomy/term/334", contentLang: "es", alternates: ["es"] });
+  assert.equal(h.canonical, "https://hyperborea-labtis.org/es/taxonomy/term/334");
+});
