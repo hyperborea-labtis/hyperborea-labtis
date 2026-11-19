@@ -38,5 +38,10 @@ jobs:
         run: npm test
       # `verify` runs astro check, the full build and every content/link check.
       # --offline skips the comparison against the live Drupal site.
+      # PUBLIC_INDEXABLE=true builds the way production does (robots.txt allowing crawlers,
+      # indexable pages), so the SEO checks validate the real thing. A local `npm run verify`
+      # uses the safe default (noindex everywhere) and reports it as a warning.
       - name: Verify (check + build + content checks)
         run: npm run verify -- --offline
+        env:
+          PUBLIC_INDEXABLE: "true"

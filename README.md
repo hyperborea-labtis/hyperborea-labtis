@@ -56,6 +56,13 @@ El sitio es un Worker (`wrangler.jsonc`): sirve `dist/` como archivos estáticos
 - Límites: 25 MiB por archivo (el mayor hoy: 14 MB), 20 000 archivos (hoy ~5400) y 2000 redirecciones (hoy ~1150).
 - Dominio: `hyperborea-labtis.org` (sin `www`) es el principal, el mismo que usa el canonical del sitio antiguo; `www.hyperborea-labtis.org` debe redirigir (301) a él. Para asignar un dominio propio al Worker, el DNS de ese dominio debe estar en Cloudflare.
 
+### Indexación y SEO (`<head>`)
+
+- **Interruptor:** la variable de build `PUBLIC_INDEXABLE` decide si el sitio se indexa. Sin ella (por defecto) **todas las páginas son `noindex, nofollow` y `robots.txt` deshabilita todo**: es lo correcto para el dominio de desarrollo (`workers.dev`) y las vistas previas. **Al lanzar hay que poner `PUBLIC_INDEXABLE=true` en Workers Builds → Settings → Build → Variables** (solo la rama `main` se indexa; las vistas previas de otras ramas quedan `noindex` aunque la variable exista). `npm run verify` avisa (check 10b) cuando el build no es indexable.
+- **Canonical y hreflang** salen de `src/lib/seo.ts` (con tests) y los emite `BaseLayout.astro`: siempre URLs absolutas con el dominio `hyperborea-labtis.org`. Las páginas con texto propio en su idioma se indexan y enlazan solo las traducciones **reales** (hreflang). Una copia sin traducir (texto en español bajo `/en` o `/fr`) lleva `canonical` a la página `/es`, `noindex, follow` y no aparece en el sitemap; al agregar la traducción real se indexa sola. Las páginas de palabras clave se indexan solo en `/es`; el buscador y el 404 son `noindex`.
+- **Sitemap** (`sitemap-index.xml`): solo páginas indexables. `robots.txt` lo genera `src/pages/robots.txt.ts`.
+- **Iconos e imagen social** (`favicon.ico`, `apple-touch-icon.png`, `og-default.png`) son **provisionales**: se derivan del único logo disponible (GIF de 300×80). Cuando llegue el logo vectorial, reemplazar la fuente y ejecutar `node scripts/build-brand-assets.mjs`. Las páginas con imagen propia (papers, actividades) usan esa imagen en `og:image`.
+
 ### Formulario de contacto (`/es/contact`)
 
 `worker/index.ts` envía el correo con Cloudflare Email Service (binding `send_email` llamado `EMAIL`, ya declarado en `wrangler.jsonc`) y lo protege con **Cloudflare Turnstile**, un límite de **5 envíos por minuto por IP** (binding `CONTACT_LIMITER`), verificación de `Origin` (solo el propio sitio), tope de 16 KB y honeypot. El destinatario es siempre `CONTACT_TO`; nada del formulario lo controla. Para activarlo:

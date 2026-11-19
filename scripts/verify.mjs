@@ -425,6 +425,91 @@ if (OFFLINE) {
   );
 }
 
+// ---------- 10. SEO head: canonical, robots, hreflang, sitemap ----------
+{
+  const read = (f) => fs.readFileSync(f, "utf8");
+  const robotsTxt = fs.existsSync(path.join(DIST, "robots.txt")) ? read(path.join(DIST, "robots.txt")) : "";
+  const indexable = /^Allow:\s*\//m.test(robotsTxt);
+  const sitemapFile = path.join(DIST, "sitemap-0.xml");
+  const sitemapUrls = fs.existsSync(sitemapFile) ? [...read(sitemapFile).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]) : [];
+  const origin = sitemapUrls.length ? new URL(sitemapUrls[0]).origin : "";
+
+  /** @type {Map<string, { robots: string | undefined, canonicals: string[], hreflang: Map<string, string> }>} */
+  const info = new Map();
+  for (const f of walk(DIST, (x) => x.endsWith(".html"))) {
+    const rel = "/" + path.relative(DIST, f).split(path.sep).join("/");
+    // the three homes are dist/es.html, dist/en.html and dist/fr.html (build.format "file")
+    if (!/^\/(es|en|fr)(\/|\.html$)/.test(rel) || /^\/(es|en|fr)\/search\/node\.html$/.test(rel)) continue;
+    const html = read(f);
+    if (/http-equiv="refresh"/i.test(html) && html.length < 2000) continue; // redirect stub
+    info.set(rel.replace(/\.html$/, ""), {
+      robots: /<meta name="robots" content="([^"]*)"/.exec(html)?.[1],
+      canonicals: [...html.matchAll(/<link rel="canonical" href="([^"]*)"/g)].map((m) => m[1]),
+      hreflang: new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]])),
+    });
+  }
+
+  const problems = [];
+  const add = (msg) => problems.push(msg);
+
+  // a. every page: one absolute canonical on the site's origin, and a robots meta that matches the build mode
+  for (const [url, p] of info) {
+    if (p.canonicals.length !== 1) add(`${url}: ${p.canonicals.length} canonical links (expected 1)`);
+    else if (!p.canonicals[0].startsWith("https://") || new URL(p.canonicals[0]).origin !== origin) add(`${url}: canonical "${p.canonicals[0]}" is not absolute on ${origin}`);
+    if (!p.robots) add(`${url}: no robots meta`);
+    else if (indexable && /nofollow/.test(p.robots)) add(`${url}: noindex,nofollow in an indexable build`);
+    else if (!indexable && !/noindex/.test(p.robots)) add(`${url}: indexable page in a non-indexable build`);
+  }
+
+  // b. untranslated copies (Spanish text under /en or /fr): canonical to /es and noindex; real translations stand alone
+  const routeSeg = { papers: "paper", articles: "actividad", pages: "" };
+  const has = new Set(entries.filter((e) => e.data && !e.data.draft).map((e) => `${e.col}|${e.locale}|${e.data.slug}`));
+  for (const e of entries) {
+    if (!e.data || e.data.draft || e.locale !== "es") continue;
+    const seg = routeSeg[e.col] ? `/${routeSeg[e.col]}` : "";
+    for (const L of ["en", "fr"]) {
+      const url = `/${L}${seg}/${e.data.slug}`;
+      const p = info.get(url);
+      if (!p) continue;
+      const real = has.has(`${e.col}|${L}|${e.data.slug}`);
+      const self = `${origin}${url}`;
+      const esUrl = `${origin}/es${seg}/${e.data.slug}`;
+      if (real && p.canonicals[0] !== self) add(`${url}: translated page whose canonical is not itself`);
+      if (!real && p.canonicals[0] !== esUrl) add(`${url}: untranslated copy must have canonical ${esUrl}`);
+      if (!real && indexable && !/^noindex/.test(p.robots ?? "")) add(`${url}: untranslated copy must be noindex`);
+      if (!real && p.hreflang.size) add(`${url}: untranslated copy must not list hreflang`);
+    }
+  }
+
+  // c. hreflang: absolute, x-default present, every target is a built page that links back
+  for (const [url, p] of info) {
+    if (!p.hreflang.size) continue;
+    if (!p.hreflang.has("x-default")) add(`${url}: hreflang without x-default`);
+    for (const [lang, href] of p.hreflang) {
+      if (!href.startsWith("https://")) { add(`${url}: hreflang ${lang} is not absolute (${href})`); continue; }
+      const target = info.get(new URL(href).pathname);
+      if (!target) add(`${url}: hreflang ${lang} → ${href} is not a built page`);
+      else if (lang !== "x-default" && !target.hreflang.size) add(`${url}: hreflang ${lang} → ${new URL(href).pathname} lists no hreflang back`);
+      else if (lang !== "x-default" && ![...target.hreflang.values()].includes(`${origin}${url}`)) add(`${url}: ${new URL(href).pathname} does not link back`);
+    }
+  }
+
+  // d. the sitemap lists only pages that exist, are not untranslated copies and (in an indexable build) are not noindex
+  for (const u of sitemapUrls) {
+    const pth = new URL(u).pathname;
+    const p = info.get(pth);
+    if (!p) { add(`sitemap: ${pth} is not a built page`); continue; }
+    if (p.canonicals[0] !== u) add(`sitemap: ${pth} is not its own canonical (${p.canonicals[0]})`);
+    if (indexable && /noindex/.test(p.robots ?? "")) add(`sitemap: ${pth} is noindex`);
+  }
+  record("10. SEO head (canonical, robots, hreflang, sitemap)", problems.length ? "fail" : "pass", `${info.size} pages, ${sitemapUrls.length} sitemap URLs, ${problems.length} problems`, problems);
+  record(
+    "10b. Indexing mode",
+    indexable ? "pass" : "warn",
+    indexable ? "indexable build (PUBLIC_INDEXABLE=true): robots.txt allows crawling" : "NOT indexable (default: dev/preview): every page is noindex and robots.txt disallows all. Production must set PUBLIC_INDEXABLE=true",
+  );
+}
+
 // ---------- summary ----------
 const fails = results.filter((r) => r.status === "fail").length;
 const warns = results.filter((r) => r.status === "warn").length;

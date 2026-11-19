@@ -4,7 +4,7 @@ import { render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
-import { articlesForLocale, articleBySlug } from "../../../lib/content";
+import { articlesForLocale, articleBySlug, contentLangOf, realLocales } from "../../../lib/content";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -24,9 +24,19 @@ const article = await articleBySlug(lang, slug);
 if (!article) return Astro.redirect(`/${lang}`);
 const { Content } = await render(article);
 const d = article.data;
+const contentLang = contentLangOf(article);
+const alternates = (await realLocales("articles")).get(slug) ?? [contentLang];
 ---
 
-<BaseLayout title={`${d.title} | Hyperborea`} lang={lang} path={`/actividad/${slug}`}>
+<BaseLayout
+  title={`${d.title} | Hyperborea`}
+  lang={lang}
+  path={`/actividad/${slug}`}
+  contentLang={contentLang}
+  alternates={alternates}
+  ogType="article"
+  image={d.heroImage}
+>
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>
       <meta data-pagefind-filter="tipo[content]" content={t("search.type.activity")} />

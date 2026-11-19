@@ -24,7 +24,13 @@ const { name } = Astro.props;
 const papers = await papersWithKeyword(lang, name);
 ---
 
-<BaseLayout title={`${name} | Hyperborea`} lang={lang} path={`/taxonomy/term/${tid}`}>
+<BaseLayout
+  title={`${name} | Hyperborea`}
+  lang={lang}
+  path={`/taxonomy/term/${tid}`}
+  contentLang="es"
+  alternates={["es"]}
+>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={name} />

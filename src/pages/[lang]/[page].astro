@@ -9,7 +9,7 @@ import PageTitle from "../../components/PageTitle.astro";
 import SectionPage from "../../components/SectionPage.astro";
 import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ALL_SECTIONS } from "../../data/nav";
-import { pagesForLocale, pageBySlug } from "../../lib/content";
+import { pagesForLocale, pageBySlug, contentLangOf, realLocales } from "../../lib/content";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -31,12 +31,20 @@ const section = ALL_SECTIONS.find((s) => s.path === slug);
 const page = section ? undefined : await pageBySlug(lang, slug);
 if (!section && !page) return Astro.redirect(`/${lang}`);
 const Content = page ? (await render(page)).Content : undefined;
+const contentLang = page ? contentLangOf(page) : lang;
+const alternates = page ? ((await realLocales("pages")).get(slug) ?? [contentLang]) : locales;
 ---
 
 {section && <SectionPage lang={lang} section={section} />}
 {
   page && Content && (
-    <BaseLayout title={`${page.data.title} | Hyperborea`} lang={lang} path={`/${slug}`}>
+    <BaseLayout
+      title={`${page.data.title} | Hyperborea`}
+      lang={lang}
+      path={`/${slug}`}
+      contentLang={contentLang}
+      alternates={alternates}
+    >
       <div class="hb-main">
         <div class="hb-container" data-pagefind-body>
           <meta data-pagefind-filter="tipo[content]" content={t("search.type.page")} />
