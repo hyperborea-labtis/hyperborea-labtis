@@ -43,6 +43,37 @@ const devServerExtras = {
   },
 };
 
+// Slugs that REALLY exist in each language (own text, not the Spanish fallback). The
+// untranslated /en and /fr copies are noindex (see src/lib/seo.ts), so they must stay out of
+// the sitemap. Read from the frontmatter of src/content/<collection>/<lang>/*.md.
+/** @type {Record<string, Record<string, Set<string>>>} */
+const REAL = {};
+for (const collection of ["papers", "articles", "pages"]) {
+  REAL[collection] = {};
+  for (const lang of ["es", "en", "fr"]) {
+    const dir = path.join("src", "content", collection, lang);
+    REAL[collection][lang] = new Set();
+    if (!fs.existsSync(dir)) continue;
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".md")) continue;
+      const head = fs.readFileSync(path.join(dir, f), "utf8").slice(0, 3000);
+      const slug = /^slug:\s*"?([^"\n]+?)"?\s*$/m.exec(head)?.[1];
+      REAL[collection][lang].add(slug ?? f.replace(/\.md$/, ""));
+    }
+  }
+}
+const PAGE_SLUGS = new Set(Object.values(REAL.pages).flatMap((s) => [...s]));
+
+/** @param {string} pathname */
+function inSitemap(pathname) {
+  if (pathname.includes("/taxonomy/term/") || pathname.endsWith("/buscar") || pathname.includes("/search/")) return false;
+  const m = /^\/(en|fr)\/(paper|actividad)\/([^/]+)$/.exec(pathname);
+  if (m) return REAL[m[2] === "paper" ? "papers" : "articles"][m[1]].has(m[3]);
+  const p = /^\/(en|fr)\/([^/]+)$/.exec(pathname);
+  if (p && PAGE_SLUGS.has(p[2])) return REAL.pages[p[1]].has(p[2]);
+  return true;
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
@@ -93,12 +124,10 @@ export default defineConfig({
   integrations: [
     devServerExtras,
     sitemap({
-      // Keyword pages keep their old URLs but were never in the old sitemap.
-      filter: (page) => !page.includes("/taxonomy/term/"),
-      i18n: {
-        defaultLocale: "es",
-        locales: { es: "es", en: "en", fr: "fr" },
-      },
+      // Only indexable pages: no keyword pages, search, redirect stubs or untranslated
+      // copies. No `i18n` option: it would cross-link every URL in three languages, but
+      // only real translations may be alternates (hreflang is emitted in <head>).
+      filter: (page) => inSitemap(new URL(page).pathname),
     }),
   ],
 });

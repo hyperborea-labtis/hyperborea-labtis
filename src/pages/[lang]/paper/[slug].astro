@@ -6,7 +6,7 @@ import PageTitle from "../../../components/PageTitle.astro";
 import PaperMeta from "../../../components/PaperMeta.astro";
 import LicenseNotice from "../../../components/LicenseNotice.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
-import { papersForLocale, paperBySlug, norm } from "../../../lib/content";
+import { papersForLocale, paperBySlug, norm, contentLangOf, realLocales } from "../../../lib/content";
 import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
 import { splitAuthor, noteAnchor } from "../../../lib/author";
@@ -29,6 +29,8 @@ const paper = await paperBySlug(lang, slug);
 if (!paper) return Astro.redirect(`/${lang}`);
 const { Content } = await render(paper);
 const d = paper.data;
+const contentLang = contentLangOf(paper);
+const alternates = (await realLocales("papers")).get(slug) ?? [contentLang];
 const authorParts = splitAuthor(d.author ?? "");
 
 // Category (section) and keywords shown after the article, like the old site:
@@ -42,6 +44,10 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
   description={d.abstract?.slice(0, 180)}
   lang={lang}
   path={`/paper/${slug}`}
+  contentLang={contentLang}
+  alternates={alternates}
+  ogType="article"
+  image={d.heroImage}
 >
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>

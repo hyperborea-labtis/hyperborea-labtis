@@ -43,6 +43,32 @@ function pickByLocale<T extends Paper | Article | Page>(entries: T[], locale: Lo
   return [...bySlug.values()];
 }
 
+/** Language of the text of an entry (its locale folder or `lang` field). Different from the
+ * URL's language when the page is the Spanish fallback of an untranslated entry. */
+export const contentLangOf = (entry: Paper | Article | Page): Locale => langOf(entry);
+
+const realLocalesCache = new Map<string, Promise<Map<string, Locale[]>>>();
+
+/** For every slug of a collection, the languages in which it REALLY exists (own text, not
+ * the Spanish fallback). Drives hreflang: only real translations are listed. */
+export function realLocales(collection: "papers" | "articles" | "pages"): Promise<Map<string, Locale[]>> {
+  let cached = realLocalesCache.get(collection);
+  if (!cached) {
+    cached = getCollection(collection, (e) => !e.data.draft).then((entries) => {
+      const bySlug = new Map<string, Locale[]>();
+      for (const e of entries) {
+        const found = bySlug.get(e.data.slug) ?? [];
+        const lang = langOf(e);
+        if (!found.includes(lang)) found.push(lang);
+        bySlug.set(e.data.slug, found);
+      }
+      return bySlug;
+    });
+    realLocalesCache.set(collection, cached);
+  }
+  return cached;
+}
+
 export async function papersForLocale(locale: Locale): Promise<Paper[]> {
   const papers = await getCollection("papers", (e) => !e.data.draft);
   return pickByLocale(papers, locale).sort(newestFirst);
