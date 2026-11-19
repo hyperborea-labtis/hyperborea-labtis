@@ -15,7 +15,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const OUT = path.join(ROOT, "scripts", "legacy-urls.txt");
-const ORIGIN = "https://www.hyperborea-labtis.org";
+const ORIGIN = "https://hyperborea-labtis.org";
 const LOCALES = ["es", "en", "fr"];
 
 const urls = new Set();

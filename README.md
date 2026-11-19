@@ -54,7 +54,7 @@ El sitio es un Worker (`wrangler.jsonc`): sirve `dist/` como archivos estáticos
 - **Deploy command:** `npx wrangler deploy`.
 - Rama de producción `main`. Cada PR genera una vista previa.
 - Límites: 25 MiB por archivo (el mayor hoy: 14 MB), 20 000 archivos (hoy ~5400) y 2000 redirecciones (hoy ~1150).
-- Dominio: `www.hyperborea-labtis.org` como principal; el dominio sin `www` debe redirigir a `www`. Para asignar un dominio propio al Worker, el DNS de ese dominio debe estar en Cloudflare.
+- Dominio: `hyperborea-labtis.org` (sin `www`) es el principal, el mismo que usa el canonical del sitio antiguo; `www.hyperborea-labtis.org` debe redirigir (301) a él. Para asignar un dominio propio al Worker, el DNS de ese dominio debe estar en Cloudflare.
 
 ### Formulario de contacto (`/es/contact`)
 

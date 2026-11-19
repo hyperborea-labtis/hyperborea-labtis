@@ -4,4 +4,4 @@
 Contact: mailto:admin@microagencia.com
 Expires: 2027-11-18T00:00:00.000Z
 Preferred-Languages: es, en
-Canonical: https://www.hyperborea-labtis.org/.well-known/security.txt
+Canonical: https://hyperborea-labtis.org/.well-known/security.txt
