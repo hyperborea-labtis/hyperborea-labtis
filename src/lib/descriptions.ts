@@ -27,6 +27,12 @@ export const keywordTitle = (lang: Locale, name: string): string => `${KEYWORD_W
 export const withPage = (description: string, lang: Locale, page: number): string =>
   page === 1 ? description : `${description} (${pageSuffix(lang, page)})`;
 
+const HOME_WORD = L("Inicio", "Home", "Accueil");
+export const homeWord = (lang: Locale): string => HOME_WORD[lang];
+
+const ACTIVITIES_TITLE = L("Actividades culturales y académicas", "Cultural and academic activities", "Activités culturelles et académiques");
+export const activitiesTitle = (lang: Locale): string => ACTIVITIES_TITLE[lang];
+
 export function issueDescription(lang: Locale, { n, year, count }: { n: number; year: number; count: number }): string {
   return L(
     `Índice del número ${n} (${year}) de Hyperborea: ${count} ${count === 1 ? "artículo" : "artículos"} de ensayo y creación sobre literatura, arte y cine.`,

@@ -11,6 +11,12 @@ import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
 import { splitAuthor, noteAnchor } from "../../../lib/author";
 import { paperDescription } from "../../../lib/descriptions";
+import { JOURNAL } from "../../../data/journal";
+import { ISSUE_YEARS, issueTitle } from "../../../data/issues";
+import { parseAuthors, scholarDate, isoDate, scholarTags } from "../../../lib/scholar";
+import { articleNode, issueNode, organizationNode, periodicalNode } from "../../../lib/jsonld";
+import { absoluteUrl } from "../../../lib/seo";
+import { plainText } from "../../../lib/meta-text";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -34,6 +40,47 @@ const contentLang = contentLangOf(paper);
 const alternates = (await realLocales("papers")).get(slug) ?? [contentLang];
 const authorParts = splitAuthor(d.author ?? "");
 
+// Scholarly metadata (Google Scholar citation_* tags) and schema.org JSON-LD. BaseLayout emits
+// both only on indexable pages, so untranslated /en and /fr copies carry neither.
+const site = Astro.site!.href;
+const paperUrl = absoluteUrl(`/${lang}/paper/${slug}`, site);
+const issueYear = d.issue !== undefined ? ISSUE_YEARS[d.issue] : undefined;
+const authors = parseAuthors(d.author);
+const pdfUrl = d.pdf ? absoluteUrl(d.pdf, site) : undefined;
+const scholar = scholarTags({
+  title: d.title.replace(/\s+/g, " ").trim(),
+  authors,
+  institution: d.affiliation,
+  date: scholarDate(d.publishedDate, issueYear),
+  journal: JOURNAL.name,
+  issn: JOURNAL.issn,
+  volume: d.issue,
+  language: contentLang,
+  keywords: d.keywords,
+  abstractUrl: paperUrl,
+  pdfUrl,
+  publisher: JOURNAL.publisher.name,
+});
+const issue = d.issue !== undefined && issueYear
+  ? issueNode(site, { lang, n: d.issue, year: issueYear, title: issueTitle(d.issue) })
+  : undefined;
+const jsonLd = issue
+  ? [
+      articleNode(site, {
+        lang: contentLang, url: paperUrl, title: d.title.replace(/\s+/g, " ").trim(), authors, institution: d.affiliation,
+        date: isoDate(d.publishedDate, issueYear), keywords: d.keywords, abstract: d.abstract ? plainText(d.abstract) : undefined,
+        section: d.section, image: d.heroImage ? absoluteUrl(d.heroImage, site) : undefined, pdfUrl, issue,
+      }),
+      issue,
+      periodicalNode(site),
+      organizationNode(site),
+    ]
+  : [];
+const breadcrumbs = [
+  ...(d.issue !== undefined && issueYear ? [{ name: issueTitle(d.issue), path: `/numero-${d.issue}` }] : []),
+  { name: d.title.replace(/\s+/g, " ").trim(), path: `/paper/${slug}` },
+];
+
 // Category (section) and keywords shown after the article, like the old site:
 // the section links to its page, each keyword to its /taxonomy/term/<id> page.
 const section = ALL_SECTIONS.find((s) => s.label === d.section);
@@ -49,6 +96,9 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
   alternates={alternates}
   ogType="article"
   image={d.heroImage}
+  metaTags={scholar}
+  jsonLd={jsonLd}
+  breadcrumbs={breadcrumbs}
 >
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>

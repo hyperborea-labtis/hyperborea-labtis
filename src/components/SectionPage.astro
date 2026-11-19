@@ -32,6 +32,7 @@ const path = page === 1 ? `/${section.path}` : `/${section.path}/${page}`;
   description={withPage(sectionDescription(lang, { label: section.label, count: all.length }), lang, page)}
   lang={lang}
   path={path}
+  breadcrumbs={[{ name: section.label, path }]}
 >
   <div class="hb-main">
     <div class="hb-container">

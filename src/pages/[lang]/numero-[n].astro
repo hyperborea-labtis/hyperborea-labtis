@@ -5,6 +5,7 @@ import PageTitle from "../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ISSUE_NUMBERS, ISSUE_YEARS, issueTitle } from "../../data/issues";
 import { issueDescription } from "../../lib/descriptions";
+import { issueNode, organizationNode, periodicalNode } from "../../lib/jsonld";
 import { papersInIssue } from "../../lib/content";
 import { splitAuthor } from "../../lib/author";
 
@@ -19,6 +20,8 @@ const t = useTranslations(lang);
 const title = issueTitle(n);
 const papers = await papersInIssue(lang, n);
 const pad = String(n).padStart(2, "0");
+const site = Astro.site!.href;
+const jsonLd = [issueNode(site, { lang, n, year: ISSUE_YEARS[n]!, title }), periodicalNode(site), organizationNode(site)];
 ---
 
 <BaseLayout
@@ -27,6 +30,8 @@ const pad = String(n).padStart(2, "0");
   description={issueDescription(lang, { n, year: ISSUE_YEARS[n]!, count: papers.length })}
   lang={lang}
   path={`/numero-${n}`}
+  jsonLd={jsonLd}
+  breadcrumbs={[{ name: title, path: `/numero-${n}` }]}
 >
   <div class="hb-main">
     <div class="hb-container">

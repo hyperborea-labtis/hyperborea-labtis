@@ -29,6 +29,7 @@ const path = page === 1 ? "/actividades" : `/actividades/${page}`;
   description={withPage(listingDescription(lang, "activities"), lang, page)}
   lang={lang}
   path={path}
+  breadcrumbs={[{ name: titles[lang], path }]}
 >
   <div class="hb-main">
     <div class="hb-container">

@@ -10,7 +10,8 @@ import { locales, type Locale } from "../i18n/config";
 import { absoluteUrl, ogLocale, resolveHead } from "../lib/seo";
 import { INDEXABLE } from "../lib/indexing";
 import { pageTitle, tidy } from "../lib/meta-text";
-import { siteDescription } from "../lib/descriptions";
+import { siteDescription, homeWord } from "../lib/descriptions";
+import { breadcrumbNode, serializeJsonLd } from "../lib/jsonld";
 
 interface Props {
   title: string;
@@ -35,6 +36,12 @@ interface Props {
   ogType?: "website" | "article";
   /** Append " | Hyperborea" to `title` (when it stays short). Off for the home page, whose title is the brand. */
   brand?: boolean;
+  /** schema.org nodes for this page (see src/lib/jsonld.ts); emitted only on indexable pages. */
+  jsonLd?: Record<string, unknown>[];
+  /** Breadcrumb trail after "Home" (the last item is the current page; paths are locale-relative). */
+  breadcrumbs?: { name: string; path: string }[];
+  /** Extra <meta name> tags (Google Scholar citation_*); emitted only on indexable pages. */
+  metaTags?: { name: string; content: string }[];
 }
 
 const {
@@ -51,6 +58,9 @@ const {
   image,
   ogType = "website",
   brand = true,
+  jsonLd = [],
+  breadcrumbs,
+  metaTags = [],
 } = Astro.props;
 const metaDescription = description ?? siteDescription(lang);
 const cleanTitle = tidy(title);
@@ -58,6 +68,10 @@ const fullTitle = brand ? pageTitle(cleanTitle) : cleanTitle;
 
 const site = Astro.site!;
 const head = resolveHead({ lang, path, site, locales, indexable: INDEXABLE, contentLang, alternates, noindex, canonicalPath });
+const graph = [
+  ...jsonLd,
+  ...(breadcrumbs?.length ? [breadcrumbNode(site.href, lang, [{ name: homeWord(lang), path: "" }, ...breadcrumbs])] : []),
+];
 const imageUrl = absoluteUrl(image || "/og-default.png", site);
 const otherLocales = head.hreflang
   .filter((h) => h.hreflang !== "x-default" && h.hreflang !== lang)
@@ -87,6 +101,9 @@ const otherLocales = head.hreflang
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={imageUrl} />
+
+    {head.indexablePage && metaTags.map((m) => <meta name={m.name} content={m.content} />)}
+    {head.indexablePage && graph.length > 0 && <script type="application/ld+json" set:html={serializeJsonLd(graph)} />}
 
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />

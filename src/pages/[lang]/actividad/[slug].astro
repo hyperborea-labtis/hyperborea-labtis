@@ -5,7 +5,10 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { articlesForLocale, articleBySlug, contentLangOf, realLocales } from "../../../lib/content";
-import { textDescription } from "../../../lib/descriptions";
+import { textDescription, activitiesTitle } from "../../../lib/descriptions";
+import { activityNode, organizationNode } from "../../../lib/jsonld";
+import { absoluteUrl } from "../../../lib/seo";
+import { isoDate } from "../../../lib/scholar";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -27,17 +30,30 @@ const { Content } = await render(article);
 const d = article.data;
 const contentLang = contentLangOf(article);
 const alternates = (await realLocales("articles")).get(slug) ?? [contentLang];
+const site = Astro.site!.href;
+const description = textDescription(lang, { body: article.body ?? "", title: d.title });
+const title = d.title.replace(/\s+/g, " ").trim();
+const jsonLd = [
+  activityNode(site, {
+    lang: contentLang, url: absoluteUrl(`/${lang}/actividad/${slug}`, site), title, description,
+    date: isoDate(d.publishedDate, undefined), image: d.heroImage ? absoluteUrl(d.heroImage, site) : undefined,
+  }),
+  organizationNode(site),
+];
+const breadcrumbs = [{ name: activitiesTitle(lang), path: "/actividades" }, { name: title, path: `/actividad/${slug}` }];
 ---
 
 <BaseLayout
   title={d.title}
-  description={textDescription(lang, { body: article.body ?? "", title: d.title })}
+  description={description}
   lang={lang}
   path={`/actividad/${slug}`}
   contentLang={contentLang}
   alternates={alternates}
   ogType="article"
   image={d.heroImage}
+  jsonLd={jsonLd}
+  breadcrumbs={breadcrumbs}
 >
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>
