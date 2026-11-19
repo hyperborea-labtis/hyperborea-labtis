@@ -36,6 +36,23 @@ function record(name, status, detail = "", items = []) {
 }
 
 // ---------- helpers ----------
+// Existence check by EXACT name. macOS (APFS) matches file names regardless of case and of
+// Unicode normalization (NFC "í" vs NFD "i"+U+0301); Linux and Cloudflare do not, so a
+// reference that works on a Mac can 404 in production. Compare directory entries byte for byte.
+const dirCache = new Map();
+function existsExact(abs) {
+  let cur = path.sep;
+  for (const part of path.resolve(abs).split(path.sep).filter(Boolean)) {
+    let names = dirCache.get(cur);
+    if (!names) {
+      try { names = new Set(fs.readdirSync(cur)); } catch { return false; }
+      dirCache.set(cur, names);
+    }
+    if (!names.has(part)) return false;
+    cur = path.join(cur, part);
+  }
+  return true;
+}
 function walk(dir, filter = () => true, out = []) {
   if (!fs.existsSync(dir)) return out;
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -129,7 +146,7 @@ if (OFFLINE) {
 {
   const missing = [];
   let checked = 0;
-  const exists = (p) => fs.existsSync(path.join(PUBLIC, decodeURIComponent(p.split("?")[0])));
+  const exists = (p) => existsExact(path.join(PUBLIC, decodeURIComponent(p.split("?")[0])));
   for (const e of entries) {
     if (!e.data) continue;
     const refs = [];
@@ -222,7 +239,7 @@ if (OFFLINE) {
   const resolves = (p) => {
     const clean = decodeURIComponent(p.split("#")[0].split("?")[0]);
     const c = [path.join(DIST, clean), path.join(DIST, clean, "index.html"), path.join(DIST, clean + ".html")];
-    return c.some((x) => fs.existsSync(x) && fs.statSync(x).isFile());
+    return c.some((x) => existsExact(x) && fs.statSync(x).isFile());
   };
   for (const f of pages) {
     const html = fs.readFileSync(f, "utf8");

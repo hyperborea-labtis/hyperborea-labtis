@@ -24,5 +24,13 @@
   // At most 5 submissions per minute per IP (checked before Turnstile is called).
   "ratelimits": [{ "name": "CONTACT_LIMITER", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } }],
   // Errors in the Worker are invisible without this (see `wrangler tail` / dashboard Logs).
-  "observability": { "enabled": true, "head_sampling_rate": 1 }
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Pull-request previews: Workers Builds runs `wrangler preview` on every branch other
+  // than main, and it refuses to run unless each binding above is declared here too.
+  // Previews get their own rate-limit counter (another namespace_id) and no secrets, so
+  // the contact form answers 503 there and can never send mail from a preview.
+  "previews": {
+    "send_email": [{ "name": "EMAIL" }],
+    "ratelimits": [{ "name": "CONTACT_LIMITER", "namespace_id": "1002", "simple": { "limit": 5, "period": 60 } }]
+  }
 }
