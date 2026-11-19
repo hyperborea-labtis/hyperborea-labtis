@@ -8,6 +8,7 @@ import PaperCard from "./PaperCard.astro";
 import Pager from "./Pager.astro";
 import { useTranslations, type Locale } from "../i18n/config";
 import { latestPublications, paginate } from "../lib/content";
+import { listingDescription, pageSuffix, withPage } from "../lib/descriptions";
 
 interface Props {
   lang: Locale;
@@ -19,7 +20,12 @@ const { items, totalPages } = paginate(await latestPublications(lang), page);
 const path = page === 1 ? "/posts-3-col" : `/posts-3-col/${page}`;
 ---
 
-<BaseLayout title={`${t("home.latest")} | Hyperborea`} lang={lang} path={path}>
+<BaseLayout
+  title={page === 1 ? t("home.latest") : `${t("home.latest")} — ${pageSuffix(lang, page)}`}
+  description={withPage(listingDescription(lang, "latest"), lang, page)}
+  lang={lang}
+  path={path}
+>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={t("home.latest")} />

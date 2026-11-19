@@ -5,6 +5,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { articlesForLocale, articleBySlug, contentLangOf, realLocales } from "../../../lib/content";
+import { textDescription } from "../../../lib/descriptions";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -29,7 +30,8 @@ const alternates = (await realLocales("articles")).get(slug) ?? [contentLang];
 ---
 
 <BaseLayout
-  title={`${d.title} | Hyperborea`}
+  title={d.title}
+  description={textDescription(lang, { body: article.body ?? "", title: d.title })}
   lang={lang}
   path={`/actividad/${slug}`}
   contentLang={contentLang}

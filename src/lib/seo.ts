@@ -38,6 +38,9 @@ export interface HeadInput {
   /** Languages with REAL content at this path (default: every locale). Drives hreflang. */
   alternates?: readonly Locale[];
   noindex?: boolean;
+  /** Locale-relative path of the page this one duplicates (same content, another URL, such as
+   * the extra Drupal term ids of a merged keyword). Canonical goes there; this page is noindex. */
+  canonicalPath?: string;
 }
 
 export interface HeadMeta {
@@ -47,20 +50,21 @@ export interface HeadMeta {
 }
 
 export function resolveHead(input: HeadInput): HeadMeta {
-  const { lang, path, site, locales, indexable, contentLang, alternates = locales, noindex = false } = input;
+  const { lang, path, site, locales, indexable, contentLang, alternates = locales, noindex = false, canonicalPath } = input;
   const fallback = contentLang !== undefined && contentLang !== lang;
-  const at = (l: Locale) => absoluteUrl(`/${l}${path}`, site);
+  const duplicate = canonicalPath !== undefined && canonicalPath !== path;
+  const at = (l: Locale, p: string = path) => absoluteUrl(`/${l}${p}`, site);
 
-  const canonical = at(fallback ? contentLang : lang);
+  const canonical = at(fallback ? contentLang : lang, canonicalPath ?? path);
 
   let robots = INDEX_ROBOTS;
   if (!indexable) robots = "noindex, nofollow";
-  else if (fallback || noindex) robots = "noindex, follow";
+  else if (fallback || noindex || duplicate) robots = "noindex, follow";
 
   const hreflang: HeadMeta["hreflang"] = [];
   // Independent of `indexable`: in a non-indexable build the pages are noindex,nofollow anyway,
   // and emitting the same hreflang keeps the structure identical (and checkable) in every build.
-  if (!fallback && !noindex && alternates.length > 1) {
+  if (!fallback && !noindex && !duplicate && alternates.length > 1) {
     for (const l of locales) if (alternates.includes(l)) hreflang.push({ hreflang: l, href: at(l) });
     const fallbackLocale = alternates.includes("es" as Locale) ? ("es" as Locale) : alternates[0]!;
     hreflang.push({ hreflang: "x-default", href: at(fallbackLocale) });

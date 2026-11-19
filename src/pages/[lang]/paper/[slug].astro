@@ -10,6 +10,7 @@ import { papersForLocale, paperBySlug, norm, contentLangOf, realLocales } from "
 import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
 import { splitAuthor, noteAnchor } from "../../../lib/author";
+import { paperDescription } from "../../../lib/descriptions";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -40,8 +41,8 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
 ---
 
 <BaseLayout
-  title={`${d.title} | Hyperborea`}
-  description={d.abstract?.slice(0, 180)}
+  title={d.title}
+  description={paperDescription(lang, { abstract: d.abstract, body: paper.body ?? "", author: authorParts.name, issue: d.issue })}
   lang={lang}
   path={`/paper/${slug}`}
   contentLang={contentLang}
