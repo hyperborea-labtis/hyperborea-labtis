@@ -20,7 +20,7 @@ keywords:
   - "Imagen"
   - "Medios de comunicación"
   - "crítica"
-heroImage: "/sites/default/files/ct-paper/Kino_Sverdloff%20Traduccio%CC%81n%20Carnevali_IMAGEN_INDICE.jpg"
+heroImage: "/sites/default/files/ct-paper/Kino_Sverdloff%20Traducci%C3%B3n%20Carnevali_IMAGEN_INDICE.jpg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Carnevali-El_espectaculo_2.pdf"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88"

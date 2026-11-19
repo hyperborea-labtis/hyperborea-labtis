@@ -9,7 +9,7 @@ issue: 1
 issueOrder: 13
 author: "Daniela Chazarreta"
 affiliation: "Universidad Nacional de la Plata, CONICET"
-heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introduccio%CC%81n-INDICE.jpeg"
+heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introducci%C3%B3n-INDICE.jpeg"
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introduccion_0.pdf"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/sobre-la-traduccion-de-cortazars-hopscotch-and-other-games-83"

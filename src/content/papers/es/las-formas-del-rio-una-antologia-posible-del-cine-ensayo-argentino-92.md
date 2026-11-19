@@ -63,7 +63,7 @@ Frente a la idea de identidad cerrada que puede presentarse en la ficción conve
 
 ¿Cómo construir una identidad desde el mito? ¿Cómo romper lo mítico? La historia de una familia se ve atravesada por la historia de un país. Albertina Carri no tiene recuerdos de sus padres desaparecidos, de su historia, entonces los reconstruye y de-construye, así como los inventa. Ficción y documental se combinan, se tensan, evidencian que no pueden existir el uno sin el otro. El yo-directora aparece en pantalla, dirige, edita, opina. Pone el cuerpo para realizar una película. El yo-Albertina es auxiliado por la ficción, la imposibilidad de poner el cuerpo emocionalmente hace que aparezca una actriz. Capas que se abren y muestran la complejidad de una identidad, sus versiones posibles, sus puntos de fuga. Convivencia de tiempos superpuestos: el pasado representado en un *stop motion* de *play movils*, el presente performativo de construir una identidad mediante la realización de una película, filmar para ser.
 
-![Hyperborea\_01-Gattás Vargas-Formas del río-Fig01](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig01.jpg)
+![Hyperborea\_01-Gattás Vargas-Formas del río-Fig01](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig01.jpg)
 
  Fotograma de *Los Rubios. Dir. Albertina Carri, 2003*.
 
@@ -73,7 +73,7 @@ Un viaje quieto, construido a través de fotografías fijas que, lejos de retrat
 
 La identidad de la narradora se va construyendo precariamente para arribar al fin al punto de llegada que, en simultáneo, es el punto de partida: la foto de su padre. El origen es la culminación del viaje. Miles de fotos para llegar a una foto única. Todas las otras, todos los viajes, todos los escenarios vacíos y ajenos, los lugares impersonales visitados de paso, se humanizan con la foto del padre.
 
-![Hyperborea\_01-Gattás Vargas-Formas del río-Fig02](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig02.jpg)
+![Hyperborea\_01-Gattás Vargas-Formas del río-Fig02](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig02.jpg)
 
  Fotograma de *Viaje sentimental*. Dir. Verónica Chen, 2010.
 
@@ -89,7 +89,7 @@ Filmar es voluntad de registro, de retener la experiencia, el caos de impresione
 
 Tiempos circulares que insisten y crean ritmos de imágenes precarias, donde el adentro-afuera en constante diálogo, así como lo sagrado y lo profano conviven, se mezclan; todo forma parte de lo mismo: la virgen, el fuego, los animales, el baile, lo muerto.
 
-![Hyperborea\_01-Gattás Vargas-Formas del río-Fig02](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig03.jpg)
+![Hyperborea\_01-Gattás Vargas-Formas del río-Fig02](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig03.jpg)
 
 Fotograma de *Puna*. Dir. Hernán Khourián, 2006.
 
@@ -99,7 +99,7 @@ Podríamos pensar esta película como una autobiografía, un documental experime
 
 Este film está estructurado por las preguntas kantianas ¿qué puedo saber? ¿qué debo hacer? ¿qué puedo esperar? Aquí, la subjetividad de la realizadora se percibe resquebrajada. No hay un punto de vista único, no hay un(a) narrador(a), sino múltiples. Hay un descentramiento. Aun cuando es un autorretrato, hay polifonía. Hay amigos, animales, incluso la voz de un terapeuta, diferentes registros musicales. La autora juega a desdoblarse, como en el mito de Narciso al que el título de su obra alude, pero el reflejo no es de ella, no es el ego-sujeto moderno, sino múltiples personajes posibles. En este juego entre las imágenes y los sonidos, de prueba y error, de experimento, surge la potencia de lo nuevo, la invención de una identidad y de una nueva forma.
 
-![Figura 4. Fotograma de El mito de Narciso. Dir. Narcisa Hirsch. La medina producciones, 2010.](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig04.jpg)
+![Figura 4. Fotograma de El mito de Narciso. Dir. Narcisa Hirsch. La medina producciones, 2010.](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig04.jpg)
 
 Fotograma de *El mito de Narciso.* Dir. Narcisa Hirsch, 2010.
 
@@ -111,7 +111,7 @@ Aquí destacamos, en último lugar, dos realizadores que trabajan en la frontera
 
 Los diarios parisinos del escritor Ernst Jünger son la materia prima para realizar una película, que se pregunta por la Historia y su construcción. Creada por completo con materiales de archivo, se halla poblada de citas de una época específica: la ocupación alemana en Francia acontecida en la Segunda Guerra Mundial. Imágenes públicas, palabras privadas, ideología vociferante o subrepticia, música premiada o prohibida. Según el propio Cozarinsky, este film es «una ficción documental o un documental de ficción». ¿Acaso este entrecruzamiento no es constitutivo de la Historia, atravesada siempre por el poder del relato de los vencedores y el silencio de los vencidos?
 
-![Hyperborea\_01-Gattás Vargas-Formas del río-Fig05](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig05.jpg)
+![Hyperborea\_01-Gattás Vargas-Formas del río-Fig05](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig05.jpg)
 
 Fotograma de *Guerre d'un seule homme.* Dir. Edgardo Cozarinsky, 1981.
 
@@ -121,7 +121,7 @@ El retrato de un fotógrafo alemán, que es al mismo tiempo el retrato del monte
 
 Elegir qué filmar, encuadrar, editar, es establecer recortes y selecciones de la inmensidad. Guzmán nos muestra que una piedra puede contener una montaña, así como una montaña contiene la piedra: en lo pequeño está lo grande y en lo grande lo pequeño. Imágenes que nos reclaman lentitud, detenimiento, imágenes que no son de ningún lugar porque son de todos.
 
-![Hyperborea\_01-Gattás Vargas-Formas del río-Fig05](/sites/default/files/inline-images/Hyperborea_01-Gatta%CC%81s%20Vargas-Formas%20del%20ri%CC%81o-Fig06.jpg)
+![Hyperborea\_01-Gattás Vargas-Formas del río-Fig05](/sites/default/files/inline-images/Hyperborea_01-Gatt%C3%A1s%20Vargas-Formas%20del%20r%C3%ADo-Fig06.jpg)
 
 Fotograma de *Imágenes de ningún lugar,* Dir. Rubén Guzmán (2016).
 

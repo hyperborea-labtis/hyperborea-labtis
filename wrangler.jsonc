@@ -15,13 +15,22 @@
     "not_found_handling": "404-page"
   },
   // Contact form. CONTACT_TO, CONTACT_FROM and TURNSTILE_SECRET are SECRETS (not
-  // committed: the repository is public); see README. `secrets.required` also feeds
-  // `npm run types`, so Env is generated and never written by hand. The recipient is
-  // always CONTACT_TO: user input never controls it.
+  // committed: the repository is public); see README. Do NOT declare them with
+  // `secrets.required`: wrangler deploy then fails while any of them is unset, and the
+  // form is meant to stay suspended until they are. Their names reach the generated Env
+  // through worker/secrets.example (see `npm run types`). The recipient is always
+  // CONTACT_TO: user input never controls it.
   "send_email": [{ "name": "EMAIL" }],
-  "secrets": { "required": ["CONTACT_TO", "CONTACT_FROM", "TURNSTILE_SECRET"] },
   // At most 5 submissions per minute per IP (checked before Turnstile is called).
   "ratelimits": [{ "name": "CONTACT_LIMITER", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } }],
   // Errors in the Worker are invisible without this (see `wrangler tail` / dashboard Logs).
-  "observability": { "enabled": true, "head_sampling_rate": 1 }
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Pull-request previews: Workers Builds runs `wrangler preview` on every branch other
+  // than main, and it refuses to run unless each binding above is declared here too.
+  // Previews get their own rate-limit counter (another namespace_id) and no secrets, so
+  // the contact form answers 503 there and can never send mail from a preview.
+  "previews": {
+    "send_email": [{ "name": "EMAIL" }],
+    "ratelimits": [{ "name": "CONTACT_LIMITER", "namespace_id": "1002", "simple": { "limit": 5, "period": 60 } }]
+  }
 }

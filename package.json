@@ -15,8 +15,8 @@
     "import:all": "node scripts/import-drupal.mjs --all",
     "import:terms": "node scripts/import-keyword-terms.mjs",
     "verify": "node scripts/verify.mjs",
-    "test": "node --test tests/",
-    "types": "wrangler types worker/worker-configuration.d.ts",
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "types": "wrangler types worker/worker-configuration.d.ts --env-file worker/secrets.example",
     "check:worker": "npm run types --silent && tsc -p worker/tsconfig.json"
   },
   "dependencies": {

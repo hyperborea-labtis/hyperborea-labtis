@@ -222,7 +222,7 @@ Reeditado en *La destrucción del mundo interior.* Santiago de Chile: Overol, 
 
 ## Juan Santander Leal (Copiapó, Chile, 1984).
 
-![Juan Santander Leal\_P. Flores (fotografía)](/sites/default/files/inline-images/Juan%20Santander%20Leal.%20Fotografi%CC%81a%20de%20Paulina%20Flores.JPG)
+![Juan Santander Leal\_P. Flores (fotografía)](/sites/default/files/inline-images/Juan%20Santander%20Leal.%20Fotograf%C3%ADa%20de%20Paulina%20Flores.JPG)
 
 Ha publicado *Allí estás* (Marea Baja, 2009), *Cuarzo* (Marea Baja, 2012) y *Agujas* (El trueno, 2015), todos ellos reunidos en versiones revisadas en *La destrucción del mundo interior* (Overol, 2015). Además, textos suyos aparecen en el libro *Memoria poética.* *Reescrituras de La Araucana* (Cuarto propio, 2010). En el 2016 se publicó *Hijos únicos* (Overol), libro ganador del premio Mejores Obras Literarias del Consejo Nacional de la Cultura y de las Artes (CNCA). Su publicación más reciente es la *plaquette* *nueve lugares* (Cuadro de Tiza, 2017).
 
