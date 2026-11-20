@@ -6,7 +6,7 @@ import "@fontsource/lato/900.css";
 import "../styles/hyperborea.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { locales, type Locale } from "../i18n/config";
+import { locales, useTranslations, type Locale } from "../i18n/config";
 import { absoluteUrl, ogLocale, resolveHead } from "../lib/seo";
 import { INDEXABLE } from "../lib/indexing";
 import { pageTitle, tidy } from "../lib/meta-text";
@@ -62,6 +62,7 @@ const {
   breadcrumbs,
   metaTags = [],
 } = Astro.props;
+const t = useTranslations(lang);
 const metaDescription = description ?? siteDescription(lang);
 const cleanTitle = tidy(title);
 const fullTitle = brand ? pageTitle(cleanTitle) : cleanTitle;
@@ -113,9 +114,10 @@ const otherLocales = head.hreflang
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
+    <a class="hb-skip-link" href="#main-content">{t("skip")}</a>
     <div class="hb-root">
       <Header lang={lang} path={path} />
-      <main id="main-content">
+      <main id="main-content" tabindex="-1">
         <slot />
       </main>
       <Footer lang={lang} variant={footerVariant} />

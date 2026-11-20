@@ -57,16 +57,12 @@ const t = useTranslations(lang);
           ISSN 2618-4397
         </p>
         <p>
-          Este sitio tiene fines académicos y culturales sin lucro, utiliza una{" "}
+          {t("footer.legal.before")}{" "}
           <a
             href="https://creativecommons.org/licenses/by-nc-nd/3.0/es"
             rel="license noopener"
-            target="_blank">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 3.0 Unported</a
-          > y su creación fue posible gracias a los aportes de la Secretaría de
-          Investigación, Creación Artística, Desarrollo y Transferencia de
-          Tecnología y la Editorial de la Universidad Nacional de Río Negro y del
-          Consejo de Investigaciones Científico Técnicas de la Rep. Argentina /
-          CONICET.
+            target="_blank">{t("license.name")}</a
+          > {t("footer.legal.after")}
         </p>
         <p class="hb-cc">
           <a
@@ -74,13 +70,13 @@ const t = useTranslations(lang);
             rel="license noopener"
             target="_blank"
           >
-            <img src="/site/cc-88x31.png" alt="Licencia Creative Commons" width="88" height="31" />
+            <img src="/site/cc-88x31.png" alt={t("license.alt")} width="88" height="31" />
           </a>
         </p>
       </div>
 
       <div class="hb-footer-col">
-        <nav aria-label="Subfooter">
+        <nav aria-label={t("nav.footer")}>
           <ul class="hb-subnav">
             {subfooterNav(lang).map((link) => (
               <li>

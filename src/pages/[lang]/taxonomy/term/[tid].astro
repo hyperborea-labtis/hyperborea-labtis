@@ -9,7 +9,7 @@ import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../../components/PageTitle.astro";
 import PaperCard from "../../../../components/PaperCard.astro";
 import { locales, type Locale } from "../../../../i18n/config";
-import { papersWithKeyword, norm } from "../../../../lib/content";
+import { papersWithKeyword, langIfDifferent, norm } from "../../../../lib/content";
 import { keywordPages, termIdByName } from "../../../../lib/keywords";
 import { keywordDescription, keywordTitle } from "../../../../lib/descriptions";
 
@@ -48,6 +48,7 @@ const primaryId = termIdByName.get(norm(name)) ?? tid;
               href={`/${lang}/paper/${p.data.slug}`}
               image={p.data.heroImage}
               columns={2}
+              titleLang={langIfDifferent(p, lang)}
             />
           ))
         }

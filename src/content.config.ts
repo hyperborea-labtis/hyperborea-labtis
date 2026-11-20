@@ -51,6 +51,8 @@ const papers = defineCollection({
     evaluatedDate: optionalDate,
     publishedDate: optionalDate,
     heroImage: z.string().optional(),
+    /** Text alternative of the hero image. Empty = decorative (the title sits next to it). */
+    heroAlt: z.string().optional(),
     pdf: z.string().optional(),
     draft: z.boolean().default(false),
     sourceUrl: optionalUrl,
@@ -69,6 +71,8 @@ const articles = defineCollection({
     title: z.string(),
     publishedDate: optionalDate,
     heroImage: z.string().optional(),
+    /** Text alternative of the hero image. Empty = decorative (the title sits next to it). */
+    heroAlt: z.string().optional(),
     pdf: z.string().optional(),
     draft: z.boolean().default(false),
     sourceUrl: optionalUrl,

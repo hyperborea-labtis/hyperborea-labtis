@@ -6,7 +6,7 @@ import PageTitle from "../../../components/PageTitle.astro";
 import PaperMeta from "../../../components/PaperMeta.astro";
 import LicenseNotice from "../../../components/LicenseNotice.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
-import { papersForLocale, paperBySlug, norm, contentLangOf, realLocales, type Paper } from "../../../lib/content";
+import { papersForLocale, paperBySlug, norm, contentLangOf, langIfDifferent, realLocales, type Paper } from "../../../lib/content";
 import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
 import { splitAuthor, noteAnchor } from "../../../lib/author";
@@ -39,6 +39,7 @@ if (!paper) return Astro.redirect(`/${lang}`);
 const { Content } = await render(paper);
 const d = paper.data;
 const contentLang = contentLangOf(paper);
+const textLang = langIfDifferent(paper, lang);
 const alternates = (await realLocales("papers")).get(slug) ?? [contentLang];
 const authorParts = splitAuthor(d.author ?? "");
 
@@ -118,14 +119,14 @@ const related = relatedPapers(toRelated(paper), (await papersForLocale(lang)).ma
       <meta data-pagefind-filter="tipo[content]" content={t("search.type.paper")} />
       {d.section && <meta data-pagefind-filter="seccion[content]" content={d.section} />}
       {d.issue !== undefined && <meta data-pagefind-filter="numero[content]" content={String(d.issue)} />}
-      <PageTitle text={d.title} />
+      <PageTitle text={d.title} lang={textLang} />
 
-      <article class="hb-article">
+      <article class="hb-article" lang={textLang}>
         {d.heroImage && (
           <img
             class="image-style-mt-slideshow-boxed"
             src={d.heroImage}
-            alt={d.title}
+            alt={d.heroAlt ?? ""}
             width="1140"
             height="630"
           />

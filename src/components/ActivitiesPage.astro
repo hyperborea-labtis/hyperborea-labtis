@@ -8,7 +8,7 @@ import PaperCard from "./PaperCard.astro";
 import Pager from "./Pager.astro";
 import type { Locale } from "../i18n/config";
 import { listingDescription, pageSuffix, withPage } from "../lib/descriptions";
-import { articlesForLocale, paginate } from "../lib/content";
+import { articlesForLocale, langIfDifferent, paginate } from "../lib/content";
 
 interface Props {
   lang: Locale;
@@ -37,7 +37,7 @@ const path = page === 1 ? "/actividades" : `/actividades/${page}`;
       <div class="hb-grid">
         {
           items.map((a) => (
-            <PaperCard title={a.data.title} href={`/${lang}/actividad/${a.data.slug}`} image={a.data.heroImage} columns={3} />
+            <PaperCard title={a.data.title} href={`/${lang}/actividad/${a.data.slug}`} image={a.data.heroImage} columns={3} titleLang={langIfDifferent(a, lang)} />
           ))
         }
       </div>
