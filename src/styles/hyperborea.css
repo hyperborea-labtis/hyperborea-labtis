@@ -989,6 +989,13 @@
 }
 .hb-tag-list a:hover { border-color: var(--hb-yellow); background: var(--hb-yellow); }
 
+/* Related articles under a paper */
+.hb-related { margin-top: 2em; }
+.hb-related h2 { font-size: 1.125em; margin: 0 0 0.5em; }
+.hb-related ul { list-style: none; margin: 0; padding: 0; }
+.hb-related li { margin: 0 0 0.4em; line-height: 1.4; }
+.hb-related-author { color: var(--hb-ink); }
+
 /* PDF button (activities) */
 .hb-pdf { margin-top: 2em; }
 .hb-pdf a {

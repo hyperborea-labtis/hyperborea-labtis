@@ -6,7 +6,7 @@ import PageTitle from "../../../components/PageTitle.astro";
 import PaperMeta from "../../../components/PaperMeta.astro";
 import LicenseNotice from "../../../components/LicenseNotice.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
-import { papersForLocale, paperBySlug, norm, contentLangOf, realLocales } from "../../../lib/content";
+import { papersForLocale, paperBySlug, norm, contentLangOf, realLocales, type Paper } from "../../../lib/content";
 import { ALL_SECTIONS } from "../../../data/nav";
 import { termIdByName } from "../../../lib/keywords";
 import { splitAuthor, noteAnchor } from "../../../lib/author";
@@ -17,6 +17,7 @@ import { parseAuthors, scholarDate, isoDate, scholarTags } from "../../../lib/sc
 import { articleNode, issueNode, organizationNode, periodicalNode } from "../../../lib/jsonld";
 import { absoluteUrl } from "../../../lib/seo";
 import { plainText } from "../../../lib/meta-text";
+import { relatedPapers } from "../../../lib/related";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -85,6 +86,17 @@ const breadcrumbs = [
 // the section links to its page, each keyword to its /taxonomy/term/<id> page.
 const section = ALL_SECTIONS.find((s) => s.label === d.section);
 const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(name)) }));
+
+// Related articles: other papers on the same subject (shared keywords) or in the same issue.
+const toRelated = (p: Paper) => ({
+  slug: p.data.slug,
+  keywords: p.data.keywords,
+  issue: p.data.issue,
+  section: p.data.section,
+  date: (p.data.created ?? p.data.publishedDate)?.getTime() ?? 0,
+  entry: p,
+});
+const related = relatedPapers(toRelated(paper), (await papersForLocale(lang)).map(toRelated));
 ---
 
 <BaseLayout
@@ -147,6 +159,19 @@ const keywords = d.keywords.map((name) => ({ name, tid: termIdByName.get(norm(na
         )}
 
         <PaperMeta lang={lang} paper={paper} />
+        {related.length > 0 && (
+          <section class="hb-related" aria-labelledby="related-title" data-pagefind-ignore>
+            <h2 id="related-title">{t("paper.related")}</h2>
+            <ul>
+              {related.map(({ entry }) => (
+                <li>
+                  <a href={`/${lang}/paper/${entry.data.slug}`} lang={contentLangOf(entry)}>{entry.data.title}</a>
+                  {entry.data.author && <span class="hb-related-author"> · {splitAuthor(entry.data.author).name}</span>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         <LicenseNotice lang={lang} />
       </article>
     </div>
