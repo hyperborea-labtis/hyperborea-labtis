@@ -8,6 +8,8 @@ section: "41º 9’ S 71º 8’ W"
 issue: 4
 issueOrder: 14
 author: "Daniela Evangelina Chazarreta"
+abstract: "Presentación de la sección sobre la leyenda de El Dorado. Retoma la idea, compartida por la crítica, de que la literatura latinoamericana surge de las crónicas de Indias y del imaginario construido a partir de ellas, y presenta dos artículos: el de Agostina Rusiani, sobre las estrategias discursivas con que Walter Raleigh construye El Dorado en The Discovery of Guiana, y el de Catherine Alès y Michel Pouyllau, que estudia las proyecciones de la leyenda en las literaturas francesa e inglesa y en Los pasos perdidos de Alejo Carpentier."
+abstractSource: editorial
 keywords:
   - "Daniela Evangelina Chazarreta"
   - "literatura latinoamericana"

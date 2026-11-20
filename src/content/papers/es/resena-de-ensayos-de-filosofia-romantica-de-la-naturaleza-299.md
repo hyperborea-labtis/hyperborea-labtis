@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 17
 author: "Pablo Rivas"
 affiliation: "Escuela de Filosofía, Facultad de Humanidades y Artes, Universidad Nacional de Rosario"
+abstract: "La reseña presenta Ensayos de filosofía romántica de la naturaleza (Serapis, 2021), antología traducida por Guillermo Colussi y Héctor Piccoli que reúne textos de Gotthilf H. von Schubert, Franz von Baader y Carl Gustav Carus, entre otros. El reseñista identifica como hilo común la búsqueda de la voz secreta de la naturaleza, evocada en el poema de Novalis que abre el volumen, y entiende la variedad de perfiles de los autores, médicos, naturalistas, filósofos y artistas, como signo de la unidad propia de la Naturphilosophie. Con Frederick Beiser sitúa en 1790, con la Crítica del Juicio de Kant, el quiebre con el mecanicismo, y contrasta la botánica holística de La metamorfosis de las plantas de Goethe con la taxonomía de Linneo. Se detiene además en la noción romántica de símbolo, en Humboldt y Rugendas y en la formación minera de Novalis, y concluye, a partir de Borges, que el libro materializa la idea de una traducción valiosa en sí misma."
+abstractSource: editorial
 keywords:
   - "Naturphilosophie"
   - "Ensayo"

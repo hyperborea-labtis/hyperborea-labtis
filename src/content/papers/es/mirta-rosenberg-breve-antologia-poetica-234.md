@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 4
 issueOrder: 13
 author: "Selección de Gabby de Cicco"
+abstract: "Selección de poemas de Mirta Rosenberg realizada por Gabby De Cicco, con textos de libros como Pasajes (1984), Teoría sentimental (1994), El arte de perder (1998) y Cuaderno de oficio (2016), reproducidos de El árbol de palabras (2018). Los poemas giran en torno a la palabra y la dificultad de nombrar lo real, el amor y el dolor, el arte como contacto, la escritura de las mujeres en «Mujeres a la página», los sentidos y el lenguaje, el duelo por la madre en «Retrato terminado» y la relación entre autobiografía y egoísmo a partir de una pregunta de Iris Murdoch. Incluye el texto en prosa «Mi oficio», donde la poesía aparece como una isla o reserva a la que recurrir ante la escasez de sentimientos y pensamientos, y una nota biográfica sobre quien realizó la selección."
+abstractSource: editorial
 keywords:
   - "mirta rosenberg"
   - "Poesía contemporánea"

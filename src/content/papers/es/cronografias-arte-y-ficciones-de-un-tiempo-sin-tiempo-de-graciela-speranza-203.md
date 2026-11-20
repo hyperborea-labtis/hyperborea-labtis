@@ -9,6 +9,8 @@ section: "Afinidades electivas"
 issue: 3
 issueOrder: 18
 author: "Fernando Julio Fantín"
+abstract: "La reseña presenta Cronografías. Arte y ficciones de un tiempo sin tiempo (Anagrama, 2017), de Graciela Speranza, libro sobre los sentidos que el arte contemporáneo puede tener hoy. Su punto de partida es el diálogo entre La Durée poignardée (1938) de René Magritte, que la autora vuelve a ver en el MoMA en 2013, y la instalación que Adrián Villar Rojas montó ese mismo año en Londres, gesto de constelar obras dispares que el libro extiende, en un prólogo, cuatro partes y un epílogo, a autores como Borges, Sebald o Anne Carson. Retoma su tesis de que la sociedad de consumo y la revolución digital comprimieron el tiempo en un presente instantáneo y efímero, frente al cual el arte abre otras temporalidades. El reseñista enmarca la lectura en la idea de nombrar como conquista, tomada de Juan Liscano, y en la noción de sujeto de Alain Badiou, y entiende ese arte como procedimiento de verdad y no como mercancía."
+abstractSource: editorial
 keywords:
   - "Graciela Speranza"
   - "arte contemporáneo"

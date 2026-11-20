@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 8
 issueOrder: 7
 author: "Laura Petrecca"
+abstract: "Texto breve de Laura Petrecca, encabezado por un epígrafe de Ósip Mandelstam sobre Dante, que reflexiona sobre la relación entre la naturaleza, la fantasía y la escritura poética. Los poemas se conciben como formas momentáneas, piedras en las cuales apoyarse y encontrar imágenes, y se enumeran motivos como la desaparición de las personas en una ciudad, la creación de un monstruo marino o el origen del relámpago. La autora plantea la posibilidad de extraer una esencia material del mundo de los poemas."
+abstractSource: editorial
 keywords:
   - "posía contemporánea"
   - "Argentina"

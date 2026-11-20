@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 2
 issueOrder: 10
 author: "Ana Lía Gabrieloni"
+abstract: "Cet essai étudie Civilización, documentaire de Rubén Guzmán sur l’œuvre de León Ferrari, à partir de la remarque de Georges Bataille sur l’insouciance des visiteurs de musée. L’attaque de la rétrospective de Ferrari au Centre Culturel de la Recoleta par un groupe catholique conservateur invite à penser une iconoclastie singulière, qui abjure des images à travers des images. Le montage, au sens technique et métaphorique, accorde à l’œuvre et au film leurs conditions d’existence, celles mêmes de la mémoire selon Giorgio Agamben. L’essai examine Civilización occidental y cristiana (1965), le circuit informationnel issu de Tucumán Arde, la résistance à la guerre du Vietnam et à la dictature argentine, et la séquence d’ouverture fondée sur le montage soviétique. Face au dilemme entre fuite esthétique et didactisme pamphlétaire, il avance comme réponse la liberté du geste du réalisateur, qui fait de nous des visiteurs actifs, voire perturbés, d’un musée devenu hypostase critique et esthétique de l’œuvre de Ferrari."
+abstractSource: editorial
 keywords:
   - "León Ferrari"
   - "Rubén Guzmán"

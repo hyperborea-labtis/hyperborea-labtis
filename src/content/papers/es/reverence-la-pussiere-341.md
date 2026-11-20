@@ -10,6 +10,8 @@ issue: 7
 issueOrder: 2
 author: "Muriel Pic"
 affiliation: "Université de Bern"
+abstract: "El ensayo analiza la presencia del polvo, la ceniza y la arena en la obra de W. G. Sebald, materias humildes a las que el autor atribuye una cualidad ética y metafísica y que son huella de la destrucción. A partir de Los emigrados, donde el pintor Max Ferber trabaja con la acumulación de polvo, y de pasajes de Austerlitz, Vértigo, Los anillos de Saturno y Campo Santo, se muestra cómo el polvo hace visible el tiempo y da presencia a los muertos y a los destinos anónimos. La segunda parte propone leer en el polvo como un ejercicio adivinatorio, siguiendo una genealogía que va de los hermanos Serendip y el Zadig de Voltaire a Sherlock Holmes, con el paradigma indiciario de Carlo Ginzburg, Walter Benjamin y el montaje de Eisenstein leído por Roland Barthes. Se concluye que reverenciar el polvo es una actitud crítica, si no política, que piensa el futuro a partir de los restos de la destrucción."
+abstractSource: editorial
 keywords:
   - "literatura alemana"
   - "W. G. Sebald"

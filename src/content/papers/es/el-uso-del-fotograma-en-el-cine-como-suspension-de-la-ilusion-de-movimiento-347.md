@@ -9,6 +9,8 @@ issue: 7
 issueOrder: 9
 author: "Paulo Pécora"
 affiliation: "Fundación Universidad del Cine (FUC), CABA, Argentina"
+abstract: "El ensayo examina la paradoja del cine, que produce la ilusión de movimiento a partir de imágenes fijas, y el modo en que diversos cineastas la ponen en evidencia frente a un cine institucionalizado que busca ocultarla. Tras repasar los antecedentes, de la cronofotografía de Muybridge y Marey al stop trick de Méliès, analiza obras que trabajan sobre el fotograma: la proyección ralentizada en Nirvana de Emiliano Cativa y Colibrí de Azucena Losana, la imagen detenida en Maya Deren, la fotografía fija en Letter to Jane de Godard y Gorin, La Jetée de Chris Marker, leída con Deleuze como crisis de la imagen-acción, los trabajos de Raúl Ruiz y Agnès Varda, el cuadro a cuadro de Jorge Honik y el parpadeo de Arnulf Rainer de Peter Kubelka. Concluye que estas obras revelan la ontología fotográfica del cine, cuyo dinamismo nace de la descomposición del movimiento en fases estáticas."
+abstractSource: editorial
 keywords:
   - "fotograma"
   - "cine de autor"

@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 4
 issueOrder: 9
 author: "Paul Zech"
+abstract: "Traducción al castellano, realizada por Enrique Bein, de «Der große Streik», texto de Paul Zech publicado originalmente en Das Kinobuch, editado por Kurt Pinthus (Leipzig, Kurt Wolff, 1914). En seis secciones numeradas, el texto sigue una huelga minera en una ciudad del carbón: la asamblea de los huelguistas, la taberna donde el canto de la Internacional deriva en una riña, el enfrentamiento con la policía frente a la mina en el que muere un joven de dieciséis años, la llegada de los soldados al barrio polaco y el conflicto del aprendiz Flimp Stumpa, dividido entre su padre, cabecilla de la huelga, y su amor por la hija del inspector de minas. Tras la detención del padre, Flimp Stumpa hace estallar la mina y mueren cien personas; el inspector logra entonces que la administración atienda las pretensiones de los obreros."
+abstractSource: editorial
 keywords:
   - "Paul Zech"
   - "Kurt Pinthus"

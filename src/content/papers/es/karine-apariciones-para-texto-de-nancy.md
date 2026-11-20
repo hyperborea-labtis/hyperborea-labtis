@@ -9,6 +9,8 @@ section: "Kino LabTIS"
 issue: 3
 issueOrder: 10
 author: "Robert Cahen"
+abstract: "Publicación de la galería de fotogramas de Karine (1976), película de Robert Cahen realizada con fotografías de una niña desde su nacimiento hasta los seis años, animadas mediante tomas muy lentas. La precede un texto poético de Cahen, traducido por Mariano Sverdloff, que evoca la mirada de la niña, su femineidad naciente y el cambio irreversible. La galería se ofrece en PDF con un código QR para ver la película; la serie se había publicado precedida de un texto de Jean-Luc Nancy, traducido en el mismo número."
+abstractSource: editorial
 keywords:
   - "Robert Cahen"
   - "Karine. aparitions"

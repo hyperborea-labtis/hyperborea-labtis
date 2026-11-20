@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 3
 author: "Wendy Steiner"
 affiliation: "Profesora emérita Richard L. Fisher de Filología inglesa, University of Pennsylvania"
+abstract: "Traducido del inglés por Ana Lía Gabrieloni y publicado antes en italiano en Studi di estetica (2012), el ensayo sostiene que, aunque el destino de la belleza estuvo subordinado a la forma, la clave de su futuro es la interacción. La autora repasa cómo la vanguardia y el formalismo, de Gertrude Stein y Clement Greenberg a Roman Jakobson y los New Critics, desplazaron la belleza en nombre de la autonomía y la autorreferencialidad. Frente a ello, analiza obras contemporáneas que movilizan la relación entre artista, modelo, público y obra, como mantle de Ann Hamilton y, sobre todo, Aliento de Oscar Muñoz, donde el aliento del espectador hace aparecer el rostro de un desaparecido. Apoyada en el mito de Cupido y Psique y en Nicolas Bourriaud, define la belleza como la experiencia del valor de un Otro y la concibe como una empatía modeladora que refuerza la reciprocidad y la igualdad."
+abstractSource: editorial
 keywords:
   - "Wendy Steiner"
   - "Modernismo"

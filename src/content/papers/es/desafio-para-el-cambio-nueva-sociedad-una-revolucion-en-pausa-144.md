@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 2
 issueOrder: 11
 author: "Rubén Guzmán"
+abstract: "El artículo examina Challenge for Change (Desafío para el Cambio / Nueva Sociedad), programa experimental lanzado en 1967 por la National Film Board de Canadá para usar el documental y los medios como herramienta de cambio social, y se pregunta por qué este programa y su antecedente, Candid Eye, están hoy prácticamente olvidados. Se detiene en los filmes de Colin Low en la isla de Fogo y en VTR – St. Jacques, de Bonnie Sherr Klein, en el que un comité de ciudadanos de un barrio carenciado de Montreal registró sus problemas con video Portapak. Sugiere que su principal aporte fue mejorar la comunicación dentro de las comunidades y con quienes toman las decisiones. Frente a medios masivos divorciados de la sociedad, juzga difícil un renacimiento del programa en la esfera gubernamental y propone revisitarlo mediante un sistema de medios múltiple, horizontal y participativo."
+abstractSource: editorial
 keywords:
   - "Historia"
   - "Medios de comunicación"

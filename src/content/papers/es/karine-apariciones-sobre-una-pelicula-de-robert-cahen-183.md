@@ -9,6 +9,8 @@ section: "Kino LabTIS"
 issue: 3
 issueOrder: 9
 author: "Jean-Luc Nancy"
+abstract: "Traducción al español, a cargo de Mariano Sverdloff, del ensayo de Jean-Luc Nancy Karine. apparitions, sobre Karine, film de Robert Cahen de unos ocho minutos montado con fotografías antiguas de la infancia de una niña. Nancy piensa la imagen como aparición: no algo que se presenta ante un sujeto, sino una membrana compartida en la que imagen y mirada se engendran mutuamente. Recorre los elementos del film, como la escena animada que vuelve tres veces, en la que una amiga con grandes guantes ciega a Karine junto a una fuente con animales esculpidos, la mirada de una mujer sobre el bebé, el espejo, el ruido del proyector y las Escenas de niños de Schumann. Sostiene que el film, sin contar ninguna historia, muestra cómo Karine aparece y desaparece, y piensa la infancia, lo femenino y la presencia como formas de esa aparición siempre frágil."
+abstractSource: editorial
 keywords:
   - "Jean-Luc Nancy"
   - "Robert Cahen"

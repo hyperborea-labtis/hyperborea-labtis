@@ -13,6 +13,8 @@ heroImage: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introducci%C3
 pdf: "/sites/default/files/ct-paper/Hyperborea_01-Chazarreta_Introduccion_0.pdf"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/sobre-la-traduccion-de-cortazars-hopscotch-and-other-games-83"
+abstract: "Texto de presentación de la sección 41º 9' S 71º 8' W, dedicada a la teoría y crítica literaria sobre la literatura latinoamericana escrita en lenguas extranjeras. Se toma Rayuela de Julio Cortázar como caso paradigmático y se presentan dos textos: la reseña «Cortazar's Hopscotch and other games» (1967) de James E. Irby, traducida por Elvio Bracco, que acerca la obra de Cortázar al lectorado norteamericano, y el artículo de Bracco sobre la traducción de la novela al inglés, su recepción en Estados Unidos y el aporte de Gregory Rabassa."
+abstractSource: editorial
 ---
 Las prácticas y operaciones vinculadas a la traducción en América Latina han generado diversas dádivas y categorías intelectuales que comprenden, por cierto, los distintos estratos de su cultura. Desde las denominadas *Crónicas de Indias*, la traducción fue la protagonista de los severos contactos y estrategias de conquista y colonización (Lienhard 2004). Los diálogos entre lo que se ha considerado lo propio y lo foráneo dieron lugar a interesantes revisiones de lo que se ha denominado una «inteligencia traductora» (Gaspar 2014). Evidentemente, el papel de la traducción en América Latina, en su condición de periferia geopolítica y cultural, asume ribetes muy diferentes a aquellos que se sostienen desde los centros de poder simbólicos y reales (Europa, por supuesto, y Estados Unidos) (Weisman 2005).
 

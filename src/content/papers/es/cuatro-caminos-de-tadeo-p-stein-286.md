@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 10
 author: "Irlanda Amaro Valdés"
 affiliation: "Facultad de Filosofía y Letras, Universidad Nacional de México"
+abstract: "La nota presenta Cuatro caminos, conjunto de veinte poemas de Tadeo P. Stein. Propone que la naturaleza, como totalidad primigenia y paraíso extraviado, atraviesa el libro, en el que reconoce un renovado eco romántico, y que solo se revela al ser poetizada. Destaca la voz del extranjero que dialoga con su origen y sus ancestros, el amor como lugar donde la extranjería se vuelve soportable, el peso de la historia y la certeza del carácter transitorio y errante del ser humano, y cierra con versos de Nezahualcóyotl."
+abstractSource: editorial
 keywords:
   - "Poesía contemporánea"
   - "Irlanda Amaro Valdés"

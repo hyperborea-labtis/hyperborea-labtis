@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 2
 author: "José Emilio Burucúa"
 affiliation: "Universidad Nacional de San Martín"
+abstract: "El ensayo parte de la Carta Apostólica Candor lucis aeternae, que el papa Francisco dedicó a Dante en 2021, y de su exhortación a los artistas a dar forma, color y sonido a la poesía dantesca. Señala los pasajes de la Divina Comedia en que se hacen presentes la arquitectura, la pintura, la escultura y la música: el noble castillo del Limbo, la puerta del Purgatorio y sus tres escalones, los relieves de la Anunciación y de Trajano como hablar visible y los continuos pasajes entre lo visible y lo audible, que culminan en la fusión de luz y polifonía del Paraíso. Repasa las respuestas de la música, desde los madrigales del siglo XVI sobre el canto III del Infierno hasta Liszt y Verdi, y sobre todo de la pintura y el dibujo del siglo XV: Domenico di Michelino, Botticelli, Priamo della Quercia y Giovanni di Paolo. Una nota final comenta la traducción de Claudia Fernández Speier."
+abstractSource: editorial
 keywords:
   - "José Emilio Burucúa"
   - "arte y cultura"

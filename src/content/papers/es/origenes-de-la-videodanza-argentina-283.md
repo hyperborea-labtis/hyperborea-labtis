@@ -10,6 +10,8 @@ issue: 5
 issueOrder: 8
 author: "Claudia Margarita Sánchez"
 affiliation: "Universidad de Buenos Aires"
+abstract: "El artículo reconstruye los orígenes de la videodanza en Argentina. Tras repasar la relación entre danza y cine desde la cronofotografía de Marey y Muybridge hasta el musical de Hollywood, atribuye a Maya Deren y su A Study in Choreography for Camera (1945) el pionerismo del género y recorre los antecedentes locales: Apollon Musagète (1951) de Irena Dodal, las experiencias del Instituto Di Tella, Ana Kamien (1970) de Marcelo Epstein y Tangos, el exilio de Gardel, de Fernando Pino Solanas. Analiza el Primer Seminario Taller de Videodanza para Coreógrafos y Compositores, dictado por Jorge Coscia en 1993, junto con dos festivales de 1992 y 1993 de los que apenas quedan registros, las búsquedas independientes de Alejandra Ceriani y Daniel Böhm y la creación del Festival VideodanzaBa por Silvina Szperling en 1995. Concluye que ese origen debe pensarse como una configuración rizomática en la que confluyen política pública e iniciativas personales."
+abstractSource: editorial
 keywords:
   - "arte y cultura"
   - "Videodanza"

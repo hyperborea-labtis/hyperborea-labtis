@@ -9,6 +9,8 @@ issue: 1
 issueOrder: 14
 author: "James E. Irby"
 affiliation: "Princeton University"
+abstract: "Traducción al castellano, por Elvio Bracco, de la reseña de James E. Irby publicada en 1967 en Novel. A Forum on Fiction a propósito de la versión inglesa de Rayuela, de Julio Cortázar. Tras repasar la recepción dispar de la novela en la crítica estadounidense, Irby traza el camino que conduce a ella desde Los reyes, Bestiario, los cuentos fantásticos y Los premios, y examina la noción cortazariana de figura, que compara con la imagen romántica según Frank Kermode. Resume luego la trama centrada en Horacio Oliveira, entre París y Buenos Aires, y analiza la doble lectura, los capítulos adicionales y las notas de Morelli sobre la anti-novela, que involucran al lector en el ordenamiento del libro. La reseña considera tediosas varias zonas de la obra, pero destaca el uso del habla de Buenos Aires contra la retórica y define a Rayuela como la primera anti-novela verdaderamente contemporánea escrita en castellano."
+abstractSource: editorial
 keywords:
   - "Traducción"
   - "James Irby"

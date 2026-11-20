@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 17
 author: "Enrico Mario Santí[1]"
 affiliation: "Claremont Graduate University de California"
+abstract: "Traducción, a cargo de María Carolina Pires, Julia Noemí Remedi y Lucía Volpe, del ensayo de Enrico Mario Santí «Octavio Paz: Otherness and the Search for the Present», publicado en The Georgia Review en 1995. El texto recorre la vida y la obra de Paz desde su infancia en Mixcoac y sus primeros escritos, pasando por la Guerra Civil Española, la revista Taller, la estadía en los Estados Unidos que motivó El laberinto de la soledad y su vínculo espiritual con el surrealismo en París. Examina luego el contacto con Oriente, Piedra de sol, El arco y la lira, la poética de la otredad de los años sesenta, la renuncia tras la masacre de Tlatelolco y la crítica política desde Plural y Vuelta. Santí atribuye la importancia de Paz a su poética universalista, que une poesía, amor y lo sagrado como vías hacia la Otredad, y a su papel como corresponsal latinoamericano de las grandes corrientes intelectuales del siglo."
+abstractSource: editorial
 keywords:
   - "Octavio Paz"
   - "América y Europa"

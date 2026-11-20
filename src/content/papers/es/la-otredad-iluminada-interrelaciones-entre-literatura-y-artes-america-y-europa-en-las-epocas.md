@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 21
 author: "Alejandro Manfred"
 affiliation: "Universidad Nacional de Rosario, Facultad de Psicología"
+abstract: "La reseña presenta Interrelaciones entre literatura y artes. América y Europa en las épocas Moderna y Contemporánea, volumen compilado por Ana Lía Gabrieloni (UNRN, 2018) cuyos ensayos abordan objetos en los que confluyen la palabra y la imagen, en especial a través de la écfrasis, entendida con James Heffernan como descripción verbal de una representación visual. Manfred propone leer el libro como una galería imaginaria y recorre sus capítulos: el museo imaginario de la écfrasis en Gabrieloni, la imagen de la Virgen de Guadalupe en Tadeo Stein, Darío, Martí y Julián del Casal en Daniela Chazarreta, la ficción modernista en lengua inglesa en Lucrecia Radyk, Guamán Poma de Ayala en Laura Catelli, el autorretrato como grado cero de la representación en Heffernan y el color en la pintura y la crítica argentina en Silvia Tomas. Observa que esos objetos se acumulan en ambos extremos de la modernidad y compara el conjunto con las cajas de Joseph Cornell."
+abstractSource: editorial
 keywords:
   - "écfrasis"
   - "América y Europa"

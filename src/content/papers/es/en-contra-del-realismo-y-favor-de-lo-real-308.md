@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 6
 issueOrder: 9
 author: "Rubén Guzmán"
+abstract: "Se publica la transcripción castellana, inédita en francés, de una entrevista que Rubén Guzmán realizó a Alain Robbe-Grillet en noviembre de 1997, cuando este presidía el jurado del 13º Festival Internacional de Cine de Mar del Plata. Robbe-Grillet se declara en contra del realismo y a favor de lo real, que asocia con la discontinuidad, y repasa su método: la escritura plano por plano de Marienbad para Alain Resnais, el rodaje de L'Immortel, donde decidió que filmar podía apartarse del guion, la ausencia de guion en L'Éden et après y la realización de N. a pris les dés con el mismo material. Discute además el cine de Marguerite Duras, opone Eisenstein a Bazin, destaca la presencia de la pintura en sus películas y critica el cine dominado por el diálogo. Cierra con Un Bruit qui rend fou, basada en el sonido de las fichas de mahjong."
+abstractSource: editorial
 keywords:
   - "Alain Robbe-Grillet"
   - "Festival Internacional de Cine de Mar del Plata"

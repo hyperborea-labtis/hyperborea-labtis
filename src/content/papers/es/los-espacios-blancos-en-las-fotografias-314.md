@@ -9,6 +9,8 @@ issue: 6
 issueOrder: 14
 author: "Paula Zori"
 affiliation: "Universidad Nacional de Río Negro, Laboratorio Texto, imagen y sociedad (LabTIS), CONICET"
+abstract: "El texto analiza el documental Atlas (2021), de Guadalupe Gaona e Ignacio Masllorens, que recorre los pabellones abandonados del Hospital Nacional de Alienadas, donde se conservan piezas biológicas y fotografías de internas de principios del siglo XX borroneadas por el tiempo. A partir de Jean-Luc Nancy, se plantea la afinidad entre imagen y ausencia. Se destaca que la cámara no se oculta, sino que exhibe sus efectos sobre los espacios y las personas, en una puesta en abismo de miradas. Atlas aparece como una exploración de la mirada del neurobiólogo Christofredo Jakob, director del hospital: un criterio clínico de selección y fragmentación que aspiraba a la objetividad pero suponía una puesta en escena, y cuyos cuerpos inmovilizados el cine reanima. El recorrido concluye en paisajes patagónicos que parecen intactos, a diferencia de las imágenes."
+abstractSource: editorial
 keywords:
   - "Atlas"
   - "Guadalupe Gaona"

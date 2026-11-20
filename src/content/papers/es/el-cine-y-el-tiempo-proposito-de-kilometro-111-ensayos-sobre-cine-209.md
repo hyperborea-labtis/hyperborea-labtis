@@ -9,6 +9,8 @@ section: "Afinidades electivas"
 issue: 3
 issueOrder: 19
 author: "Matías Lapezzata"
+abstract: "El ensayo repasa los veinte años de la revista porteña de crítica Kilómetro 111. Ensayos sobre cine, nacida en noviembre de 2000, desde la perspectiva de un lector que escribe en Córdoba. Parte de la nota editorial del primer número, que concibe la crítica como destino del cine y como construcción de una idea del mundo, y vincula el nombre de la revista con la película homónima de Mario Soffici de 1938 y su nacimiento con la crisis de 2001 y el debate sobre la muerte del cine. La contrasta con El Amante, surgida en 1991. Se describen sus ejes recurrentes, como la historia del cine nacional, el vínculo entre cine y Estado y el pasaje del celuloide a lo digital, así como las secciones Conversaciones y Versiones y los dossiers sobre cine argentino de 2009 y de una década después. Se destaca su apuesta por pensar el presente sin someterse a la actualidad."
+abstractSource: editorial
 keywords:
   - "Kilómetro 111"
   - "cine"

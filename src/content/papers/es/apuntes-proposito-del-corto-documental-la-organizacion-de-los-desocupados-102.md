@@ -12,6 +12,8 @@ issue: 1
 issueOrder: 9
 author: "José Benclowicz"
 affiliation: "Universidad Nacional de Río Negro / Sede Andina, IIDyPCA / CONICET"
+abstract: "El texto presenta los apuntes de investigación que acompañan al corto documental La organización de los desocupados (dir. Rubén Guzmán, 2018). Se examinan los movimientos de desocupados surgidos en la década de 1930 con la crisis económica mundial, un fenómeno poco atendido por la literatura académica por la creencia en la incapacidad organizativa de los desempleados y su asimilación al lumpenproletariado. Tras repasar los casos de Inglaterra, Alemania, Estados Unidos y España, se sostiene que en la Argentina el Partido Comunista fue la única fuerza que planteó sistemáticamente la organización independiente de los desocupados, durante el llamado tercer período. Se describen sus comités, petitorios, movilizaciones y grupos de autodefensa, y los límites impuestos por la represión bajo el gobierno de Agustín P. Justo, la ausencia de reclamos del PS y la CGT y el giro hacia el Frente Popular."
+abstractSource: editorial
 keywords:
   - "Argentina"
   - "Cine documental"

@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 11
 author: "Natalia König"
 affiliation: "Fedra Roberto, Universidad Nacional de Río Negro"
+abstract: "El artículo propone una genealogía de la videodanza a partir de dos autores que institucionalizaron la práctica Maya Deren y Norman McLaren, y rastrea, con Walter Benjamin, cómo sus obras reaparecen por cita, reminiscencia u homenaje en producciones contemporáneas. En Deren se analizan su definición de videodanza y la construcción de un espacio solo posible en el film, ligada a las ideas de Moholy-Nagy y la Bauhaus, y se leen sus ecos, como el suelo ausente, en A Little Green Man, In Defiance of Gravity de RJ Muna y Crazy de Daniel Böhm. En McLaren se estudia la técnica de exposiciones múltiples de Pas de deux y su reelaboración digital en Choros, de Michael Langan y Terah Maher, y en Nascent, de Gina Czarnecki. El recorrido sugiere una progresiva desintegración de los cuerpos danzantes en píxeles y la hibridación de las técnicas del cine y la animación."
+abstractSource: editorial
 keywords:
   - "Natalia König"
   - "Fedra Roberto"

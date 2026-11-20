@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 14
 author: "Ximena Espeche"
 affiliation: "Centro de Historia Intelectual, Universidad Nacional de Quilmes, CONICET"
+abstract: "La reseña examina El siglo de la Revolución. Teatralidad, secularización, lenguaje nuevo, editado por Américo Cristófalo y Emilio Bernini, que estudia las relaciones entre la Revolución Francesa y la literatura del siglo XIX dentro de un proyecto colectivo de la Universidad de Buenos Aires. El abordaje se organiza en tres momentos: la traducción, en sentido literal y metafórico, como operación social, a partir de El XVIII Brumario de Marx; las tradiciones selectivas, según Raymond Williams, en capítulos sobre Hölderlin, Burke, Rousseau, Rimbaud, Hugo y Sarmiento, Blake o Mallarmé; y el vínculo entre lo nuevo, la violencia y la representación en los trabajos sobre Sade, À rebours, Historia de dos ciudades y Bouvard y Pécuchet. La autora suma preguntas propias y concluye que el libro invita a quienes investigan las revoluciones latinoamericanas del siglo XX a volver a las del XIX."
+abstractSource: editorial
 keywords:
   - "Literatura y cultura"
   - "Ximena Espeche"

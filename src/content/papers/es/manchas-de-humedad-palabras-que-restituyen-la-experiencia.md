@@ -13,6 +13,8 @@ heroImage: "/sites/default/files/ct-paper/santader_leal_manchas2x.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_santander_leal-manchas-de-humedad-palabras-que-restituyen.pdf"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/manchas-de-humedad-palabras-que-restituyen-la-experiencia"
+abstract: "La reseña presenta Manchas de humedad, de Rodolfo Reyes, reescritura de La proximidad del tsunami donde lo cotidiano se vuelve extraño entre lo lírico y lo narrativo. Tras una primera parte de infancia y paisaje pampeano o patagónico, la segunda, en fragmentos numerados, es la bitácora del aislamiento de un joven que proyecta paisajes despoblados en las manchas de humedad de su casa. El reseñista evoca a W. G. Sebald y la adherencia de Eugenio Montale, y sitúa el libro entre prosa y poesía, imagen y narración, memoria y olvido."
+abstractSource: editorial
 ---
 * * *
 

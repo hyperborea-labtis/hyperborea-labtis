@@ -9,6 +9,8 @@ issue: 1
 issueOrder: 6
 author: "Mariano Sverdloff"
 affiliation: "Universidad de Buenos Aires, CONICET"
+abstract: "El texto introduce la traducción de un ensayo de Barbara Carnevali sobre Guy Debord y presenta su filosofía como una investigación de la imagen en tanto fenómeno social desde una perspectiva fisiológica, opuesta a la lectura patológica de La sociedad del espectáculo: la imagen no es un engaño sino el tejido conectivo de toda interacción y la forma misma de lo real. El autor extrae consecuencias políticas de este enfoque, como la relación entre cuerpo y visibilidad en la desaparición de personas en la Argentina, y propone pensar los dispositivos comunicacionales del neoliberalismo como confiscación unilateral de la producción de imágenes antes que como alienación. Con la contraposición de Jean Starobinski entre Rousseau y Montaigne, ubica a Carnevali del lado de Montaigne, reseña su crítica de la theory y enumera cuatro dimensiones de su pensamiento, entre ellas la estética social y una ética del uso de las imágenes."
+abstractSource: editorial
 keywords:
   - "Barbara Carnevalli"
   - "Guy Debord"

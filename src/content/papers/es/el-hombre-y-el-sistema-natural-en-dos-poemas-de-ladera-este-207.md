@@ -9,6 +9,8 @@ section: "41º 9’ S 71º 8’ W"
 issue: 3
 issueOrder: 14
 author: "Stephen Clinton"
+abstract: "El artículo examina la huella del estructuralismo de Claude Lévi-Strauss en Ladera este, de Octavio Paz, a partir de Claude Lévi-Strauss o el nuevo festín de Esopo, donde los comentarios de Paz sobre el antropólogo funcionan como crítica indirecta de su propia poesía. El análisis de «Ejemplo» y «Cauce» muestra que estos poemas leen la naturaleza como un sistema de signos y se construyen mediante oposiciones binarias que desembocan en un isomorfismo conceptual: la tormenta es un ejemplo del principio cósmico de unidad que surge del conflicto, y el amor humano, parte de la oposición creativa de los principios masculino y femenino. Desde su ateísmo, Paz asigna al hombre un lugar casi incidental en un universo de estructuras ordenadas y busca trascender el tiempo mediante la comunión con el cosmos. Es la traducción, por Lucía Volpe y Carla Luján Di Biase, de un artículo publicado en el Journal of Spanish Studies: Twentieth Century."
+abstractSource: editorial
 keywords:
   - "literatura latinoamericana"
   - "Poesía"

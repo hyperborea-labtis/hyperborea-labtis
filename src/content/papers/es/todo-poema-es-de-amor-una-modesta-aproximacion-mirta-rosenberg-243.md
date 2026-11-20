@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 4
 issueOrder: 12
 author: "Andi Nachon"
+abstract: "En un texto que se dirige a la poeta en segunda persona, Andi Nachon propone una aproximación a la obra de Mirta Rosenberg a partir del recuerdo de un encuentro en 1994, cuando recibió de ella Teoría sentimental. Describe un territorio Rosenberg definido por tres tensiones: la intriga y la desconfianza ante lo real, que se concreta en una forma de conocimiento lateral, y el par inseparable de palabra y ritmo, un léxico opulento y una musicalidad del verso libre apoyada en el saber de la métrica. Destaca además la hibridación y el mestizaje de elegías, poemas ligeros y diarios, con ejemplos de Paisaje interior, y vincula esa poesía con las condiciones materiales de la autora como mujer, madre, traductora y poeta. A partir del título de su obra reunida, El árbol de palabras, sostiene que en esta poética el lenguaje es el lugar donde se propician otras formas de la experiencia."
+abstractSource: editorial
 keywords:
   - "Andi Nachon"
   - "mirta rosenberg"

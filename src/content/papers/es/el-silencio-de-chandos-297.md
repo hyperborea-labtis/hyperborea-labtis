@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 5
 issueOrder: 16
 author: "Rodolfo Reyes Macaya"
+abstract: "La reseña presenta la nueva traducción de la Carta de Lord Chandos (1902) de Hugo von Hofmannsthal, realizada por Nicolás Trujillo Osorio y publicada en 2021 por Cuadro de tiza ediciones en Santiago de Chile, e incorpora informaciones del traductor. Sitúa la Carta, en la que un poeta renuncia a la actividad literaria ante la insuficiencia de la palabra, en la Viena finisecular de los Habsburgo y en la crisis de la representación que atraviesa a Musil, Kafka o Wittgenstein, y la vincula con los silencios de Hölderlin y Rimbaud y con su anacronismo. Expone luego, según Trujillo, la afinidad del texto con los giros lingüístico, pragmático e icónico de la filosofía y los problemas de traducirlo: el tiempo, las peculiaridades del alemán y del castellano y la contradicción de escribir sobre la imposibilidad de escribir. Concluye que la Carta es una puerta de entrada al trabajo del pensar."
+abstractSource: editorial
 keywords:
   - "Hugo von Hofmannsthal"
   - "Carta de Lord Chandos"

@@ -66,6 +66,7 @@ collections:
       - { name: email, label: Email, widget: string, required: false, i18n: duplicate }
       - { name: affiliation, label: Afiliación, widget: string, required: false, i18n: true }
       - { name: abstract, label: Resumen, widget: text, required: false, i18n: true }
+      - { name: abstractSource, label: Autoría del resumen, widget: select, options: [{ label: "Del autor/a", value: author }, { label: "Elaborado por la redacción", value: editorial }], required: false, i18n: duplicate, hint: "«Elaborado por la redacción» muestra esa etiqueta bajo el resumen. Si el autor/a envía el suyo, cámbialo a «Del autor/a»." }
       - name: keywords
         label: Palabras clave
         widget: relation

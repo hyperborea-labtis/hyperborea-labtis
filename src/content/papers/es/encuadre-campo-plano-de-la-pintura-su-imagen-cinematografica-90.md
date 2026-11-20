@@ -9,6 +9,8 @@ issue: 1
 issueOrder: 10
 author: "Bernard Vouilloux"
 affiliation: "Université Paris-Sorbonne, CNRS/Paris-Sorbonne CELLF 16-21"
+abstract: "El artículo examina cómo la imagen cinematográfica puede mostrar algo de la operación del cuadro pictórico, a partir de tres términos que comparten ambos lenguajes: encuadre, campo y plano. Analiza el plano fijo y la inclusión del marco en Cézanne y Une visite au Louvre de Jean-Marie Straub y Danièle Huillet, que distinguen la pintura de su imagen fílmica, frente al ingreso en el cuadro en Sueños de Akira Kurosawa y El molino y la cruz de Lech Majewski, a la luz de la oposición de André Bazin entre marco centrípeto y pantalla centrífuga. Luego, con Alberti, Meyer Schapiro, Clement Greenberg y Rosalind Krauss, estudia el campo pictórico en Pollock de Ed Harris, en las películas de Hans Namuth sobre Pollock, con su dispositivo de vidrio, y en Le Mystère Picasso de Clouzot, cuya pretensión de revelar el misterio de la creación siguiendo la mano del pintor se pone en cuestión."
+abstractSource: editorial
 keywords:
   - "Bernard Vouilloux"
   - "film sur l'art"

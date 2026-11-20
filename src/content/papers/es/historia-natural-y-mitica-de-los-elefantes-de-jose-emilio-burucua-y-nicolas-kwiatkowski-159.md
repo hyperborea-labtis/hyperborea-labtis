@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 2
 issueOrder: 19
 author: "Ana Lía Gabrieloni"
+abstract: "La reseña presenta Historia natural y mítica de los elefantes de José Emilio Burucúa y Nicolás Kwiatkowski (Ampersand, 2019), que reúne fuentes textuales y un amplio repertorio iconográfico para reconstruir la historia natural y simbólica de estos animales desde la Antigüedad hasta el siglo XIX, a través de Europa, América, África, la India y el lejano Oriente. Según la reseña, los autores buscan en esa cultura pasada fuentes para una relación menos destructiva con estos animales, amenazados de extinción. Se recorren los capítulos del libro: los elefantes de Roma y del Renacimiento, como Hanno, obsequiado al papa León X; los autores griegos y latinos; la identificación del elefante con Cristo; su presencia en Montaigne y Burton; los testimonios de exploradores; el giro empírico de la Ilustración, y un excursus sobre la ciencia y las mitologías de la India. La reseña valora los recursos editoriales del volumen y lo considera un manifiesto a favor de la vida."
+abstractSource: editorial
 keywords:
   - "Historia natural y mítica de los elefantes"
   - "José Emilio Burucúa"

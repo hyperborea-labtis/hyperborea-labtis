@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 15
 author: "Rodolfo Reyes Macaya."
 affiliation: "Université Paris Sorbonne"
+abstract: "Entrevista de Rodolfo Reyes Macaya a Daniela Escobar, poeta, diseñadora y editora, una de las fundadoras del sello Overol. La conversación se centra en Curvatura del ánimo (2018), su primer libro, premiado en los Juegos Literarios Gabriela Mistral. Escobar describe un proceso de escritura sin urgencia por publicar, hecho de cortes y reescrituras, la búsqueda de continuidad narrativa en poemas sin título y un vocabulario construido con recuerdos familiares, sueños, los objetos del almacén y el paisaje de Renca. Se refiere también a sus textos como una especie de oración, a un ascetismo que pone la atención en la propia miseria y al ayuno como modo de mirar los hábitos. Distingue el diseño, entendido como un trabajo sistemático con una función específica, de la escritura y el arte, y relata su experiencia en Overol y en La Cooperativa, de la que extrae la idea de no hablar por el otro, sino con él, y de escuchar más."
+abstractSource: editorial
 keywords:
   - "Poesía"
   - "Daniela Escobar"

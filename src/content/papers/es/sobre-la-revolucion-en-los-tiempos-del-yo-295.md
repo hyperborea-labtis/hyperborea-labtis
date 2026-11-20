@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 5
 issueOrder: 15
 author: "Ana Lía Gabrieloni"
+abstract: "La reseña presenta El siglo de la Revolución. Teatralidad, secularización, lenguaje nuevo (2020), volumen editado por Américo Cristófalo y Emilio Bernini que reúne trabajos surgidos de la cátedra de Literatura del siglo XIX de la Universidad de Buenos Aires. A partir del cuadro de Hubert Robert sobre la demolición de la Bastilla reproducido en la cubierta, propone leer el libro como un acelerador de las partículas elementales de la revolución, en el que el vacío opera como tema y como método. Recorre las colisiones que el volumen identifica, entre derecho natural y positivo, régimen moral y político, vida íntima y pública, y capítulos dedicados a Sade, Rousseau y Robespierre, Blake, Flaubert, Rimbaud, Mallarmé y Wagner, hasta el poema en prosa, el verso libre y las exploraciones de Dujardin. Con Los Once de Pierre Michon y la vista imaginaria de la Grande Galerie del Louvre en ruinas de Robert, subraya la ambigüedad entre celebración y aborrecimiento del Terror."
+abstractSource: editorial
 keywords:
   - "El siglo de la revolución"
   - "Américo Cristófalo"

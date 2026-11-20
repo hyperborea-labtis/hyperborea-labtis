@@ -14,6 +14,8 @@ heroImage: "/sites/default/files/ct-paper/chazarreta_intro2.jpg"
 pdf: "/sites/default/files/ct-paper/hyperborea_03_chazarreta_apostilla-traducciones-octavio-paz_0.pdf"
 draft: false
 sourceUrl: "https://hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215"
+abstract: "Presentación de las traducciones sobre Octavio Paz incluidas en el tercer número, en continuidad con las de Enrico Mario Santí y Klaus Meyer-Minnemann publicadas en el segundo. Ambos textos se ocupan de la década 1958-1968, marcada por la estancia de Paz como embajador en la India. Stephen Clinton analiza Ladera este a partir de Claude Lévi-Strauss o el nuevo festín de Esopo, donde lee una crítica del propio Paz al poemario, y Anthony Stanton examina el contexto de «Los signos en rotación» como constelación de la teoría poética paciana."
+abstractSource: editorial
 ---
 * * *
 

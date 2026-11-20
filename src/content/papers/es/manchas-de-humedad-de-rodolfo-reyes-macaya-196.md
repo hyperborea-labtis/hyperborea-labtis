@@ -8,6 +8,8 @@ title: "Manchas de humedad de Rodolfo Reyes Macaya "
 section: "Manet et manebit"
 issue: 3
 issueOrder: 12
+abstract: "Selección, realizada por Francisca Toledo Candia, de textos de Manchas de humedad, libro de Rodolfo Reyes Macaya publicado en Santiago de Chile por Jámpster Libros en 2019. Incluye poemas de las secciones Para una historia del viento, Manchas de humedad y Semillas de cardo, y una serie de fragmentos numerados en prosa en los que un narrador casi inmóvil cuida a Nerón, el perro de unos amigos que se fueron, observa las manchas de humedad de la pared y a sus vecinos, asiste a la eutanasia del animal y lee sobre Czapski, que habló de memoria sobre Proust en el Gulag. Recorren los textos imágenes de viento, cardos, jaibas y olas, una foto que dice Valdivia 1960 pero fue tomada en Pichilemu 1994 y el gesto de tomar aire para contar algo y no contar nada."
+abstractSource: editorial
 keywords:
   - "Rodolfo Reyes Macaya"
   - "Manchas de humedad"

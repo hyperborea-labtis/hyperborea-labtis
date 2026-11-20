@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 6
 issueOrder: 11
 author: "Cécile Wajsbrot"
+abstract: "Traducción, a cargo de Ana Lía Gabrieloni, de un interludio y del capítulo IV de la novela Nevermore de Cécile Wajsbrot (Le Bruit du temps, 2021). El interludio recorre la High Line como escenario del reciclaje arquitectónico y del olvido. En el capítulo IV, la narradora, una traductora que reside en Dresde con una beca, traduce Time Passes, el corredor que une los dos bloques de To the Lighthouse de Virginia Woolf, y expone sus vacilaciones ante frases del original. El capítulo enlaza lagos y faros, del Averno de la Eneida y el lago junto al campo de Ravensbrück a The Phantom Light de Michael Powell, con la zona de exclusión de Chernóbil, la memoria de la ciudad bombardeada en 1945 y el encuentro, sobre un puente del Elba, con una presencia espectral que evoca a una amiga."
+abstractSource: editorial
 keywords:
   - "Cécile Wajsbrot"
   - "Nevermore"

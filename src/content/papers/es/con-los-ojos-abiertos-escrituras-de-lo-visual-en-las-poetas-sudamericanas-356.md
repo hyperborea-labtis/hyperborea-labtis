@@ -10,6 +10,8 @@ issueOrder: 14
 author: "María José Punte"
 email: "majo.punte@gmail.com"
 affiliation: "Universidad Católica Argentina, Universidad de Buenos Aires"
+abstract: "La reseña presenta Con los ojos abiertos. Escrituras de lo visual en las poetas sudamericanas, de María Lucía Puppo (Iberoamericana/Vervuert, 2024), estudio que vincula, mediante series y genealogías, a poetas uruguayas (Delmira Agustini, Amanda Berenguer, Marosa di Giorgio), chilenas (Elvira Hernández, Cecilia Vicuña) y argentinas (Alejandra Pizarnik, Juana Bignozzi, Alicia Genovese). Según la reseña, el libro parte de la pregunta de por qué no leer literatura desde los estudios visuales y, en diálogo con W. J. T. Mitchell, examina cómo estas poetas indagan la imagen entre lo tecnológico y lo natural, lo fantasmático y lo material, las artes plásticas y la calle, recorridos que organizan sus cinco capítulos. El título, tomado de un poema de Sophia de Mello, remite a la escritura como testimonio de la disponibilidad y la reticencia de la mirada. La reseña concluye que la crítica literaria rescata autoras relegadas por las historias canónicas y, como la poesía, contribuye a hacer comunidad."
+abstractSource: editorial
 keywords:
   - "Con los ojos abiertos. Escrituras de lo visual en las poetas sudamericanas"
   - "María Lucía Puppo"

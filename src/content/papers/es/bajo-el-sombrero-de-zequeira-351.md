@@ -10,6 +10,8 @@ issueOrder: 10
 author: "Astrid Romero"
 email: "romeroastrid@gmail.com"
 affiliation: "S. C. de Bariloche"
+abstract: "El ensayo estudia la tríada de poemas Noche de Reyes de Jorge Luis Arcos La Rosa, aparecidos en De los ínferos (1999), El libro de las conversiones imaginarias (2014) y, el tercero, en el Diario de Cuba, aunque pertenece al inédito Finis terrae. Parte de una carta de Fina García-Marruz sobre el primero y, con la idea de perderse de Rebecca Solnit y la imagen del sombrero de Manuel de Zequeira y Arango, quien se creía invisible al ponérselo, lee en los poemas el itinerario de un viajero ensimismado que va de La Habana a Madrid en busca de una revelación que nunca llega, marcado por la patria perdida, los amigos poetas suicidas y los amores ausentes. Analiza el paso de la voz lírica de la primera a la tercera persona, que crea un distanciamiento progresivo. Con Cintio Vitier, propone que el anhelo sería en estos poemas forma y sustancia de lo poético."
+abstractSource: editorial
 keywords:
   - "Jorge Luis Arcos La Rosa"
   - "Noche de Reyes"

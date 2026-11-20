@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 7
 author: "Karina Jaufmann"
 affiliation: "Universidad Nacional de Río Negro"
+abstract: "El ensayo examina la poética de la elegía pastoral en dos obras audiovisuales: Vremena goda (1975), film armenio de Artavazd Peleshyan, y Arise! (2005), de Rubén Guzmán. A partir de Raymond Williams, recorre la tradición pastoral, su contraste entre campo y ciudad y su apego a un pasado perdido, y lee en Vremena goda la confluencia de locus amoenus y locus horridus y una cadena de coerción entre animal, hombre y máquina ordenada desde la perspectiva humana. Con la elegía ecológica de Timothy Morton y las reflexiones de Gabriel Giorgi sobre la animalidad, se pregunta si es posible una elegía pastoral sin el pastor como ordenador de experiencias y sentidos, e interroga la voluntad de las ovejas. En Arise! encuentra una mirada antropocéntrica que compite con una animalidad latente y que desarma el ordenamiento de cuerpos entre humano y animal, y concluye admitiendo el desconocimiento de ese límite."
+abstractSource: editorial
 keywords:
   - "Literatura y cine"
   - "Karina Jaufmann"

@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 2
 issueOrder: 9
 author: "Lucrecia Radyk"
+abstract: "This article examines early twentieth-century films and texts from the English-speaking world that depict their own present and allude to international commerce and war. Drawing on John Grierson’s notion of documentary as the creative treatment of actuality and on Paul Rotha’s writings, it argues that lesser-known articles by Virginia Woolf and Djuna Barnes share the documentary concern with narratives of actuality. Woolf’s 1931 article on the London docks, whose didactic intent approaches the documentary method, is compared with Rotha’s Shipyard (1935), which presents the common man as essential to modern industry, and Humphrey Jennings’s Farewell Topsails (1937), a nostalgic view of sailors displaced by changes in maritime trade. Barnes’s «The Hem of Manhattan» (1917) disdains factual detail yet can be read as a statement against the First World War. The article concludes that these works share a preoccupation with the present and drastic historical change."
+abstractSource: editorial
 keywords:
   - "Modernism"
   - "film and text"

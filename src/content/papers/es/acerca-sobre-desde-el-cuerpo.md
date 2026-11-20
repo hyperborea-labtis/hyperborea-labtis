@@ -10,6 +10,8 @@ issueOrder: 12
 author: "Guadalupe Garione"
 email: "guadalupegarione@mi.unc.edu.ar"
 affiliation: "Facultad de Filosofía y Humanidades, Universidad Nacional de Córdoba"
+abstract: "La reseña presenta el libro digital Hilda Zagaglia. De lo inasible a lo visible (Bosquemadura E-DITORIAL DE ARTE), que reúne fotografías, tres ensayos de especialistas, una introducción de Adriana Musitano y un texto de la artista sobre más de cuarenta años de trayectoria. A partir de la triple preposición acerca/sobre/desde con que Alejandra Ciriza caracteriza su pintura política, la autora lee la obra de Zagaglia como un modo de hacer ligado al cuerpo a cuerpo con el territorio: la dictadura, la africanidad olvidada de Alta Gracia, la violencia sobre los cuerpos femeninos, la conquista de América. Recurre a Las tretas del débil de Josefina Ludmer para pensar las travesuras que señala Natalia Encinas y el cruce entre lo personal y lo político que destaca Renato Miracco. Desde los Nuevos Materialismos, se detiene en materiales como arena, semillas, plumas y huesos como alianza entre lo humano y lo no humano."
+abstractSource: editorial
 keywords:
   - "arte contemporáneo"
   - "Argentina"

@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 5
 issueOrder: 9
 author: "Rubén Guzmán"
+abstract: "El ensayo analiza la influencia de la arquitectura expresionista en las películas alemanas de autor producidas entre 1919 y 1926. Tras reseñar el contexto político y económico de la República de Weimar, caracteriza esa arquitectura por la distorsión, la interdependencia de interior y exterior, la repetición de formas y su correspondencia con la música, con referencias a Mendelsohn, Poelzig y Finsterlin. El cine habría ofrecido a estos arquitectos una materialización temporal de ideas irrealizables, y la escenografía debía representar la condición del alma de los personajes. Se examinan los decorados de Das Kabinett des Dr. Caligari, Der Golem. Wie er in die Welt kam y Von Morgens bis Mitternachts, junto con filmes de Murnau, Lang, Leni, Pabst y Wiene. El texto concluye con el ocaso del expresionismo ante la Neue Sachlichkeit, el capital estadounidense y la emigración de cineastas a Hollywood, y recuerda, con Ernst Bloch, que su herencia no se ha agotado."
+abstractSource: editorial
 keywords:
   - "historia del cine"
   - "Alemania"

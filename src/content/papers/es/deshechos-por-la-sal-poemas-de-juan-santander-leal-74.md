@@ -7,6 +7,8 @@ title: "Deshechos por la sal. Poemas de Juan Santander Leal"
 section: "Manet et manebit"
 issue: 1
 issueOrder: 11
+abstract: "Selección de poemas de Juan Santander Leal (Copiapó, Chile, 1984) tomados de sus libros Cuarzo (2012) e Hijos únicos (2016), precedida de una introducción de Rodolfo Reyes M. La introducción caracteriza ambos libros por un lirismo que entrelaza la imagen visual y la narración de acontecimientos mínimos, señales de un relato secreto, y los contrapone: al verso elástico de Cuarzo, con un espacio dinámico y una identidad difuminada por la observación y la degradación de los objetos, se opone el fraseo comedido de Hijos únicos, donde prima lo escenográfico, la memoria se mueve en espiral y la tentativa autobiográfica se tensa con la segunda persona y la figura del doble. Propone leer la selección como un interrogante acerca de la manera en que el individuo se cristaliza en el mundo. Los poemas recorren escenas domésticas, familiares y de infancia, la enfermedad y el paisaje. Se incluye una nota biobibliográfica del autor."
+abstractSource: editorial
 keywords:
   - "Juan Santander Leal"
   - "Antología"

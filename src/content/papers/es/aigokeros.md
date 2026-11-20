@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 6
 issueOrder: 8
 author: "Narcisa Hirsch"
+abstract: "Selección de fragmentos de Aigokeros. Cuadernos patagónicos, de Narcisa Hirsch, ofrecida en versión pdf para preservar el diálogo entre los textos, los ideogramas y las imágenes según el diseño de Gerardo Patiño. Los textos fueron seleccionados por Ana Lía Gabrieloni y Rubén Guzmán, y las imágenes que los acompañan provienen del cortometraje El refugio de Narcisa Heuser, del mismo Rubén Guzmán."
+abstractSource: editorial
 keywords:
   - "Narcisa Hirsch"
   - "textos e imágenes"

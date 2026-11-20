@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 20
 author: "Nataliya Lenina"
 affiliation: "York University - Glendon Campus"
+abstract: "La reseña presenta Image et médium. Sur une hypothèse de Pascal Quignard (2018), de Bernard Vouilloux, libro que, a partir de una relectura del mito de Medea y del ciclo de Medea de Quignard, atraviesa la literatura, la pintura, la música y la danza. Expone su hipótesis central: la imagen, que reenvía a una presencia siempre ausente, no sólo posee un medio sino que es ella misma un médium. Recorre luego la lectura de Medea como figura de la mediación dotada de los poderes de un médium, la oposición entre los frescos de Pompeya, centrados en el instante anterior al infanticidio, y la pintura moderna, la distinción entre un momento griego y uno romano, y la Medea chamánica encarnada por la bailarina de butoh Carlotta Ikeda en un espectáculo con guion de Quignard. Según la reseña, el libro no ofrece respuestas unívocas y aporta a los estudios sobre las relaciones entre texto e imagen."
+abstractSource: editorial
 keywords:
   - "Bernard Vouilloux"
   - "Pascal Quignard"

@@ -9,6 +9,8 @@ issue: 6
 issueOrder: 2
 author: "Klaus Garber"
 affiliation: "Profesor emérito de la Universität Osnabrück"
+abstract: "Traducción, a cargo de Enrique Bein, de un apartado de la tesis doctoral de Klaus Garber Der Locus Amoenus und der Locus Terribilis (1974). Garber indaga qué motiva, en la literatura barroca alemana, la permanencia en el locus terribilis. Distingue la huida de la sociedad del amante doliente, motivación heredada de Propercio y del petrarquismo que juzga superficial, del alejamiento del mundo del ermitaño en la novela picaresca, como en el Simplicissimus de Grimmelshausen, donde el bosque es cifra del distanciamiento. Muestra que ese lugar es a la vez sitio de prueba de la fidelidad y de castigo, ambivalencia que atribuye al amor petrarquista. Sostiene, por último, que en Johann Beer, cuando la vida eremítica pierde su legitimación religiosa, los ermitaños comienzan a deleitarse con la naturaleza, aunque sin trascender la percepción sensorial."
+abstractSource: editorial
 keywords:
   - "Klaus Garber"
   - "locus horridus"

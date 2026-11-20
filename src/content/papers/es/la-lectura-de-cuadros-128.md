@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 1
 author: "James A. W. Heffernan[1]"
 affiliation: "Dartmouth College"
+abstract: "Traducción, a cargo de Lucrecia Radyk, del artículo Reading Pictures de James A. W. Heffernan, publicado en PMLA (2019). El ensayo sostiene que interpretar cuadros merece llamarse lectura por derecho propio, reconociendo el carácter distintivo de los signos pictóricos y la indeterminación de sus marcas. Discute la teoría de Louis Marin, construida a partir de la carta de Poussin sobre El maná, y muestra que presupone textos previos; repasa luego el debate entre perceptualismo y semiótica, de Lessing a Gombrich, Bryson y W. J. T. Mitchell. Analiza el papel de los títulos, El valle de Dedham de Constable, Naturaleza muerta con Biblia de Van Gogh, La traición de las imágenes de Magritte y obras hechas de palabras de Jenny Holzer, Christopher Wool y Tsang Kin-Wah. Concluye que leer cuadros exige procesar las palabras que los rodean sin equiparar signos pictóricos y verbales, y atender a lo subsemiótico que resiste la verbalización."
+abstractSource: editorial
 keywords:
   - "Biblia"
   - "Laocoonte"

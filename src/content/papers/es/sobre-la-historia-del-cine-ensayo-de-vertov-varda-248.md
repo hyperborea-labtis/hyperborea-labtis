@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 4
 author: "Timothy Corrigan"
 affiliation: "Profesor emérito, de Filología inglesa, estudios sobre cine e historia del arte, University of Pennsylvania"
+abstract: "El ensayo reconstruye la historia del cine ensayo, que tiene en Carta de Siberia (1957) de Chris Marker, caracterizada por André Bazin como filme ensayo, un momento decisivo precedido por una historia ligada al documental y la vanguardia. Sostiene que lo ensayístico no es una alternativa a esas prácticas ni a la narración, sino un modo de habitarlas y repensarlas como diálogo de ideas dirigido a un público activo. A partir del contraste entre El hombre de la cámara de Dziga Vertov y 2 o 3 cosas que sé de ella de Jean-Luc Godard, rastrea antecedentes en Eisenstein, la voz en off documental, los cineclubes franceses y Humphrey Jennings. Ubica en la década de 1940 un punto de inflexión, con Hans Richter y la caméra-stylo de Alexandre Astruc, y destaca el cortometraje y el boceto en Resnais, Rivette, Franju y Godard. Concluye con Agnès Varda, cuyos Los espigadores y la espigadora y su continuación renuevan el diálogo del cineclub."
+abstractSource: editorial
 keywords:
   - "Timothy Corrigan"
   - "cine de autor"

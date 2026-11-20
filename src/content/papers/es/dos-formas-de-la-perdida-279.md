@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 6
 author: "Martín N. Chávez"
 affiliation: "Universidad Nacional de Río Negro"
+abstract: "El artículo compara dos expresiones de lo elegíaco: Una vida humilde, film de Aleksandr Sokurov que integra su trilogía oriental realizada en Japón, y «El jardín», poema póstumo de la escritora mexicana Elena Garro. A partir de los estudios sobre la elegía de Karen Weisman, David Kennedy y Paul Coates, se analiza cómo la temporalidad detenida del film construye el tono elegíaco que envuelve a Umeno Matsuyoshi, una anciana que vive sola en las montañas de Nara y cuyos poemas finales lamentan a su marido muerto, a sus hijos y su soledad. En el poema de Garro, en cambio, el jardín y la casa de la infancia no son solo escenario sino objeto de la pérdida, y sus preguntas se inscriben en el tópico del ubi sunt, evocando a los padres como fantasmas. El trabajo concluye que Umeno acepta lo irrecuperable, mientras que Garro formula una súplica que culmina en una pregunta imposible de responder."
+abstractSource: editorial
 keywords:
   - "Literatura y cine"
   - "Martín Chavez"
