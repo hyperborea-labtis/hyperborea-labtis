@@ -15,9 +15,9 @@ const lang = Astro.params.lang as Locale;
 const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY as string | undefined;
 
 const text: Record<Locale, Record<string, string>> = {
-  es: { title: "Contacto", name: "Su nombre", email: "Su dirección de correo electrónico", subject: "Asunto", message: "Mensaje", send: "Enviar mensaje", ok: "Mensaje enviado. ¡Gracias!", error: "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde.", challenge: "No se pudo verificar la comprobación de seguridad. Actualice la página e inténtelo de nuevo.", limited: "Demasiados intentos. Espere un minuto e inténtelo de nuevo.", unavailable: "El formulario de contacto no está disponible por el momento." },
-  en: { title: "Contact", name: "Your name", email: "Your email address", subject: "Subject", message: "Message", send: "Send message", ok: "Message sent. Thank you!", error: "The message could not be sent. Please try again later.", challenge: "The security check could not be verified. Reload the page and try again.", limited: "Too many attempts. Wait a minute and try again.", unavailable: "The contact form is temporarily unavailable." },
-  fr: { title: "Contact", name: "Votre nom", email: "Votre adresse e-mail", subject: "Sujet", message: "Message", send: "Envoyer le message", ok: "Message envoyé. Merci !", error: "Le message n’a pas pu être envoyé. Veuillez réessayer plus tard.", challenge: "La vérification de sécurité a échoué. Rechargez la page et réessayez.", limited: "Trop de tentatives. Patientez une minute et réessayez.", unavailable: "Le formulaire de contact est momentanément indisponible." },
+  es: { title: "Contacto", name: "Su nombre", email: "Su dirección de correo electrónico", subject: "Asunto", message: "Mensaje", send: "Enviar mensaje", ok: "Mensaje enviado. ¡Gracias!", error: "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde.", challenge: "No se pudo verificar la comprobación de seguridad. Actualice la página e inténtelo de nuevo.", limited: "Demasiados intentos. Espere un minuto e inténtelo de nuevo.", unavailable: "El formulario de contacto no está disponible por el momento.", invalid: "Revise los campos marcados: todos son obligatorios y el correo debe ser válido." },
+  en: { title: "Contact", name: "Your name", email: "Your email address", subject: "Subject", message: "Message", send: "Send message", ok: "Message sent. Thank you!", error: "The message could not be sent. Please try again later.", challenge: "The security check could not be verified. Reload the page and try again.", limited: "Too many attempts. Wait a minute and try again.", unavailable: "The contact form is temporarily unavailable.", invalid: "Check the highlighted fields: all are required and the email address must be valid." },
+  fr: { title: "Contact", name: "Votre nom", email: "Votre adresse e-mail", subject: "Sujet", message: "Message", send: "Envoyer le message", ok: "Message envoyé. Merci !", error: "Le message n’a pas pu être envoyé. Veuillez réessayer plus tard.", challenge: "La vérification de sécurité a échoué. Rechargez la page et réessayez.", limited: "Trop de tentatives. Patientez une minute et réessayez.", unavailable: "Le formulaire de contact est momentanément indisponible.", invalid: "Vérifiez les champs signalés : tous sont obligatoires et l’adresse e-mail doit être valide." },
 };
 const t = text[lang];
 ---
@@ -36,7 +36,7 @@ const t = text[lang];
         <input class="hb-contact-trap" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="cf-turnstile" data-sitekey={siteKey} data-language={lang} data-theme="light"></div>
         <button type="submit">{t.send}</button>
-        <p id="contact-status" role="status" data-ok={t.ok} data-error={t.error} data-challenge={t.challenge} data-limited={t.limited}></p>
+        <p id="contact-status" role="status" data-ok={t.ok} data-error={t.error} data-challenge={t.challenge} data-limited={t.limited} data-invalid={t.invalid}></p>
       </form>
       <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
       )}
@@ -48,9 +48,28 @@ const t = text[lang];
   const form = document.getElementById("contact-form");
   const status = document.getElementById("contact-status");
   if (form instanceof HTMLFormElement && status) {
+    form.addEventListener("input", (ev) => {
+      const field = ev.target;
+      if (field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) {
+        if (field.hasAttribute("aria-invalid") && field.checkValidity()) field.setAttribute("aria-invalid", "false");
+      }
+    });
     form.addEventListener("submit", async (ev) => {
       ev.preventDefault();
-      if (!form.reportValidity()) return;
+      // Our own validation (the form is novalidate): mark each bad field, say so in the live region
+      // and move the focus to the first one.
+      let firstInvalid: HTMLInputElement | HTMLTextAreaElement | null = null;
+      for (const field of form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[required]")) {
+        const bad = !field.checkValidity();
+        field.setAttribute("aria-invalid", String(bad));
+        if (bad && !firstInvalid) firstInvalid = field;
+      }
+      if (firstInvalid) {
+        status.setAttribute("role", "alert");
+        status.textContent = status.dataset.invalid ?? "";
+        firstInvalid.focus();
+        return;
+      }
       const button = form.querySelector("button");
       if (button) button.disabled = true;
       try {
@@ -60,9 +79,11 @@ const t = text[lang];
           body: JSON.stringify(Object.fromEntries(new FormData(form))),
         });
         const failure = res.status === 429 ? status.dataset.limited : res.status === 403 ? status.dataset.challenge : status.dataset.error;
+        status.setAttribute("role", res.ok ? "status" : "alert");
         status.textContent = (res.ok ? status.dataset.ok : failure) ?? "";
         if (res.ok) form.reset();
       } catch {
+        status.setAttribute("role", "alert");
         status.textContent = status.dataset.error ?? "";
       }
       // A Turnstile token is single-use: ask for a fresh one after every attempt.

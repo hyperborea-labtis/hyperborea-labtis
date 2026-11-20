@@ -36,7 +36,7 @@ const isActive = (item: (typeof nav)[number]) =>
           <nav class="hb-nav" aria-label={t("nav.main")}>
             <ul class="hb-nav-list">
               {
-                nav.map((item) => (
+                nav.map((item, i) => (
                   <li class="hb-nav-item">
                     <div class="hb-nav-row">
                       <a
@@ -53,6 +53,7 @@ const isActive = (item: (typeof nav)[number]) =>
                           class="hb-caret-button"
                           aria-label={`${t("nav.submenu")}: ${item.label}`}
                           aria-expanded="false"
+                          aria-controls={`submenu-${i}`}
                         >
                           <svg class="hb-caret" viewBox="0 0 1792 1792" aria-hidden="true">
                             <g transform="translate(0,1536) scale(1,-1)" fill="currentColor">
@@ -63,7 +64,7 @@ const isActive = (item: (typeof nav)[number]) =>
                       )}
                     </div>
                     {item.children && (
-                      <ul class="hb-submenu">
+                      <ul class="hb-submenu" id={`submenu-${i}`}>
                         {item.children.map((child) => (
                           <li>
                             <a
@@ -116,18 +117,56 @@ const isActive = (item: (typeof nav)[number]) =>
 </div>
 
 <script>
-  // Dropdown toggle (mobile tap) + fixed-on-scroll header (desktop > 767px).
-  const container = document.querySelector<HTMLElement>(".hb-header-container");
-  const header = container?.querySelector<HTMLElement>(".hb-header");
+  // Submenus follow the "disclosure" pattern: the caret is a button (aria-expanded / aria-controls);
+  // the menu also opens on hover with the mouse. Escape closes it (hover included, WCAG 1.4.13) and
+  // returns the focus to the button; so do a click outside and tabbing out of the item.
+  const items = [...document.querySelectorAll<HTMLElement>(".hb-nav-item")].filter((li) => li.querySelector(".hb-caret-button"));
 
-  document.querySelectorAll<HTMLButtonElement>(".hb-caret-button").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const submenu = btn.closest(".hb-nav-item")?.querySelector(".hb-submenu");
-      const open = submenu?.classList.toggle("is-open") ?? false;
-      btn.setAttribute("aria-expanded", String(open));
+  const parts = (li: HTMLElement) => ({
+    button: li.querySelector<HTMLButtonElement>(".hb-caret-button")!,
+    menu: li.querySelector<HTMLElement>(".hb-submenu")!,
+  });
+  function setOpen(li: HTMLElement, open: boolean) {
+    const { button, menu } = parts(li);
+    menu.classList.toggle("is-open", open);
+    button.setAttribute("aria-expanded", String(open));
+  }
+  const isOpen = (li: HTMLElement) => parts(li).menu.classList.contains("is-open");
+
+  for (const li of items) {
+    const { button } = parts(li);
+    button.addEventListener("click", () => {
+      const open = !isOpen(li);
+      for (const other of items) if (other !== li) setOpen(other, false);
+      li.classList.remove("is-dismissed");
+      setOpen(li, open);
     });
+    li.addEventListener("mouseleave", () => li.classList.remove("is-dismissed"));
+    li.addEventListener("focusout", (ev) => {
+      if (!li.contains(ev.relatedTarget as Node | null)) setOpen(li, false);
+    });
+  }
+
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Escape") return;
+    for (const li of items) {
+      const shown = isOpen(li) || li.matches(":hover");
+      if (!shown) continue;
+      const focusInside = li.contains(document.activeElement);
+      setOpen(li, false);
+      if (li.matches(":hover")) li.classList.add("is-dismissed"); // hides a hover-opened menu until the pointer leaves
+      if (focusInside) parts(li).button.focus();
+    }
+  });
+  document.addEventListener("click", (ev) => {
+    for (const li of items) if (isOpen(li) && !li.contains(ev.target as Node)) setOpen(li, false);
   });
 
+  // Header fixed on scroll (desktop > 767px). Its height is published as --hb-header-h so that
+  // `scroll-padding-top` keeps the element that receives the focus (or an #anchor) from landing
+  // underneath it (WCAG 2.4.11).
+  const container = document.querySelector<HTMLElement>(".hb-header-container");
+  const header = container?.querySelector<HTMLElement>(".hb-header");
   if (container && header) {
     let fixed = false;
     const update = () => {
@@ -136,6 +175,10 @@ const isActive = (item: (typeof nav)[number]) =>
         container.style.paddingBottom = `${header.offsetHeight}px`;
         container.classList.add("is-fixed");
         fixed = true;
+        // The header shrinks with a 0.2 s transition: publish its settled height afterwards.
+        window.setTimeout(() => {
+          if (fixed) document.documentElement.style.setProperty("--hb-header-h", `${header.offsetHeight}px`);
+        }, 300);
       } else if (!shouldFix && fixed) {
         container.classList.remove("is-fixed");
         container.style.paddingBottom = "";

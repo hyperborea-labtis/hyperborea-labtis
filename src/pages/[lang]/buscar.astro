@@ -158,6 +158,21 @@ const strings = {
       history.replaceState(null, "", url);
     }
 
+    // Pagefind's excerpt is escaped text with <mark> around the matches. Rebuilt node by node (never
+    // assigned as HTML): anything that is not plain text or <mark> is flattened to its text.
+    function appendExcerpt(target: HTMLElement, html: string) {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      for (const node of doc.body.childNodes) {
+        if (node instanceof HTMLElement && node.tagName === "MARK") {
+          const mark = document.createElement("mark");
+          mark.textContent = node.textContent;
+          target.append(mark);
+        } else {
+          target.append(document.createTextNode(node.textContent ?? ""));
+        }
+      }
+    }
+
     async function renderBatch() {
       const batch = pending.splice(0, PAGE);
       const items = await Promise.all(batch.map((r) => r.data()));
@@ -171,7 +186,7 @@ const strings = {
         a.textContent = d.meta.title ?? d.url;
         h.append(a);
         const p = document.createElement("p");
-        p.innerHTML = d.excerpt; // Pagefind output: escaped text + <mark>
+        appendExcerpt(p, d.excerpt);
         li.append(h, p);
         list.append(li);
       }

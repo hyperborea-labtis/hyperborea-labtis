@@ -778,6 +778,26 @@ if (OFFLINE) {
   }
   record("18. Page structure (h1, headings, alt, skip link, ids, lang)", bad.length ? "fail" : "pass", `${n} pages, ${bad.length} problems`, bad);
 }
+// ---------- 19. Accessibility guards in the source ----------
+// Things no built page can show on its own: scripts must not build HTML from strings (innerHTML and
+// friends: XSS surface, and a future Trusted Types policy would reject them), and the stylesheet keeps
+// the support for reduced motion, forced colors (Windows high contrast) and the fixed header's
+// scroll padding (WCAG 2.4.11).
+{
+  const problems = [];
+  const sinks = /\.(?:innerHTML|outerHTML)\s*=|insertAdjacentHTML\s*\(|document\.write\s*\(/;
+  const sources = [...walk(path.join(ROOT, "src"), (x) => /\.(astro|ts|mjs|js)$/.test(x) && !x.includes(`${path.sep}content${path.sep}`)), ...walk(path.join(ROOT, "worker"), (x) => /\.(ts|js)$/.test(x))];
+  for (const f of sources) {
+    fs.readFileSync(f, "utf8").split("\n").forEach((line, i) => {
+      if (sinks.test(line)) problems.push(`${relf(f)}:${i + 1}  builds HTML from a string: ${line.trim().slice(0, 80)}`);
+    });
+  }
+  const css = fs.readFileSync(path.join(ROOT, "src", "styles", "hyperborea.css"), "utf8");
+  for (const [needle, why] of [["prefers-reduced-motion", "reduced-motion support"], ["forced-colors", "forced-colors support"], ["scroll-padding-top", "scroll padding for the fixed header"]]) {
+    if (!css.includes(needle)) problems.push(`src/styles/hyperborea.css  lost ${why} (${needle})`);
+  }
+  record("19. Accessibility guards (no HTML sinks, motion/forced-colors/scroll-padding CSS)", problems.length ? "fail" : "pass", `${sources.length} source files, ${problems.length} problems`, problems);
+}
 // ---------- 13. Own-domain links in content ----------
 {
   const bad = [];

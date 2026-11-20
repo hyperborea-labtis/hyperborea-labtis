@@ -975,6 +975,12 @@
   padding-left: 14px;
 }
 .hb-lang-link {
+  /* 24 x 24 px minimum target (WCAG 2.5.8) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
   font-size: 0.72em;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -1099,3 +1105,50 @@
 .hb-contact-unavailable { max-width: 640px; margin: 0 auto 60px; text-align: center; font-weight: 700; }
 .hb-contact button:disabled { opacity: 0.6; cursor: wait; }
 .hb-contact-trap { position: absolute; left: -9999px; }
+
+/* ---------- Keyboard, motion and high-contrast support (WCAG 2.2) ---------- */
+/* Escape pressed while a hover-opened submenu is showing: hide it until the pointer leaves. */
+.hb-nav-item.is-dismissed > .hb-submenu {
+  display: none;
+}
+
+/* The header is fixed while scrolling (desktop): the focused element or #anchor must not end up
+   underneath it. Header.astro publishes its real height as --hb-header-h. */
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: calc(var(--hb-header-h, 64px) + 16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Windows high contrast and similar: colors are replaced by the system palette, so anything that
+   signals focus or the current page only through a color or a border color needs a shape. */
+@media (forced-colors: active) {
+  .hb-input:focus,
+  .hb-select:focus,
+  .hb-contact input:focus,
+  .hb-contact textarea:focus,
+  .hb-button:focus {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+  .hb-nav-link.is-active,
+  .hb-lang-link.is-active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .hb-pager a.is-active {
+    outline: 2px solid ButtonText;
+    outline-offset: -2px;
+  }
+}

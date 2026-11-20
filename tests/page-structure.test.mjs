@@ -52,3 +52,15 @@ test("lang attributes are valid language tags (html and parts)", () => {
   assert.match(structureProblems(page('<h1>a</h1><p lang="espanol">x</p>'), {}).join(), /invalid lang "espanol"/);
   assert.deepEqual(structureProblems(page('<h1>a</h1><p lang="fr">x</p><p lang="pt-BR">y</p>'), {}), []);
 });
+
+test("aria-controls / aria-labelledby / aria-describedby point at ids that exist", () => {
+  const broken = page('<h1>a</h1><button aria-expanded="false" aria-controls="menu-x">m</button>');
+  assert.match(structureProblems(broken, {}).join(), /aria-controls="menu-x" points at no element/);
+  const fine = page('<h1>a</h1><button aria-expanded="false" aria-controls="menu-x">m</button><ul id="menu-x"></ul><p id="d">x</p><input aria-describedby="d menu-x">');
+  assert.deepEqual(structureProblems(fine, {}), []);
+  assert.match(structureProblems(page('<h1>a</h1><input aria-describedby="nope">'), {}).join(), /aria-describedby="nope"/);
+});
+
+test("a button with aria-expanded must say what it expands (aria-controls)", () => {
+  assert.match(structureProblems(page('<h1>a</h1><button aria-expanded="false">m</button>'), {}).join(), /aria-expanded without aria-controls/);
+});
