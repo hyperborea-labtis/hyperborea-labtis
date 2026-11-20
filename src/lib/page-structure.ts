@@ -6,6 +6,8 @@
 //  - every <img> has an alt attribute (WCAG 1.1.1; alt="" marks it decorative)
 //  - the skip link is the first link of the page and its target exists (WCAG 2.4.1)
 //  - ids are unique (WCAG 4.1.1 / aria references)
+//  - aria-controls / aria-labelledby / aria-describedby reference ids that exist; a button with
+//    aria-expanded names what it expands (WCAG 4.1.2)
 //  - <html lang> is present and every lang attribute is a plausible language tag (WCAG 3.1.1, 3.1.2)
 
 const LANG_TAG = /^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$/;
@@ -67,6 +69,15 @@ export function structureProblems(html: string, { strictOutline = false }: Struc
   for (const m of doc.matchAll(/<[a-z][^>]*?\sid="([^"]+)"/gi)) {
     if (seen.has(m[1])) dup.add(m[1]);
     seen.add(m[1]);
+  }
+  // ARIA references
+  for (const m of doc.matchAll(/\saria-(controls|labelledby|describedby)="([^"]*)"/gi)) {
+    for (const id of m[2].split(/\s+/).filter(Boolean)) {
+      if (!seen.has(id)) problems.push(`aria-${m[1].toLowerCase()}="${id}" points at no element`);
+    }
+  }
+  for (const m of doc.matchAll(/<button\b[^>]*>/gi)) {
+    if (/\saria-expanded=/.test(m[0]) && !/\saria-controls=/.test(m[0])) problems.push("button with aria-expanded without aria-controls");
   }
   for (const id of [...dup].slice(0, 5)) problems.push(`duplicate id "${id}"`);
   if (dup.size > 5) problems.push(`… and ${dup.size - 5} more duplicate ids`);
