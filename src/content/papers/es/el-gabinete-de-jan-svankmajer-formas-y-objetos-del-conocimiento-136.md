@@ -259,4 +259,4 @@ Salvo indicación contraria, las traducciones anteriores y a continuación prese
 
 ## Referencia electrónica
 
-Hernandez Céliz, María Gabriela. «El Gabinete de Jan Švankmajer. Formas y objetos del conocimiento». *Hyperborea. Revista de ensayo y creación* 2 (2019): 106-127. [http://www.hyperborea-labtis.org/es/paper/el-gabinete-de-jan-svankmajer-formas-y-objetos-del-conocimiento-136](http://www.hyperborea-labtis.org/es/paper/el-gabinete-de-jan-svankmajer-formas-y-objetos-del-conocimiento-136)
+Hernandez Céliz, María Gabriela. «El Gabinete de Jan Švankmajer. Formas y objetos del conocimiento». *Hyperborea. Revista de ensayo y creación* 2 (2019): 106-127. [http://www.hyperborea-labtis.org/es/paper/el-gabinete-de-jan-svankmajer-formas-y-objetos-del-conocimiento-136](/es/paper/el-gabinete-de-jan-svankmajer-formas-y-objetos-del-conocimiento-136)

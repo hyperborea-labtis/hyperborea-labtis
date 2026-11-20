@@ -31,5 +31,5 @@ Agradecemos a la autora la generosa autorización para reproducir los fragmentos
 
 ## Referencia electrónica
 
-Hirsch, Narcisa. «*Aigokeros. Cuadernos patagónicos* (fragmentos).» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023: 118-145. [https://www.hyperborea-labtis.org/es/paper/aigokeros](https://www.hyperborea-labtis.org/es/paper/aigokeros)  
+Hirsch, Narcisa. «*Aigokeros. Cuadernos patagónicos* (fragmentos).» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023: 118-145. [https://www.hyperborea-labtis.org/es/paper/aigokeros](/es/paper/aigokeros)  
 DOI: [https://doi.org/10.5281/zenodo.5290559](https://doi.org/10.5281/zenodo.5290559)

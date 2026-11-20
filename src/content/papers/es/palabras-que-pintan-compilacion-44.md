@@ -67,5 +67,5 @@ Encontramos reunidos en este volumen, entonces, un conjunto de estudios que comp
 
 ## Referencia electrónica
 
-Tomas, Silvia Inés. «Lectura de imágenes y palabras que pintan. Una compilación de estudios sobre el tránsito de las artes hermanas a la interdisciplina». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 296-301. [https://www.hyperborea-labtis.org/es/paper/palabras-que-pintan-compilacion-44](https://www.hyperborea-labtis.org/es/paper/palabras-que-pintan-compilacion-44)  
+Tomas, Silvia Inés. «Lectura de imágenes y palabras que pintan. Una compilación de estudios sobre el tránsito de las artes hermanas a la interdisciplina». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 296-301. [https://www.hyperborea-labtis.org/es/paper/palabras-que-pintan-compilacion-44](/es/paper/palabras-que-pintan-compilacion-44)  
 DOI: [https://doi.org/10.5281/zenodo.5292432](https://doi.org/10.5281/zenodo.5292432)

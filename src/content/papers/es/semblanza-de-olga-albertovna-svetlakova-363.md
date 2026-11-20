@@ -37,7 +37,7 @@ Albértovna Svetlakova (n. 1956) es crítica literaria y traductora rusa. Trabaj
 
 ## Referencia electrónica
 
-Krutitskaya, Anastasia. «Semblanza de Olga Albértovna Svetlakova.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 153-154 [https://hyperborea-labtis.org/es/paper/semblanza-de-olga-albertovna-svetlakova-363](https://hyperborea-labtis.org/es/paper/semblanza-de-olga-albertovna-svetlakova-363)  
+Krutitskaya, Anastasia. «Semblanza de Olga Albértovna Svetlakova.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 153-154 [https://hyperborea-labtis.org/es/paper/semblanza-de-olga-albertovna-svetlakova-363](/es/paper/semblanza-de-olga-albertovna-svetlakova-363)  
 DOI:  [https://doi.org/10.5281/zenodo.14290756](https://doi.org/10.5281/zenodo.14290756
 )
 

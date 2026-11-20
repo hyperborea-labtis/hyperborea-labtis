@@ -62,4 +62,4 @@ Traducción: Elvio Bracco.
 
 ## Referencia electrónica
 
-Irby, James. E. «"Rayuela" y otros juegos de Cortázar». Trad. Elvio Bracco. *Hyperborea. Revista de ensayo y creación* 1 (2018): 198-206. [https://www.hyperborea-labtis.org/es/paper/rayuela-y-otros-juegos-de-cortazar-95](https://www.hyperborea-labtis.org/es/paper/rayuela-y-otros-juegos-de-cortazar-95)
+Irby, James. E. «"Rayuela" y otros juegos de Cortázar». Trad. Elvio Bracco. *Hyperborea. Revista de ensayo y creación* 1 (2018): 198-206. [https://www.hyperborea-labtis.org/es/paper/rayuela-y-otros-juegos-de-cortazar-95](/es/paper/rayuela-y-otros-juegos-de-cortazar-95)

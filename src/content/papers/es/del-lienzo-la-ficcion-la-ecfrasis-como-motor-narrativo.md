@@ -196,7 +196,7 @@ Aún resta un ángulo por explorar: el papel crucial que desempeña el nivel met
 ## Referencia electrónica
 
 Unda, Pablo. «Del lienzo a la ficción: la écfrasis como motor narrativo en La fragata de las máscaras (1996) de Tomás de Mattos.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 58–77.  
-URL: [https://www.hyperborea-labtis.org/es/paper/del-lienzo-la-ficcion-la-ecfrasis-como-motor-narrativo](https://www.hyperborea-labtis.org/es/paper/del-lienzo-la-ficcion-la-ecfrasis-como-motor-narrativo)   
+URL: [https://www.hyperborea-labtis.org/es/paper/del-lienzo-la-ficcion-la-ecfrasis-como-motor-narrativo](/es/paper/del-lienzo-la-ficcion-la-ecfrasis-como-motor-narrativo)   
 DOI: [https://doi.org/10.5281/zenodo.17664257](https://doi.org/10.5281/zenodo.17664257)
 
 * * *

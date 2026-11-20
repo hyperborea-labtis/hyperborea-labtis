@@ -300,5 +300,5 @@ Agradecemos al autor y a The University of Chicago la autorización para hacer p
 
 * * *
 
-Mitchell, W. J. T. «La forma espacial en la literatura: hacia una teoría general». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 87-122. [https://hyperborea-labtis.org/es/paper/la-forma-espacial-en-la-literatura-225](https://hyperborea-labtis.org/es/paper/la-forma-espacial-en-la-literatura-225)  
+Mitchell, W. J. T. «La forma espacial en la literatura: hacia una teoría general». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 87-122. [https://hyperborea-labtis.org/es/paper/la-forma-espacial-en-la-literatura-225](/es/paper/la-forma-espacial-en-la-literatura-225)  
 DOI: [https://doi.org/](https://doi.org/10.5281/zenodo.5289783)[10.5281/zenodo.5799121](https://doi.org/10.5281/zenodo.5799121)

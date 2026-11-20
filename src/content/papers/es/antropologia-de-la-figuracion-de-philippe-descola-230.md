@@ -83,5 +83,5 @@ Un régimen figurativo se deja definir por varios aspectos: por los tipos de obj
 
 ## Referencia electrónica
 
-Reyes Macaya, Rodolfo. «Figurar las articulaciones del mundo: la antropología de la figuración de Philippe Descola». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 302-07. [https://www.hyperborea-labtis.org/es/paper/antropologia-de-la-figuracion-de-philippe-descola-230](https://www.hyperborea-labtis.org/es/paper/antropologia-de-la-figuracion-de-philippe-descola-230)  
+Reyes Macaya, Rodolfo. «Figurar las articulaciones del mundo: la antropología de la figuración de Philippe Descola». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 302-07. [https://www.hyperborea-labtis.org/es/paper/antropologia-de-la-figuracion-de-philippe-descola-230](/es/paper/antropologia-de-la-figuracion-de-philippe-descola-230)  
 DOI: [https://doi.org/10.5281/zenodo.5292341](https://doi.org/10.5281/zenodo.5292341)

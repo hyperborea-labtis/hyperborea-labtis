@@ -98,4 +98,4 @@ Traducción: Natalia Accossano Pérez.
 
 ## Referencia electrónica
 
-Petzke, Ingo. «*Sueños que el dinero puede comprar*. Un pequeño pétalo del manojo de mentiras de Hans Richter». *Hyperborea. Revista de ensayo y creación* 2 (2019): 128-133. [http://www.hyperborea-labtis.org/es/paper/suenos-que-el-dinero-puede-comprar-138](http://www.hyperborea-labtis.org/es/paper/suenos-que-el-dinero-puede-comprar-138)
+Petzke, Ingo. «*Sueños que el dinero puede comprar*. Un pequeño pétalo del manojo de mentiras de Hans Richter». *Hyperborea. Revista de ensayo y creación* 2 (2019): 128-133. [http://www.hyperborea-labtis.org/es/paper/suenos-que-el-dinero-puede-comprar-138](/es/paper/suenos-que-el-dinero-puede-comprar-138)

@@ -159,7 +159,7 @@ Agradecemos la generosa autorización del autor para la publicación de esta tra
 
 ## Referencia electrónica
 
-Martella, Marco. «El paraíso habitable. Reflexiones sobre la belleza y el arte de los jardines». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 45-55. [https://www.hyperborea-labtis.org/es/paper/sobre-el-paraiso-habitable-275](https://www.hyperborea-labtis.org/es/paper/sobre-el-paraiso-habitable-275)
+Martella, Marco. «El paraíso habitable. Reflexiones sobre la belleza y el arte de los jardines». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 45-55. [https://www.hyperborea-labtis.org/es/paper/sobre-el-paraiso-habitable-275](/es/paper/sobre-el-paraiso-habitable-275)
 
 DOI: [https://doi.org/10.5281/zenodo.7020011](https://doi.org/10.5281/zenodo.7020011)
 

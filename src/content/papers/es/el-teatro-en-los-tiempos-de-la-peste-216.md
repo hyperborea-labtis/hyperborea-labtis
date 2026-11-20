@@ -53,4 +53,4 @@ La experimentación con la corporalidad, que afecta la sensibilidad del espectad
 
 * * *
 
-Manfred, Alejandro. «El teatro en los tiempos de la peste». *Hyperborea. Revista de ensayo y creación* 3 (2020): 96-99. [https://www.hyperborea-labtis.org/es/paper/el-teatro-en-los-tiempos-de-la-peste](https://www.hyperborea-labtis.org/es/paper/el-teatro-en-los-tiempos-de-la-peste)
+Manfred, Alejandro. «El teatro en los tiempos de la peste». *Hyperborea. Revista de ensayo y creación* 3 (2020): 96-99. [https://www.hyperborea-labtis.org/es/paper/el-teatro-en-los-tiempos-de-la-peste](/es/paper/el-teatro-en-los-tiempos-de-la-peste-216)

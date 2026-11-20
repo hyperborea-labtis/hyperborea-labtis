@@ -159,4 +159,4 @@ Algunas lecturas que acompañan o se citan en el texto
 
 ## Referencia electrónica
 
-Gattás Vargas, Maia, «Las formas del río: una antología posible del cine ensayo argentino». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 117-127 [https://www.hyperborea-labtis.org/es/paper/las-formas-del-rio-una-antologia-posible-del-cine-ensayo-argentino-92](https://www.hyperborea-labtis.org/es/paper/las-formas-del-rio-una-antologia-posible-del-cine-ensayo-argentino-92)
+Gattás Vargas, Maia, «Las formas del río: una antología posible del cine ensayo argentino». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 117-127 [https://www.hyperborea-labtis.org/es/paper/las-formas-del-rio-una-antologia-posible-del-cine-ensayo-argentino-92](/es/paper/las-formas-del-rio-una-antologia-posible-del-cine-ensayo-argentino-92)

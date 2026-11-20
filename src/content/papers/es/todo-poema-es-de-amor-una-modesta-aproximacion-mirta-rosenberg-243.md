@@ -74,5 +74,5 @@ Desde 2013 codirige la productora cinematográfica Hain Cine. Ha guionado numero
 
 ## Referencia electrónica
 
-Nachon, Andi. «*Todo poema es de amor*: una modesta aproximación a Mirta Rosenberg». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 188-93. [https://hyperborea-labtis.org/es/paper/todo-poema-es-de-amor-una-modesta-aproximacion-mirta-rosenberg-243](https://hyperborea-labtis.org/es/paper/todo-poema-es-de-amor-una-modesta-aproximacion-mirta-rosenberg-243)  
+Nachon, Andi. «*Todo poema es de amor*: una modesta aproximación a Mirta Rosenberg». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 188-93. [https://hyperborea-labtis.org/es/paper/todo-poema-es-de-amor-una-modesta-aproximacion-mirta-rosenberg-243](/es/paper/todo-poema-es-de-amor-una-modesta-aproximacion-mirta-rosenberg-243)  
 DOI: [https://doi.org/10.5281/zenodo.5291493](https://doi.org/10.5281/zenodo.5291493)

@@ -366,4 +366,4 @@ La figura deviene insecto y deviene imperceptible, cumple el deseo de ser invisi
 
 ## Referencia electrónica
 
-Muylem, Micaela van. «Los laboratorios de Jan Fabre». *Hyperborea. Revista de ensayo y creación* 3 (2020): 133-155. [https://www.hyperborea-labtis.org/es/paper/los-laboratorios-de-jan-fabre-173](https://www.hyperborea-labtis.org/es/paper/los-laboratorios-de-jan-fabre-173)
+Muylem, Micaela van. «Los laboratorios de Jan Fabre». *Hyperborea. Revista de ensayo y creación* 3 (2020): 133-155. [https://www.hyperborea-labtis.org/es/paper/los-laboratorios-de-jan-fabre-173](/es/paper/los-laboratorios-de-jan-fabre-173)

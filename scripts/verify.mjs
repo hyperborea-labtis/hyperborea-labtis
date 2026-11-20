@@ -13,6 +13,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import YAML from "yaml";
+import { findOwnLinks } from "../src/lib/own-links.ts";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const CONTENT = path.join(ROOT, "src", "content");
@@ -586,10 +587,96 @@ if (OFFLINE) {
   record("12. Scholarly metadata and JSON-LD", sch.length ? "fail" : "pass", `${info.size} pages checked, ${sch.length} problems`, sch);
   record("12b. Papers without an author", noAuthor.length ? "warn" : "pass", noAuthor.length ? `${noAuthor.length} papers carry no citation_author: Google Scholar needs one to index them (set the \`author\` field)` : "every paper has an author", noAuthor);
 
+  // ---------- 14. Sitemap lastmod ----------
+  {
+    const lm = [];
+    const xml = fs.existsSync(sitemapFile) ? read(sitemapFile) : "";
+    // @astrojs/sitemap writes the date as midnight UTC ("2025-11-28T00:00:00.000Z"): compare the day.
+    const withDate = new Map([...xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>(?:\s*<lastmod>([^<]+)<\/lastmod>)?/g)].map((m) => [m[1], m[2]?.slice(0, 10)]));
+    const dateOf = (v) => (v instanceof Date ? v.toISOString().slice(0, 10) : v ? new Date(v).toISOString().slice(0, 10) : undefined);
+    const expected = new Map();
+    for (const e of entries) {
+      if (e.locale !== "es" || !e.data || (e.col !== "papers" && e.col !== "articles")) continue;
+      const d = dateOf(e.data.publishedDate || undefined) ?? dateOf(e.data.created || undefined);
+      expected.set(`/${e.locale}/${e.col === "papers" ? "paper" : "actividad"}/${e.data.slug}`, d);
+    }
+    const today = new Date().toISOString().slice(0, 10);
+    for (const [u, d] of withDate) {
+      const pth = new URL(u).pathname;
+      if (d && (!/^\d{4}-\d{2}-\d{2}$/.test(d) || d > today)) lm.push(`${pth}: lastmod "${d}" is not a past YYYY-MM-DD date`);
+      if (expected.has(pth)) {
+        if (d !== expected.get(pth)) lm.push(`${pth}: lastmod ${d ?? "missing"}, its frontmatter date is ${expected.get(pth) ?? "none"}`);
+      } else if (d && !/^\/(es|en|fr)(\/numero-\d+)?$/.test(pth)) {
+        lm.push(`${pth}: has a lastmod but no real date behind it`);
+      }
+    }
+    for (const l of LOCALES) if (!withDate.get(`${origin}/${l}`)) lm.push(`/${l}: home without lastmod`);
+    record("14. Sitemap lastmod", lm.length ? "fail" : "pass", `${withDate.size} URLs, ${[...withDate.values()].filter(Boolean).length} with lastmod, ${lm.length} problems`, lm);
+  }
+
+  // ---------- 15. RSS feeds ----------
+  {
+    const feedProblems = [];
+    const titles = new Set();
+    for (const l of LOCALES) {
+      const f = path.join(DIST, l, "rss.xml");
+      if (!fs.existsSync(f)) { feedProblems.push(`/${l}/rss.xml missing`); continue; }
+      const xml = read(f);
+      const feedUrl = `${origin}/${l}/rss.xml`;
+      if (!xml.startsWith('<?xml version="1.0" encoding="utf-8"?>')) feedProblems.push(`/${l}/rss.xml: no XML declaration`);
+      if (!xml.includes(`<atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />`)) feedProblems.push(`/${l}/rss.xml: no atom:link rel=self to ${feedUrl}`);
+      if (!new RegExp(`<language>${l}</language>`).test(xml)) feedProblems.push(`/${l}/rss.xml: <language> is not ${l}`);
+      if (!/<lastBuildDate>[^<]+<\/lastBuildDate>/.test(xml)) feedProblems.push(`/${l}/rss.xml: no lastBuildDate`);
+      titles.add(/<channel>\s*<title>([^<]*)<\/title>/.exec(xml)?.[1]);
+      const items = xml.split("<item>").slice(1);
+      if (!items.length) feedProblems.push(`/${l}/rss.xml: no items`);
+      if ((xml.match(/<item>/g) ?? []).length !== (xml.match(/<\/item>/g) ?? []).length) feedProblems.push(`/${l}/rss.xml: unbalanced <item>`);
+      for (const it of items) {
+        const link = /<link>([^<]+)<\/link>/.exec(it)?.[1];
+        const guid = /<guid isPermaLink="true">([^<]+)<\/guid>/.exec(it)?.[1];
+        const page = link && info.get(new URL(link).pathname);
+        if (!link || link !== guid) feedProblems.push(`/${l}/rss.xml: item link/guid mismatch (${link} vs ${guid})`);
+        else if (!page) feedProblems.push(`/${l}/rss.xml: ${link} is not a built page`);
+        else if (page.canonicals[0] !== link) feedProblems.push(`/${l}/rss.xml: ${link} is not its page's canonical (${page.canonicals[0]})`);
+      }
+    }
+    if (titles.size !== LOCALES.length) feedProblems.push("feeds share a channel title: each language needs its own");
+    record("15. RSS feeds", feedProblems.length ? "fail" : "pass", `${LOCALES.length} feeds, ${feedProblems.length} problems`, feedProblems);
+  }
+
+  // ---------- 16. 404 page ----------
+  {
+    const f = path.join(DIST, "404.html");
+    const e = [];
+    if (!fs.existsSync(f)) e.push("dist/404.html missing");
+    else {
+      const html = read(f);
+      if (!/<meta name="robots" content="noindex/.test(html)) e.push("404 is not noindex");
+      if (/<link rel="(canonical|alternate)" [^>]*hreflang|<link rel="canonical"/.test(html)) e.push("404 has a canonical or hreflang (it has no address of its own)");
+      for (const l of LOCALES) if (!new RegExp(`<p lang="${l}"[^>]*>[^<]*<a href="/${l}"`).test(html)) e.push(`404 has no ${l} block with a link to /${l}`);
+      if ((html.match(/<h1\b/g) ?? []).length !== 1) e.push("404 must have exactly one <h1>");
+    }
+    record("16. 404 page (neutral, three languages)", e.length ? "fail" : "pass", e.length ? `${e.length} problems` : "noindex, no canonical, es/en/fr blocks", e);
+  }
+
   record(
     "10b. Indexing mode",
     indexable ? "pass" : "warn",
     indexable ? "indexable build (PUBLIC_INDEXABLE=true): robots.txt allows crawling" : "NOT indexable (default: dev/preview): every page is noindex and robots.txt disallows all. Production must set PUBLIC_INDEXABLE=true",
+  );
+}
+
+// ---------- 13. Own-domain links in content ----------
+{
+  const bad = [];
+  for (const file of walk(CONTENT, (f) => f.endsWith(".md"))) {
+    for (const url of findOwnLinks(fs.readFileSync(file, "utf8"))) bad.push(`${relf(file)}: ${url}`);
+  }
+  record(
+    "13. Own-domain links in content are relative",
+    bad.length ? "fail" : "pass",
+    bad.length ? `${bad.length} absolute link(s) to this site: run \`npm run fix:links\`` : "no link to hyperborea-labtis.org written as an absolute URL",
+    bad,
   );
 }
 

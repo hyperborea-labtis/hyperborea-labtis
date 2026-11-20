@@ -332,6 +332,6 @@ Su obra ha sido traducida al portugués, holandés e inglés.
 
 ## Referencia electrónica
 
-Antopolsky, Román. «El pasado como enigma del presente como alabanza. Poemas de Román Antopolsky. Introducción de Mariano Sverdloff». *Hyperborea. Revista de ensayo y creación* 1 (2018): 168-194. [http://www.hyperborea-labtis.org/es/paper/el-pasado-como-enigma-del-presente-como-alabanza-poemas-de-roman-antopolsky-73](http://www.hyperborea-labtis.org/es/paper/el-pasado-como-enigma-del-presente-como-alabanza-poemas-de-roman-antopolsky-73)
+Antopolsky, Román. «El pasado como enigma del presente como alabanza. Poemas de Román Antopolsky. Introducción de Mariano Sverdloff». *Hyperborea. Revista de ensayo y creación* 1 (2018): 168-194. [http://www.hyperborea-labtis.org/es/paper/el-pasado-como-enigma-del-presente-como-alabanza-poemas-de-roman-antopolsky-73](/es/paper/el-pasado-como-enigma-del-presente-como-alabanza-poemas-de-roman-antopolsky-73)
 
 * * *

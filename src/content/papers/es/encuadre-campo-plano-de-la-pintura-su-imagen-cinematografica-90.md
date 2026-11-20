@@ -174,4 +174,4 @@ Traducción: Lucrecia Radyk
 
 ## Referencia electrónica
 
-Vouilloux, Bernard. «Encuadre, campo, plano: de la pintura a su imagen cinematográfica*».* *Hyperborea. Revista de ensayo y creación.* 1 (2018): 132-149. [https://www.hyperborea-labtis.org/es/paper/encuadre-campo-plano-de-la-pintura-su-imagen-cinematografica-90](https://www.hyperborea-labtis.org/es/paper/encuadre-campo-plano-de-la-pintura-su-imagen-cinematografica-90)
+Vouilloux, Bernard. «Encuadre, campo, plano: de la pintura a su imagen cinematográfica*».* *Hyperborea. Revista de ensayo y creación.* 1 (2018): 132-149. [https://www.hyperborea-labtis.org/es/paper/encuadre-campo-plano-de-la-pintura-su-imagen-cinematografica-90](/es/paper/encuadre-campo-plano-de-la-pintura-su-imagen-cinematografica-90)

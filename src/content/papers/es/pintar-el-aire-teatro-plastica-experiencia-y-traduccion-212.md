@@ -238,4 +238,4 @@ A partir del análisis de la *mise en abyme* como concepto y como procedimiento 
 
 ## Referencia electrónica
 
-Fobbio, Laura. «Pintar el aire. Teatro, plástica, experiencia y traducción». *Hyperborea. Revista de ensayo y creación* 3 (2020): 113-133.  [https://www.hyperborea-labtis.org/es/paper/pintar-el-aire-teatro-traduccion](https://www.hyperborea-labtis.org/es/paper/pintar-el-aire-teatro-traduccion)
+Fobbio, Laura. «Pintar el aire. Teatro, plástica, experiencia y traducción». *Hyperborea. Revista de ensayo y creación* 3 (2020): 113-133.  [https://www.hyperborea-labtis.org/es/paper/pintar-el-aire-teatro-traduccion](/es/paper/pintar-el-aire-teatro-plastica-experiencia-y-traduccion-212)

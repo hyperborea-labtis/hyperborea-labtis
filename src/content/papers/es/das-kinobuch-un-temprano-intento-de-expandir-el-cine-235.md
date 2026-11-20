@@ -67,5 +67,5 @@ Así, el *Kinobuch* constituye una puerta a un cine expandido por venir, un nuev
 
 ## Referencia electrónica
 
-Guzmán, Rubén. «*Das Kinobuch*, un temprano intento de expandir el cine». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 123-129. [https://www.hyperborea-labtis.org/es/paper/das-kinobuch-un-temprano-intento-de-expandir-el-cine-235](https://www.hyperborea-labtis.org/es/paper/das-kinobuch-un-temprano-intento-de-expandir-el-cine-235)  
+Guzmán, Rubén. «*Das Kinobuch*, un temprano intento de expandir el cine». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 123-129. [https://www.hyperborea-labtis.org/es/paper/das-kinobuch-un-temprano-intento-de-expandir-el-cine-235](/es/paper/das-kinobuch-un-temprano-intento-de-expandir-el-cine-235)  
 DOI: [https://doi.org/10.5281/zenodo.5290640](https://doi.org/10.5281/zenodo.5290640)

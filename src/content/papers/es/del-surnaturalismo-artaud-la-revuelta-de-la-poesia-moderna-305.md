@@ -170,7 +170,7 @@ Estos elementos expresan lo que podemos llamar la crisis de la modernidad y las 
 
 ## Referencia electrónica
 
-Percia, Violeta. «Del surnaturalismo a Artaud: la revuelta de la poesía moderna contra la imagen de una naturaleza despotenciada.» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 52-65. [https://www.hyperborea-labtis.org/es/paper/del-surnaturalismo-artaud-la-revuelta-de-la-poesia-moderna-305](https://www.hyperborea-labtis.org/es/paper/del-surnaturalismo-artaud-la-revuelta-de-la-poesia-moderna-305)  
+Percia, Violeta. «Del surnaturalismo a Artaud: la revuelta de la poesía moderna contra la imagen de una naturaleza despotenciada.» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 52-65. [https://www.hyperborea-labtis.org/es/paper/del-surnaturalismo-artaud-la-revuelta-de-la-poesia-moderna-305](/es/paper/del-surnaturalismo-artaud-la-revuelta-de-la-poesia-moderna-305)  
 DOI: [https://doi.org/10.5281/zenodo.8400992](https://doi.org/10.5281/zenodo.8400992)
 
 *Imagen superior: Anónimo,* Tulipán en flor*, c. 1880 (detalle).*

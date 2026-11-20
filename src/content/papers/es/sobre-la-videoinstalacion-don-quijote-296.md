@@ -130,5 +130,5 @@ Imagen inicial © Ebba Sund
 
 ## Referencia electrónica
 
-Mussetta, Mariana y Andrés Belfanti. «Videoinstalación *Don Quijote: Tristes Figuras*, de Mieke Bal». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 238-246. [https://www.hyperborea-labtis.org/es/paper/sobre-la-videoinstalacion-don-quijote-296](https://www.hyperborea-labtis.org/es/paper/sobre-la-videoinstalacion-don-quijote-296)  
+Mussetta, Mariana y Andrés Belfanti. «Videoinstalación *Don Quijote: Tristes Figuras*, de Mieke Bal». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 238-246. [https://www.hyperborea-labtis.org/es/paper/sobre-la-videoinstalacion-don-quijote-296](/es/paper/sobre-la-videoinstalacion-don-quijote-296)  
 DOI: [https://doi.org/10.5281/zenodo.7020165](https://doi.org/10.5281/zenodo.7020165)

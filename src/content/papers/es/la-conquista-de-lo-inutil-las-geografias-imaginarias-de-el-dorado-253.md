@@ -432,5 +432,5 @@ Este artículo fue publicado originalmente bajo el título «La Conquête de l�
 
 ## Referencia electrónica
 
-Alès, Catherine y Michel Pouyllau. «La conquista de lo inútil. Las geografías imaginarias de *El Dorado*».*Hyperborea. Revista de ensayo y creación.* 4 (2021): 235-86. [https://hyperborea-labtis.org/es/paper/la-conquista-de-lo-inutil-las-geografias-imaginarias-de-el-dorado-253](https://hyperborea-labtis.org/es/paper/la-conquista-de-lo-inutil-las-geografias-imaginarias-de-el-dorado-253)  
+Alès, Catherine y Michel Pouyllau. «La conquista de lo inútil. Las geografías imaginarias de *El Dorado*».*Hyperborea. Revista de ensayo y creación.* 4 (2021): 235-86. [https://hyperborea-labtis.org/es/paper/la-conquista-de-lo-inutil-las-geografias-imaginarias-de-el-dorado-253](/es/paper/la-conquista-de-lo-inutil-las-geografias-imaginarias-de-el-dorado-253)  
 DOI: [https://doi.org/10.5281/zenodo.5292048](https://doi.org/10.5281/zenodo.5292048)

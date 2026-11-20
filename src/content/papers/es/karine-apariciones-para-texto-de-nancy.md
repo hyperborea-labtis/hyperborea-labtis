@@ -71,7 +71,7 @@ cambio.
 
 ## Galería de fotogramas de *KARINE* (1976) de Robert Cahen
 
-La galería de fotogramas de *KARINE* de Robert Cahen se encuentra disponible **[aquí](https://www.hyperborea-labtis.org/sites/default/files/ct-paper/hyperborea_03_cahen-karine-apariciones_0.pdf)** en una versión integral y según el diseño original, que se recomienda ver a dos páginas. Hacia el final, el archivo —también adjunto al pie de esta página—  incluye un código QR para ver la película, disponible en el sitio personal de Robert Cahen: [http://robertcahen.com/films-videos-fr#/karine/](http://robertcahen.com/films-videos-fr#/karine/)
+La galería de fotogramas de *KARINE* de Robert Cahen se encuentra disponible **[aquí](/sites/default/files/ct-paper/hyperborea_03_cahen-karine-apariciones_0_compressed.pdf)** en una versión integral y según el diseño original, que se recomienda ver a dos páginas. Hacia el final, el archivo —también adjunto al pie de esta página—  incluye un código QR para ver la película, disponible en el sitio personal de Robert Cahen: [http://robertcahen.com/films-videos-fr#/karine/](http://robertcahen.com/films-videos-fr#/karine/)
 
 * * *
 
@@ -87,4 +87,4 @@ Traducción: Mariano Sverdloff
 
 ## Referencia electrónica
 
-Cahen, Robert. «*Karine*. apariciones. Para un texto de Jean-Luc Nancy». *Hyperborea. Revista de ensayo y creación* 3 (2021): 166-256. [https://www.hyperborea-labtis.org/es/paper/karine-apariciones-para-texto-de-nancy](https://www.hyperborea-labtis.org/es/paper/karine-apariciones-para-texto-de-nancy)
+Cahen, Robert. «*Karine*. apariciones. Para un texto de Jean-Luc Nancy». *Hyperborea. Revista de ensayo y creación* 3 (2021): 166-256. [https://www.hyperborea-labtis.org/es/paper/karine-apariciones-para-texto-de-nancy](/es/paper/karine-apariciones-para-texto-de-nancy)

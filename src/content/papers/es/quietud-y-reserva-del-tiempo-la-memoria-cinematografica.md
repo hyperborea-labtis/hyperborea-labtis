@@ -205,5 +205,5 @@ Al fin y al cabo, los filmes de Resnais no se definen como ensayos, a diferencia
 * * *
 
 Llarrull, Florencia. «Quietud y reserva del tiempo: la memoria cinematográfica y “los pensamientos de una persona cualquiera en medio del mundo” en *Le Mystère Koumiko* (1965).» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 97–115.  
-URL: [https://www.hyperborea-labtis.org/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica](https://www.hyperborea-labtis.org/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica) [](https://www.hyperborea-labtis.org/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica)  
+URL: [https://www.hyperborea-labtis.org/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica](/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica) [](/es/paper/quietud-y-reserva-del-tiempo-la-memoria-cinematografica)  
 DOI: [https://doi.org/10.5281/zenodo.17664500](https://doi.org/10.5281/zenodo.17664500)

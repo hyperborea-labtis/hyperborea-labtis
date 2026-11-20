@@ -58,7 +58,7 @@ Como decía Hugo Claus en aquel hermoso poema dedicado a su amigo y artista plá
 
 ## Referencia electrónica
 
-Fantín, Fernando Julio. «*Cronografías: arte y ficciones de un tiempo sin tiempo* de Graciela Speranza». *Hyperborea. Revista de ensayo y creación* 3 (2020): 332-337. [https://www.hyperborea-labtis.org/es/paper/cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo-de-graciela-speranza-203](https://www.hyperborea-labtis.org/es/paper/cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo-de-graciela-speranza-203)
+Fantín, Fernando Julio. «*Cronografías: arte y ficciones de un tiempo sin tiempo* de Graciela Speranza». *Hyperborea. Revista de ensayo y creación* 3 (2020): 332-337. [https://www.hyperborea-labtis.org/es/paper/cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo-de-graciela-speranza-203](/es/paper/cronografias-arte-y-ficciones-de-un-tiempo-sin-tiempo-de-graciela-speranza-203)
 
 * * *
 

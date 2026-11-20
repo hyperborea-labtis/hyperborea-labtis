@@ -64,7 +64,7 @@ Primavera, 2022.
 
 ## Referencia electrónica
 
-Amaro Valdés, Irlanda. «*Cuatro caminos* de Tadeo P. Stein». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 159-162. [https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-de-tadeo-p-stein-286](https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-de-tadeo-p-stein-286)  
+Amaro Valdés, Irlanda. «*Cuatro caminos* de Tadeo P. Stein». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 159-162. [https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-de-tadeo-p-stein-286](/es/paper/cuatro-caminos-de-tadeo-p-stein-286)  
 DOI: [https://doi.org/10.5281/zenodo.7020092](https://doi.org/10.5281/zenodo.7020092)
 
 *Imagen superior: © Helmut Corcova*

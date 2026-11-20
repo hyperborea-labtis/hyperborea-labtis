@@ -172,4 +172,4 @@ Quien nace *outsider*, muere *outsider*. En un mundo intoxicado de mercado y apl
 
 ## Referencia electrónica
 
-Araujo, Juan Facundo. «"Fiascos y Super-fiascos": antimodernismo en la obra de Saki». *Hyperborea. Revista de ensayo y creación* 2 (2019): 43-58. [https://www.hyperborea-labtis.org/es/paper/fiascos-y-super-fiascos-antimodernismo-en-la-obra-de-saki-123](https://www.hyperborea-labtis.org/es/paper/fiascos-y-super-fiascos-antimodernismo-en-la-obra-de-saki-123)
+Araujo, Juan Facundo. «"Fiascos y Super-fiascos": antimodernismo en la obra de Saki». *Hyperborea. Revista de ensayo y creación* 2 (2019): 43-58. [https://www.hyperborea-labtis.org/es/paper/fiascos-y-super-fiascos-antimodernismo-en-la-obra-de-saki-123](/es/paper/fiascos-y-super-fiascos-antimodernismo-en-la-obra-de-saki-123)

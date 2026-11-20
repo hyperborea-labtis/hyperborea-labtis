@@ -202,5 +202,5 @@ En un estudio sobre lo que el arte puede contribuir en nuestra época, Tanya de 
 
 ## Referencia electrónica
 
-Leyro Diaz, Hannah. «Ceguera vegetal, ecología oscura y la novela *Aberrant*: puntos de fuga en un mundo cosificado». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 31-44. [https://www.hyperborea-labtis.org/es/paper/ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273](https://www.hyperborea-labtis.org/es/paper/ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273)  
+Leyro Diaz, Hannah. «Ceguera vegetal, ecología oscura y la novela *Aberrant*: puntos de fuga en un mundo cosificado». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 31-44. [https://www.hyperborea-labtis.org/es/paper/ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273](/es/paper/ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273)  
 DOI: [https://doi.org/10.5281/zenodo.7020039](https://doi.org/10.5281/zenodo.7020039)

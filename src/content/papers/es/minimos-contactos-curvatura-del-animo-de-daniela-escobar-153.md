@@ -323,4 +323,4 @@ de hundir los dedos.
 
 ## Referencia electrónica
 
-Reyes Macaya, Rodolfo. «*Mínimos contactos: Curvatura del ánimo* de Daniela Escobar. Ensayo introductorio a una selección de poemas». *Hyperborea. Revista de ensayo y creación* (2019): 196-220. [https://www.hyperborea-labtis.org/es/paper/minimos-contactos-curvatura-del-animo-de-daniela-escobar-153](https://www.hyperborea-labtis.org/es/paper/minimos-contactos-curvatura-del-animo-de-daniela-escobar-153)
+Reyes Macaya, Rodolfo. «*Mínimos contactos: Curvatura del ánimo* de Daniela Escobar. Ensayo introductorio a una selección de poemas». *Hyperborea. Revista de ensayo y creación* (2019): 196-220. [https://www.hyperborea-labtis.org/es/paper/minimos-contactos-curvatura-del-animo-de-daniela-escobar-153](/es/paper/minimos-contactos-curvatura-del-animo-de-daniela-escobar-153)

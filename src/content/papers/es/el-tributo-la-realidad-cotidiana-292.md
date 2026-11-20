@@ -300,7 +300,7 @@ Este artículo se ha publicado originalmente en inglés con el título «The Tri
 
 ## Referencia electrónica
 
-Lutz, Robyn R. «El tributo a la realidad cotidiana en *Fragmentos a su imán* de José Lezama Lima». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 190-208. [https://www.hyperborea-labtis.org/es/paper/el-tributo-la-realidad-cotidiana-292](https://www.hyperborea-labtis.org/es/paper/el-tributo-la-realidad-cotidiana-292)  
+Lutz, Robyn R. «El tributo a la realidad cotidiana en *Fragmentos a su imán* de José Lezama Lima». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 190-208. [https://www.hyperborea-labtis.org/es/paper/el-tributo-la-realidad-cotidiana-292](/es/paper/el-tributo-la-realidad-cotidiana-292)  
 DOI: [https://doi.org/10.5281/zenodo.7020128](https://doi.org/10.5281/zenodo.7020128)
 
 *Imagen superior: © Helmut Corcova (1975)*

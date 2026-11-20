@@ -174,5 +174,5 @@ Como vemos, el fenómeno de tránsito del mundo visible de la ruina al de las re
 
 ## Referencia electrónica
 
-Orduño, Rodrigo. «La trascendencia de la materialidad. Revisión escultórica a partir del poema ecfrástico “Torso arcaico de Apolo”». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 1-11. [https://www.hyperborea-labtis.org/es/paper/la-trascendencia-de-la-materialidad-268](https://www.hyperborea-labtis.org/es/paper/la-trascendencia-de-la-materialidad-268)  
+Orduño, Rodrigo. «La trascendencia de la materialidad. Revisión escultórica a partir del poema ecfrástico “Torso arcaico de Apolo”». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 1-11. [https://www.hyperborea-labtis.org/es/paper/la-trascendencia-de-la-materialidad-268](/es/paper/la-trascendencia-de-la-materialidad-268)  
 DOI: [https://doi.org/10.5281/zenodo.7019995](https://doi.org/10.5281/zenodo.7019995)

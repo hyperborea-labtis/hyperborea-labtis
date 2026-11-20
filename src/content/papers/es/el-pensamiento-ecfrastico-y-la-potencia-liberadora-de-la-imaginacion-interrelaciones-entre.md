@@ -92,4 +92,4 @@ Fernando Navarro expuso una versión abreviada de este ensayo en la presentació
 
 ## Referencia electrónica
 
-Navarro, Fernando. «El pensamiento ecfrástico y la potencia liberadora de la imaginación». *Hyperborea. Revista de ensayo y creación* 2 (2019): 280-288. [http://www.hyperborea-labtis.org/es/paper/el-pensamiento-ecfrastico-y-la-potencia-liberadora-de-la-imaginacion-158](http://www.hyperborea-labtis.org/es/paper/el-pensamiento-ecfrastico-y-la-potencia-liberadora-de-la-imaginacion-158)
+Navarro, Fernando. «El pensamiento ecfrástico y la potencia liberadora de la imaginación». *Hyperborea. Revista de ensayo y creación* 2 (2019): 280-288. [http://www.hyperborea-labtis.org/es/paper/el-pensamiento-ecfrastico-y-la-potencia-liberadora-de-la-imaginacion-158](/es/paper/el-pensamiento-ecfrastico-y-la-potencia-liberadora-de-la-imaginacion-interrelaciones-entre)

@@ -159,5 +159,5 @@ Agradecemos a la autora su autorización para hacer posible esta traducción y p
 
 ## Referencia electrónica
 
-Pic, Muriel. «Reverenciar el polvo. W. G. Sebald y el archivo.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 16-25, [https://www.hyperborea-labtis.org/es/paper/reverence-la-pussiere-341](https://www.hyperborea-labtis.org/es/paper/reverence-la-pussiere-341)  
+Pic, Muriel. «Reverenciar el polvo. W. G. Sebald y el archivo.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 16-25, [https://www.hyperborea-labtis.org/es/paper/reverence-la-pussiere-341](/es/paper/reverence-la-pussiere-341)  
 DOI: [https://doi.org/10.5281/zenodo.13916408](https://doi.org/10.5281/zenodo.13916408)

@@ -72,4 +72,4 @@ Alejandro Manfred expuso una versión abreviada de este ensayo en la presentaci�
 
 ## Referencia electrónica
 
-Manfred, Alejandro. «La otredad iluminada». *Hyperborea. Revista de ensayo y creación* 2 (2019): 272-279.  [http://www.hyperborea-labtis.org/es/paper/la-otredad-iluminada-157](http://www.hyperborea-labtis.org/es/paper/la-otredad-iluminada-157)
+Manfred, Alejandro. «La otredad iluminada». *Hyperborea. Revista de ensayo y creación* 2 (2019): 272-279.  [http://www.hyperborea-labtis.org/es/paper/la-otredad-iluminada-157](/es/paper/la-otredad-iluminada-interrelaciones-entre-literatura-y-artes-america-y-europa-en-las-epocas)

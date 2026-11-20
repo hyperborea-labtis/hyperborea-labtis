@@ -83,4 +83,4 @@ D. E.- Supongo que evitando esencializar identidades (tanto en las voces como en
 
 ## **Referencia electrónica**
 
-Reyes Macaya, Rodolfo. «Conversaciones con Daniela Escobar. “No hablar por el otro, sino con, o través de, escuchar más”*»*. *Hyperborea. Revista de ensayo y creación* (2019): 221-227. [https://www.hyperborea-labtis.org/es/paper/conversaciones-con-daniela-escobar-no-hablar-por-el-otro-sino-con-o-traves-de-escuchar-mas](https://www.hyperborea-labtis.org/es/paper/conversaciones-con-daniela-escobar-no-hablar-por-el-otro-sino-con-o-traves-de-escuchar-mas)
+Reyes Macaya, Rodolfo. «Conversaciones con Daniela Escobar. “No hablar por el otro, sino con, o través de, escuchar más”*»*. *Hyperborea. Revista de ensayo y creación* (2019): 221-227. [https://www.hyperborea-labtis.org/es/paper/conversaciones-con-daniela-escobar-no-hablar-por-el-otro-sino-con-o-traves-de-escuchar-mas](/es/paper/conversaciones-con-daniela-escobar-163)

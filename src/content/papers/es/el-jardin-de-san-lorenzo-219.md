@@ -161,5 +161,5 @@ El jardín es el espacio de las delicias y de los padecimientos, tal como figura
 
 ## Referencia electrónica
 
-Pascale, Nicolás. «El jardín de San Lorenzo y el jardín de *Prospect Cottage*. Amplificaciones, miradas múltiples y reformulaciones de la noción “naturaleza”». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 151-70. [https://hyperborea-labtis.org/es/paper/https://hyperborea-labtis.org/es/paper/el-jardin-de-san-lorenzo-219](https://hyperborea-labtis.org/es/paper/el-jardin-de-san-lorenzo-219)  
+Pascale, Nicolás. «El jardín de San Lorenzo y el jardín de *Prospect Cottage*. Amplificaciones, miradas múltiples y reformulaciones de la noción “naturaleza”». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 151-70. [https://hyperborea-labtis.org/es/paper/https://hyperborea-labtis.org/es/paper/el-jardin-de-san-lorenzo-219](/es/paper/el-jardin-de-san-lorenzo-219)  
 DOI: [https://doi.org/10.5281/zenodo.5291040](https://doi.org/10.5281/zenodo.5291040)

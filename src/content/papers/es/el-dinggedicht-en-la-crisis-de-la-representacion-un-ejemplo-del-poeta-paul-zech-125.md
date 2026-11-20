@@ -174,4 +174,4 @@ De esta manera, Zech elabora un juego rítmico sobre el que se tienden las redes
 
 ## Referencia electrónica
 
-Sufotinsky, Tomás. «El *Dinggedicht* en la crisis de la representación. Un ejemplo del poeta Paul Zech». *Hyperborea Revista de ensayo y creación* 2 (2019): 73-84. [http://www.hyperborea-labtis.org/es/paper/el-dinggedicht-en-la-crisis-de-la-representacion-un-ejemplo-del-poeta-paul-zech-125](http://www.hyperborea-labtis.org/es/paper/el-dinggedicht-en-la-crisis-de-la-representacion-un-ejemplo-del-poeta-paul-zech-125)
+Sufotinsky, Tomás. «El *Dinggedicht* en la crisis de la representación. Un ejemplo del poeta Paul Zech». *Hyperborea Revista de ensayo y creación* 2 (2019): 73-84. [http://www.hyperborea-labtis.org/es/paper/el-dinggedicht-en-la-crisis-de-la-representacion-un-ejemplo-del-poeta-paul-zech-125](/es/paper/el-dinggedicht-en-la-crisis-de-la-representacion-un-ejemplo-del-poeta-paul-zech-125)

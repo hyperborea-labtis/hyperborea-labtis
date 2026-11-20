@@ -14,7 +14,7 @@ Se alienta, asimismo, el envío de reseñas para la sección «Afinidades electi
 
 La fecha límite de recepción de los trabajos es el 30 de junio de 2026.
 
-Antes de realizar un envío, consultar las directrices consignadas en: [https://www.hyperborea-labtis.org/es/criterios\_y\_directrices\_publicacion](https://www.hyperborea-labtis.org/es/criterios_y_directrices_publicacion)
+Antes de realizar un envío, consultar las directrices consignadas en: [https://www.hyperborea-labtis.org/es/criterios\_y\_directrices\_publicacion](/es/criterios_y_directrices_publicacion)
 
 Para mayor información, escribir a: hyperborea@hyperborea-labtis.org
 

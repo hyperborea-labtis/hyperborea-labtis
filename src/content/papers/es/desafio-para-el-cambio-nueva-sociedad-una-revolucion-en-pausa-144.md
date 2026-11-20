@@ -142,4 +142,4 @@ Reflexiones basadas en «El Ojo que Piensa, una revolución en suspenso», proye
 
 ## Referencia electrónica
 
-Guzmán, Rubén. «*Desafío para el Cambio / Nueva Sociedad*. Una revolución en pausa». *Hyperborea. Revista de ensayo y creación* 2 (2019): 157-166.   [http://www.hyperborea-labtis.org/es/paper/desafio-para-el-cambio-nueva-sociedad-una-revolucion-en-pausa-144](http://www.hyperborea-labtis.org/es/paper/desafio-para-el-cambio-nueva-sociedad-una-revolucion-en-pausa-144)
+Guzmán, Rubén. «*Desafío para el Cambio / Nueva Sociedad*. Una revolución en pausa». *Hyperborea. Revista de ensayo y creación* 2 (2019): 157-166.   [http://www.hyperborea-labtis.org/es/paper/desafio-para-el-cambio-nueva-sociedad-una-revolucion-en-pausa-144](/es/paper/desafio-para-el-cambio-nueva-sociedad-una-revolucion-en-pausa-144)

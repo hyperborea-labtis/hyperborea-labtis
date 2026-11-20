@@ -191,5 +191,5 @@ La trayectoria ilustrada de la obra de Poe ha llevado a entender a sus protagoni
 
 ## Referencia electrónica
 
-Martínez Ruiz, Gema. «"Ligeia" como otredad celeste y monstruosa. Interpretación artística de Wilfried Sätty.» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 1-23. [https://www.hyperborea-labtis.org/es/paper/ligeia-como-otredad-celeste-y-monstruosa-303](https://www.hyperborea-labtis.org/es/paper/ligeia-como-otredad-celeste-y-monstruosa-303)  
+Martínez Ruiz, Gema. «"Ligeia" como otredad celeste y monstruosa. Interpretación artística de Wilfried Sätty.» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 1-23. [https://www.hyperborea-labtis.org/es/paper/ligeia-como-otredad-celeste-y-monstruosa-303](/es/paper/ligeia-como-otredad-celeste-y-monstruosa-303)  
 DOI: [https://doi.org/10.5281/zenodo.8400971](https://doi.org/10.5281/zenodo.8400971)

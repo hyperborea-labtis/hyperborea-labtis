@@ -157,7 +157,7 @@ Agradecemos la muy generosa cesión de los derechos para hacer posible esta trad
 
 ## Referencia electrónica
 
-Wajsbrot, Cécile. «*Nevermore.* \[Interludio y capítulo IV\].» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 162-172. [https://www.hyperborea-labtis.org/es/paper/nevermore-311](https://www.hyperborea-labtis.org/es/paper/nevermore-311)  
+Wajsbrot, Cécile. «*Nevermore.* \[Interludio y capítulo IV\].» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 162-172. [https://www.hyperborea-labtis.org/es/paper/nevermore-311](/es/paper/nevermore-311)  
 DOI: [https://doi.org/10.5281/zenodo.8401046](https://doi.org/10.5281/zenodo.8401046)
 
 *Imagen superior: Édouard Manet,* L'Évasion de Rochefort, *1880-1881 (detalle).*

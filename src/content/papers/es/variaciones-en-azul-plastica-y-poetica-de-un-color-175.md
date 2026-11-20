@@ -285,7 +285,7 @@ Después del recorrido realizado, después de intentar trazar un plano con las t
 
 ## Referencia electrónica
 
-Poenitz, Paula. «Variaciones en azul: plástica y poética de un color». *Hyperborea. Revista de ensayo y creación* 3 (2020): 1-28. [https://www.hyperborea-labtis.org/es/paper/variaciones-en-azul-plastica-y-poetica-de-un-color-175](https://www.hyperborea-labtis.org/es/paper/variaciones-en-azul-plastica-y-poetica-de-un-color-175)
+Poenitz, Paula. «Variaciones en azul: plástica y poética de un color». *Hyperborea. Revista de ensayo y creación* 3 (2020): 1-28. [https://www.hyperborea-labtis.org/es/paper/variaciones-en-azul-plastica-y-poetica-de-un-color-175](/es/paper/variaciones-en-azul-plastica-y-poetica-de-un-color-175)
 
 * * *
 

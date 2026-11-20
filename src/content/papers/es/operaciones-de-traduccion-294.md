@@ -88,7 +88,7 @@ Con algunas modificaciones, con este texto participé en la presentación virtua
 
 ## Referencia electrónica
 
-Espeche, Ximena. «Operaciones de traducción». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 209-215. [https://www.hyperborea-labtis.org/es/paper/operaciones-de-traduccion-294](https://www.hyperborea-labtis.org/es/paper/operaciones-de-traduccion-294)
+Espeche, Ximena. «Operaciones de traducción». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 209-215. [https://www.hyperborea-labtis.org/es/paper/operaciones-de-traduccion-294](/es/paper/operaciones-de-traduccion-294)
 
 DOI: [https://doi.org/10.5281/zenodo.7429936](https://doi.org/10.5281/zenodo.7429936)
 

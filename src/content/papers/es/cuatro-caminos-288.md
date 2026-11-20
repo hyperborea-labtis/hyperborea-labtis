@@ -646,7 +646,7 @@ La soledad es un estado, una decisión o una fortuna. Surge y alimenta espacios 
 
 ## Referencia electrónica
 
-Referencia electrónica || Stein, Tadeo P. «Cuatro caminos». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 163-186. [https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-288](https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-288)
+Referencia electrónica || Stein, Tadeo P. «Cuatro caminos». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 163-186. [https://www.hyperborea-labtis.org/es/paper/cuatro-caminos-288](/es/paper/cuatro-caminos-288)
 
 DOI: [https://doi.org/10.5281/zenodo.7020079](https://doi.org/10.5281/zenodo.7020079)
 

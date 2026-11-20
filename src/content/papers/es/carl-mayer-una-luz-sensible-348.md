@@ -158,7 +158,7 @@ En 1942, Mayer fue diagnosticado con cáncer y falleció dos años después, el 
 
 \[2\] De aquí en más, las traducciones del original en inglés son propias.
 
-\[3\] Véase: [https://www.hyperborea-labtis.org/es/paper/la-arquitectura- expresionista-en-el-cine-aleman-284](<https://www.hyperborea-labtis.org/es/paper/la-arquitectura- expresionista-en-el-cine-aleman-284>)
+\[3\] Véase: [https://www.hyperborea-labtis.org/es/paper/la-arquitectura- expresionista-en-el-cine-aleman-284](/es/paper/la-arquitectura-expresionista-en-el-cine-aleman-284)
 
 \[4\] Robert Wiene ha sido un renombrado director, productor y guionista alemán nacido en Breslau. *Das Kabinett des Dr. Caligari* había sido originariamente comisionada a Fritz Lang, quien en ese momento estaba ocupado en el rodaje de *Die Spinnen* (1919).
 
@@ -204,7 +204,7 @@ En 1942, Mayer fue diagnosticado con cáncer y falleció dos años después, el 
 
 ## Referencia electrónica
 
-Guzmán, Rubén. «Carl Mayer: una luz sensible.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 114-127, [https://www.hyperborea-labtis.org/es/paper/carl-mayer-una-luz-sensible-348](https://www.hyperborea-labtis.org/es/paper/carl-mayer-una-luz-sensible-348)  
+Guzmán, Rubén. «Carl Mayer: una luz sensible.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 114-127, [https://www.hyperborea-labtis.org/es/paper/carl-mayer-una-luz-sensible-348](/es/paper/carl-mayer-una-luz-sensible-348)  
 DOI: [https://doi.org/10.5281/zenodo.13916451](https://doi.org/10.5281/zenodo.13916451)
 
 * * *

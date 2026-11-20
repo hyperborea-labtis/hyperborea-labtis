@@ -68,7 +68,7 @@ Podemos ensayar alguna respuesta luego de ver la película, y también al contin
 
 ## Referencia electrónica
 
-Lapezatta, Matías. «Convergencias entre planos, miradas y dispositivos. Un libro, complemento del cine expandido.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 194-200. [https://www.hyperborea-labtis.org/es/paper/convergencias-entre-planos-miradas-y-dispositivos-315](https://www.hyperborea-labtis.org/es/paper/convergencias-entre-planos-miradas-y-dispositivos-315)  
+Lapezatta, Matías. «Convergencias entre planos, miradas y dispositivos. Un libro, complemento del cine expandido.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 194-200. [https://www.hyperborea-labtis.org/es/paper/convergencias-entre-planos-miradas-y-dispositivos-315](/es/paper/convergencias-entre-planos-miradas-y-dispositivos-315)  
 DOI: [https://doi.org/10.5281/zenodo.8401077](https://doi.org/10.5281/zenodo.8401077) 
 
 *Imágenes de* El ruido del tiempo *(2022)**, Dir. Rubén Guzmán* © Maravilla Cine - Raymond Beluga Studio

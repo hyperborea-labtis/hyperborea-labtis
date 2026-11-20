@@ -37,4 +37,4 @@ La primera apropiación involucra «Octavio Paz: la búsqueda de la otredad y el
 
 ## Referencia electrónica
 
-Chazarreta, Daniela. «Apostilla sobre las traducciones en torno al poeta Octavio Paz». *Hyperborea. Revista de ensayo y creación* 2 (2019): 228-230. [http://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-147](http://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-147)
+Chazarreta, Daniela. «Apostilla sobre las traducciones en torno al poeta Octavio Paz». *Hyperborea. Revista de ensayo y creación* 2 (2019): 228-230. [http://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-147](/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-147)

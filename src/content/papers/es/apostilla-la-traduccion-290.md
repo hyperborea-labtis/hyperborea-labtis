@@ -29,7 +29,7 @@ Estamos, por cierto, frente a un poemario en donde se complejizan los lazos entr
 
 ## Referencia electrónica
 
-Chazarreta, Daniela. «Apostilla a la traducción de “El tributo a la realidad cotidiana en *Fragmentos a su imán* de José Lezama Lima” de Robyn R. Lutz». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 187-189. [https://www.hyperborea-labtis.org/es/paper/apostilla-la-traduccion-290](https://www.hyperborea-labtis.org/es/paper/apostilla-la-traduccion-290\>)  
+Chazarreta, Daniela. «Apostilla a la traducción de “El tributo a la realidad cotidiana en *Fragmentos a su imán* de José Lezama Lima” de Robyn R. Lutz». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 187-189. [https://www.hyperborea-labtis.org/es/paper/apostilla-la-traduccion-290](/es/paper/apostilla-la-traduccion-290)  
 DOI: [https://doi.org/10.5281/zenodo.7020113](https://doi.org/10.5281/zenodo.7020113)
 
 *Imagen superior: © Helmut Corcova (1975)*

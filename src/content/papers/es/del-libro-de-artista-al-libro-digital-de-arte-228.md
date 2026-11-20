@@ -94,5 +94,5 @@ Encontrar en la literatura, en los mitos y sus personajes, la sabiduría, el con
 
 ## Referencia electrónica
 
-Musitano, Adriana. «Conjugar opuestos hacia un tercer modelo. Del libro de artista al libro digital de arte». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 287-295. [https://www.hyperborea-labtis.org/es/paper/del-libro-de-artista-al-libro-digital-de-arte-228](https://www.hyperborea-labtis.org/es/paper/del-libro-de-artista-al-libro-digital-de-arte-228)  
+Musitano, Adriana. «Conjugar opuestos hacia un tercer modelo. Del libro de artista al libro digital de arte». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 287-295. [https://www.hyperborea-labtis.org/es/paper/del-libro-de-artista-al-libro-digital-de-arte-228](/es/paper/del-libro-de-artista-al-libro-digital-de-arte-228)  
 DOI: [https://doi.org/10.5281/zenodo.5348076](https://doi.org/10.5281/zenodo.5348076)

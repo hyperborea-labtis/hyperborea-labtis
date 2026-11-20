@@ -224,7 +224,7 @@ Este ensayo supo ser parte de la tesis doctoral de Klaus Garber, publicada como 
 
 ## Referencia electrónica
 
-Garber, Klaus. «Motivación y función de la permanencia en el *locus terribilis.*» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 24-37. [https://www.hyperborea-labtis.org/es/paper/iii-motivacion-y-funcion-de-la-permanencia-en-el-locus-terribilis-302](https://www.hyperborea-labtis.org/es/paper/iii-motivacion-y-funcion-de-la-permanencia-en-el-locus-terribilis-302)  
+Garber, Klaus. «Motivación y función de la permanencia en el *locus terribilis.*» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 24-37. [https://www.hyperborea-labtis.org/es/paper/iii-motivacion-y-funcion-de-la-permanencia-en-el-locus-terribilis-302](/es/paper/iii-motivacion-y-funcion-de-la-permanencia-en-el-locus-terribilis-302)  
 DOI: [https://doi.org/10.5281/zenodo.8400960](https://doi.org/10.5281/zenodo.8400960)
 
 *Imagen superior: Nicolaes Lachtropius,* Serpiente, sapo y mariposas al pie de un cardón*, 1689 (detalle).*

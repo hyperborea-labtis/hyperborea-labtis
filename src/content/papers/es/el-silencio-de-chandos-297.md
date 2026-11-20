@@ -83,6 +83,6 @@ La Carta de Lord Chandos, de Hugo von Hofmannsthal, fue producida en el multicul
 
 ## Referencia electrónica
 
-Reyes Macaya, Rodolfo. «El silencio de Chandos». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 224-230. [https://www.hyperborea-labtis.org/es/paper/el-silencio-de-chandos-297](https://www.hyperborea-labtis.org/es/paper/el-silencio-de-chandos-297)
+Reyes Macaya, Rodolfo. «El silencio de Chandos». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 224-230. [https://www.hyperborea-labtis.org/es/paper/el-silencio-de-chandos-297](/es/paper/el-silencio-de-chandos-297)
 
 DOI: [https://doi.org/10.5281/zenodo.7020140](https://doi.org/10.5281/zenodo.7020140)

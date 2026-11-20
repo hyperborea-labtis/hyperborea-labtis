@@ -92,5 +92,5 @@ Texto original publicado con el título «*Der große Streik*». Ed. Kurt Pinthu
 
 ## Referencia electrónica
 
-Zech, Paul. «La gran huelga». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 142-150. [https://www.hyperborea-labtis.org/es/paper/la-gran-huelga-240](https://www.hyperborea-labtis.org/es/paper/la-gran-huelga-240)  
+Zech, Paul. «La gran huelga». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 142-150. [https://www.hyperborea-labtis.org/es/paper/la-gran-huelga-240](/es/paper/la-gran-huelga-240)  
 DOI: [https://doi.org/10.5281/zenodo.5596954](https://doi.org/10.5281/zenodo.5596954)

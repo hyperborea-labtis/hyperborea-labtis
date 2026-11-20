@@ -139,4 +139,4 @@ A first version of this article was presented at the 2019 annual meeting of the 
 
 ## Referencia electrónica
 
-Radyk, Lucrecia. «Narratives of Actuality in Early Twentieth Century Film and Literature». *Hyperborea. Revista de ensayo y creación* 2 (2019): 134-145. [http://www.hyperborea-labtis.org/es/paper/narratives-actuality-early-twentieth-century-film-and-literature-140](http://www.hyperborea-labtis.org/es/paper/narratives-actuality-early-twentieth-century-film-and-literature-140)
+Radyk, Lucrecia. «Narratives of Actuality in Early Twentieth Century Film and Literature». *Hyperborea. Revista de ensayo y creación* 2 (2019): 134-145. [http://www.hyperborea-labtis.org/es/paper/narratives-actuality-early-twentieth-century-film-and-literature-140](/es/paper/narratives-actuality-early-twentieth-century-film-and-literature-140)

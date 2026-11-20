@@ -288,4 +288,4 @@ Agradecemos a la editorial Jámpster Libros la amable autorización para reprod
 
 ## Referencia electrónica
 
-Toledo Candia, Francisca. *«Manchas de humedad* de Rodolfo Reyes Macaya». *Hyperborea. Revista de ensayo y creación* 3 (2020): 260-285. [https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad-de-rodolfo-reyes-macaya-196](https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad-de-rodolfo-reyes-macaya-196)
+Toledo Candia, Francisca. *«Manchas de humedad* de Rodolfo Reyes Macaya». *Hyperborea. Revista de ensayo y creación* 3 (2020): 260-285. [https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad-de-rodolfo-reyes-macaya-196](/es/paper/manchas-de-humedad-de-rodolfo-reyes-macaya-196)

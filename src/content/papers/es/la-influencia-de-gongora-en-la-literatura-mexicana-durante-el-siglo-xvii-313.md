@@ -237,5 +237,5 @@ Este artículo se ha publicado originalmente en inglés con el título «The Inf
 
 ## Referencia electrónica
 
-Schons, Dorothy. «La influencia de Góngora en la literatura mexicana durante el siglo diecisiete.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 176-188. [https://www.hyperborea-labtis.org/es/paper/la-influencia-de-gongora-en-la-literatura-mexicana-durante-el-siglo-xvii-313](https://www.hyperborea-labtis.org/es/paper/la-influencia-de-gongora-en-la-literatura-mexicana-durante-el-siglo-xvii-313)  
+Schons, Dorothy. «La influencia de Góngora en la literatura mexicana durante el siglo diecisiete.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 176-188. [https://www.hyperborea-labtis.org/es/paper/la-influencia-de-gongora-en-la-literatura-mexicana-durante-el-siglo-xvii-313](/es/paper/la-influencia-de-gongora-en-la-literatura-mexicana-durante-el-siglo-xvii-313)  
 DOI: [https://doi.org/10.5281/zenodo.8401050](https://doi.org/10.5281/zenodo.8401050)

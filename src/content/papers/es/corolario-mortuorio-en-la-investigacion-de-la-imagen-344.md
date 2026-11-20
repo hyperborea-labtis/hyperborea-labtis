@@ -178,7 +178,7 @@ Pues bien, la muerte como hecho social tiene su fundamento a partir de la vivenc
 
 ## Referencia electrónica
 
-Brieba, Antonio. «Corolario mortuorio en la investigación de la imagen: El enfoque medial de Hans Belting.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 78-90, [https://www.hyperborea-labtis.org/es/paper/corolario-mortuorio-en-la-investigacion-de-la-imagen-344](https://www.hyperborea-labtis.org/es/paper/corolario-mortuorio-en-la-investigacion-de-la-imagen-344)  
+Brieba, Antonio. «Corolario mortuorio en la investigación de la imagen: El enfoque medial de Hans Belting.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 78-90, [https://www.hyperborea-labtis.org/es/paper/corolario-mortuorio-en-la-investigacion-de-la-imagen-344](/es/paper/corolario-mortuorio-en-la-investigacion-de-la-imagen-344)  
 DOI: [https://doi.org/10.5281/zenodo.13916283](https://doi.org/10.5281/zenodo.13916283)
 
 * * *

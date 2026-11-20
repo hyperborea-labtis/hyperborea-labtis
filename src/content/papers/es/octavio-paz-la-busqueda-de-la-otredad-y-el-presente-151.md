@@ -94,4 +94,4 @@ Agradecemos al profesor Enrico Mario-Santí y también a los editores de *The Ge
 
 ## Referencia electrónica
 
-Santí, Enrico Mario. «Octavio Paz: la búsqueda de la Otredad y el presente». *Hyperborea. Revista de ensayo y creación* 2 (2019): 231-244. [http://www.hyperborea-labtis.org/es/paper/octavio-paz-la-busqueda-de-la-otredad-y-el-presente-151](http://www.hyperborea-labtis.org/es/paper/octavio-paz-la-busqueda-de-la-otredad-y-el-presente-151)
+Santí, Enrico Mario. «Octavio Paz: la búsqueda de la Otredad y el presente». *Hyperborea. Revista de ensayo y creación* 2 (2019): 231-244. [http://www.hyperborea-labtis.org/es/paper/octavio-paz-la-busqueda-de-la-otredad-y-el-presente-151](/es/paper/octavio-paz-la-busqueda-de-la-otredad-y-el-presente-151)

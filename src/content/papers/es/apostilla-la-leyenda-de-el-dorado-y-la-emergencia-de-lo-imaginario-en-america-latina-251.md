@@ -40,5 +40,5 @@ En este contexto emerge la leyenda de El Dorado, uno de los relatos con más pro
 
 ## Referencia electrónica
 
-Chazarreta, Daniela Evangelina. «Apostilla. La leyenda de “El Dorado” y la emergencia de lo imaginario en América Latina». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 220-22. [https://www.hyperborea-labtis.org/es/paper/apostilla-la-leyenda-de-el-dorado-y-la-emergencia-de-lo-imaginario-en-america-latina-251](https://www.hyperborea-labtis.org/es/paper/apostilla-la-leyenda-de-el-dorado-y-la-emergencia-de-lo-imaginario-en-america-latina-251)  
+Chazarreta, Daniela Evangelina. «Apostilla. La leyenda de “El Dorado” y la emergencia de lo imaginario en América Latina». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 220-22. [https://www.hyperborea-labtis.org/es/paper/apostilla-la-leyenda-de-el-dorado-y-la-emergencia-de-lo-imaginario-en-america-latina-251](/es/paper/apostilla-la-leyenda-de-el-dorado-y-la-emergencia-de-lo-imaginario-en-america-latina-251)  
 DOI: [https://doi.org/10.5281/zenodo.5291926](https://doi.org/10.5281/zenodo.5291926)

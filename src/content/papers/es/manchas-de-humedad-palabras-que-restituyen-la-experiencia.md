@@ -32,4 +32,4 @@ Manchas de humedad destila un hacer cuidadoso, casi secretamente, con imágenes 
 
 ## Referencia electrónica
 
-Santander Leal, Juan. «Manchas de humedad. Palabras que restituyen la experiencia del observador». *Hyperborea. Revista de ensayo y creación* 3 (2020): 257-259. [https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad-palabras-que-restituyen-la-experiencia](https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad)
+Santander Leal, Juan. «Manchas de humedad. Palabras que restituyen la experiencia del observador». *Hyperborea. Revista de ensayo y creación* 3 (2020): 257-259. [https://www.hyperborea-labtis.org/es/paper/manchas-de-humedad-palabras-que-restituyen-la-experiencia](/es/paper/manchas-de-humedad-palabras-que-restituyen-la-experiencia)

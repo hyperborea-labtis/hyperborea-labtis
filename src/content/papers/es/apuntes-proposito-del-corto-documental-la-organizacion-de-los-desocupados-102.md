@@ -62,4 +62,4 @@ José Benclowicz es director del proyecto de investigación «Organización de l
 
 ## Referencia electrónica
 
-Benclowicz, José. «Apuntes sobre el corto documental *La organización de los desocupados*»*. Hyperborea. Revista de ensayo y creación.* 1 (2018): 128-131 [https://www.hyperborea-labtis.org/es/paper/apuntes-proposito-del-corto-documental-la-organizacion-de-los-desocupados-102](https://www.hyperborea-labtis.org/es/paper/apuntes-proposito-del-corto-documental-la-organizacion-de-los-desocupados-102)
+Benclowicz, José. «Apuntes sobre el corto documental *La organización de los desocupados*»*. Hyperborea. Revista de ensayo y creación.* 1 (2018): 128-131 [https://www.hyperborea-labtis.org/es/paper/apuntes-proposito-del-corto-documental-la-organizacion-de-los-desocupados-102](/es/paper/apuntes-proposito-del-corto-documental-la-organizacion-de-los-desocupados-102)

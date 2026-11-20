@@ -18,4 +18,4 @@ Este año, el Simposio comprenderá mesas de estudiantes de la Licenciatura en L
 
 El mismo se realizará con modalidad presencial y virtual entre el 22 y el 23 de octubre en la Sede Andina de la Universidad Nacional de Río Negro, S. C. de Bariloche, ARG. 
 
-Para mayor información, escribir a: [organizacionsimposio@gmail.com](https://www.hyperborea-labtis.org/es/actividad/organizacionsimposio@gmail.com)
+Para mayor información, escribir a: [organizacionsimposio@gmail.com](mailto:organizacionsimposio@gmail.com)

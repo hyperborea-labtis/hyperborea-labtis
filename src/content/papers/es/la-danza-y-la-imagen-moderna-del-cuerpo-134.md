@@ -201,4 +201,4 @@ A nuestro juicio, la imagen de la Fotografía 1 funciona como una *cita*. Arranc
 
 ## Referencia electrónica
 
-Vignolo, María Alejandra. «La danza y la imagen moderna del cuerpo. Un estudio sobre la conformación del baile solista en Alemania». *Hyperborea Revista de ensayo y creación* 2 (2019): 85-105.   [http://www.hyperborea-labtis.org/es/paper/la-danza-y-la-imagen-moderna-del-cuerpo-134](http://www.hyperborea-labtis.org/es/paper/la-danza-y-la-imagen-moderna-del-cuerpo-134)
+Vignolo, María Alejandra. «La danza y la imagen moderna del cuerpo. Un estudio sobre la conformación del baile solista en Alemania». *Hyperborea Revista de ensayo y creación* 2 (2019): 85-105.   [http://www.hyperborea-labtis.org/es/paper/la-danza-y-la-imagen-moderna-del-cuerpo-134](/es/paper/la-danza-y-la-imagen-moderna-del-cuerpo-134)

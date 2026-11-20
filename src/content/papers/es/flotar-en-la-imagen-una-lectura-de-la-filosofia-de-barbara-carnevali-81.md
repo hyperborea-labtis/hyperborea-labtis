@@ -58,4 +58,4 @@ Hasta ahora, las principales publicaciones de Carnevali son:
 
 ## Referencia electrónica
 
-Sverdloff, Mariano. « Flotar en la imagen: una lectura de la filosofía de Barbara Carnevali». Hyperborea. Revista de ensayo y creación. 1 (2018): 97-99. [http://www.hyperborea-labtis.org/es/paper/flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81](http://www.hyperborea-labtis.org/es/paper/flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81)
+Sverdloff, Mariano. « Flotar en la imagen: una lectura de la filosofía de Barbara Carnevali». Hyperborea. Revista de ensayo y creación. 1 (2018): 97-99. [http://www.hyperborea-labtis.org/es/paper/flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81](/es/paper/flotar-en-la-imagen-una-lectura-de-la-filosofia-de-barbara-carnevali-81)

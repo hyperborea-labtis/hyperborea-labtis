@@ -212,5 +212,5 @@ En el sentido de la visión aberrante, puede notarse aquí el modo en que las es
 
 ## Referencia electrónica
 
-Bernini, Emilio. «Después del naturalismo: Zola fotógrafo». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 1-24. [https://www.hyperborea-labtis.org/es/paper/despues-del-naturalismo-zola-fotografo-232](https://www.hyperborea-labtis.org/es/paper/despues-del-naturalismo-zola-fotografo-232)  
+Bernini, Emilio. «Después del naturalismo: Zola fotógrafo». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 1-24. [https://www.hyperborea-labtis.org/es/paper/despues-del-naturalismo-zola-fotografo-232](/es/paper/despues-del-naturalismo-zola-fotografo-232)  
 DOI: [https://doi.org/10.5281/zenodo.5290347](https://doi.org/10.5281/zenodo.5290347)

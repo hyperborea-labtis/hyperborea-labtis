@@ -238,5 +238,5 @@ En las primeras páginas de su obra, Jenkins no puede evitar esclarecer el sesgo
 
 ## Referencia electrónica
 
-Bergonce, Agustín Alejandro. «Navegando fuera de los mares literarios: un acercamiento al universo transmedia de *One Piece*.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 26-39, [https://www.hyperborea-labtis.org/es/paper/navegando-fuera-de-los-mares-literarios-345](https://www.hyperborea-labtis.org/es/paper/navegando-fuera-de-los-mares-literarios-345)  
+Bergonce, Agustín Alejandro. «Navegando fuera de los mares literarios: un acercamiento al universo transmedia de *One Piece*.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 26-39, [https://www.hyperborea-labtis.org/es/paper/navegando-fuera-de-los-mares-literarios-345](/es/paper/navegando-fuera-de-los-mares-literarios-345)  
 DOI: [https://doi.org/10.5281/zenodo.13914662](https://doi.org/10.5281/zenodo.13914662)
