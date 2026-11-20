@@ -163,4 +163,4 @@ Traducción: Mariano Sverdloff.
 
 ## Referencia electrónica
 
-Carnevali, Barbara. «*El espectáculo: ¿**patolog**í**a o fisiolog**ía de la vida social?».* *Hyperborea. Revista de ensayo y creación.*1 (2018): 100-116. [https://www.hyperborea-labtis.org/es/paper/el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88](https://www.hyperborea-labtis.org/es/paper/el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88)
+Carnevali, Barbara. «*El espectáculo: ¿**patolog**í**a o fisiolog**ía de la vida social?».* *Hyperborea. Revista de ensayo y creación.*1 (2018): 100-116. [https://www.hyperborea-labtis.org/es/paper/el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88](/es/paper/el-espectaculo-patologia-o-fisiologia-de-la-vida-social-88)

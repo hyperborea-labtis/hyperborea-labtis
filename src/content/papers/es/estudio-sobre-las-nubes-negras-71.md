@@ -261,4 +261,4 @@ Para terminar, nos queda sólo citar las últimas palabras de *Petropolis*…, q
 
 ## Referencia electrónica
 
-Accossano Pérez, Natalia, «Estudio sobre las nubes negras en ensayos literarios de John Ruskin y audiovisuales de Werner Herzog y Peter Mettler». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 14-38 [http://www.hyperborea-labtis.org/es/paper/estudio-sobre-las-nubes-negras-71](http://www.hyperborea-labtis.org/es/paper/estudio-sobre-las-nubes-negras-71)
+Accossano Pérez, Natalia, «Estudio sobre las nubes negras en ensayos literarios de John Ruskin y audiovisuales de Werner Herzog y Peter Mettler». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 14-38 [http://www.hyperborea-labtis.org/es/paper/estudio-sobre-las-nubes-negras-71](/es/paper/estudio-sobre-las-nubes-negras-71)

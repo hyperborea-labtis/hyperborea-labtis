@@ -254,4 +254,4 @@ Hacia el final de estas reflexiones, nos interesa señalar que los breves extrac
 
 ## Referencia electrónica
 
-Llarrull, María Florencia. «*Mise-en-scène* y escritura auténtica». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 80-96.  [https://www.hyperborea-labtis.org/es/paper/mise-en-scene-y-escritura-autentica-64](https://www.hyperborea-labtis.org/es/paper/mise-en-scene-y-escritura-autentica-64)
+Llarrull, María Florencia. «*Mise-en-scène* y escritura auténtica». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 80-96.  [https://www.hyperborea-labtis.org/es/paper/mise-en-scene-y-escritura-autentica-64](/es/paper/mise-en-scene-y-escritura-autentica-64)

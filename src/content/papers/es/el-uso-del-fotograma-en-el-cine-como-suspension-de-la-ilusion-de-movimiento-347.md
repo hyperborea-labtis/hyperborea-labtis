@@ -151,7 +151,7 @@ El cine es una máquina que genera ilusiones. Por suerte existen artistas, pensa
 
 ## Referencia electrónica
 
-Pécora, Paulo. «El uso del fotograma en el cine como suspensión de la ilusión de movimiento.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 128-140, [https://www.hyperborea-labtis.org/es/paper/el-uso-del-fotograma-en-el-cine-como-suspension-de-la-ilusion-de- movimiento-347](<https://www.hyperborea-labtis.org/es/paper/el-uso-del-fotograma-en-el-cine-como-suspension-de-la-ilusion-de- movimiento-347>)  
+Pécora, Paulo. «El uso del fotograma en el cine como suspensión de la ilusión de movimiento.» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 128-140, [https://www.hyperborea-labtis.org/es/paper/el-uso-del-fotograma-en-el-cine-como-suspension-de-la-ilusion-de- movimiento-347](/es/paper/el-uso-del-fotograma-en-el-cine-como-suspension-de-la-ilusion-de-movimiento-347)  
 DOI: [https://doi.org/10.5281/zenodo.13916437](https://doi.org/10.5281/zenodo.13916437)
 
 * * *

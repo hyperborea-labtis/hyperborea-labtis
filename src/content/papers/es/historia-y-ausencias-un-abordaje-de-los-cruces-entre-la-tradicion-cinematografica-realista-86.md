@@ -140,4 +140,4 @@ En estas páginas hemos emprendido un viaje que nos enfrentó con certezas e int
 
 ## Referencia electrónica
 
-Zori, Paula, «Historia y ausencias. Cruces entre la tradición cinematográfica realista y los procesos de ficcionalización en dos films de Víctor Erice». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 55-70. [http://www.hyperborea-labtis.org/es/paper/historia-y-ausencias-un-abordaje-de-los-cruces-entre-la-tradicion-cinematografica-realista-86](http://www.hyperborea-labtis.org/es/paper/historia-y-ausencias-un-abordaje-de-los-cruces-entre-la-tradicion-cinematografica-realista-86)
+Zori, Paula, «Historia y ausencias. Cruces entre la tradición cinematográfica realista y los procesos de ficcionalización en dos films de Víctor Erice». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 55-70. [http://www.hyperborea-labtis.org/es/paper/historia-y-ausencias-un-abordaje-de-los-cruces-entre-la-tradicion-cinematografica-realista-86](/es/paper/historia-y-ausencias-un-abordaje-de-los-cruces-entre-la-tradicion-cinematografica-realista-86)

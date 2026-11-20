@@ -247,7 +247,7 @@ Difícil, asimismo, detectar el punto cero, encontrar la punta del ovillo, cuand
 
 ## Referencia electrónica
 
-Sánchez, Claudia Margarita. «Orígenes de la videodanza argentina». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 126-143. [https://www.hyperborea-labtis.org/es/paper/origenes-de-la-videodanza-argentina-283](https://www.hyperborea-labtis.org/es/paper/origenes-de-la-videodanza-argentina-283)
+Sánchez, Claudia Margarita. «Orígenes de la videodanza argentina». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 126-143. [https://www.hyperborea-labtis.org/es/paper/origenes-de-la-videodanza-argentina-283](/es/paper/origenes-de-la-videodanza-argentina-283)
 
 DOI: [https://doi.org/10.5281/zenodo.7373867](https://doi.org/10.5281/zenodo.7373867)
 

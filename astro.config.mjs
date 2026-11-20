@@ -45,24 +45,42 @@ const devServerExtras = {
 
 // Slugs that REALLY exist in each language (own text, not the Spanish fallback). The
 // untranslated /en and /fr copies are noindex (see src/lib/seo.ts), so they must stay out of
-// the sitemap. Read from the frontmatter of src/content/<collection>/<lang>/*.md.
+// the sitemap. Read from the frontmatter of src/content/<collection>/<lang>/*.md, which also
+// gives the sitemap its <lastmod>: the publication date (else the creation date) of the entry.
 /** @type {Record<string, Record<string, Set<string>>>} */
 const REAL = {};
+/** @type {Record<string, Record<string, Map<string, { date?: string, issue?: number }>>>} */
+const META = {};
+/** @param {string} head @param {string} key */
+function frontmatterDate(head, key) {
+  const raw = new RegExp(`^${key}:\\s*["']?([^"'\\n]*?)["']?\\s*$`, "m").exec(head)?.[1];
+  const t = raw ? Date.parse(raw) : NaN;
+  return Number.isNaN(t) ? undefined : new Date(t).toISOString().slice(0, 10);
+}
 for (const collection of ["papers", "articles", "pages"]) {
   REAL[collection] = {};
+  META[collection] = {};
   for (const lang of ["es", "en", "fr"]) {
     const dir = path.join("src", "content", collection, lang);
     REAL[collection][lang] = new Set();
+    META[collection][lang] = new Map();
     if (!fs.existsSync(dir)) continue;
     for (const f of fs.readdirSync(dir)) {
       if (!f.endsWith(".md")) continue;
       const head = fs.readFileSync(path.join(dir, f), "utf8").slice(0, 3000);
-      const slug = /^slug:\s*"?([^"\n]+?)"?\s*$/m.exec(head)?.[1];
-      REAL[collection][lang].add(slug ?? f.replace(/\.md$/, ""));
+      const slug = /^slug:\s*"?([^"\n]+?)"?\s*$/m.exec(head)?.[1] ?? f.replace(/\.md$/, "");
+      REAL[collection][lang].add(slug);
+      const issue = Number(/^issue:\s*(\d+)\s*$/m.exec(head)?.[1]) || undefined;
+      META[collection][lang].set(slug, { date: frontmatterDate(head, "publishedDate") ?? frontmatterDate(head, "created"), issue });
     }
   }
 }
 const PAGE_SLUGS = new Set(Object.values(REAL.pages).flatMap((s) => [...s]));
+
+/** Newest date among entries (YYYY-MM-DD strings sort as dates). @param {(string | undefined)[]} dates */
+const newest = (dates) => dates.filter(Boolean).sort().pop();
+const ALL_PAPERS = [...META.papers.es.values()];
+const ALL_ENTRIES = [...ALL_PAPERS, ...META.articles.es.values()];
 
 /** @param {string} pathname */
 function inSitemap(pathname) {
@@ -72,6 +90,21 @@ function inSitemap(pathname) {
   const p = /^\/(en|fr)\/([^/]+)$/.exec(pathname);
   if (p && PAGE_SLUGS.has(p[2])) return REAL.pages[p[1]].has(p[2]);
   return true;
+}
+
+/**
+ * <lastmod> only where there is a real date: an entry's own date, an issue page = its newest
+ * paper, a home page = the newest entry. Listings and institutional pages get none: a made-up
+ * date would teach crawlers to distrust every other one.
+ * @param {string} pathname
+ */
+function lastmod(pathname) {
+  const entry = /^\/(es|en|fr)\/(paper|actividad)\/([^/]+)$/.exec(pathname);
+  if (entry) return META[entry[2] === "paper" ? "papers" : "articles"][entry[1]].get(entry[3])?.date;
+  const issue = /^\/(?:es|en|fr)\/numero-(\d+)$/.exec(pathname);
+  if (issue) return newest(ALL_PAPERS.filter((e) => e.issue === Number(issue[1])).map((e) => e.date));
+  if (/^\/(es|en|fr)$/.test(pathname)) return newest(ALL_ENTRIES.map((e) => e.date));
+  return undefined;
 }
 
 // https://astro.build/config
@@ -128,6 +161,10 @@ export default defineConfig({
       // copies. No `i18n` option: it would cross-link every URL in three languages, but
       // only real translations may be alternates (hreflang is emitted in <head>).
       filter: (page) => inSitemap(new URL(page).pathname),
+      serialize: (item) => {
+        const date = lastmod(new URL(item.url).pathname);
+        return date ? { ...item, lastmod: date } : item;
+      },
     }),
   ],
 });

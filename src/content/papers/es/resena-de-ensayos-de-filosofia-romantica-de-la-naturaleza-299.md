@@ -75,7 +75,7 @@ En una conferencia sobre la traducción que Jorge Luis Borges da en Harvard, lue
 
 ## Referencia electrónica
 
-Rivas, Pablo. «Reseña de *Ensayos de filosofía romántica de la naturaleza*». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 231-237. [https://www.hyperborea-labtis.org/es/paper/resena-de-ensayos-de-filosofia-romantica-de-la-naturaleza-299](https://www.hyperborea-labtis.org/es/paper/resena-de-ensayos-de-filosofia-romantica-de-la-naturaleza-299)
+Rivas, Pablo. «Reseña de *Ensayos de filosofía romántica de la naturaleza*». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 231-237. [https://www.hyperborea-labtis.org/es/paper/resena-de-ensayos-de-filosofia-romantica-de-la-naturaleza-299](/es/paper/resena-de-ensayos-de-filosofia-romantica-de-la-naturaleza-299)
 
 DOI: [https://doi.org/10.5281/zenodo.7020177](https://doi.org/10.5281/zenodo.7020177)
 

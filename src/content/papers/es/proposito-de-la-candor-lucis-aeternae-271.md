@@ -156,7 +156,7 @@ No me llegó a tiempo la versión de Fernández Speier para tomar de ella las ci
 
 ## Referencia electrónica
 
-Burucúa, José Emilio. «A propósito de la *Candor lucis aeternae*. Una aproximación iconográfica». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 12-30. [https://www.hyperborea-labtis.org/es/paper/proposito-de-la-candor-lucis-aeternae-271](https://www.hyperborea-labtis.org/es/paper/proposito-de-la-candor-lucis-aeternae-271)  
+Burucúa, José Emilio. «A propósito de la *Candor lucis aeternae*. Una aproximación iconográfica». *Hyperborea. Revista de ensayo y creación.* 5 (2022): 12-30. [https://www.hyperborea-labtis.org/es/paper/proposito-de-la-candor-lucis-aeternae-271](/es/paper/proposito-de-la-candor-lucis-aeternae-271)  
 DOI: [https://doi.org/10.5281/zenodo.7019947](https://doi.org/10.5281/zenodo.7019947)
 
 *Imagen superior: detalle de la estatua del Dante, Enrico Pazzi (1865)*

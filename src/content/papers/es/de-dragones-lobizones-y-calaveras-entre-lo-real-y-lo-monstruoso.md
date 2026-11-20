@@ -74,4 +74,4 @@ En la cita inicial de esta reseña, Ítalo Calvino parece vislumbrar en los cóm
 
 ## Referencia electrónica
 
-Accossano Pérez, Natalia A. «De dragones, lobizones y calaveras: entre lo real y lo monstruoso en *Lo que más me gusta son los monstruos* de Emil Ferris». *Hyperborea. Revista de ensayo y creación* 3 (2020): 326-331. [https://www.hyperborea-labtis.org/es/paper/de-dragones-lobizones-y-calaveras-entre-lo-real-y-lo-monstruoso](https://www.hyperborea-labtis.org/es/paper/de-dragones-lobizones-y-calaveras-entre-lo-real-y-lo-monstruoso)
+Accossano Pérez, Natalia A. «De dragones, lobizones y calaveras: entre lo real y lo monstruoso en *Lo que más me gusta son los monstruos* de Emil Ferris». *Hyperborea. Revista de ensayo y creación* 3 (2020): 326-331. [https://www.hyperborea-labtis.org/es/paper/de-dragones-lobizones-y-calaveras-entre-lo-real-y-lo-monstruoso](/es/paper/de-dragones-lobizones-y-calaveras-entre-lo-real-y-lo-monstruoso)

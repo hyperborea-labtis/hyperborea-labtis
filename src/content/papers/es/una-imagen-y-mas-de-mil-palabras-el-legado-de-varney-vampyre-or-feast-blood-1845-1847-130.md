@@ -226,4 +226,4 @@ De esta manera, si consideramos las producciones de vampiros que suceden a *Varn
 
 ## Referencia electrónica
 
-Coria Nogueira, Nicolás. «Una imagen y más de mil palabras: El legado de *Varney, the Vampyre or, The Feast of Blood* (1845-1847)». *Hyperborea. Revista de ensayo y creación* 2 (2019): 26-42. [http://www.hyperborea-labtis.org/es/paper/una-imagen-y-mas-de-mil-palabras-el-legado-de-varney-vampyre-or-feast-blood-1845-1847-130](http://www.hyperborea-labtis.org/es/paper/una-imagen-y-mas-de-mil-palabras-el-legado-de-varney-vampyre-or-feast-blood-1845-1847-130)
+Coria Nogueira, Nicolás. «Una imagen y más de mil palabras: El legado de *Varney, the Vampyre or, The Feast of Blood* (1845-1847)». *Hyperborea. Revista de ensayo y creación* 2 (2019): 26-42. [http://www.hyperborea-labtis.org/es/paper/una-imagen-y-mas-de-mil-palabras-el-legado-de-varney-vampyre-or-feast-blood-1845-1847-130](/es/paper/una-imagen-y-mas-de-mil-palabras-el-legado-de-varney-vampyre-or-feast-blood-1845-1847-130)

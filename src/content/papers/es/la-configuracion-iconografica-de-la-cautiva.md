@@ -206,5 +206,5 @@ La representación de la figura de la cautiva no solo se inscribe en un contexto
 ## Referencia electrónica
 
 Pérez, Verónica. «La configuración iconográfica de la cautiva: del esteticismo romántico a la construcción ideológica del imaginario nacional argentino.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 1–17.  
-URL: [https://www.hyperborea-labtis.org/es/paper/la-configuracion-iconografica-de-la-cautiva](https://www.hyperborea-labtis.org/es/paper/la-configuracion-iconografica-de-la-cautiva)   
+URL: [https://www.hyperborea-labtis.org/es/paper/la-configuracion-iconografica-de-la-cautiva](/es/paper/la-configuracion-iconografica-de-la-cautiva)   
 DOI: [https://doi.org/10.5281/zenodo.17664571](https://doi.org/10.5281/zenodo.17664571)

@@ -39,7 +39,7 @@ La naturaleza crea sin detenerse, dispone en el mundo elementos distintos que co
 ## Referencia electrónica
 
 Petrecca, Laura. «Poemas, piedras, imágenes.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 116–17.  
-URL: [https://www.hyperborea-labtis.org/es/paper/poemas-piedras-imagenes-390](https://www.hyperborea-labtis.org/es/paper/poemas-piedras-imagenes-390)   
+URL: [https://www.hyperborea-labtis.org/es/paper/poemas-piedras-imagenes-390](/es/paper/poemas-piedras-imagenes-390)   
 DOI: [https://doi.org/10.5281/zenodo.17664604](https://doi.org/10.5281/zenodo.17664604)
 
 * * *

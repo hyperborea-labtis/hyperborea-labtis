@@ -33,4 +33,4 @@ Para inscribirse y recibir el enlace correspondiente el mismo día de cada confe
 
 [https://docs.google.com/forms/d/e/1FAIpQLScTT1\_1SI-URBg\_wDArIxdqVEacZDWQUXGbU5J2aoitX14RNA/viewform](https://docs.google.com/forms/d/e/1FAIpQLScTT1_1SI-URBg_wDArIxdqVEacZDWQUXGbU5J2aoitX14RNA/viewform)
 
-Para mayor información, escribir a: [recintosdelamorlh@gmail.com](https://www.hyperborea-labtis.org/es/actividad/recintosdelamorlh@gmail.com)
+Para mayor información, escribir a: [recintosdelamorlh@gmail.com](mailto:recintosdelamorlh@gmail.com)

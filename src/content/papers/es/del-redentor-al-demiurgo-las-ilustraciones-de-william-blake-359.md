@@ -223,6 +223,6 @@ A pesar de todo esto, no quisiéramos terminar este artículo sin valorar el ges
 
 ## Referencia electrónica
 
-Paolini, Daniela y Mario Rucavado Rojas. «Del Redentor al Demiurgo: Las ilustraciones de William Blake vistas a través de las *Meditaciones poéticas* de José Joaquín de Mora.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 40-57, [https://www.hyperborea-labtis.org/es/paper/del-redentor-al-demiurgo-las-ilustraciones-de-william-blake-359](https://www.hyperborea-labtis.org/es/paper/del-redentor-al-demiurgo-las-ilustraciones-de-william-blake-359)  
+Paolini, Daniela y Mario Rucavado Rojas. «Del Redentor al Demiurgo: Las ilustraciones de William Blake vistas a través de las *Meditaciones poéticas* de José Joaquín de Mora.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 40-57, [https://www.hyperborea-labtis.org/es/paper/del-redentor-al-demiurgo-las-ilustraciones-de-william-blake-359](/es/paper/del-redentor-al-demiurgo-las-ilustraciones-de-william-blake-359)  
 DOI: [https://doi.org/10.5281/zenodo.13916419](https://doi.org/10.5281/zenodo.13916419)
 

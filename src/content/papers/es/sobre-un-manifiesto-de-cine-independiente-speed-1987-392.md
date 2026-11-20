@@ -45,5 +45,5 @@ A continuación, se reproduce el texto original del «Manifesto» —extraído d
 ## Referencia electrónica
 
 Guzmán, Rubén. «Sobre un manifiesto de cine independiente publicado en la revista *Speed* (1987).» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 125–6.  
-URL: [https://www.hyperborea-labtis.org/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392](https://www.hyperborea-labtis.org/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392) [](https://www.hyperborea-labtis.org/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392)  
+URL: [https://www.hyperborea-labtis.org/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392](/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392) [](/es/paper/sobre-un-manifiesto-de-cine-independiente-speed-1987-392)  
 DOI: [https://doi.org/10.5281/zenodo.17664583](https://doi.org/10.5281/zenodo.17664583)

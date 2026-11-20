@@ -204,7 +204,7 @@ Traducción: Ana Lía Gabrieloni
 
 ## Referencia electrónica
 
-Guzmán, Rubén. «"En contra del realismo y a favor de lo real." Entrevista inédita a Alain Robbe-Grillet (1922-2008).» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 146-155. [https://www.hyperborea-labtis.org/es/paper/en-contra-del-realismo-y-favor-de-lo-real-308](https://www.hyperborea-labtis.org/es/paper/en-contra-del-realismo-y-favor-de-lo-real-308) 
+Guzmán, Rubén. «"En contra del realismo y a favor de lo real." Entrevista inédita a Alain Robbe-Grillet (1922-2008).» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 146-155. [https://www.hyperborea-labtis.org/es/paper/en-contra-del-realismo-y-favor-de-lo-real-308](/es/paper/en-contra-del-realismo-y-favor-de-lo-real-308) 
 
 DOI: [https://doi.org/10.5281/zenodo.8401037](https://doi.org/10.5281/zenodo.8401037) 
 

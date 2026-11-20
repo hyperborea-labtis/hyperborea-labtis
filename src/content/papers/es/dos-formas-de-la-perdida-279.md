@@ -108,7 +108,7 @@ Este último punto podría ser uno de los más relevantes al contrastar las dos 
 
 ## Referencia electrónica
 
-Chávez, Martín N. «Dos formas de la pérdida: *Una vida humilde* de Alexndr Sokurov y “El jardín” de Elena Garro». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 112-118. [https://www.hyperborea-labtis.org/es/paper/dos-formas-de-la-perdida-279](https://www.hyperborea-labtis.org/es/paper/dos-formas-de-la-perdida-279)  
+Chávez, Martín N. «Dos formas de la pérdida: *Una vida humilde* de Alexndr Sokurov y “El jardín” de Elena Garro». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 112-118. [https://www.hyperborea-labtis.org/es/paper/dos-formas-de-la-perdida-279](/es/paper/dos-formas-de-la-perdida-279)  
 DOI: [https://doi.org/10.5281/zenodo.7020063](https://doi.org/10.5281/zenodo.7020063)
 
 *Imagen superior: fotograma de* Smirennaya zhizn *del director Aleksandr Sokurov (1997)*

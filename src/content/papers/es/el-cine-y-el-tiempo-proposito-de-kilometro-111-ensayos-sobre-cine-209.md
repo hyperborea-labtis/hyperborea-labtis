@@ -62,7 +62,7 @@ Y, entonces, desde hace ya casi veinte años, un cono de luz se proyecta e impri
 
 ## Referencia electrónica
 
-Lapezzata, Matías. «El cine y el tiempo. A propósito de *Kilómetro 111. Ensayos sobre cine*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 338-345. [https://www.hyperborea-labtis.org/es/paper/el-cine-y-el-tiempo-proposito-de-kilometro-111-ensayos-sobre-cine-209](https://www.hyperborea-labtis.org/es/paper/el-cine-y-el-tiempo-proposito-de-kilometro-111-ensayos-sobre-cine-209)
+Lapezzata, Matías. «El cine y el tiempo. A propósito de *Kilómetro 111. Ensayos sobre cine*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 338-345. [https://www.hyperborea-labtis.org/es/paper/el-cine-y-el-tiempo-proposito-de-kilometro-111-ensayos-sobre-cine-209](/es/paper/el-cine-y-el-tiempo-proposito-de-kilometro-111-ensayos-sobre-cine-209)
 
 * * *
 

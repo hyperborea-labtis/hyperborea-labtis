@@ -168,7 +168,7 @@ Podríamos seguir abundando en ejemplos y pormenorizando las relaciones que tien
 
 \[4\] En otros textos he tenido la oportunidad de escribir más extensamente sobre este tema. Si es de interés, sugiero consultar «Relaciones iconotextuales en la poesía en soportes alternativos», en *Bibliología e iconotextualidad. Estudios interdisciplinarios sobre las relaciones entre textos e imágenes.* Eds. Marina Garone y María Andrea Giovine. México: UNAM-IIB, 2018, 76 -77.
 
-\[5\] Recomiendo leer el muy sugerente ensayo «La lectura de cuadros», de James A. W. Heffernan, publicado en el segundo número de *Hyperborea. Revista de ensayo y creación* ([https://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](https://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128)), donde el autor extiende el concepto de lectura para aplicarlo al ámbito de las artes visuales y demuestra con ejemplos cómo leemos cuadros de manera semejante a como leemos textos. Este ensayo fue una enorme fuente de inspiración para reflexionar sobre la relación entre las obras de artes visuales y sus títulos desde la perspectiva que aquí propongo.
+\[5\] Recomiendo leer el muy sugerente ensayo «La lectura de cuadros», de James A. W. Heffernan, publicado en el segundo número de *Hyperborea. Revista de ensayo y creación* ([https://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](/es/paper/la-lectura-de-cuadros-128)), donde el autor extiende el concepto de lectura para aplicarlo al ámbito de las artes visuales y demuestra con ejemplos cómo leemos cuadros de manera semejante a como leemos textos. Este ensayo fue una enorme fuente de inspiración para reflexionar sobre la relación entre las obras de artes visuales y sus títulos desde la perspectiva que aquí propongo.
 
 \[6\] También resultaría interesante reflexionar sobre la relación que establece el título con obras de naturaleza no visual, como sucede en el caso de la música o la danza. Sin embargo, por razones de extensión y por la naturaleza de mis intereses de investigación ubicados en los puntos de contacto entre visualidad y escritura, me centraré exclusivamente en las relaciones entre obras de artes visuales y sus títulos.
 
@@ -206,7 +206,7 @@ Podríamos seguir abundando en ejemplos y pormenorizando las relaciones que tien
 -   Gabrieloni, Ana Lía. «Interpretaciones teóricas y poéticas sobre la literatura y la pintura. Un esbozo histórico». *Saltana. Revista de literatura y traducción*, [https://www.saltana.org/1/docar/0010.html](https://www.saltana.org/1/docar/0010.html), (15/07/20).
 -   Gammel, Irene. *Baroness Elsa –Gender, Dada and everyday Modernity, a Cultural Biography.* Cambridge: MIT Press, 2002.
 -   Giovine, María Andrea. «Relaciones iconotextuales en la poesía en soportes alternativos». *Bibliología e iconotextualidad. Estudios interdisciplinarios sobre las relaciones entre textos e imágenes.* Eds. Marina Garone y María Andrea Giovine. México: UNAM-IIB, 2018.
--   Heffernan, James A. W. «La lectura de cuadros». *Hyperborea. Revista de ensayo y creación* 2 (2019): 1-25. [http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128), (17/07/20).
+-   Heffernan, James A. W. «La lectura de cuadros». *Hyperborea. Revista de ensayo y creación* 2 (2019): 1-25. [http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](/es/paper/la-lectura-de-cuadros-128), (17/07/20).
 -   Jacobs, Helmut C. *El sueño de la razón: el Capricho 43 de Goya en el arte visual, la literatura y la música.* Trads. Beatriz Galán Echevarría y Helmut C. Jacobs. Madrid: Iberoamericana-Vervuert, 2011.
 -   «La fe mueve montañas». *La Panera*, [http://lapanera.cl/sitio/la-fe-mueve-montanas](http://lapanera.cl/sitio/la-fe-mueve-montanas/), (18/07/20).
 -   Lageira, Jacinto. *Centre Pompidou. Musée National d’Art Moderne: Peintures et Scultpures.* Paris: Scala, 2008.
@@ -231,7 +231,7 @@ Podríamos seguir abundando en ejemplos y pormenorizando las relaciones que tien
 
 ## Referencia electrónica
 
-Giovine Yáñez, María Andrea. «Toda obra de artes visuales es iconotextual: una invitación a pensar la historia de las artes visuales desde la relación entre las obras y sus títulos». *Hyperborea. Revista de ensayo y creación* 3 (2020): 71-95. [https://www.hyperborea-labtis.org/es/paper/toda-obra-de-artes-visuales-es-iconotextual-una-invitacion-pensar-la-historia-de-las-artes](https://www.hyperborea-labtis.org/es/paper/toda-obra-de-artes-visuales-es-iconotextual-una-invitacion-pensar-la-historia-de-las-artes)
+Giovine Yáñez, María Andrea. «Toda obra de artes visuales es iconotextual: una invitación a pensar la historia de las artes visuales desde la relación entre las obras y sus títulos». *Hyperborea. Revista de ensayo y creación* 3 (2020): 71-95. [https://www.hyperborea-labtis.org/es/paper/toda-obra-de-artes-visuales-es-iconotextual-una-invitacion-pensar-la-historia-de-las-artes](/es/paper/toda-obra-de-artes-visuales-es-iconotextual-una-invitacion-pensar-la-historia-de-las-artes)
 
 * * *
 

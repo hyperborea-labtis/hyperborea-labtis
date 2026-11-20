@@ -57,4 +57,4 @@ El libro logra sus propósitos (invierte recursos maravillosamente insólitos e
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «*Historia natural y mítica de los elefantes* de José Emilio Burucúa y Nicolás Kwiatkowski». *Hyperborea. Revista de ensayo y creación* 2 (2019): 262-267. [https://www.hyperborea-labtis.org/es/paper/historia-natural-y-mitica-de-los-elefantes-de-jose-emilio-burucua-y-nicolas-kwiatkowski-159](https://www.hyperborea-labtis.org/es/paper/historia-natural-y-mitica-de-los-elefantes-de-jose-emilio-burucua-y-nicolas-kwiatkowski-159)
+Gabrieloni, Ana Lía. «*Historia natural y mítica de los elefantes* de José Emilio Burucúa y Nicolás Kwiatkowski». *Hyperborea. Revista de ensayo y creación* 2 (2019): 262-267. [https://www.hyperborea-labtis.org/es/paper/historia-natural-y-mitica-de-los-elefantes-de-jose-emilio-burucua-y-nicolas-kwiatkowski-159](/es/paper/historia-natural-y-mitica-de-los-elefantes-de-jose-emilio-burucua-y-nicolas-kwiatkowski-159)

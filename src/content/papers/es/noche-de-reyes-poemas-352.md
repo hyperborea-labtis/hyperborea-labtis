@@ -154,7 +154,7 @@ La de las soledades
 
 ## Referencia electrónica
 
-Arcos La Rosa, Jorge Luis. «Noche de Reyes.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 146-152, [https://www.hyperborea-labtis.org/es/paper/noche-de-reyes-poemas-352](https://www.hyperborea-labtis.org/es/paper/noche-de-reyes-poemas-352)  
+Arcos La Rosa, Jorge Luis. «Noche de Reyes.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 146-152, [https://www.hyperborea-labtis.org/es/paper/noche-de-reyes-poemas-352](/es/paper/noche-de-reyes-poemas-352)  
 DOI: [https://doi.org/10.5281/zenodo.13916473](https://doi.org/10.5281/zenodo.13916473)
 
 * * *

@@ -64,7 +64,7 @@ En una carta a su amada amiga Vita Sackville-West fechada el 13 de abril de 1926
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «La presencia y la palabra. *Nevermore* (2021) de Cécile Wajsbrot.» *Hyperborea. Revista de ensayo y creación,* nro 6, 2023, pp. 156-161. [https://www.hyperborea-labtis.org/es/paper/introduccion-nevermore-de-cecile-wajsbrot-310](https://www.hyperborea-labtis.org/es/paper/introduccion-nevermore-de-cecile-wajsbrot-310)  
+Gabrieloni, Ana Lía. «La presencia y la palabra. *Nevermore* (2021) de Cécile Wajsbrot.» *Hyperborea. Revista de ensayo y creación,* nro 6, 2023, pp. 156-161. [https://www.hyperborea-labtis.org/es/paper/introduccion-nevermore-de-cecile-wajsbrot-310](/es/paper/introduccion-nevermore-de-cecile-wajsbrot-310)  
 DOI: [https://doi.org/10.5281/zenodo.8401044](https://doi.org/10.5281/zenodo.8401044)
 
 *Imagen superior: Estación de radar Duga, zona de exclusión de Chernóbil, Ucrania.*

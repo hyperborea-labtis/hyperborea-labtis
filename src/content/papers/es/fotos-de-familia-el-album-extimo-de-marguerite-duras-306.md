@@ -324,5 +324,5 @@ En el comienzo de *L’Amant,* Duras remite a la noción antigua de las fotograf
 
 ## Referencia electrónica
 
-Vogelfang, Lucía. «Fotos de familia. El álbum éxtimo de Marguerite Duras.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 66-93. [https://www.hyperborea-labtis.org/es/paper/fotos-de-familia-el-album-extimo-de-marguerite-duras-306](https://www.hyperborea-labtis.org/es/paper/fotos-de-familia-el-album-extimo-de-marguerite-duras-306)  
+Vogelfang, Lucía. «Fotos de familia. El álbum éxtimo de Marguerite Duras.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 66-93. [https://www.hyperborea-labtis.org/es/paper/fotos-de-familia-el-album-extimo-de-marguerite-duras-306](/es/paper/fotos-de-familia-el-album-extimo-de-marguerite-duras-306)  
 DOI: [https://doi.org/10.5281/zenodo.8401012](https://doi.org/10.5281/zenodo.8401012)

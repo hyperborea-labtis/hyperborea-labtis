@@ -162,4 +162,4 @@ Finalmente, las operaciones de lectura y de reescritura sobre las relaciones ent
 
 ## Referencia electrónica
 
-Toledo, Carolina. «"El peso de las imágenes": interrelaciones entre palabras e imágenes en tres novelas de Alejo Carpentier». *Hyperborea. Revista de ensayo y creación* 2 (2019): 59-72. [http://www.hyperborea-labtis.org/es/paper/el-peso-de-las-imagenes-132](http://www.hyperborea-labtis.org/es/paper/el-peso-de-las-imagenes-132)
+Toledo, Carolina. «"El peso de las imágenes": interrelaciones entre palabras e imágenes en tres novelas de Alejo Carpentier». *Hyperborea. Revista de ensayo y creación* 2 (2019): 59-72. [http://www.hyperborea-labtis.org/es/paper/el-peso-de-las-imagenes-132](/es/paper/el-peso-de-las-imagenes-132)

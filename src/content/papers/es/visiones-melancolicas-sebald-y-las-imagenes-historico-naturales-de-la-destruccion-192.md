@@ -220,4 +220,4 @@ La fuerza alegórica innovadora que destacan estos críticos en la composición 
 
 ## Referencia electrónica
 
-Villavicencio Arrillaga, *Agustín.* «Visiones melancólicas: Sebald y las imágenes históricos-naturales de la destrucción». *Hyperborea. Revista de ensayo y creación* 3 (2020): 29-52. [https://www.hyperborea-labtis.org/es/paper/visiones-melancolicas-sebald-y-las-imagenes-historico-naturales-de-la-destruccion-192](https://www.hyperborea-labtis.org/es/paper/visiones-melancolicas-sebald-y-las-imagenes-historico-naturales-de-la-destruccion-192)
+Villavicencio Arrillaga, *Agustín.* «Visiones melancólicas: Sebald y las imágenes históricos-naturales de la destrucción». *Hyperborea. Revista de ensayo y creación* 3 (2020): 29-52. [https://www.hyperborea-labtis.org/es/paper/visiones-melancolicas-sebald-y-las-imagenes-historico-naturales-de-la-destruccion-192](/es/paper/visiones-melancolicas-sebald-y-las-imagenes-historico-naturales-de-la-destruccion-192)

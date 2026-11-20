@@ -39,5 +39,5 @@ Acude a esta selección una serie de fotogramas transpuestos del *Refugio de Na
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «*"All Passion Spent"*. Constelaciones del pensamiento en los *Cuadernos patagónicos* de Narcisa Hirsch.» *Hyperborea. Revista de ensayo y creación,* no 6, 2023, pp. 114-117. [https://www.hyperborea-labtis.org/es/paper/constelaciones-del-pensamiento-en-los-cuadernos-patagonicos-de-narcisa-hirsch-309](https://www.hyperborea-labtis.org/es/paper/constelaciones-del-pensamiento-en-los-cuadernos-patagonicos-de-narcisa-hirsch-309)  
+Gabrieloni, Ana Lía. «*"All Passion Spent"*. Constelaciones del pensamiento en los *Cuadernos patagónicos* de Narcisa Hirsch.» *Hyperborea. Revista de ensayo y creación,* no 6, 2023, pp. 114-117. [https://www.hyperborea-labtis.org/es/paper/constelaciones-del-pensamiento-en-los-cuadernos-patagonicos-de-narcisa-hirsch-309](/es/paper/constelaciones-del-pensamiento-en-los-cuadernos-patagonicos-de-narcisa-hirsch-309)  
 DOI: [https://doi.org/10.5281/zenodo.10070188](https://doi.org/10.5281/zenodo.10070188)

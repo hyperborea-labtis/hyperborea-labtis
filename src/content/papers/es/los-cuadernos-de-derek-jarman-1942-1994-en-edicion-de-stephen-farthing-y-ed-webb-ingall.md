@@ -53,4 +53,4 @@ Neil Tennat, integrante del dúo *Pet Shop Boys* —para el cual Jarman creó va
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «Los cuadernos de Derek Jarman (1942-1994) en edición de Stephen Farthing y Ed Webb-Ingall: *a delphinium, Blue, upon his grave*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 320-325. [https://www.hyperborea-labtis.org/es/paper/los-cuadernos-de-derek-jarman-1942-1994-en-edicion-de-stephen-farthing-y-ed-webb-ingall](https://www.hyperborea-labtis.org/es/paper/los-cuadernos-de-derek-jarman-1942-1994-en-edicion-de-stephen-farthing-y-ed-webb-ingall)
+Gabrieloni, Ana Lía. «Los cuadernos de Derek Jarman (1942-1994) en edición de Stephen Farthing y Ed Webb-Ingall: *a delphinium, Blue, upon his grave*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 320-325. [https://www.hyperborea-labtis.org/es/paper/los-cuadernos-de-derek-jarman-1942-1994-en-edicion-de-stephen-farthing-y-ed-webb-ingall](/es/paper/los-cuadernos-de-derek-jarman-1942-1994-en-edicion-de-stephen-farthing-y-ed-webb-ingall)

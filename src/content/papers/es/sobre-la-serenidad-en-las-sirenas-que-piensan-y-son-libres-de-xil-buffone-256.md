@@ -81,5 +81,5 @@ Agradecemos el permiso para reproducir aquí detalles de "Sirenas argentinas" 
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «Sobre la serenidad en las sirenas que piensan y son libres de Xil Buffone». **Hyperborea. Revista de ensayo y creación.** 4 (2021): 308-16. [https://www.hyperborea-labtis.org/es/paper/sobre-la-serenidad-en-las-sirenas-que-piensan-y-son-libres-de-xil-buffone-256](https://www.hyperborea-labtis.org/es/paper/sobre-la-serenidad-en-las-sirenas-que-piensan-y-son-libres-de-xil-buffone-256)  
+Gabrieloni, Ana Lía. «Sobre la serenidad en las sirenas que piensan y son libres de Xil Buffone». **Hyperborea. Revista de ensayo y creación.** 4 (2021): 308-16. [https://www.hyperborea-labtis.org/es/paper/sobre-la-serenidad-en-las-sirenas-que-piensan-y-son-libres-de-xil-buffone-256](/es/paper/sobre-la-serenidad-en-las-sirenas-que-piensan-y-son-libres-de-xil-buffone-256)  
 DOI: [https://doi.org/10.5281/zenodo.5799109](https://doi.org/10.5281/zenodo.5799109)

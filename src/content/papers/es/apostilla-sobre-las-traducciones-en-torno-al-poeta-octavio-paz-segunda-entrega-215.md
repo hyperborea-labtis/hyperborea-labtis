@@ -29,4 +29,4 @@ Creímos fundamental, entonces, traer estos textos al castellano para que sean a
 
 ## Referencia electrónica
 
-Chazarreta, Daniela Evangelina. «Apostilla sobre las traducciones en torno al poeta Octavio Paz. Segunda entrega".  *Hyperborea. Revista de ensayo y creación* 3 (2020): 286-287. [https://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215](https://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215)
+Chazarreta, Daniela Evangelina. «Apostilla sobre las traducciones en torno al poeta Octavio Paz. Segunda entrega".  *Hyperborea. Revista de ensayo y creación* 3 (2020): 286-287. [https://www.hyperborea-labtis.org/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215](/es/paper/apostilla-sobre-las-traducciones-en-torno-al-poeta-octavio-paz-segunda-entrega-215)

@@ -16,8 +16,8 @@ sourceUrl: "https://hyperborea-labtis.org/es/paper/manifesto-394"
 
 ## Referencia electrónica
 
-Haynes, Scott, Oliver Hockenhull y Doug Chomyn. «Manifesto.» *Hyperborea. Revista de ensayo y creación*, no. 8, 2028, pp. 136–141. Reproducción facsimilar del original en *Speed*, no. 1, 1987, pp. 136–41.  
-URL: [https://www.hyperborea-labtis.org/es/paper/manifesto-394](https://www.hyperborea-labtis.org/es/paper/manifesto-394)  
+Haynes, Scott, Oliver Hockenhull y Doug Chomyn. «Manifesto.» *Hyperborea. Revista de ensayo y creación*, no. 8, 2025, pp. 136–141. Reproducción facsimilar del original en *Speed*, no. 1, 1987, pp. 136–41.  
+URL: [https://www.hyperborea-labtis.org/es/paper/manifesto-394](/es/paper/manifesto-394)  
 DOI: [https://doi.org/10.5281/zenodo.17664592](https://doi.org/10.5281/zenodo.17664592)
 
 * * *

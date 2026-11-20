@@ -35,7 +35,7 @@ En la **segunda jornada del ciclo**, las ideas sobre el progreso y la humanidad
 
 **Alejandro Manfred** es psicoanalista y doctor en Psicología con la tesis «La tradición melancólica isabelina y el *Hamlet* de Freud». Asimismo es profesor en las Facultades de Psicología y Medicina de la Universidad Nacional de Rosario, y de la Residencia Interdisciplinaria en Salud Mental del Hospital Escuela Eva Perón de Granadero Baigorria (Rosario, Argentina). Recientemente editó junto con A. Palavecino, *Melancholia. El malestar del individuo* de Jackie Pigeaud (Rosario, 2021). 
 
-**Ana Lía Gabrieloni** es investigadora del CONICET, profesora de Literaturas Europeas (ss. XIX-XXI) e Historia del Arte en la Universidad Nacional de Río Negro (Bariloche) y de posgrado en la Universidad de Buenos Aires (Argentina). Ha sido becaria Fulbright y del CONICET. Co-fundó y en la actualidad dirige el *Laboratorio Texto, imagen y sociedad*(LabTIS/UNRN). Co-dirige [*Hyperborea. Revista de ensayo y creación*](https://www.hyperborea-labtis.org/es/presentacion)
+**Ana Lía Gabrieloni** es investigadora del CONICET, profesora de Literaturas Europeas (ss. XIX-XXI) e Historia del Arte en la Universidad Nacional de Río Negro (Bariloche) y de posgrado en la Universidad de Buenos Aires (Argentina). Ha sido becaria Fulbright y del CONICET. Co-fundó y en la actualidad dirige el *Laboratorio Texto, imagen y sociedad*(LabTIS/UNRN). Co-dirige [*Hyperborea. Revista de ensayo y creación*](/es/presentacion)
 
 * * *
 

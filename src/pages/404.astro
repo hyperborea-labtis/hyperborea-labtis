@@ -1,13 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageTitle from "../components/PageTitle.astro";
+
+// Workers Assets serves this one file for every missing URL, whatever its language, so the
+// page speaks all three (each block carries its own `lang`) and has no address of its own.
+const messages = [
+  { lang: "es", text: "Página no encontrada.", home: "Volver al inicio", search: "Buscar" },
+  { lang: "en", text: "Page not found.", home: "Back to the home page", search: "Search" },
+  { lang: "fr", text: "Page introuvable.", home: "Retour à l’accueil", search: "Rechercher" },
+] as const;
 ---
 
-<BaseLayout title="Página no encontrada" lang="es" noindex canonical={false}>
+<BaseLayout title="404 · Página no encontrada · Page not found" lang="es" noindex canonical={false}>
   <div class="hb-main">
     <div class="hb-container">
-      <PageTitle text="Página no encontrada" />
-      <p><a href="/es">Volver al inicio</a> · <a href="/es/buscar">Buscar</a></p>
+      <PageTitle text="404" />
+      {
+        messages.map((m) => (
+          <p lang={m.lang}>
+            {m.text} <a href={`/${m.lang}`}>{m.home}</a> · <a href={`/${m.lang}/buscar`}>{m.search}</a>
+          </p>
+        ))
+      }
     </div>
   </div>
 </BaseLayout>

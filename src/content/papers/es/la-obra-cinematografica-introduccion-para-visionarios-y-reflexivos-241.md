@@ -116,5 +116,5 @@ Texto original publicado con el título «Das Kinobuch. Ernste Einleitung für V
 
 ## Referencia electrónica
 
-Pinthus, Kurt. «La obra cinematográfica. Introducción para “visionarios” y “reflexivos”». *Hyperborea. Revista de ensayo y creación* 4 (2021): 130-38. [https://www.hyperborea-labtis.org/es/paper/la-obra-cinematografica-introduccion-para-visionarios-y-reflexivos-241](https://www.hyperborea-labtis.org/es/paper/la-obra-cinematografica-introduccion-para-visionarios-y-reflexivos-241)  
+Pinthus, Kurt. «La obra cinematográfica. Introducción para “visionarios” y “reflexivos”». *Hyperborea. Revista de ensayo y creación* 4 (2021): 130-38. [https://www.hyperborea-labtis.org/es/paper/la-obra-cinematografica-introduccion-para-visionarios-y-reflexivos-241](/es/paper/la-obra-cinematografica-introduccion-para-visionarios-y-reflexivos-241)  
 DOI: [https://doi.org/10.5281/zenodo.5290831](https://doi.org/10.5281/zenodo.5290831)

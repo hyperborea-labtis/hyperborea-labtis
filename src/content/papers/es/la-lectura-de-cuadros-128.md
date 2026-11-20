@@ -288,4 +288,4 @@ Traducción: Lucrecia Radyk.
 
 ## Referencia electrónica
 
-Heffernan, James A. W. «La lectura de cuadros». *Hyperborea. Revista de ensayo y creación* 2 (2019): 1-25. [http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128)
+Heffernan, James A. W. «La lectura de cuadros». *Hyperborea. Revista de ensayo y creación* 2 (2019): 1-25. [http://www.hyperborea-labtis.org/es/paper/la-lectura-de-cuadros-128](/es/paper/la-lectura-de-cuadros-128)

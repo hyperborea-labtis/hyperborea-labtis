@@ -122,4 +122,4 @@ León Ferrari travaille dans son atelier. Photogramme du film de Guzmán.
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «De la civilisation. Le musée impossible». *Hyperborea. Revista de ensayo y creación* 2 (2019): 146-156. [http://www.hyperborea-labtis.org/es/paper/de-la-civilisation-le-musee-impossible-142](http://www.hyperborea-labtis.org/es/paper/de-la-civilisation-le-musee-impossible-142)
+Gabrieloni, Ana Lía. «De la civilisation. Le musée impossible». *Hyperborea. Revista de ensayo y creación* 2 (2019): 146-156. [http://www.hyperborea-labtis.org/es/paper/de-la-civilisation-le-musee-impossible-142](/es/paper/de-la-civilisation-le-musee-impossible-142)

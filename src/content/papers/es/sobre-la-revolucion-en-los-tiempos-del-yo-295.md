@@ -77,6 +77,6 @@ Una versión preliminar de este escrito se compartió en la presentación virtua
 
 ## Referencia electrónica
 
-Gabrieloni, Ana Lía. «Sobre la Revolución en tiempos del “yo”». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 216-223. [https://www.hyperborea-labtis.org/es/paper/sobre-la-revolucion-en-los-tiempos-del-yo-295](https://www.hyperborea-labtis.org/es/paper/sobre-la-revolucion-en-los-tiempos-del-yo-295)
+Gabrieloni, Ana Lía. «Sobre la Revolución en tiempos del “yo”». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 216-223. [https://www.hyperborea-labtis.org/es/paper/sobre-la-revolucion-en-los-tiempos-del-yo-295](/es/paper/sobre-la-revolucion-en-los-tiempos-del-yo-295)
 
 DOI: [https://doi.org/10.5281/zenodo.7429948](https://doi.org/10.5281/zenodo.7429948)

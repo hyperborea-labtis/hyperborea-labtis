@@ -166,4 +166,4 @@ Au terme de ce parcours, il apparaît que la radicalisation de l’écriture de 
 
 ## Référence électronique
 
-Dreyer, Sylvain. «*Notre tranchée de chaque jour* et *La Machine excavatrice*. Les pièces cubaines d’Armand Gatti». *Hyperborea Revista de ensayo y creación* 3 (2020): 99-111. [https://www.hyperborea-labtis.org/es/paper/notre-tranchee-de-chaque-jour-et-la-machine-excavatrice-les-pieces-cubaines-darmand-gatti-178](https://www.hyperborea-labtis.org/es/paper/notre-tranchee-de-chaque-jour-et-la-machine-excavatrice-les-pieces-cubaines-darmand-gatti-178)
+Dreyer, Sylvain. «*Notre tranchée de chaque jour* et *La Machine excavatrice*. Les pièces cubaines d’Armand Gatti». *Hyperborea Revista de ensayo y creación* 3 (2020): 99-111. [https://www.hyperborea-labtis.org/es/paper/notre-tranchee-de-chaque-jour-et-la-machine-excavatrice-les-pieces-cubaines-darmand-gatti-178](/es/paper/notre-tranchee-de-chaque-jour-et-la-machine-excavatrice-les-pieces-cubaines-darmand-gatti-178)

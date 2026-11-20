@@ -186,5 +186,5 @@ Agradecemos al autor su generosa autorización para la traducción y publicació
 
 ## Referencia electrónica
 
-Scott, David. «El encuadre de la vida moderna: Manet, Watteau y la pintura de género». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 25-44. [https://hyperborea-labtis.org/es/paper/el-encuadre-de-la-vida-moderna-manet-watteau-y-la-pintura-de-genero-222](https://hyperborea-labtis.org/es/paper/el-encuadre-de-la-vida-moderna-manet-watteau-y-la-pintura-de-genero-222)  
+Scott, David. «El encuadre de la vida moderna: Manet, Watteau y la pintura de género». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 25-44. [https://hyperborea-labtis.org/es/paper/el-encuadre-de-la-vida-moderna-manet-watteau-y-la-pintura-de-genero-222](/es/paper/el-encuadre-de-la-vida-moderna-manet-watteau-y-la-pintura-de-genero-222)  
 DOI: [https://doi.org/10.5281/zenodo.5289915](https://doi.org/10.5281/zenodo.5289915)

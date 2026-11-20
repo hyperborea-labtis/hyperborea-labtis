@@ -232,4 +232,4 @@ Ha publicado *Allí estás* (Marea Baja, 2009), *Cuarzo* (Marea Baja, 2012) 
 
 ## Referencia electrónica
 
-Santander Leal, Juan. «Deshechos por la sal. Poemas de Juan Santander Leal*.* Introducción de Rodolfo R. Macaya». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 150-167. [http://www.hyperborea-labtis.org/es/paper/deshechos-por-la-sal-poemas-de-juan-santander-leal-74](http://www.hyperborea-labtis.org/es/paper/deshechos-por-la-sal-poemas-de-juan-santander-leal-74)
+Santander Leal, Juan. «Deshechos por la sal. Poemas de Juan Santander Leal*.* Introducción de Rodolfo R. Macaya». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 150-167. [http://www.hyperborea-labtis.org/es/paper/deshechos-por-la-sal-poemas-de-juan-santander-leal-74](/es/paper/deshechos-por-la-sal-poemas-de-juan-santander-leal-74)

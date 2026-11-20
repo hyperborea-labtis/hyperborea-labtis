@@ -176,4 +176,4 @@ Traducción: Ana Lía Gabrieloni.
 
 ## Referencia electrónica
 
-Müller, Bernard. «Panfleto. Último momento. Los orígenes patafísicos de la etnografía: al fin las pruebas». *Hyperborea. Revista de ensayo y creación* 2 (2019): 167–180.  [http://www.hyperborea-labtis.org/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146](http://www.hyperborea-labtis.org/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146)
+Müller, Bernard. «Panfleto. Último momento. Los orígenes patafísicos de la etnografía: al fin las pruebas». *Hyperborea. Revista de ensayo y creación* 2 (2019): 167–180.  [http://www.hyperborea-labtis.org/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146](/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146)

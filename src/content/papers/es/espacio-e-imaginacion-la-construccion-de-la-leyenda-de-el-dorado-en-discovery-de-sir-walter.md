@@ -183,5 +183,5 @@ De aquí en más, las traducciones provienen de la versión en castellano de *Th
 
 ## Referencia electrónica
 
-Rusiani, Agostina. «Espacio e imaginación: la construcción de la leyenda de El Dorado en *The Discovery* de Sir Walter Raleigh». *Hyperborea. Revista de ensayo y creación*. 4 (2021): 221–34. [https://www.hyperborea-labtis.org/es/paper/espacio-e-imaginacion-la-construccion-de-la-leyenda-de-el-dorado-en-discovery-de-sir-walter](https://www.hyperborea-labtis.org/es/paper/espacio-e-imaginacion-la-construccion-de-la-leyenda-de-el-dorado-en-discovery-de-sir-walter)  
+Rusiani, Agostina. «Espacio e imaginación: la construcción de la leyenda de El Dorado en *The Discovery* de Sir Walter Raleigh». *Hyperborea. Revista de ensayo y creación*. 4 (2021): 221–34. [https://www.hyperborea-labtis.org/es/paper/espacio-e-imaginacion-la-construccion-de-la-leyenda-de-el-dorado-en-discovery-de-sir-walter](/es/paper/espacio-e-imaginacion-la-construccion-de-la-leyenda-de-el-dorado-en-discovery-de-sir-walter)  
 DOI: [https://doi.org/10.5281/zenodo.5291987](https://doi.org/10.5281/zenodo.5291987)

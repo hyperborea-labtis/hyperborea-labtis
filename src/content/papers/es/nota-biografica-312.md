@@ -31,5 +31,5 @@ Wilhelmina Dorothy Schons nació en Estados Unidos en 1890 y murió allí en 196
 
 ## Referencia electrónica
 
-Ameyalli Sánchez Pacheco, Ilse y Tadeo Pablo Stein, «Dorothy Schons. Nota biográfica.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 173-175. [https://www.hyperborea-labtis.org/es/paper/nota-biografica-312](https://www.hyperborea-labtis.org/es/paper/nota-biografica-312)  
+Ameyalli Sánchez Pacheco, Ilse y Tadeo Pablo Stein, «Dorothy Schons. Nota biográfica.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 173-175. [https://www.hyperborea-labtis.org/es/paper/nota-biografica-312](/es/paper/nota-biografica-312)  
 DOI: [https://doi.org/10.5281/zenodo.8401067](https://doi.org/10.5281/zenodo.8401067)

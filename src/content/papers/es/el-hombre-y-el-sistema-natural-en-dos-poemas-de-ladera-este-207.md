@@ -147,4 +147,4 @@ Traducción: Lucía Volpe y Carla Luján Di Biase.
 
 ## Referencia electrónica
 
-Clinton, Stephen. «El hombre y el sistema natural en dos poemas de *Ladera este*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 288-295. [https://www.hyperborea-labtis.org/es/paper/el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este-207](https://www.hyperborea-labtis.org/es/paper/el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este-207)
+Clinton, Stephen. «El hombre y el sistema natural en dos poemas de *Ladera este*». *Hyperborea. Revista de ensayo y creación* 3 (2020): 288-295. [https://www.hyperborea-labtis.org/es/paper/el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este-207](/es/paper/el-hombre-y-el-sistema-natural-en-dos-poemas-de-ladera-este-207)

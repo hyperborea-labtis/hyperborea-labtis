@@ -207,4 +207,4 @@ Traducción: Suyai Gustinelli y Macarena Álvarez
 
 ## Referencia electrónica
 
-Stanton, Anthony. «Poética del apocalipsis, figura espacial e indeterminación: la prosa de Octavio Paz en la década de 1960». *Hyperborea. Revista de ensayo y creación* 3 (2020): 296-319. [https://www.hyperborea-labtis.org/es/paper/poetica-del-apocalipsis-prosa-paz](https://www.hyperborea-labtis.org/es/paper/poetica-del-apocalipsis-prosa-paz)
+Stanton, Anthony. «Poética del apocalipsis, figura espacial e indeterminación: la prosa de Octavio Paz en la década de 1960». *Hyperborea. Revista de ensayo y creación* 3 (2020): 296-319. [https://www.hyperborea-labtis.org/es/paper/poetica-del-apocalipsis-prosa-paz](/es/paper/poetica-del-apocalipsis-figura-espacial-e-indeterminacion-la-prosa-de-octavio-paz)

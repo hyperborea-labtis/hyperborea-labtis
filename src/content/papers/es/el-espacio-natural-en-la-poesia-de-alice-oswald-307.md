@@ -282,7 +282,7 @@ Partiendo del presupuesto de que la literatura puede influenciar, transformar, a
 
 ## Referencia electrónica
 
-Araújo, Neemias. «El espacio natural en la poesía de Alice Oswald.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 94-113. [https://www.hyperborea-labtis.org/es/paper/el-espacio-natural-en-la-poesia-de-alice-oswald-307](https://www.hyperborea-labtis.org/es/paper/el-espacio-natural-en-la-poesia-de-alice-oswald-307)  
+Araújo, Neemias. «El espacio natural en la poesía de Alice Oswald.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 94-113. [https://www.hyperborea-labtis.org/es/paper/el-espacio-natural-en-la-poesia-de-alice-oswald-307](/es/paper/el-espacio-natural-en-la-poesia-de-alice-oswald-307)  
 DOI: [https://doi.org/10.5281/zenodo.8401029](https://doi.org/10.5281/zenodo.8401029)
 
 *Imagen superior: Max Liebermann,* Die Blumenterrasse im Wannseegarten*, 1915.*

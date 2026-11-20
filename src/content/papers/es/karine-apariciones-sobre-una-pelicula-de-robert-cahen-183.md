@@ -174,4 +174,4 @@ Traducción: Mariano Sverdloff
 
 ## Referencia electrónica
 
-Nancy, Jean-Luc. «*Karine*. apariciones. Sobre una película de Robert Cahen». *Hyperborea. Revista de ensayo y creación* 3 (2021): 156-165. [https://www.hyperborea-labtis.org/es/paper/karine-apariciones-sobre-una-pelicula-de-robert-cahen-183](https://www.hyperborea-labtis.org/es/paper/karine-apariciones-sobre-una-pelicula-de-robert-cahen-183)
+Nancy, Jean-Luc. «*Karine*. apariciones. Sobre una película de Robert Cahen». *Hyperborea. Revista de ensayo y creación* 3 (2021): 156-165. [https://www.hyperborea-labtis.org/es/paper/karine-apariciones-sobre-una-pelicula-de-robert-cahen-183](/es/paper/karine-apariciones-sobre-una-pelicula-de-robert-cahen-183)

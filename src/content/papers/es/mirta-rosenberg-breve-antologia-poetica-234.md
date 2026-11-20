@@ -740,6 +740,6 @@ Agradecemos a la editorial Bajo la Luna \[[http://www.bajolaluna.com/bajo%20la%2
 
 ## Referencia electrónica
 
-Rosenberg, Mirta. «Breve antología poética». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 194-219. [https://hyperborea-labtis.org/es/paper/mirta-rosenberg-breve-antologia-poetica-234](https://hyperborea-labtis.org/es/paper/mirta-rosenberg-breve-antologia-poetica-234)
+Rosenberg, Mirta. «Breve antología poética». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 194-219. [https://hyperborea-labtis.org/es/paper/mirta-rosenberg-breve-antologia-poetica-234](/es/paper/mirta-rosenberg-breve-antologia-poetica-234)
 
 DOI: [https://doi.org/10.5281/zenodo.5291602](https://doi.org/10.5281/zenodo.5291602)

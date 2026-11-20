@@ -253,4 +253,4 @@ Con la revisión del autor, Klaus Meyer-Minnemann, a quien agradecemos el permis
 
 ## Referencia electrónica
 
-Meyer-Minnemann, Klaus. «Octavio Paz en los años treinta: reconstrucción de una vanguardia Mexicana». *Hyperborea. Revista de ensayo y creación* 2 (2019): 245-261.  [http://www.hyperborea-labtis.org/es/paper/octavio-paz-en-los-anos-treinta-reconstruccion-de-una-vanguardia-mexicana-149](http://www.hyperborea-labtis.org/es/paper/octavio-paz-en-los-anos-treinta-reconstruccion-de-una-vanguardia-mexicana-149)
+Meyer-Minnemann, Klaus. «Octavio Paz en los años treinta: reconstrucción de una vanguardia Mexicana». *Hyperborea. Revista de ensayo y creación* 2 (2019): 245-261.  [http://www.hyperborea-labtis.org/es/paper/octavio-paz-en-los-anos-treinta-reconstruccion-de-una-vanguardia-mexicana-149](/es/paper/octavio-paz-en-los-anos-treinta-reconstruccion-de-una-vanguardia-mexicana-149)

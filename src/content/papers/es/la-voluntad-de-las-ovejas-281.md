@@ -76,7 +76,7 @@ En *Arise!*, ese mecanismo ordenador de cuerpos y sentidos se destruye sin vacil
 
 ## Referencia electrónica
 
-Jaufmann, Karina. «La voluntad de las ovejas: la poética de la elegía pastoral en dos obras audiovisuales». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 119-125. [https://www.hyperborea-labtis.org/es/paper/la-voluntad-de-las-ovejas-281](https://www.hyperborea-labtis.org/es/paper/la-voluntad-de-las-ovejas-281)
+Jaufmann, Karina. «La voluntad de las ovejas: la poética de la elegía pastoral en dos obras audiovisuales». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 119-125. [https://www.hyperborea-labtis.org/es/paper/la-voluntad-de-las-ovejas-281](/es/paper/la-voluntad-de-las-ovejas-281)
 
 DOI: [https://doi.org/10.5281/zenodo.7020049](https://doi.org/10.5281/zenodo.7020049)
 

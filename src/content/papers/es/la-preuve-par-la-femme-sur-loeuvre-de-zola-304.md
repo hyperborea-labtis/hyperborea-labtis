@@ -238,7 +238,7 @@ Agradecemos al autor su autorización para hacer posible esta traducción y publ
 
 ## Referencia electrónica
 
-Steinmetz, Jean-Luc. «La prueba por medio de la mujer (Sobre *L’Œuvre* de Zola).» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 38-51. [https://www.hyperborea-labtis.org/es/paper/la-preuve-par-la-femme-sur-loeuvre-de-zola-304](https://www.hyperborea-labtis.org/es/paper/la-preuve-par-la-femme-sur-loeuvre-de-zola-304)  
+Steinmetz, Jean-Luc. «La prueba por medio de la mujer (Sobre *L’Œuvre* de Zola).» *Hyperborea. Revista de ensayo y creación*, no. 6, 2023, pp. 38-51. [https://www.hyperborea-labtis.org/es/paper/la-preuve-par-la-femme-sur-loeuvre-de-zola-304](/es/paper/la-preuve-par-la-femme-sur-loeuvre-de-zola-304)  
 DOI: [https://doi.org/10.5281/zenodo.8400986](https://doi.org/10.5281/zenodo.8400986)
 
 *Imagen superior: Karl Jensen-Hjell,* Junto a la ventana. Retrato del artiste Kalle Løchen*, 1887 (detalle).*

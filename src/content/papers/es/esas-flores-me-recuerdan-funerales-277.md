@@ -1039,7 +1039,7 @@ ARCAS. Universidad Nacional de La Plata. *Archivo Manuel Puig*. [http://arcas.fa
 
 ## Referencia electrónica
 
-Villagarcía, Martín. «”Esas flores me recuerdan funerales”: un estudio crítico-genético de los epígrafes de *The Buenos Aires Affair* en el Archivo Manuel Puig». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 56-111. [https://www.hyperborea-labtis.org/es/paper/esas-flores-me-recuerdan-funerales-277](https://www.hyperborea-labtis.org/es/paper/esas-flores-me-recuerdan-funerales-277)
+Villagarcía, Martín. «”Esas flores me recuerdan funerales”: un estudio crítico-genético de los epígrafes de *The Buenos Aires Affair* en el Archivo Manuel Puig». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 56-111. [https://www.hyperborea-labtis.org/es/paper/esas-flores-me-recuerdan-funerales-277](/es/paper/esas-flores-me-recuerdan-funerales-277)
 
 DOI: [https://doi.org/10.5281/zenodo.7020017](https://doi.org/10.5281/zenodo.7020017)
 

@@ -45,7 +45,7 @@ Cintio Vitier señala que «el mundo se desdobla en su recuerdo y en su ausencia
 
 ## Notas
 
-\[1\] Nota que me confía J. L. Arcos La Rosa al compartir esta carta de Fina García- Marruz: «como muchas otras cartas que conservo de ella, fue escrita en La Habana, entregada a mano y sin fecha, aunque esta última puede colegirse por la fecha de publicación del libro al que hace referencia, *De los ínferos*, que obtuvo el premio internacional de poesía Rafael Pocaterra en El Ateneo de Valencia, Mérida, Venezuela, en 1998, pero no fue publicado en La Habana, Cuba hasta 1999. La presente carta, escrita a mano por la autora, me fue entregada por ella personalmente cuando le regalé la edición de mi libro, que obtuvo luego en Cuba el Premio de la Crítica de 1989. Conservo un copioso epistolario con ella, con todas las cartas manuscritas, que en algún momento publicaré en su totalidad.» (septiembre 2024). Una reproducción del original de la citada carta se encuentra disponible en: [https://www.hyperborea-labtis.org/es/carta-de-fina-garcia-marruz](https://www.hyperborea-labtis.org/es/carta-de-fina-garcia-marruz)
+\[1\] Nota que me confía J. L. Arcos La Rosa al compartir esta carta de Fina García- Marruz: «como muchas otras cartas que conservo de ella, fue escrita en La Habana, entregada a mano y sin fecha, aunque esta última puede colegirse por la fecha de publicación del libro al que hace referencia, *De los ínferos*, que obtuvo el premio internacional de poesía Rafael Pocaterra en El Ateneo de Valencia, Mérida, Venezuela, en 1998, pero no fue publicado en La Habana, Cuba hasta 1999. La presente carta, escrita a mano por la autora, me fue entregada por ella personalmente cuando le regalé la edición de mi libro, que obtuvo luego en Cuba el Premio de la Crítica de 1989. Conservo un copioso epistolario con ella, con todas las cartas manuscritas, que en algún momento publicaré en su totalidad.» (septiembre 2024). Una reproducción del original de la citada carta se encuentra disponible en: [https://www.hyperborea-labtis.org/es/carta-de-fina-garcia-marruz](/es/carta-de-fina-garcia-marruz)
 
 \[2\] Véase «Octavio Armand y el sombrero de Zequeira» de Rafael Rojas sobre el poeta, teólogo y militar realista habanero Manuel de Zequeira y Arango (1764-1846), quien sufría delirios que lo llevaron a creerse invisible cuando se colocaba el sombrero.
 
@@ -64,7 +64,7 @@ Cintio Vitier señala que «el mundo se desdobla en su recuerdo y en su ausencia
 
 ## Referencia electrónica
 
-Romero, Astrid. «Bajo el sombrero de Zequeira. Sobre tres poemas de Jorge Luis Arcos La Rosa.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 141-145, [https://www.hyperborea-labtis.org/es/paper/bajo-el-sombrero-de-zequeira-351](<https://www.hyperborea-labtis.org/es/paper/bajo-el-sombrero-de- zequeira-351>)  
+Romero, Astrid. «Bajo el sombrero de Zequeira. Sobre tres poemas de Jorge Luis Arcos La Rosa.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 141-145, [https://www.hyperborea-labtis.org/es/paper/bajo-el-sombrero-de-zequeira-351](/es/paper/bajo-el-sombrero-de-zequeira-351)  
 DOI: [https://doi.org/10.5281/zenodo.13916465](https://doi.org/10.5281/zenodo.13916465)
 
 * * *

@@ -121,5 +121,5 @@ Una versión en italiano de este artículo, que permanece inédito en inglés, s
 
 ## Referencia electrónica
 
-Steiner, Wendy. «La belleza como interacción». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 45-55.  [https://hyperborea-labtis.org/es/paper/la-belleza-como-interaccion-223](https://hyperborea-labtis.org/es/paper/la-belleza-como-interaccion-223)  
+Steiner, Wendy. «La belleza como interacción». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 45-55.  [https://hyperborea-labtis.org/es/paper/la-belleza-como-interaccion-223](/es/paper/la-belleza-como-interaccion-223)  
 DOI: [https://doi.org/10.5281/zenodo.5290009](https://doi.org/10.5281/zenodo.5290009)

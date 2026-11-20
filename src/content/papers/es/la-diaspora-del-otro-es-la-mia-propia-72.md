@@ -139,4 +139,4 @@ También, ver la tesis de maestría: Rodolfo Reyes. *Nada para ver: relaciones e
 
 ## Referencia electrónica
 
-Reyes Macaya, Rodolfo. «La diáspora del otro es la mía propia: *Récits d’Ellis Island* y *W ou le Souvenir d’enfance* de Georges Perec». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 71-79. [http://www.hyperborea-labtis.org/es/paper/la-diaspora-del-otro-es-la-mia-propia-72](http://www.hyperborea-labtis.org/es/paper/la-diaspora-del-otro-es-la-mia-propia-72)
+Reyes Macaya, Rodolfo. «La diáspora del otro es la mía propia: *Récits d’Ellis Island* y *W ou le Souvenir d’enfance* de Georges Perec». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 71-79. [http://www.hyperborea-labtis.org/es/paper/la-diaspora-del-otro-es-la-mia-propia-72](/es/paper/la-diaspora-del-otro-es-la-mia-propia-72)

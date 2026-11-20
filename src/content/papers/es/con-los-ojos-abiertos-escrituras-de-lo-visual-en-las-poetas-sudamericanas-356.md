@@ -45,7 +45,7 @@ Para concluir, quisiera constatar una vez más que los trabajos de crítica lite
 
 ## Referencia electrónica
 
-Punte, María José. «Con los ojos abiertos. Escrituras de lo visual en las escritoras sudamericanas.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 170-173 [https://www.hyperborea-labtis.org/es/paper/con-los-ojos-abiertos-escrituras-de-lo-visual-en-las-poetas-sudamericanas-356](https://www.hyperborea-labtis.org/es/paper/con-los-ojos-abiertos-escrituras-de-lo-visual-en-las-poetas-sudamericanas-356)  
+Punte, María José. «Con los ojos abiertos. Escrituras de lo visual en las escritoras sudamericanas.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 170-173 [https://www.hyperborea-labtis.org/es/paper/con-los-ojos-abiertos-escrituras-de-lo-visual-en-las-poetas-sudamericanas-356](/es/paper/con-los-ojos-abiertos-escrituras-de-lo-visual-en-las-poetas-sudamericanas-356)  
 DOI: [https://doi.org/10.5281/zenodo.13916600](https://doi.org/10.5281/zenodo.13916600)
 
 * * *

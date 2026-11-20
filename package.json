@@ -14,6 +14,7 @@
     "import": "node scripts/import-drupal.mjs",
     "import:all": "node scripts/import-drupal.mjs --all",
     "import:terms": "node scripts/import-keyword-terms.mjs",
+    "fix:links": "node scripts/relativize-links.mjs",
     "verify": "node scripts/verify.mjs",
     "test": "node --test \"tests/**/*.test.mjs\"",
     "types": "wrangler types worker/worker-configuration.d.ts --env-file worker/secrets.example",

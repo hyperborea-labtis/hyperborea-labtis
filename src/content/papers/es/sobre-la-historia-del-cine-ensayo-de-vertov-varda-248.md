@@ -238,5 +238,5 @@ Agradecemos al autor y a The Oxford University Press la autorización para hacer
 
 ## Referencia electrónica
 
-Corrigan, Timothy. «Sobre la historia del cine ensayo: de Vertov a Varda». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 56-86. [https://hyperborea-labtis.org/es/paper/sobre-la-historia-del-cine-ensayo-de-vertov-varda-248](https://hyperborea-labtis.org/es/paper/sobre-la-historia-del-cine-ensayo-de-vertov-varda-248)  
+Corrigan, Timothy. «Sobre la historia del cine ensayo: de Vertov a Varda». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 56-86. [https://hyperborea-labtis.org/es/paper/sobre-la-historia-del-cine-ensayo-de-vertov-varda-248](/es/paper/sobre-la-historia-del-cine-ensayo-de-vertov-varda-248)  
 DOI: [https://doi.org/10.5281/zenodo.5724263](https://doi.org/10.5281/zenodo.5724263)

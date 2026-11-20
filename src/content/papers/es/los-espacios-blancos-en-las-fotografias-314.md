@@ -58,5 +58,5 @@ Al inicio señalamos que *Atlas* es una exploración de la mirada de Jakob y por
 
 ## Referencia electrónica
 
-Zori, Paula. «Los espacios blancos en las fotografías. *Atlas* (2021) y el registro como vacío.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 189-193. [https://www.hyperborea-labtis.org/es/paper/los-espacios-blancos-en-las-fotografias-314](https://www.hyperborea-labtis.org/es/paper/los-espacios-blancos-en-las-fotografias-314)   
+Zori, Paula. «Los espacios blancos en las fotografías. *Atlas* (2021) y el registro como vacío.» *Hyperborea. Revista de ensayo y creación,* no. 6, 2023, pp. 189-193. [https://www.hyperborea-labtis.org/es/paper/los-espacios-blancos-en-las-fotografias-314](/es/paper/los-espacios-blancos-en-las-fotografias-314)   
 DOI: [https://doi.org/10.5281/zenodo.8401071](https://doi.org/10.5281/zenodo.8401071)

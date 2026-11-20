@@ -285,7 +285,7 @@ La edición de lujo de Emecé Editores nos presenta a dos artistas que dialogan 
 
 ## Referencia electrónica
 
-Calabrese, Martín Ezequiel. «Los editores españoles y sus publicaciones del Quijote en Argentina durante el franquismo: la edición de EMECÉ, ilustrada por Salvador Dalí y Carlos Alonso (1957 y 1958).» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 91-113, [https://www.hyperborea-labtis.org/es/paper/editores-espanoles-y-sus-publicaciones-del-quijote-342](https://www.hyperborea-labtis.org/es/paper/editores-espanoles-y-sus-publicaciones-del-quijote-342)  
+Calabrese, Martín Ezequiel. «Los editores españoles y sus publicaciones del Quijote en Argentina durante el franquismo: la edición de EMECÉ, ilustrada por Salvador Dalí y Carlos Alonso (1957 y 1958).» *Hyperborea. Revista de ensayo y creación,* no 7, 2024, pp. 91-113, [https://www.hyperborea-labtis.org/es/paper/editores-espanoles-y-sus-publicaciones-del-quijote-342](/es/paper/editores-espanoles-y-sus-publicaciones-del-quijote-342)  
 DOI: [https://doi.org/10.5281/zenodo.13916131](https://doi.org/10.5281/zenodo.13916131)
 
 * * *

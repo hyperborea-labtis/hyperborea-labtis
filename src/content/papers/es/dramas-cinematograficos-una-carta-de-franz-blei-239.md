@@ -38,5 +38,5 @@ Texto original publicado con el título «*Kinodramen. Ein Brief*» en Ed. Kurt 
 
 ## Referencia electrónica
 
-Blei, Franz. «Dramas cinematográficos. Una carta de Franz Blei». *Hyperborea. Revista de ensayo y creación* 4 (2021): 139-41. [https://www.hyperborea-labtis.org/es/paper/dramas-cinematograficos-una-carta-de-franz-blei-239](https://www.hyperborea-labtis.org/es/paper/dramas-cinematograficos-una-carta-de-franz-blei-239)  
+Blei, Franz. «Dramas cinematográficos. Una carta de Franz Blei». *Hyperborea. Revista de ensayo y creación* 4 (2021): 139-41. [https://www.hyperborea-labtis.org/es/paper/dramas-cinematograficos-una-carta-de-franz-blei-239](/es/paper/dramas-cinematograficos-una-carta-de-franz-blei-239)  
 DOI: [https://doi.org/10.5281/zenodo.5596946](https://doi.org/10.5281/zenodo.5596946)

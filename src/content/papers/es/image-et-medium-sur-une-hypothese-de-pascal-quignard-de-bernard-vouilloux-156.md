@@ -51,4 +51,4 @@ Traducción: Lucrecia Radyk.
 
 ## Referencia electrónica
 
-Lenina, Nataliya. «*Image et médium. Sur une hypothèse de Pascal Quignard* de Bernard Vouilloux». *Hyperborea. Revista de ensayo y creación* 2 (2019): 268-271. [http://www.hyperborea-labtis.org/es/paper/image-et-medium-sur-une-hypothese-de-pascal-quignard-de-bernard-vouilloux-156](http://www.hyperborea-labtis.org/es/paper/image-et-medium-sur-une-hypothese-de-pascal-quignard-de-bernard-vouilloux-156)
+Lenina, Nataliya. «*Image et médium. Sur une hypothèse de Pascal Quignard* de Bernard Vouilloux». *Hyperborea. Revista de ensayo y creación* 2 (2019): 268-271. [http://www.hyperborea-labtis.org/es/paper/image-et-medium-sur-une-hypothese-de-pascal-quignard-de-bernard-vouilloux-156](/es/paper/image-et-medium-sur-une-hypothese-de-pascal-quignard-de-bernard-vouilloux-156)

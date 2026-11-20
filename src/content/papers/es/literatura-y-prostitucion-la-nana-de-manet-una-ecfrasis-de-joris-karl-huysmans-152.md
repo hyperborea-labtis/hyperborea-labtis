@@ -152,4 +152,4 @@ Tal como está, con sus cualidades y sus defectos, esta tela vive y es superior 
 
 ## *Referencia electrónica*
 
-Sverdloff, Mariano. «Literatura y prostitución: la "Nana de Manet", una écfrasis de Joris-Karl Huysmans». *Hyperborea. Revista de ensayo y creación* 2 (2019): 181-195. *[http://www.hyperborea-labtis.org/es/paper/literatura-y-prostitucion-la-nana-de-manet-una-ecfrasis-de-joris-karl-huysmans-152](http://www.hyperborea-labtis.org/es/paper/literatura-y-prostitucion-la-nana-de-manet-una-ecfrasis-de-joris-karl-huysmans-152)*
+Sverdloff, Mariano. «Literatura y prostitución: la "Nana de Manet", una écfrasis de Joris-Karl Huysmans». *Hyperborea. Revista de ensayo y creación* 2 (2019): 181-195. *[http://www.hyperborea-labtis.org/es/paper/literatura-y-prostitucion-la-nana-de-manet-una-ecfrasis-de-joris-karl-huysmans-152](/es/paper/literatura-y-prostitucion-la-nana-de-manet-una-ecfrasis-de-joris-karl-huysmans-152)*

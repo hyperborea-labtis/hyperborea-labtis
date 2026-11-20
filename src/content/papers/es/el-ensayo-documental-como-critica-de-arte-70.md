@@ -205,4 +205,4 @@ Nos movemos aquí, como dijimos al comienzo, en terrenos propicios para los int
 
 ## Referencia electrónica
 
-Tomas, Silvia, «El ensayo documental como crítica de arte: traducción audiovisual de la pintura y recuperación del tableau vivant». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 39-54. [http://www.hyperborea-labtis.org/es/paper/el-ensayo-documental-como-critica-de-arte-70](http://www.hyperborea-labtis.org/es/paper/el-ensayo-documental-como-critica-de-arte-70)
+Tomas, Silvia, «El ensayo documental como crítica de arte: traducción audiovisual de la pintura y recuperación del tableau vivant». *Hyperborea. Revista de ensayo y creación.* 1 (2018): 39-54. [http://www.hyperborea-labtis.org/es/paper/el-ensayo-documental-como-critica-de-arte-70](/es/paper/el-ensayo-documental-como-critica-de-arte-70)

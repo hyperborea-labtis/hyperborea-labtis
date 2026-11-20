@@ -197,5 +197,5 @@ Un expreso agradecimiento a quienes autorizaron la reproducción de las imágene
 
 ## Referencia electrónica
 
-König, Natalia y Fedra Roberto. «Cine, danza y píxeles. Derivaciones de la videodanza». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 171-87. [https://www.hyperborea-labtis.org/es/paper/cine-danza-y-pixeles-derivaciones-de-la-videodanza-246](https://www.hyperborea-labtis.org/es/paper/cine-danza-y-pixeles-derivaciones-de-la-videodanza-246)  
+König, Natalia y Fedra Roberto. «Cine, danza y píxeles. Derivaciones de la videodanza». *Hyperborea. Revista de ensayo y creación.* 4 (2021): 171-87. [https://www.hyperborea-labtis.org/es/paper/cine-danza-y-pixeles-derivaciones-de-la-videodanza-246](/es/paper/cine-danza-y-pixeles-derivaciones-de-la-videodanza-246)  
 DOI: [https://doi.org/](https://doi.org/10.5281/zenodo.5291251)[10.5281/zenodo.5799117](https://doi.org/10.5281/zenodo.5799117)

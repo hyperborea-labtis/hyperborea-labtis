@@ -154,4 +154,4 @@ Aún después de finalizado el *Boom*, el interés del lectorado norteamericano
 
 ## Referencia electrónica
 
-Bracco, Elvio, «Del lado de allá: un estudio sobre cómo *Rayuela* fue traducida al inglés y publicada en los Estados Unidos». *Hyperborea. Revista de ensayo y creación* 1 (2018): 207-217. [https://www.hyperborea-labtis.org/es/paper/un-estudio-sobre-rayuela-107](https://www.hyperborea-labtis.org/es/paper/un-estudio-sobre-rayuela-107)
+Bracco, Elvio, «Del lado de allá: un estudio sobre cómo *Rayuela* fue traducida al inglés y publicada en los Estados Unidos». *Hyperborea. Revista de ensayo y creación* 1 (2018): 207-217. [https://www.hyperborea-labtis.org/es/paper/un-estudio-sobre-rayuela-107](/es/paper/un-estudio-sobre-rayuela-107)

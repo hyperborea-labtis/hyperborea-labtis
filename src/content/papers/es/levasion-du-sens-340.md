@@ -200,5 +200,5 @@ Il en va différemment entre écrivain et œuvre littéraire chez Blanchot : le 
 
 ## Referencia electrónica
 
-Olivares Valencia, Amanda Leonor. «L’Évasion du sens. L’image en littérature et les limites du langage chez Maurice Blanchot.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 1-15, [https://www.hyperborea-labtis.org/es/paper/levasion-du-sens-340](https://www.hyperborea-labtis.org/es/paper/levasion-du-sens-340)  
+Olivares Valencia, Amanda Leonor. «L’Évasion du sens. L’image en littérature et les limites du langage chez Maurice Blanchot.» *Hyperborea. Revista de ensayo y creación*, no 7, 2024, pp. 1-15, [https://www.hyperborea-labtis.org/es/paper/levasion-du-sens-340](/es/paper/levasion-du-sens-340)  
 DOI: [https://doi.org/10.5281/zenodo.13916383](https://doi.org/10.5281/zenodo.13916383)

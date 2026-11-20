@@ -212,7 +212,7 @@ Véase aquí el trailer: [https://vimeo.com/402713496](https://vimeo.com/4027134
 
 ## Referencia electrónica
 
-Mussetta, Mariana. «En busca de lo real y lo auténtico: experimentación gráfica en nuevas narrativas del siglo XXI». *Hyperborea. Revista de ensayo y creación* 3 (2020): 53-70. [https://www.hyperborea-labtis.org/es/paper/en-busca-de-lo-real-y-lo-autentico-experimentacion-grafica-en-nuevas-narrativas-del-siglo-xxi](https://www.hyperborea-labtis.org/es/paper/en-busca-de-lo-real-y-lo-autentico-experimentacion-grafica-en-nuevas-narrativas-del-siglo-xxi)
+Mussetta, Mariana. «En busca de lo real y lo auténtico: experimentación gráfica en nuevas narrativas del siglo XXI». *Hyperborea. Revista de ensayo y creación* 3 (2020): 53-70. [https://www.hyperborea-labtis.org/es/paper/en-busca-de-lo-real-y-lo-autentico-experimentacion-grafica-en-nuevas-narrativas-del-siglo-xxi](/es/paper/en-busca-de-lo-real-y-lo-autentico-experimentacion-grafica-en-nuevas-narrativas-del-siglo-xxi)
 
 * * *
 

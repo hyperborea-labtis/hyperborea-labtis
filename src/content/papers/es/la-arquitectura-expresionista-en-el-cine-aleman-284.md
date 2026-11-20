@@ -231,7 +231,7 @@ Con todo, es posible que el legado del expresionismo, aquel movimiento revolucio
 
 ## Referencia electrónica
 
-Guzmán, Rubén. «La arquitectura expresionista en el cine alemán». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 144-158. [https://www.hyperborea-labtis.org/es/paper/la-arquitectura-expresionista-en-el-cine-aleman-284](https://www.hyperborea-labtis.org/es/paper/la-arquitectura-expresionista-en-el-cine-aleman-284)  
+Guzmán, Rubén. «La arquitectura expresionista en el cine alemán». *Hyperborea. Revista de ensayo y creación*. 5 (2022): 144-158. [https://www.hyperborea-labtis.org/es/paper/la-arquitectura-expresionista-en-el-cine-aleman-284](/es/paper/la-arquitectura-expresionista-en-el-cine-aleman-284)  
 DOI: [https://doi.org/10.5281/zenodo.7020081](https://doi.org/10.5281/zenodo.7020081)
 
 *Imagen superior: fotograma de* Der Golem. Wie er in die Welt kam *de los directores Paul Wegener y Carl Boese (1920)*

@@ -152,7 +152,7 @@ La versión original en ruso de este texto se publicó con el título «Ольг
 
 ## Referencia electrónica
 
-Svetlakova, Olga. «Rulfo en ruso: traducciones de Perla Natánovna Glázova medio siglo después.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 155-169 [https://www.hyperborea-labtis.org/es/paper/rulfo-en-ruso-traducciones-de-p-n-glazova-medio-siglo-despues-354](https://www.hyperborea-labtis.org/es/paper/rulfo-en-ruso-traducciones-de-p-n-glazova-medio-siglo-despues-354)  
+Svetlakova, Olga. «Rulfo en ruso: traducciones de Perla Natánovna Glázova medio siglo después.» *Hyperborea. Revista de ensayo y creación*, no. 7, 2024, pp. 155-169 [https://www.hyperborea-labtis.org/es/paper/rulfo-en-ruso-traducciones-de-p-n-glazova-medio-siglo-despues-354](/es/paper/rulfo-en-ruso-traducciones-de-p-n-glazova-medio-siglo-despues-354)  
 DOI: [https://doi.org/10.5281/zenodo.13916491](https://doi.org/10.5281/zenodo.13916491)
 
 * * *
