@@ -8,6 +8,8 @@ section: "41º 9’ S 71º 8’ W"
 issue: 6
 issueOrder: 12
 author: "Ilse Ameyalli y Tadeo Pablo Stein"
+abstract: "Nota biográfica sobre la hispanista Wilhelmina Dorothy Schons (1890-1961), profesora de la Universidad de Texas y pionera en los estudios sobre sor Juana Inés de la Cruz, que acompaña la traducción de su artículo sobre la influencia de Góngora en la literatura mexicana del siglo XVII. Los autores destacan las fuentes que Schons dio a conocer, como un manuscrito de 1799 de la Biblioteca Nacional de México y documentos de archivo, y advierten que el estudio debe leerse en el contexto de la dicotomía conceptismo-culteranismo afianzada por Menéndez Pelayo."
+abstractSource: editorial
 keywords:
   - "Dorothy Schons"
   - "Barroco"

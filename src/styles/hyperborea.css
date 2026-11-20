@@ -989,6 +989,12 @@
 }
 .hb-tag-list a:hover { border-color: var(--hb-yellow); background: var(--hb-yellow); }
 
+/* Abstract before the text of a paper */
+.hb-abstract { margin: 0 0 2em; padding-left: 1em; border-left: 3px solid var(--hb-yellow); }
+.hb-abstract h2 { font-size: 1.125em; margin: 0 0 0.5em; }
+.hb-abstract p { margin: 0 0 0.5em; }
+.hb-article .hb-abstract-source { font-size: 0.875em; font-style: italic; text-align: left; }
+
 /* Related articles under a paper */
 .hb-related { margin-top: 2em; }
 .hb-related h2 { font-size: 1.125em; margin: 0 0 0.5em; }

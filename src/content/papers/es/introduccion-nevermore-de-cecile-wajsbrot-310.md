@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 6
 issueOrder: 10
 author: "Ana Lía Gabrieloni"
+abstract: "El texto introduce la traducción al castellano de dos partes sucesivas de Nevermore (2021), novela de Cécile Wajsbrot. La novela narra la estadía en Dresde de una traductora llegada de París que traduce al francés Time Passes, el capítulo intermedio de To the Lighthouse de Virginia Woolf, y antepone a cada capítulo interludios sobre las transformaciones de la High Line de Nueva York, como los interludios de The Waves. La introducción examina el diálogo con Woolf, la tensión entre desaparición y restitución, el avance de la naturaleza sobre espacios abandonados, de la High Line a Chernóbil, y la imagen de los alcauciles entre las rosas como figura de la catástrofe. La autora relata su propio encuentro con la novela, la compara con un film essai y destaca que Wajsbrot no reescribe sino que restituye a figuras como Lily Briscoe."
+abstractSource: editorial
 keywords:
   - "Literatura contemporánea"
   - "Cécile Wajsbrot"

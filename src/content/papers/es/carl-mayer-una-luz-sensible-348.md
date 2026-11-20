@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 7
 issueOrder: 8
 author: "Rubén Guzmán"
+abstract: "El artículo recorre la trayectoria del guionista austríaco Carl Mayer (1894-1944), figura clave del cine expresionista y del Kammerspielfilm alemán. Tras sus guiones para Das Kabinett des Dr. Caligari y Genuine, de Robert Wiene, y su colaboración con F. W. Murnau, se examina el Kammerspielfilm a partir del teatro de cámara de Max Reinhardt: un cine íntimo, centrado en la psicología de los personajes, del que Scherben, de Lupu Pick, que prescinde de los intertítulos, es un temprano exponente. Con apoyo en Lotte Eisner, Paul Rotha y Karl Freund, se destacan su escritura visual, el problema de expresar el tiempo en Sylvester y la liberación de la cámara en Der Letzte Mann. El texto aborda además Sunrise, su desacuerdo con Walther Ruttmann en Berlin, Die Sinfonie der Großstadt, el impacto del montaje soviético y del sonido, y su muerte en Londres en la pobreza y el olvido."
+abstractSource: editorial
 keywords:
   - "Carl Mayer"
   - "cine experimental"

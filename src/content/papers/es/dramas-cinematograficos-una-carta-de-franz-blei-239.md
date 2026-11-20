@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 4
 issueOrder: 8
 author: "Franz Blei"
+abstract: "Traducción al castellano, por Enrique Bein, de Kinodramen. Ein Brief, carta de Franz Blei publicada en Das Kinobuch, editado por Kurt Pinthus en 1914. En respuesta a una invitación a escribir una obra cinematográfica, Blei sostiene que el cine es un asunto fotográfico y no artístico, y propone filmar biografías de personas de su tiempo, como el cerrajero, el campesino o el empleado, en su aspecto humano desde el nacimiento hasta la muerte, para que el público se interese por su propia realidad."
+abstractSource: editorial
 keywords:
   - "Franz Blei"
   - "Das Kinobuch"

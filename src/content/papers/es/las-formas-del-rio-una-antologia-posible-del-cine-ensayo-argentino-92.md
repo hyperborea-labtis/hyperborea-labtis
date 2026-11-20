@@ -12,6 +12,8 @@ issue: 1
 issueOrder: 8
 author: "Maia Gattás Vargas"
 affiliation: "Universidad Nacional de La Plata, IIDyPCA / CONICET"
+abstract: "El artículo propone una antología posible, no exhaustiva ni cronológica, del cine ensayo argentino. Caracteriza el cine ensayo como un género fronterizo y monstruoso, en términos de Comolli, que se mueve entre la ficción y la no ficción y piensa discontinuamente, según Weinrichter y Adorno. Organiza luego la selección en tres categorías: películas que hablan desde el yo, como Los rubios de Albertina Carri y Viaje sentimental de Verónica Chen; videos de métodos libres y experimentales, como Puna de Hernán Khourián y El mito de Narciso de Narcisa Hirsch; y films inclasificables entre documental y ficción, como Guerra de un solo hombre de Edgardo Cozarinsky e Imágenes de ningún lugar de Rubén Guzmán. Concluye con la imagen del río para pensar la identidad del cine ensayo como espacio y como tiempo en constante movimiento."
+abstractSource: editorial
 keywords:
   - "cine ensayo"
   - "Antología"

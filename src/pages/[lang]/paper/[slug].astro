@@ -18,6 +18,7 @@ import { articleNode, issueNode, organizationNode, periodicalNode } from "../../
 import { absoluteUrl } from "../../../lib/seo";
 import { plainText } from "../../../lib/meta-text";
 import { relatedPapers } from "../../../lib/related";
+import { bodyHasAbstract } from "../../../lib/abstract";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -137,6 +138,14 @@ const related = relatedPapers(toRelated(paper), (await papersForLocale(lang)).ma
             {d.email && (<><br />{d.email}</>)}
             {d.affiliation && (<><br />{d.affiliation}</>)}
           </p>
+        )}
+
+        {d.abstract && !bodyHasAbstract(paper.body ?? "") && (
+          <section class="hb-abstract" aria-labelledby="abstract-title">
+            <h2 id="abstract-title">{t("paper.abstract")}</h2>
+            <p lang={contentLang}>{d.abstract}</p>
+            {d.abstractSource === "editorial" && <p class="hb-abstract-source">{t("paper.abstractEditorial")}</p>}
+          </section>
         )}
 
         <Content />

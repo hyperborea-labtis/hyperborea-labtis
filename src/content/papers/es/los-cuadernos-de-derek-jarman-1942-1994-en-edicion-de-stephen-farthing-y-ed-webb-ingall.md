@@ -9,6 +9,8 @@ section: "Afinidades electivas"
 issue: 3
 issueOrder: 16
 author: "Ana Lía Gabrieloni"
+abstract: "La reseña presenta la edición especial de Derek Jarman's Sketchbooks a cargo de Stephen Farthing y Ed Webb-Ingall (Thames & Hudson, 2013) y se detiene primero en su materialidad, que remite a los cuadernos y evoca un catafalco. Describe los materiales reunidos, de guiones y poemas a recortes, story boards y flores, junto con los textos de Tilda Swinton, Andrew Logan, Christopher Hobbs, James Mackay y Keith Collins, entre otros. Sitúa los cuadernos entre los diarios y las películas de Jarman, como espacio donde confluyen vida y creatividad, arte y política, en el contexto de la era thatcheriana y del diagnóstico de HIV. Destaca el collage, la reescritura en tinta sobre lápiz como palimpsesto, el jardín de Dungeness y las páginas convertidas en herbario, que vincula con Virginia Woolf y con el filme Blue."
+abstractSource: editorial
 keywords:
   - "Derek Jarman"
   - "Sketchbooks"

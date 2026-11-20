@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 14
 author: "Rodolfo Reyes Macaya"
 affiliation: "Université Paris Sorbonne"
+abstract: "Ensayo introductorio de Rodolfo Reyes Macaya a una selección de poemas de Curvatura del ánimo (2018), de Daniela Escobar. El ensayo describe un mundo familiar enrarecido, construido en tercetos y dísticos mediante encabalgamientos, metonimias y elipsis, y situado en los cerros de Renca, en la periferia de Santiago, entre una madre comerciante y un padre a veces tímido y a veces castigador. A partir de las acepciones del término ánimo y de un recorrido por la historia de la melancolía, la manía y la histeria en Hipócrates, Jaspers, Foucault, Bartra y Federici, propone que la curvatura del ánimo consiste en un doble movimiento: el tránsito entre estados emotivos y el paso por las edades y los roles, de hija a madre, que construye una identidad compleja. Discute las lecturas de Nicolás Meneses y Johnathan Opazo y subraya el control lúcido de los materiales, que aleja a la hablante de la locura. Sigue la selección de poemas."
+abstractSource: editorial
 keywords:
   - "literatura latinoamericana"
   - "Poesía"

@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 15
 author: "Agostina Rusiani"
 affiliation: "Universidad Nacional de La Plata, Instituto de Investigaciones, en Humanidades y Ciencias Sociales [IdIHCS]"
+abstract: "El artículo analiza las estrategias con que Sir Walter Raleigh construye el espacio de la Guayana en The Discovery (1596), carta de relación escrita para justificar ante la reina Isabel I y los inversores el fracaso de su expedición de 1595 en busca de Manoa o El Dorado y obtener apoyo para regresar. Se lo lee como un paisaje palimpsesto atravesado por intertextos españoles y lenguas nativas, y se examinan los tópicos que lo configuran: el oro, cuya ausencia se suple con testimonios ajenos; la abundancia de recursos que Inglaterra necesitaba; el vergel o jardín; la virginidad y lo femenino, que vinculan la tierra con la reina virgen, las Amazonas y las mujeres nativas; y lo maravilloso, sostenido en la experiencia propia y en relatos como el de los Ewaipanoma. Se concluye que estos tópicos forman un entramado que presenta el territorio del modo más atractivo para la reina, en favor de la conquista y la colonización."
+abstractSource: editorial
 keywords:
   - "Agostina Rusiani"
   - "Sir Walter Raleigh"

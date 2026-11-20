@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 22
 author: "Fernando Navarro"
 affiliation: "Universidad Nacional de Rosario, Investigaciones Socio-históricas Regionales - ISHIR, CONICET"
+abstract: "La reseña presenta el volumen Interrelaciones entre literatura y artes. América y Europa en las épocas Moderna y Contemporánea, compilado por Ana Lía Gabrieloni, que indaga los cruces entre palabra e imagen desde la écfrasis y el ut pictura poesis. Recorre sus capítulos: la Nueva corónica y buen gobierno de Guamán Poma de Ayala (Laura Catelli), la écfrasis sagrada de la Virgen de Guadalupe (Tadeo Stein), el modernismo de Darío, Casal y Martí (Daniela Chazarreta), el color en la crítica de arte argentina (Silvia Tomas), la ficción modernista anglófona (Lucrecia Radyk), el museo imaginario de la écfrasis (Gabrieloni) y el epílogo de James A. W. Heffernan sobre la autorrepresentación. En su cierre, con referencia a Adorno, sugiere que la reflexión sobre la écfrasis podría abrir un espacio de redención y señala como legado del libro la tarea de un pensamiento ecfrástico confiado en la potencia liberadora de la imaginación."
+abstractSource: editorial
 keywords:
   - "écfrasis"
   - "ut pictura poesis"

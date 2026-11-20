@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 10
 author: "Nicolás Pascale"
 affiliation: "Facultad de Filosofía y Letras, Universidad de Buenos Aires"
+abstract: "El ensayo se divide en dos apartados. El primero, autobiográfico, reconstruye el jardín de la casa de los abuelos paternos del autor en Villa Domínico, Avellaneda, y la colección de bonsáis de su abuelo okinawense, a partir de recuerdos de flores, aromas, insectos y piedras. Con Santiago Beruete y Gilles Clément, el jardín se piensa como espacio de juego, colección, crueldad y aprendizaje del nombrar, y, a partir de W. G. Sebald, el bicho canasto se vincula con la historia de la sericicultura. El segundo examina la noción de naturaleza en la obra de Derek Jarman: la apreciación estética de la naturaleza en Sebastiane, discutida con Malcolm Budd; el jardín de Prospect Cottage, construido con la laisse de mer en sintonía con Clément; y las imágenes del mar y la grava en The Garden, donde el jardín aparece como espacio de delicias y padecimientos."
+abstractSource: editorial
 keywords:
   - "Nicolás Pascale"
   - "Ensayo"

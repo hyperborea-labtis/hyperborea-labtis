@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 4
 issueOrder: 18
 author: "Silvia Inés Tomas"
+abstract: "La reseña presenta Painting Words. Aesthetics and the Relationship between Image and Text (New York, 2020), compilado por Beatriz y Fernando González-Moreno. La autora sostiene que el tema recuerda cuánto se debe al Romanticismo, más que a las vanguardias, en la concepción de las relaciones interartísticas, y relativiza la preeminencia actual de la imagen invocada por los compiladores. Recorre los apartados del libro, que van de Cervantes y Shakespeare y la tradición del ut pictura poesis al Romanticismo inglés leído desde una perspectiva de género, y de allí a casos de América del Norte y a la expansión transatlántica de estas teorías. Destaca como acierto la recuperación del enfoque estético frente a la semiótica o el análisis retórico, y lee el volumen como una comunidad que reproduce la fraternidad de los artistas románticos."
+abstractSource: editorial
 keywords:
   - "Silvia Tomas"
   - "Beatriz González-Moreno"

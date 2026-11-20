@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 13
 author: "Mariano Sverdloff"
 affiliation: "Universidad de Buenos Aires, CONICET"
+abstract: "El texto presenta y traduce «La Nana de Manet», crítica de Joris-Karl Huysmans publicada en 1877 en la revista L'Artiste sobre el cuadro Nana de Édouard Manet, rechazado por el jurado del Salón de ese año. La introducción sitúa la prostitución en el siglo XIX como realidad material y como objeto de discursos y representaciones, del higienismo de Parent-Duchâtelet a la literatura, la pintura y la pornografía, con apoyo en Alain Vaillant y en Pollock y Parker sobre la mirada misógina del arte. Propone que la écfrasis de Huysmans hace una lectura fetichista del cuerpo pintado y que la obsesión por las medias de seda fabricadas en Londres inscribe ese cuerpo en los flujos económicos modernos, en una poética preciosista e industrial que anticipa À rebours. En el texto traducido, Huysmans celebra en el cuadro la representación de la prostituta, aunque le reprocha fallas de ejecución."
+abstractSource: editorial
 keywords:
   - "Francia"
   - "Siglo XIX"

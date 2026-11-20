@@ -9,6 +9,8 @@ issue: 6
 issueOrder: 13
 author: "Dorothy Schons"
 affiliation: "University of Texas"
+abstract: "El artículo examina en qué medida Luis de Góngora influyó en la literatura de México durante el siglo XVII y en qué grado se adoptó allí el gongorismo del propio poeta, distinto del de sus imitadores. Tras describir un trasfondo novohispano marcado por el humanismo, la teología escolástica y la agudeza criolla, la autora rastrea la circulación de la obra gongorina y sus huellas en certámenes poéticos de 1633 a 1683, en Carlos de Sigüenza y Góngora y en sor Juana Inés de la Cruz, cuyo Primero sueño imita la sintaxis de la Primera soledad pero difiere de ella en atmósfera y tema. Concluye que en México se adoptaron el vocabulario, las palabras sonoras y un uso convencional de la descripción de la naturaleza, pero no, salvo en algunos poemas de sor Juana, la sintaxis de Góngora ni sus imágenes dobles, por lo que la imitación se limitó a lo externo."
+abstractSource: editorial
 keywords:
   - "Góngora"
   - "Literatura mexicana"

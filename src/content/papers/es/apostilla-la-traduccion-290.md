@@ -8,6 +8,8 @@ section: "41º 9’ S 71º 8’ W"
 issue: 5
 issueOrder: 12
 author: "Daniela Chazarreta"
+abstract: "Apostilla de Daniela Chazarreta a la traducción de «The Tribute to Everyday Reality in José Lezama Lima's Fragmentos a su imán», de Robyn R. Lutz. Según Lutz, el poemario póstumo indaga los lazos entre lo sobrenatural y lo cotidiano desde imaginarios católicos y orientales. La apostilla destaca la casa, recinto de la intimidad y el auto-exilio, como espacio mágico que habilita una nueva modalidad del repliegue barroco, y vincula esa prioridad del espacio privado con la transformación del espacio público tras la Revolución de 1959, que en Lezama deriva en un exilio interior."
+abstractSource: editorial
 keywords:
   - "literatura hispanoamericana"
   - "Daniela Chazarreta"

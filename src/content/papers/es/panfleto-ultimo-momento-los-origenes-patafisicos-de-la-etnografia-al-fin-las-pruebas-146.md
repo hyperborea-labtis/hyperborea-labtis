@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 12
 author: "Bernard Müller"
 affiliation: "Curio, Miembro asociado del IRIS (EHESS, París)"
+abstract: "En tono paródico, este panfleto sostiene que la etnografía tendría orígenes patafísicos largamente ocultos. Recuerda la definición de la patafísica de Alfred Jarry como ciencia de las soluciones imaginarias y la organización del Collège de Patafísica, y hace coincidir el nacimiento de ambas disciplinas, a fines del siglo XIX, con la expansión colonial francesa, los discursos de Jules Ferry y los trabajos de Durkheim y Mauss. Retoma las críticas a la autoridad etnográfica de James Clifford y Johannes Fabian y la sospecha sobre el terreno como relación asimétrica. Propone que la disciplina asuma su carácter imaginativo, su condición de portnawak o de decir no importa qué, y se renueve al modo de OULIPO, concibiendo el terreno como una restricción y un arte de la conversación basado en la amistad, según Ivan Illich, tarea que encomienda a un Taller de Antropología Potencial (OUANPO). Concluye que la patafísica podría contribuir a la reinicialización de la etnografía, en el sentido de George Marcus."
+abstractSource: editorial
 keywords:
   - "etnografia"
   - "`Patafísica"

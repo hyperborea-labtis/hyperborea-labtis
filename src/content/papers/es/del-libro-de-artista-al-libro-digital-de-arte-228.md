@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 17
 author: "Adriana Musitano"
 affiliation: "Editora - Bosquemadura, Córdoba, Argentina"
+abstract: "El ensayo presenta el proyecto de Bosquemadura E-ditorial de arte, sello de Córdoba que publica libros de arte nativos digitales preservando la materialidad de su puesta en página, con antecedente en la colección Papeles Teatrales de la Universidad Nacional de Córdoba. La autora plantea conjugar las fortalezas del libro de arte en papel y las del digital en un tercer modelo, el libro digital interactivo, donde el lector-espectador elige recorridos, enlaces, imágenes y sonidos, y destaca su accesibilidad. Con Roberto Calasso, Amaranth Borsuk y Bibiana Crespo Martín, vincula la propuesta con la tradición del libro de artista desde Mallarmé. Se detiene luego en Pharus. Del hemisferio Sur al Norte, primer título del catálogo, cuyas fotografías de faros de Matilde Marín trazan un recorrido entre hemisferios que convoca mitos y relatos de Homero a Virginia Woolf. Concluye que la tarea desde Argentina y América Latina será acercar artistas y lectores mediante el libro digital de arte."
+abstractSource: editorial
 keywords:
   - "Adriana Musitano"
   - "Bosquemadura E-ditorial de arte"

@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 4
 issueOrder: 20
 author: "Ana Lía Gabrieloni"
+abstract: "El ensayo examina Sirenas argentinas, serie pictórica e instalación de Xil Buffone exhibida en 2019 en el Centro Cultural de la Cooperación de Buenos Aires, compuesta por quince módulos horizontales al óleo y un mapa escolar intervenido por la artista. Ante la inexistencia de sirenas en el imaginario argentino, Buffone decidió crearlas y situarlas en paisajes como el río Paraná, los salitrales, las Malvinas, las Cataratas del Iguazú, el Lago Gutiérrez o la Antártida. El texto relaciona la serie con tradiciones pictóricas como la representación de estaciones y regiones, el tema mitológico y la repetición de un motivo bajo distintas luces, y analiza el color como el lazo con que estas sirenas atan, a partir de Carlos García Gual, Baudelaire, Bachelard y Jacques Darriulat. Propone que reflexión y libertad sintetizan la visión de las sirenas y la de la propia artista."
+abstractSource: editorial
 keywords:
   - "Xil Buffone"
   - "Ana Lía Gabrieloni"

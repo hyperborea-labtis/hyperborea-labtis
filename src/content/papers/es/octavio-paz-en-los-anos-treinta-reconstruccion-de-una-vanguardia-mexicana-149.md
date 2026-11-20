@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 18
 author: "Klaus Meyer-Minnemann[1]"
 affiliation: "Institut für Romanistik, Universität Hamburg"
+abstract: "El artículo, traducido del alemán por Sergio Danilo Acosta, reconstruye la posición literaria de Octavio Paz en los años treinta a partir de «Ética del artista», publicado en Barandal en 1931, donde Paz opta por un arte de tesis frente al arte puro. Examina las dos posturas que hacia 1930 se disputaban la modernidad en México: la de la revista Contemporáneos, defendida por Ortiz de Montellano, y la del agorismo y la revista Crisol, que concebían el arte como vehículo de la acción revolucionaria. Sostiene que Paz y el grupo de Barandal rechazan una definición funcional del arte y mantienen una actitud estética que los acerca a los Contemporáneos, cuya vanguardia buscan relevar. Sigue su evolución hasta los poemas sobre la Guerra Civil española y «Razón de ser» (Taller, 1939), donde Paz concibe la nueva poesía como continuadora y superadora de los Contemporáneos."
+abstractSource: editorial
 keywords:
   - "literatura latinoamericana"
   - "América y Europa"

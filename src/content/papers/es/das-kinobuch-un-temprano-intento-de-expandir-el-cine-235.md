@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 4
 issueOrder: 6
 author: "Rubén Guzmán"
+abstract: "El texto presenta la primera traducción al castellano, realizada por Enrique Bein, de la introducción de Kurt Pinthus a Das Kinobuch, compilación de ideas para guiones de autores provenientes mayormente del teatro y la literatura, publicada hacia fines de 1913. Se sitúa el libro en un cine todavía mudo, anterior a las teorías del montaje y a El estudiante de Praga, considerada por muchos la primera obra de cine de autor. Se destacan La gran huelga de Paul Zech, por sus rasgos expresionistas, y la carta en que Franz Blei explica su negativa a colaborar y propone una suerte de documental etnográfico. El prólogo de Pinthus subraya el potencial expresivo y la función social del cine, lo diferencia del teatro y anticipa el uso creativo del montaje y la idea del cine como arte que desarrollarían Béla Balázs y Rudolf Arnheim. El texto concluye que el Kinobuch abre la puerta a un cine expandido por venir."
+abstractSource: editorial
 keywords:
   - "Rubén Guzmán"
   - "Kurt Pinthus"

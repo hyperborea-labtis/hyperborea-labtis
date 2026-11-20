@@ -9,6 +9,8 @@ issue: 6
 issueOrder: 3
 author: "Jean-Luc Steinmetz"
 affiliation: "Profesor emérito de la Université de Nantes"
+abstract: "El ensayo lee L’Œuvre de Émile Zola desde el psicoanálisis. Zola se divide en Claude Lantier, pintor fracasado, y Sandoz, escritor exitoso, cuyo nombre Freud ya había analizado como transformación del de Zola. Claude aparece como un niño-artista que no alcanza la madurez, ligado a figuras parentales sustitutas, Sandoz como padre y Christine como madre, y marcado por la herida de la pérdida materna, que el autor vincula con la muerte de la madre de Zola en 1880. La fisura, la fractura y la grieta atraviesan las amistades, la pareja, el cuerpo del pintor y sus telas, y revelan una división del sujeto que anticipa a Freud y a Lacan. El análisis de Al aire libre y L’Œuvre, los cuadros de Claude, con su figura femenina central idolatrada, lo muestra fascinado por un vacío infigurable que lo lleva a ahorcarse ante la tela. Es la traducción, por Mariano Sverdloff, de un ensayo incluido en Le Champ d'écoute (1985)."
+abstractSource: editorial
 keywords:
   - "Jean-Luc Steinmetz"
   - "literatura francesa"

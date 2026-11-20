@@ -716,6 +716,48 @@ if (OFFLINE) {
   );
 }
 
+// ---------- 17. Abstracts ----------
+// A paper's abstract (frontmatter `abstract`) is shown before the text and feeds the meta description
+// and the JSON-LD. Written by the editorial team, it must say so (`abstractSource: editorial` prints
+// "Resumen elaborado por la redacción" under it, in each language). Content-level rules: a plausible
+// length and a known source. Page-level rule: the section and the label are really in the HTML.
+{
+  const i18n = fs.readFileSync(path.join(ROOT, "src", "i18n", "config.ts"), "utf8");
+  const labels = [...i18n.matchAll(/"paper\.abstractEditorial": "([^"]+)"/g)].map((m) => m[1]);
+  const problems = [];
+  let withAbstract = 0;
+  let editorial = 0;
+  const papers = entries.filter((e) => e.col === "papers" && e.locale === "es" && e.data);
+  for (const e of papers) {
+    const d = e.data;
+    const words = (d.abstract ?? "").trim().split(/\s+/).filter(Boolean).length;
+    if (d.abstractSource !== undefined && !["author", "editorial"].includes(d.abstractSource)) problems.push(`${relf(e.file)}: abstractSource "${d.abstractSource}" must be "author" or "editorial"`);
+    if (!d.abstract) {
+      if (d.abstractSource) problems.push(`${relf(e.file)}: abstractSource without an abstract`);
+      continue;
+    }
+    withAbstract++;
+    if (words < 30 || words > 300) problems.push(`${relf(e.file)}: abstract has ${words} words (expected 30–300)`);
+    if (/[\r\n]/.test(d.abstract.trim())) problems.push(`${relf(e.file)}: abstract must be a single paragraph`);
+    if (/[*_`#]|\]\(/.test(d.abstract)) problems.push(`${relf(e.file)}: abstract contains Markdown (it is shown as plain text)`);
+    if (d.abstractSource === "editorial") editorial++;
+    LOCALES.forEach((l, i) => {
+      const f = path.join(DIST, l, "paper", `${d.slug}.html`);
+      if (!fs.existsSync(f)) return;
+      const html = fs.readFileSync(f, "utf8");
+      // Headings named Resumen/Abstract/Résumé on the page: ours (inside .hb-abstract) plus any the author put in the text.
+      const headings = [...html.matchAll(/<h[1-6][^>]*>\s*(?:<strong>)?\s*(?:resumen|abstract|résumé)\s*(?:<\/strong>)?\s*<\/h[1-6]>/gi)].length;
+      const ours = html.includes('class="hb-abstract"');
+      if (ours && headings > 1) problems.push(`/${l}/paper/${d.slug}: abstract shown twice (the text has its own Resumen)`);
+      else if (!ours && headings > 0 && d.abstractSource !== "editorial") { /* the author's own, in the text: no second one is printed */ }
+      else if (!ours) problems.push(`/${l}/paper/${d.slug}: abstract not rendered`);
+      else if (d.abstractSource === "editorial" && !html.includes(labels[LOCALES.indexOf(l)] ?? "\u0000")) problems.push(`/${l}/paper/${d.slug}: missing the editorial label`);
+      else if (d.abstractSource !== "editorial" && labels.some((x) => html.includes(x))) problems.push(`/${l}/paper/${d.slug}: shows the editorial label but abstractSource is not "editorial"`);
+    });
+  }
+  if (labels.length !== LOCALES.length) problems.push("src/i18n/config.ts: paper.abstractEditorial must exist in every language");
+  record("17. Paper abstracts", problems.length ? "fail" : "pass", `${withAbstract}/${papers.length} papers have one (${editorial} written by the editorial team), ${problems.length} problems`, problems.slice(0, 20));
+}
 // ---------- 13. Own-domain links in content ----------
 {
   const bad = [];

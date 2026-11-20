@@ -9,6 +9,8 @@ issue: 5
 issueOrder: 18
 author: "Mariana Mussetta"
 affiliation: "Universidad Nacional de Villa María, Andrés Belfanti, Universidad Nacional de Villa María, Universidad Provincial de Córdoba"
+abstract: "La reseña de Mariana Mussetta y Andrés Belfanti se ocupa de la videoinstalación Don Quijote: Tristes figuras, de Mieke Bal, presentada por primera vez en América Latina en Villa María, Córdoba, en el marco del Congreso de ASAECA. En sintonía con la obra, el texto se organiza como un laberinto de hipervínculos que propone recorridos de lectura no lineales y combina fragmentos del texto curatorial, notas y citas. Se destacan la polifonía, el multilingüismo y el uso productivo del anacronismo en la poética citacional de Bal, así como la referencia a «Pierre Menard, autor del Quijote» de Borges para pensar la relación de la obra con su original. Desde la experiencia de la curaduría, la reseña reflexiona además sobre el carácter situado de esa práctica, el papel del público en la construcción de la narrativa y la figura de Sancha."
+abstractSource: editorial
 keywords:
   - "Mieke Bal"
   - "ut pictura poesis"

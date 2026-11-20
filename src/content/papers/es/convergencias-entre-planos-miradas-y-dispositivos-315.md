@@ -9,6 +9,8 @@ issue: 6
 issueOrder: 15
 author: "Matías Lapezatta"
 affiliation: "Editor de Los Ríos, Córdoba"
+abstract: "La reseña presenta El ruido del tiempo, libro digital de Rubén Guzmán publicado por Bosquemadura E-ditorial de arte en 2023, que acompaña su film ensayo homónimo sobre Eric Boman, arqueólogo y antropólogo sueco-argentino que se adentró en el territorio indígena del noroeste argentino. La película no reconstruye sus expediciones: plantea una vuelta fantasmática a la Puna, donde Boman se reencuentra con Pedro Carpanchay, su guía. La reseña recorre el ensayo de Arnd Schneider, que cuestiona desde una perspectiva decolonial la representación de los pueblos por los primeros exploradores; el de Ana Lía Gabrieloni, que inscribe la película en la figura de la prosopopeya, opone la Puna al encierro del museo y destaca que los personajes dialogan en sueco y en quechua; el texto introductorio del director sobre el método Frankenstein de un film que el reseñista acerca al cine expandido, y el guion final, leído como una guía para aproximarse a una obra que no puede ser escrita."
+abstractSource: editorial
 keywords:
   - "Bosquemadura E-ditorial de arte"
   - "El ruido del tiempo"

@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 4
 issueOrder: 7
 author: "Por el Dr. Kurt Pinthus[1]"
+abstract: "Traducción al castellano, por Enrique Bein, de la introducción de Kurt Pinthus a Das Kinobuch (1914), con notas del traductor sobre juegos de palabras del original. Pinthus distingue el drama cinematográfico, que lleva a la pantalla obras de teatro o novelas y debe extinguirse, de la obra cinematográfica propiamente dicha, y sostiene que el cine no tiene nada en común con el teatro, cuyo medio esencial es la palabra. Explica la atracción del público por el afán de ampliar conocimientos y experiencias, de ver al hombre y su destino y de encontrar lo extraordinario, incluido el Kitsch, y afirma que el cine logra con medios primitivos lo que busca el arte más encumbrado, sin ser por ello arte. Identifica tres medios de expresión, el ambiente ilimitado, el movimiento y la situación o truco, aglutinados por el hombre y su destino, y presenta las obras del libro como intentos de hallar una forma literaria apta para el cine."
+abstractSource: editorial
 keywords:
   - "Kurt Pinthus"
   - "Das Kinobuch"

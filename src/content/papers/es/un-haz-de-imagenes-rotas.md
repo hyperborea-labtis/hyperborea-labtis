@@ -9,6 +9,8 @@ issue: 8
 issueOrder: 13
 author: "Natalia A. Accossano Pérez"
 affiliation: "Universidad Nacional de Río Negro, Laboratorio Texto, Imagen y Sociedad, S. C. de Bariloche"
+abstract: "La reseña presenta Ruinas, vestigios, restos. Hacia una definición de una estética de la degradación en la literatura y cultura inglesas (2024), compilación de Lucas Margarit y María Inés Castagnino que reúne trabajos de integrantes de la Cátedra de Literatura Inglesa de la Universidad de Buenos Aires sobre las ruinas. A partir de la capilla en ruinas de The Waste Land de T. S. Eliot, la reseñista señala dos momentos que el libro aborda: el abandono de las iglesias católicas con la reforma religiosa de Enrique VIII y la contemplación romántica de las ruinas. Describe el recorrido cronológico del volumen, desde el poema anglosajón «The Ruin» hasta The Tain de China Miéville, con atención a la apropiación renacentista de las ruinas romanas y a la destrucción de las Guerras Mundiales, y destaca sus ejes: el tiempo como proceso y cambio, y la ruina en sentido amplio, que abarca edificaciones y cuerpos."
+abstractSource: editorial
 keywords:
   - "literatura inglesa"
   - "ruinas"

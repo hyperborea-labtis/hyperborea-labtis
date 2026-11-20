@@ -9,6 +9,8 @@ section: "Mare Sugenum"
 issue: 3
 issueOrder: 5
 author: "Alejandro Manfred"
+abstract: "Presentación de un dosier de tres artículos sobre teatro, escrita en medio de la peste. Parte de la peste como metáfora en Artaud, Freud y Camus para señalar que, cuando realmente llega, niega los cuerpos y deja solo sus imágenes en las pantallas, y presenta los artículos como testimonios de experiencias posibles cuando el teatro lo era. Organiza su lectura en tres ejes: la traducción como clave interpretativa, a propósito del texto de Sylvain Dreyer sobre las piezas de Armand Gatti acerca de la Cuba revolucionaria; la mise en abyme como urdimbre de la escena, en el de Laura Fobbio sobre Bosque sagrado de monstruos, puesta de Tantanian sobre Santa Teresa de Ávila; y el cuerpo interpelado, en el estudio de Micaela van Muylem sobre una trilogía de monólogos de Jan Fabre. Concluye preguntándose quién devolverá al espectador el cuerpo del actor, del que las imágenes solo rescatan una sombra."
+abstractSource: editorial
 keywords:
   - "dossier"
   - "teatro"

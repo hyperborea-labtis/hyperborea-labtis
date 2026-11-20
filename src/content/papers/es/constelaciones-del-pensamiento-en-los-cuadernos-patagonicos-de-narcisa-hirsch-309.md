@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 6
 issueOrder: 7
 author: "Ana Lía Gabrieloni"
+abstract: "El texto presenta una selección de fragmentos de Aigokeros. Cuadernos patagónicos, libro publicado en 2004 por la realizadora de cine experimental Narcisa Hirsch, que reúne composiciones en prosa y verso donde el ensayismo alterna con haikus sobre las estaciones en el sur y con once «Cartas a los hombres». A partir de los versos finales del libro, que nombran la belleza y el amor, la introducción señala resonancias con la poesía romántica alemana y propone leer los fragmentos como constelaciones del pensamiento en las que la belleza y el amor debaten su coexistencia sobre un fondo de verdad. La selección, que excluye las últimas Cartas, se acompaña de fotogramas del documental Refugio de Narcisa Heuser (2023), de Rubén Guzmán, y se organiza en cinco tópicos: aquí y ahora; las palabras y las imágenes; las lindes y el universo; el cuerpo, la materia; el amor y otros modos del sentir."
+abstractSource: editorial
 keywords:
   - "Narcisa Hirsch"
   - "Aigokeros. Cuadernos patagónicos"

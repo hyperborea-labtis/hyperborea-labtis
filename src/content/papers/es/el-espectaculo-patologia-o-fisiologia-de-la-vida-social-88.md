@@ -9,6 +9,8 @@ issue: 1
 issueOrder: 7
 author: "Barbara Carnevali"
 affiliation: "Centre de recherches sur l'art et le langage [CRAL], École des hautes études en sciences sociales [EHESS]"
+abstract: "El artículo parte del aforismo de Guy Debord según el cual el espectáculo es una relación social entre personas mediatizada por imágenes, y pregunta si se trata de una patología propia de la modernidad capitalista o de una dimensión constitutiva de la vida social. La autora identifica en Debord un romanticismo social de genealogía roussoniana, fundado en un diagnóstico marxista inscripto en una ontología dualista de realidad y apariencia, en el concepto de alienación y en una lectura platónica del fetichismo de la mercancía. Señala los límites históricos de esa crítica, ante formas de espectacularidad precapitalista como la Grecia clásica o las cortes modernas, y su incapacidad para pensar la función fisiológica de las apariencias. Con Georg Simmel, Hannah Arendt y Erving Goffman propone un abordaje estético-social del espectáculo como dimensión ordinaria de toda interacción, y concluye que la crítica debe liberarse de la hipoteca romántica y repensar los ideales de autenticidad."
+abstractSource: editorial
 keywords:
   - "Barabara Carnevalli"
   - "Guy Debord"

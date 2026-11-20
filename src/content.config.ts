@@ -43,6 +43,8 @@ const papers = defineCollection({
     email: z.string().optional(),
     affiliation: z.string().optional(),
     abstract: z.string().optional(),
+    // Who wrote the abstract: the author (default) or the editorial team, which the paper page says.
+    abstractSource: z.enum(["author", "editorial"]).optional(),
     keywords: z.array(z.string()).default([]),
     // Shown under the paper: reception, evaluation and publication dates.
     receivedDate: optionalDate,

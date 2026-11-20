@@ -7,6 +7,8 @@ title: "El tributo a la realidad cotidiana en Fragmentos a su imán de José Lez
 section: "41º 9’ S 71º 8’ W"
 issue: 5
 issueOrder: 13
+abstract: "El artículo estudia Fragmentos a su imán (1977), último libro de poesía de José Lezama Lima, en el que la búsqueda de un orden significativo del mundo se ancla en los detalles de la vida cotidiana. Se distinguen dos procedimientos: convertir un detalle mundano en símbolo de una abstracción, como en La mujer y la casa, donde el ama de casa aparece como sacerdotisa del orden, o en Nuevo encuentro con Víctor Manuel; y objetivar una experiencia intelectual o estética en una imagen concreta, como el tokonoma de El pabellón del vacío. El análisis de El esperado muestra que ambos métodos son en esencia el mismo. Se concluye que Lezama escribe aquí una poesía más directa e íntima, que transforma a su familia, sus amigos y su herencia cubana en símbolos de las interrelaciones del mundo."
+abstractSource: editorial
 keywords:
   - "literatura hispanoamericana"
   - "José Lezama Lima"

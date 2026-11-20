@@ -9,6 +9,8 @@ section: "Afinidades electivas"
 issue: 3
 issueOrder: 17
 author: "Natalia A. Accossano Pérez"
+abstract: "La reseña examina Lo que más me gusta son los monstruos, de Emil Ferris, a partir del proyecto inconcluso de Ítalo Calvino de componer relatos con historietas como equivalente contemporáneo del tarot. Tras repasar la historia de la novela gráfica, de Will Eisner y la censura del Comics Code al Graphic Novel Manifesto de Eddie Campbell, sitúa la obra en ese movimiento por su atención a la historia. Presenta el diario dibujado de Karen Reyes, una niña de diez años que se representa como loba detective e investiga, en el Uptown de Chicago de 1968, el asesinato de su vecina Anka Silverberg, sobreviviente del Holocausto. Se analizan la hibridación de diario, relato policial y memoria, la fusión de texto e imagen y la relación de Karen con las pinturas del Instituto de Arte de Chicago. Se concluye que Ferris reflexiona sobre cómo recurrimos a las imágenes para contar historias, incluida la propia."
+abstractSource: editorial
 keywords:
   - "textos e imágenes"
   - "BD"

@@ -8,6 +8,8 @@ section: "Afinidades electivas"
 issue: 4
 issueOrder: 19
 author: "Rodolfo Reyes Macaya"
+abstract: "La reseña presenta Les Formes du visible. Une anthropologie de la figuration (2021), de Philippe Descola, un estudio antropológico comparativo que interroga las imágenes para probar la pertinencia de su teoría ontológica en distintas culturas. Se reconstruye el origen de ese programa en la experiencia del etnólogo entre los Achuar de la alta Amazonía, que no separaban naturaleza y cultura, y se caracterizan los cuatro regímenes de identificación y composición del mundo que organizan el libro: animismo, totemismo, analogismo y naturalismo. La reseña sitúa la obra en la corriente que, con Alfred Gell, Hans Belting, David Freedberg y Horst Bredekamp, trata a las imágenes como agentes, sin abandonar su condición de entramado de signos, y expone la tipología de imágenes de Descola, incluidas las ornamentales, como el motivo Orión de los Achuar. Concluye que, para el libro, figurar es hacer ver la naturaleza ontológica de lo real y activar la agencia de las imágenes."
+abstractSource: editorial
 keywords:
   - "Rodolfo Reyes Macaya"
   - "Philippe Descola"

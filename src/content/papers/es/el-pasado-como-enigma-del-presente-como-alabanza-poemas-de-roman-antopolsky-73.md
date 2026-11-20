@@ -7,6 +7,8 @@ title: "El pasado como enigma del presente como alabanza. Poemas de Román Anto
 section: "Manet et manebit"
 issue: 1
 issueOrder: 12
+abstract: "Selección de poemas de Un Baburnama, libro inédito de Román Antopolsky, precedida de una introducción de Mariano Sverdloff. La introducción vincula el extrañamiento de la lengua poética de Antopolsky con su exposición a múltiples lenguas y con su práctica de la pintura, y caracteriza su relación con la tradición como un formalismo celebratorio, religioso e irónico, que concibe la antigüedad como un enigma. Un Baburnama se presenta como una glosa marginal sobre el Bāburnāma, memorias del príncipe Babur, fundador del imperio mogol, en la que las sucesivas tomas y pérdidas de Samarkanda se vuelven metáfora de un deseo que no puede ser colmado. Los poemas, intercalados con imágenes, retoman la caza, el asedio de Samarkanda, los ríos de Fergana, las flechas, el tiempo, la imagen, Alá y la renuncia al alcohol."
+abstractSource: editorial
 keywords:
   - "Roman Antopolsky"
   - "Poesía"

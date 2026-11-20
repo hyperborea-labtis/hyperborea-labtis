@@ -9,6 +9,8 @@ issue: 4
 issueOrder: 5
 author: "W. J. T. Mitchell"
 affiliation: "Profesor Gaylord Donnelley Distinguished Service, University of Chicago"
+abstract: "Traducción, a cargo de Ana Lía Gabrieloni, de «Spatial Form in Literature», publicado por W. J. T. Mitchell en Critical Inquiry en 1980. A partir del ensayo de Joseph Frank, Mitchell sostiene que la forma espacial no es una mera metáfora ni un rasgo exclusivo de la literatura modernista, sino un aspecto crucial de la experiencia y la interpretación de la literatura de todas las épocas. Rechaza la oposición entre espacio y tiempo, con apoyo en la definición de Leibniz del espacio como orden de lo coexistente. Con los cuatro niveles de la alegoría medieval revitalizados por Northrop Frye, distingue la espacialidad del texto físico, del mundo descripto, de la forma y del significado. Propone criterios de análisis y el término tectónico, y destaca el potencial de la noción para los estudios comparatistas y una historia general de los signos."
+abstractSource: editorial
 keywords:
   - "W. J. T. Mitchell"
   - "Joseph Frank"

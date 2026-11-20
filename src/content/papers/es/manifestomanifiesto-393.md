@@ -7,6 +7,8 @@ title: "Manifesto/Manifiesto"
 section: "Kino LabTIS"
 issue: 8
 issueOrder: 10
+abstract: "Traducción al castellano, a cargo de Ana Lía Gabrieloni y Rubén Guzmán, del manifiesto de Scott Haynes, Oliver Hockenhull y Doug Chomyn publicado en el primer número de la revista Speed en 1987. El texto presenta a Speed como un foro provocador y polémico para cineastas y artistas del cine independientes, frente a un clima neoconservador de miedo a hablar, y reclama el derecho a un discurso fílmico libre junto con medios materiales para filmar. En una prosa paródica y escatológica que cita a Artaud, denuncia la institución del cine, la tecnocracia, el cine dominante y la propia complicidad con el confinamiento cultural, y culmina en una serie de rechazos que alcanzan incluso los sistemas de autoridad de los firmantes."
+abstractSource: editorial
 keywords:
   - "cine experimental"
   - "Canadá"

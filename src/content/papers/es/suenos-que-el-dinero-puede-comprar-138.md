@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 2
 issueOrder: 8
 author: "Ingo Petzke"
+abstract: "El artículo cuestiona el relato que Hans Richter, artista alemán surgido del dadaísmo y referente del cine de vanguardia, difundió sobre su propia trayectoria, en particular la afirmación, incluida en los créditos de Vormittagsspuk (Fantasmas antes del desayuno, 1928), de que los nazis destruyeron la versión sonora del film por considerarla arte degradado. Se reconstruye que se trataba de un corto mudo estrenado en el Festival de Baden-Baden con música mecánica de Paul Hindemith para pianola, que Richter había puesto a resguardo sus pertenencias en Suiza antes de partir hacia la Unión Soviética y que, según Werner Graeff, la música dejó de ajustarse a la película porque Richter amplió varias de sus partes. El texto concluye que los nazis destruyeron la música de Hindemith, no la película de Richter, de modo que los créditos le atribuyen una posición antinazi que los hechos no sostienen."
+abstractSource: editorial
 keywords:
   - "cine de autor"
   - "Hans Richter"

@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 5
 issueOrder: 11
 author: "Tadeo P. Stein"
+abstract: "Ciclo de veinte poemas numerados de Tadeo P. Stein, precedido por epígrafes de Robert Hunter y Miguel Abuelo y cerrado por un texto en prosa. Los poemas recorren el huerto, el río, el bosque y la llanura, junto a la figura de la amada, amiga y compañera, y de las hijas, en un diálogo entre la memoria de la infancia y el presente. La voz se piensa como extranjero y peregrino en una tierra de ancestros que no le pertenecen, con imágenes del maíz, el copal, el huipil o el quetzal. Junto a la contemplación aparecen la urbe sin árboles, la conquista, la violencia contra las mujeres, la destrucción de la naturaleza atribuida al capitalismo, la muerte y la conciencia de que cantar el paisaje es también destruirlo. Se incluye una nota biográfica del autor."
+abstractSource: editorial
 keywords:
   - "Poesía contemporánea"
   - "Tadeo Stein"

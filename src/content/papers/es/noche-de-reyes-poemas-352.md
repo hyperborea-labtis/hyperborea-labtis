@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 7
 issueOrder: 11
 author: "Jorge Luis Arcos La Rosa"
+abstract: "Selección de tres poemas de Jorge Luis Arcos La Rosa titulados Noche de Reyes, con epígrafe de Fina García-Marruz. El primero enumera visiones de una noche antigua y onírica y culmina en el canto de José el carpintero. El segundo, fechado en 2006, evoca a alguien que huye a España, entre bares, sombras de la infancia, la Divina Comedia ilustrada por Doré y referencias a Casal y Gorostiza. El tercero, con epígrafe de Lezama Lima, presenta a un dios sin rostro que regala el insomnio y ordena cantar la noche."
+abstractSource: editorial
 keywords:
   - "Jorge Arcos La Rosa"
   - "Noche de Reyes"

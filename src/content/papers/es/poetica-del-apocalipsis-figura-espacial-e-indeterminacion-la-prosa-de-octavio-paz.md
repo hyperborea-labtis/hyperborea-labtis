@@ -10,6 +10,8 @@ issue: 3
 issueOrder: 15
 author: "Anthony Stanton[1]"
 affiliation: "El Colegio de México"
+abstract: "Traducción, a cargo de Suyai Gustinelli y Macarena Álvarez, de un artículo de Anthony Stanton publicado en inglés en 1992. El estudio analiza la prosa de Octavio Paz en la década de 1960, etapa estructurada por tres encuentros: la lectura de Mallarmé, el estructuralismo y el pensamiento religioso de la India. Se centra en «Los signos en rotación», nuevo epílogo de la segunda edición de El arco y la lira, que intenta conciliar un credo neorromántico y surrealista con el estructuralismo. Paz lee Un Coup de dés como cierre apocalíptico y apertura profética de una forma espacial y abierta, lectura que se compara con las de Haroldo de Campos, Maurice Blanchot y Umberto Eco. Stanton sostiene que no es una lectura estructuralista, pues rechaza la eliminación del creador y concibe el poema como ritual colectivo, y concluye que esta estética es inseparable de una nueva moral, una visión de la historia y una filosofía política."
+abstractSource: editorial
 keywords:
   - "literatura latinoamericana"
   - "Octavio Paz"

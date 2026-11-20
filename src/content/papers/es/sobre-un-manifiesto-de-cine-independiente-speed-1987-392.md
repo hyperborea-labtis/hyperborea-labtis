@@ -8,6 +8,8 @@ section: "Kino LabTIS"
 issue: 8
 issueOrder: 9
 author: "Rubén Guzmán"
+abstract: "Presentación del manifiesto publicado en el primer número de Speed, revista cuatrimestral lanzada en 1987 por Scott Haynes, Doug Chomyn y Oliver Hockenhull, realizadores de cine experimental y miembros de Cineworks Independent Filmmakers Society, centro artístico autogestionado de Vancouver. Explica que el nombre de la revista deriva de la imagen-velocidad de Paul Virilio y que el manifiesto invitaba a repudiar la cochonnerie de los medios masivos para dar lugar a otro lenguaje y a otra mirada. Anuncia la reproducción del texto original junto a su primera traducción al español."
+abstractSource: editorial
 keywords:
   - "cine experimental"
   - "Canadá"

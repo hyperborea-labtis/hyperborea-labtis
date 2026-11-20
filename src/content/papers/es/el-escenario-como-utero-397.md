@@ -10,6 +10,8 @@ issueOrder: 14
 author: "Fedra Roberto"
 email: "froberto@unrn.edu.ar"
 affiliation: "Universidad Nacional de Río Negro, Laboratorio Texto, Imagen y Sociedad, S. C. de Bariloche, Escuela Metropolitana de Arte Dramático, Ciudad de Buenos Aires"
+abstract: "La reseña presenta la performance sexi, cálida y 3d, ideada, dirigida e interpretada por Astrid Gómez Grosschadl, y la recorre en cuatro apartados (lugar, materia, sonido y performance) escritos en segunda persona desde la experiencia del espectador. A partir de la idea de Karen Barad del vacío como útero, lee el escenario como un espacio uterino donde nacen materiales como cabello, plástico, gelatina, globos y piedras, que la intérprete transforma en sensaciones. Con Deleuze, Jane Bennett, Le Breton y DeLanda, analiza las fuerzas que actúan sobre el cuerpo, la vitalidad de la materia, el sonido, la ausencia del rostro como anterioridad a la individuación y la gelatina y la piedra como alusiones a la evolución. Destaca como eje de la pieza, vinculada al mito del origen, la des-jerarquización entre lo humano y lo no humano."
+abstractSource: editorial
 keywords:
   - "performance"
   - "Argentina"

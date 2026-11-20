@@ -8,6 +8,8 @@ section: "Manet et manebit"
 issue: 8
 issueOrder: 8
 author: "Laura Petrecca"
+abstract: "Selección de cuatro poemas breves de Laura Petrecca en los que las piedras son una imagen recurrente: sobre su superficie viscosa el yo poético ve un mensaje, entre ellas busca un lugar junto al agua mientras otro, desconfiado, presiente un peligro, y saltando entre ellas ensaya un camino para no lastimarse. Los poemas recogen además un grito que resuena entre la gente que busca a un niño perdido, el deseo de desaparecer sin dejar cicatriz en el tiempo y la duda sobre lo aprendido."
+abstractSource: editorial
 keywords:
   - "Laura Petrecca"
   - "Poesía contemporánea"

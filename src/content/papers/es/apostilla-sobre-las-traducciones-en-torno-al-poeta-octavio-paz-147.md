@@ -9,6 +9,8 @@ issue: 2
 issueOrder: 16
 author: "Daniela Evangelina Chazarreta"
 affiliation: "Universidad Nacional de La Plata, CONICET"
+abstract: "Esta apostilla presenta el dossier de traducciones sobre Octavio Paz. Parte de la concepción paciana de la traducción como metamorfosis que involucra la reescritura y la apropiación, y reseña los dos artículos ofrecidos por primera vez en castellano: «Octavio Paz: la búsqueda de la otredad y el presente», de Enrico Mario Santí, que recorre la vida y la obra del poeta a la luz del Premio Nobel, y «Octavio Paz: reconstrucción de una vanguardia mexicana», de Klaus Meyer-Minnemann, sobre las primeras búsquedas del joven Paz en la revista Barandal."
+abstractSource: editorial
 keywords:
   - "literatura latinoamericana"
   - "Traducción"

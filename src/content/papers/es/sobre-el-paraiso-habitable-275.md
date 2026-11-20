@@ -8,6 +8,8 @@ section: "Mare Sugenum"
 issue: 5
 issueOrder: 4
 author: "Marco Martella"
+abstract: "El ensayo parte de la constatación de que la belleza parece obsoleta en el arte de los jardines contemporáneos, reducida a ornamento, y la reivindica como su razón de ser desde la Antigüedad. Recorre el pairi-daeza persa y la noción griega de cosmos como orden y belleza; el tonos o justa proporción, según Ivan Illich, cuya pérdida ilustra la desmesura de Versailles; las fotografías de Eugène Atget del parque de Sceaux en 1925; el cuidado de lo viviente; la unidad de lo bello y lo útil en un olivar del sur de Italia; y el jardín silvestre como respuesta a la necesidad de recosmización. Concluye que la experiencia estética del jardín adquiere hoy un carácter político y propone como utopía que el jardín sea modelo del paisaje y que la tierra se vuelva un cosmos."
+abstractSource: editorial
 keywords:
   - "literatura francesa"
   - "Marco Martella"
