@@ -307,6 +307,11 @@ if (OFFLINE) {
     for (const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*"\s*(?:javascript|vbscript|data:text)[^"]{0,30}/gi)) issues.add(m[0].slice(0, 60));
     for (const m of html.matchAll(/<(?:iframe|object|embed|applet)\b/gi)) issues.add(m[0]);
     for (const m of html.matchAll(/\bhref="(?:%20|\s)[^"]{0,40}/g)) issues.add(`link with leading space: ${m[0].slice(0, 60)}`);
+    // A link with no text and no accessible name is invisible to screen readers (typically `[](url)` left
+    // by the Drupal import); a destination without a leading slash (`href="someone@mail.com"`) resolves
+    // against the current page and goes nowhere on a site with no trailing slashes.
+    for (const m of html.matchAll(/<a\b([^>]*\bhref=[^>]*)>\s*<\/a>/gi)) if (!/\baria-label(?:ledby)?=/.test(m[1])) issues.add(`empty link: ${m[0].slice(0, 60)}`);
+    for (const m of html.matchAll(/\bhref="(?![a-z][a-z0-9+.-]*:|[/#?])[^"]*"/gi)) issues.add(`page-relative link: ${m[0].slice(0, 60)}`);
     if (issues.size) unsafe.push(`${rel}  →  ${[...issues].slice(0, 3).join(" · ")}`);
     const stub = /http-equiv="refresh"/i.test(html) && html.length < 2000;
     if (!stub && !/http-equiv="content-security-policy"/i.test(html)) noCsp.push(rel);
@@ -387,6 +392,51 @@ if (OFFLINE) {
   }
 }
 
+// ---------- 9a. redirects: no chains, no loops, no dead ends ----------
+// A redirect that lands on another redirect costs the visitor (and the crawler) an extra round trip
+// and dilutes link equity; one that lands on nothing is a 404 with extra steps. Checked on the
+// _redirects file Cloudflare serves and on the HTML redirect stubs (meta refresh) alike.
+{
+  const file = path.join(DIST, "_redirects");
+  const rules = fs.existsSync(file)
+    ? fs.readFileSync(file, "utf8").split("\n").map((l) => l.trim().split(/\s+/)).filter((p) => p.length >= 2 && !p[0].startsWith("#"))
+    : [];
+  const from = new Map(rules.map(([a, b]) => [a, b]));
+  const resolvesTo = (p) => {
+    const clean = decodeURIComponent(p.split("#")[0].split("?")[0]);
+    return [path.join(DIST, clean), path.join(DIST, clean + ".html"), path.join(DIST, clean, "index.html")].some((x) => existsExact(x) && fs.statSync(x).isFile());
+  };
+  const bad = [];
+  const check = (source, target) => {
+    if (/^https?:\/\//.test(target)) return;
+    const bare = target.split(/[?#]/)[0];
+    if (bare === source) bad.push(`${source} → itself`);
+    else if (from.has(bare) || from.has(bare + "/")) bad.push(`${source} → ${target} → ${from.get(bare) ?? from.get(bare + "/")}  (chain)`);
+    else if (!resolvesTo(target)) bad.push(`${source} → ${target}  (dead end)`);
+  };
+  for (const [a, b] of rules) check(a, b);
+  let stubs = 0;
+  for (const f of walk(DIST, (x) => x.endsWith(".html"))) {
+    const html = fs.readFileSync(f, "utf8");
+    const url = html.length < 2000 ? /http-equiv="refresh"[^>]*content="\d+;\s*url=([^"]+)"/i.exec(html)?.[1] : undefined;
+    if (url) { stubs++; check(relf(f).replace("dist/", "/").replace(/\.html$/, ""), url); }
+  }
+  record("9a. Redirects (no chains, loops or dead ends)", bad.length ? "fail" : "pass", `${rules.length} _redirects rules, ${stubs} redirect stubs, ${bad.length} problems`, bad.slice(0, 20));
+}
+// ---------- 9d. one <h1> per article ----------
+// The page title is the only <h1>; a Markdown "# Heading" in the body would make a second one and
+// flatten the outline for assistive technology. Papers and activities only: the section and home
+// pages are covered by their own templates.
+{
+  const bad = [];
+  let n = 0;
+  for (const f of walk(DIST, (x) => /\/(es|en|fr)\/(paper|actividad)\/[^/]+\.html$/.test(x))) {
+    n++;
+    const count = (fs.readFileSync(f, "utf8").match(/<h1\b/g) ?? []).length;
+    if (count !== 1) bad.push(`${relf(f).replace("dist/", "/").replace(/\.html$/, "")}  has ${count} <h1>`);
+  }
+  record("9d. One <h1> per paper and activity", bad.length ? "fail" : "pass", `${n} pages, ${bad.length} problems`, bad.slice(0, 20));
+}
 // ---------- 9b. keyword pages (/{lang}/taxonomy/term/<id>) + vocabulary ----------
 {
   const termsDir = path.join(ROOT, "src", "data", "keywords");

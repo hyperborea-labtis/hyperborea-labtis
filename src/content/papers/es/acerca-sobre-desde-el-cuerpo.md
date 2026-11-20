@@ -54,5 +54,5 @@ Las tretas del débil, estas alianzas con mundos interiores-exteriores propios y
 ## Referencia electrónica
 
 Garione, Guadalupe. «Acerca/sobre/desde el cuerpo a cuerpo con el territorio que habitamos: lecturas, alianzas y arte en Hilda Zagaglia. De lo inasible a lo visible.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 142–46.  
-URL: [https://www.hyperborea-labtis.org/es/paper/acerca-sobre-desde-el-cuerpo](/es/paper/acerca-sobre-desde-el-cuerpo) [](/es/paper/acerca-sobre-desde-el-cuerpo)  
+URL: [https://www.hyperborea-labtis.org/es/paper/acerca-sobre-desde-el-cuerpo](/es/paper/acerca-sobre-desde-el-cuerpo)   
 DOI: [https://doi.org/10.5281/zenodo.17664635](https://doi.org/10.5281/zenodo.17664635)

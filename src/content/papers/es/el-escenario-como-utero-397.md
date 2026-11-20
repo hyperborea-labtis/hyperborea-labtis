@@ -90,7 +90,7 @@ la performance se completa con una pieza audiovisual que invita a acercarte ínt
 ## Referencia electrónica
 
 Roberto, Fedra. «El Escenario como Útero: reseña sobre una performance de Astrid Gómez Grosschadl.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 153–59.  
-URL: [https://www.hyperborea-labtis.org/es/paper/el-escenario-como-utero-397](/es/paper/el-escenario-como-utero-397) [](/es/paper/el-escenario-como-utero-397)  
+URL: [https://www.hyperborea-labtis.org/es/paper/el-escenario-como-utero-397](/es/paper/el-escenario-como-utero-397)   
 DOI: [https://doi.org/10.5281/zenodo.17664622](https://doi.org/10.5281/zenodo.17664622)
 
 * * *

@@ -144,5 +144,5 @@ En el cuento de Werfel, el artista, Saverio, es confinado en un manicomio. Algun
 ## Referencia electrónica
 
 Poenitz, Paula. «El “secreto” del arte: naturaleza y abstracción en *Secreto de un hombre* de Franz Werfel.» *Hyperborea. Revista de ensayo y creación,* no. 8, 2025, pp. 49–57.  
-URL: [https://www.hyperborea-labtis.org/es/paper/el-secreto-del-arte-naturaleza-y-abstraccion](/es/paper/el-secreto-del-arte-naturaleza-y-abstraccion) [](/es/paper/el-secreto-del-arte-naturaleza-y-abstraccion)  
+URL: [https://www.hyperborea-labtis.org/es/paper/el-secreto-del-arte-naturaleza-y-abstraccion](/es/paper/el-secreto-del-arte-naturaleza-y-abstraccion)   
 DOI: [https://doi.org/10.5281/zenodo.17664531](https://doi.org/10.5281/zenodo.17664531)
