@@ -4,7 +4,7 @@ import { render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
-import { articlesForLocale, articleBySlug, contentLangOf, realLocales } from "../../../lib/content";
+import { articlesForLocale, articleBySlug, contentLangOf, langIfDifferent, realLocales } from "../../../lib/content";
 import { textDescription, activitiesTitle } from "../../../lib/descriptions";
 import { activityNode, organizationNode } from "../../../lib/jsonld";
 import { absoluteUrl } from "../../../lib/seo";
@@ -29,6 +29,7 @@ if (!article) return Astro.redirect(`/${lang}`);
 const { Content } = await render(article);
 const d = article.data;
 const contentLang = contentLangOf(article);
+const textLang = langIfDifferent(article, lang);
 const alternates = (await realLocales("articles")).get(slug) ?? [contentLang];
 const site = Astro.site!.href;
 const description = textDescription(lang, { body: article.body ?? "", title: d.title });
@@ -58,10 +59,10 @@ const breadcrumbs = [{ name: activitiesTitle(lang), path: "/actividades" }, { na
   <div class="hb-main">
     <div class="hb-container" data-pagefind-body>
       <meta data-pagefind-filter="tipo[content]" content={t("search.type.activity")} />
-      <PageTitle text={d.title} />
-      <article class="hb-article">
+      <PageTitle text={d.title} lang={textLang} />
+      <article class="hb-article" lang={textLang}>
         {d.heroImage && (
-          <img src={d.heroImage} alt={d.title} width="1140" height="630" />
+          <img src={d.heroImage} alt={d.heroAlt ?? ""} width="1140" height="630" />
         )}
         <Content />
         {d.pdf && (

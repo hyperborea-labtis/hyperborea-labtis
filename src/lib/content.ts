@@ -47,6 +47,13 @@ function pickByLocale<T extends Paper | Article | Page>(entries: T[], locale: Lo
  * URL's language when the page is the Spanish fallback of an untranslated entry. */
 export const contentLangOf = (entry: Paper | Article | Page): Locale => langOf(entry);
 
+/** The language to declare on a piece of text copied from an entry, or undefined when it already
+ * matches the page's (WCAG 3.1.2: only parts in another language carry their own `lang`). */
+export const langIfDifferent = (entry: Paper | Article | Page, pageLang: Locale): Locale | undefined => {
+  const l = langOf(entry);
+  return l === pageLang ? undefined : l;
+};
+
 const realLocalesCache = new Map<string, Promise<Map<string, Locale[]>>>();
 
 /** For every slug of a collection, the languages in which it REALLY exists (own text, not
@@ -173,7 +180,7 @@ export async function papersInSectionNewestFirst(locale: Locale, sectionLabel: s
   return papers.filter((p) => p.data.section === sectionLabel).sort(newestFirst);
 }
 
-export type Publication = { title: string; href: string; image?: string };
+export type Publication = { title: string; href: string; image?: string; titleLang?: Locale };
 
 /** Every paper and activity (the `papers` and `articles` collections), newest first. */
 export async function latestPublications(locale: Locale): Promise<Publication[]> {
@@ -182,7 +189,7 @@ export async function latestPublications(locale: Locale): Promise<Publication[]>
     ...papers.map((e) => ({ e, href: `/${locale}/paper/${e.data.slug}` })),
     ...articles.map((e) => ({ e, href: `/${locale}/actividad/${e.data.slug}` })),
   ].sort((a, b) => newestFirst(a.e, b.e));
-  return rows.map(({ e, href }) => ({ title: e.data.title, href, image: e.data.heroImage }));
+  return rows.map(({ e, href }) => ({ title: e.data.title, href, image: e.data.heroImage, titleLang: langIfDifferent(e, locale) }));
 }
 
 /** The latest papers shown on the home page: papers of the four main-menu sections
@@ -194,5 +201,5 @@ export async function homePublications(locale: Locale): Promise<Publication[]> {
   return [...papers]
     .sort(newestFirst)
     .slice(0, PAGE_SIZE)
-    .map((e) => ({ title: e.data.title, href: `/${locale}/paper/${e.data.slug}`, image: e.data.heroImage }));
+    .map((e) => ({ title: e.data.title, href: `/${locale}/paper/${e.data.slug}`, image: e.data.heroImage, titleLang: langIfDifferent(e, locale) }));
 }

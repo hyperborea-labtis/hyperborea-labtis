@@ -14,6 +14,7 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import YAML from "yaml";
 import { findOwnLinks } from "../src/lib/own-links.ts";
+import { structureProblems } from "../src/lib/page-structure.ts";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const CONTENT = path.join(ROOT, "src", "content");
@@ -757,6 +758,25 @@ if (OFFLINE) {
   }
   if (labels.length !== LOCALES.length) problems.push("src/i18n/config.ts: paper.abstractEditorial must exist in every language");
   record("17. Paper abstracts", problems.length ? "fail" : "pass", `${withAbstract}/${papers.length} papers have one (${editorial} written by the editorial team), ${problems.length} problems`, problems.slice(0, 20));
+}
+// ---------- 18. Structural accessibility of every page ----------
+// Rules in src/lib/page-structure.ts: one <h1>, alt on every image, skip link first, unique ids,
+// valid lang attributes; pages whose outline the templates fully control (home, listings, sections,
+// search, contact) also may not skip heading levels. Articles keep the author's own heading levels.
+{
+  const bad = [];
+  let n = 0;
+  const articleLike = /\/(paper|actividad)\/[^/]+\.html$/;
+  const strict = /\/(?:(?:es|en|fr)\.html|(?:es|en|fr)\/(?:posts-3-col|numero-[^/]+|actividades|Afinidades_electivas|taxonomy|buscar|contact)(?:[^]*)\.html|(?:es|en|fr)\/(?:posts-3-col|actividades)\.html)$/;
+  for (const f of walk(DIST, (x) => x.endsWith(".html") && !/\/(admin|pagefind)\//.test(x))) {
+    const html = fs.readFileSync(f, "utf8");
+    if (/http-equiv="refresh"/i.test(html)) continue; // redirect stub, not a page
+    n++;
+    const rel = relf(f).replace("dist/", "/").replace(/\.html$/, "");
+    const problems = structureProblems(html, { strictOutline: strict.test(f) && !articleLike.test(f) });
+    for (const p of problems) bad.push(`${rel}  ${p}`);
+  }
+  record("18. Page structure (h1, headings, alt, skip link, ids, lang)", bad.length ? "fail" : "pass", `${n} pages, ${bad.length} problems`, bad);
 }
 // ---------- 13. Own-domain links in content ----------
 {

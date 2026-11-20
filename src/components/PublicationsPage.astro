@@ -31,7 +31,7 @@ const path = page === 1 ? "/posts-3-col" : `/posts-3-col/${page}`;
     <div class="hb-container">
       <PageTitle text={t("home.latest")} />
       <div class="hb-grid">
-        {items.map((i) => <PaperCard title={i.title} href={i.href} image={i.image} columns={3} />)}
+        {items.map((i) => <PaperCard title={i.title} href={i.href} image={i.image} columns={3} titleLang={i.titleLang} />)}
       </div>
       <Pager lang={lang} base={`/${lang}/posts-3-col`} current={page} total={totalPages} />
     </div>

@@ -1,6 +1,7 @@
 ---
 import { mainNav } from "../data/nav";
 import { locales, localeNames, useTranslations, type Locale } from "../i18n/config";
+import { siteTitle } from "../lib/descriptions";
 
 interface Props {
   lang: Locale;
@@ -17,14 +18,14 @@ const isActive = (item: (typeof nav)[number]) =>
 ---
 
 <div class="hb-header-container">
-  <header class="hb-header" role="banner">
+  <header class="hb-header">
     <div class="hb-container-fluid">
       <div class="hb-header-inside">
         <div class="hb-brand">
-          <a href={`/${lang}`} title="Hyperborea">
+          <a href={`/${lang}`}>
             <img
               src="/site/logo-header.gif"
-              alt="Hyperborea. Revista de Ensayo y Creación"
+              alt={siteTitle(lang)}
               width="300"
               height="80"
             />
@@ -32,7 +33,7 @@ const isActive = (item: (typeof nav)[number]) =>
         </div>
 
         <div class="hb-header-right">
-          <nav class="hb-nav" aria-label="Menú principal">
+          <nav class="hb-nav" aria-label={t("nav.main")}>
             <ul class="hb-nav-list">
               {
                 nav.map((item) => (
@@ -41,6 +42,7 @@ const isActive = (item: (typeof nav)[number]) =>
                       <a
                         class:list={["hb-nav-link", { "is-active": isActive(item) }]}
                         href={item.href}
+                        aria-current={current === item.href.replace(/\/$/, "") ? "page" : undefined}
                         {...(item.external ? { rel: "noopener" } : {})}
                       >
                         {item.label}
@@ -49,7 +51,7 @@ const isActive = (item: (typeof nav)[number]) =>
                         <button
                           type="button"
                           class="hb-caret-button"
-                          aria-label={`${item.label} ▾`}
+                          aria-label={`${t("nav.submenu")}: ${item.label}`}
                           aria-expanded="false"
                         >
                           <svg class="hb-caret" viewBox="0 0 1792 1792" aria-hidden="true">
@@ -64,7 +66,11 @@ const isActive = (item: (typeof nav)[number]) =>
                       <ul class="hb-submenu">
                         {item.children.map((child) => (
                           <li>
-                            <a href={child.href} {...(child.external ? { rel: "noopener" } : {})}>
+                            <a
+                              href={child.href}
+                              aria-current={current === child.href.replace(/\/$/, "") ? "page" : undefined}
+                              {...(child.external ? { rel: "noopener" } : {})}
+                            >
                               {child.label}
                             </a>
                           </li>
@@ -95,6 +101,7 @@ const isActive = (item: (typeof nav)[number]) =>
                   class:list={["hb-lang-link", { "is-active": l === lang }]}
                   hreflang={l}
                   lang={l}
+                  aria-current={l === lang ? "true" : undefined}
                   title={localeNames[l]}
                 >
                   {l.toUpperCase()}

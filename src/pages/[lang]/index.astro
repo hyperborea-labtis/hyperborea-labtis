@@ -27,6 +27,7 @@ const intros: Record<Locale, string> = {
 <BaseLayout title={siteTitle(lang)} brand={false} lang={lang} path="" footerVariant="full" jsonLd={jsonLd}>
   <section class="hb-lead">
     <div class="hb-container">
+      <h1 class="hb-visually-hidden">{siteTitle(lang)}</h1>
       <p set:html={intros[lang]} />
     </div>
   </section>
@@ -37,7 +38,7 @@ const intros: Record<Locale, string> = {
       <div class="hb-grid">
         {
           publications.map((p) => (
-            <PaperCard title={p.title} href={p.href} image={p.image} columns={3} />
+            <PaperCard title={p.title} href={p.href} image={p.image} columns={3} level={3} titleLang={p.titleLang} />
           ))
         }
       </div>

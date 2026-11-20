@@ -82,6 +82,7 @@ collections:
       - { name: evaluatedDate, label: Fecha de evaluación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, hint: "Se muestra bajo el paper. Déjala vacía si no hay fecha de publicación real.", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
+      - { name: heroAlt, label: Descripción de la imagen destacada (texto alternativo), widget: string, required: false, i18n: true, hint: "Para personas que no ven la imagen: descríbela en una frase (qué se ve). Déjala vacía si es solo decorativa; el título ya aparece al lado." }
       - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
       - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
       - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
@@ -103,6 +104,7 @@ collections:
       - { name: created, label: Fecha y hora de creación (orden en portada y listados), widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: "HH:mm", picker_utc: true, hint: "Los listados ordenan del más nuevo al más viejo por esta fecha y hora. En contenido importado viene de Drupal: no la cambies. En contenido nuevo déjala vacía (se usa la fecha de publicación)." }
       - { name: publishedDate, label: Fecha, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
+      - { name: heroAlt, label: Descripción de la imagen destacada (texto alternativo), widget: string, required: false, i18n: true, hint: "Para personas que no ven la imagen: descríbela en una frase (qué se ve). Déjala vacía si es solo decorativa; el título ya aparece al lado." }
       - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
       - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
       - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }

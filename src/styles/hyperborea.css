@@ -45,6 +45,30 @@
   padding: 0 15px;
 }
 
+/* Skip link (WCAG 2.4.1): first stop of the keyboard, visible only while focused. */
+.hb-skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 12px 20px;
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  background: var(--hb-yellow, #d8b200);
+  transform: translateY(-120%);
+}
+.hb-skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid #000;
+  outline-offset: -3px;
+}
+/* #main-content takes focus from the skip link; it is not a control, so no ring around the page. */
+#main-content:focus {
+  outline: none;
+}
+
 /* visually hidden */
 .hb-visually-hidden {
   position: absolute !important;
