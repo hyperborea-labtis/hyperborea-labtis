@@ -46,6 +46,10 @@ export interface HeadInput {
 export interface HeadMeta {
   canonical: string;
   robots: string;
+  /** Whether the PAGE itself belongs in search results (not an untranslated copy, a duplicate or
+   * a noindex page), whatever the build mode. Structured data and scholarly tags are only
+   * worth emitting on such pages. */
+  indexablePage: boolean;
   hreflang: { hreflang: string; href: string }[];
 }
 
@@ -69,7 +73,7 @@ export function resolveHead(input: HeadInput): HeadMeta {
     const fallbackLocale = alternates.includes("es" as Locale) ? ("es" as Locale) : alternates[0]!;
     hreflang.push({ hreflang: "x-default", href: at(fallbackLocale) });
   }
-  return { canonical, robots, hreflang };
+  return { canonical, robots, indexablePage: !(fallback || noindex || duplicate), hreflang };
 }
 
 /**

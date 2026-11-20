@@ -25,6 +25,7 @@ const path = page === 1 ? "/posts-3-col" : `/posts-3-col/${page}`;
   description={withPage(listingDescription(lang, "latest"), lang, page)}
   lang={lang}
   path={path}
+  breadcrumbs={[{ name: t("home.latest"), path }]}
 >
   <div class="hb-main">
     <div class="hb-container">

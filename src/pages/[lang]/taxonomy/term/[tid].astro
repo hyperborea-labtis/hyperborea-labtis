@@ -30,6 +30,7 @@ const primaryId = termIdByName.get(norm(name)) ?? tid;
 <BaseLayout
   title={keywordTitle(lang, name)}
   canonicalPath={`/taxonomy/term/${primaryId}`}
+  breadcrumbs={[{ name: keywordTitle(lang, name), path: `/taxonomy/term/${tid}` }]}
   description={keywordDescription(lang, { name, count: papers.length })}
   lang={lang}
   path={`/taxonomy/term/${tid}`}

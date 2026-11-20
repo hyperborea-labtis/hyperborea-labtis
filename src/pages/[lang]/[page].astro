@@ -11,6 +11,8 @@ import { locales, useTranslations, type Locale } from "../../i18n/config";
 import { ALL_SECTIONS } from "../../data/nav";
 import { pagesForLocale, pageBySlug, contentLangOf, realLocales } from "../../lib/content";
 import { textDescription } from "../../lib/descriptions";
+import { organizationNode, pageNode, websiteNode } from "../../lib/jsonld";
+import { absoluteUrl } from "../../lib/seo";
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -34,6 +36,11 @@ if (!section && !page) return Astro.redirect(`/${lang}`);
 const Content = page ? (await render(page)).Content : undefined;
 const contentLang = page ? contentLangOf(page) : lang;
 const alternates = page ? ((await realLocales("pages")).get(slug) ?? [contentLang]) : locales;
+const site = Astro.site!.href;
+const pageDescription = page ? textDescription(lang, { body: page.body ?? "", title: page.data.title }) : "";
+const jsonLd = page
+  ? [pageNode(site, { lang: contentLang, url: absoluteUrl(`/${lang}/${slug}`, site), title: page.data.title, description: pageDescription }), websiteNode(site, lang), organizationNode(site)]
+  : [];
 ---
 
 {section && <SectionPage lang={lang} section={section} />}
@@ -41,7 +48,9 @@ const alternates = page ? ((await realLocales("pages")).get(slug) ?? [contentLan
   page && Content && (
     <BaseLayout
       title={page.data.title}
-      description={textDescription(lang, { body: page.body ?? "", title: page.data.title })}
+      description={pageDescription}
+      jsonLd={jsonLd}
+      breadcrumbs={[{ name: page.data.title, path: `/${slug}` }]}
       lang={lang}
       path={`/${slug}`}
       contentLang={contentLang}

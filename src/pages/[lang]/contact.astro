@@ -22,7 +22,7 @@ const text: Record<Locale, Record<string, string>> = {
 const t = text[lang];
 ---
 
-<BaseLayout title={t.title} description={listingDescription(lang, "contact")} lang={lang} path="/contact">
+<BaseLayout title={t.title} description={listingDescription(lang, "contact")} lang={lang} path="/contact" breadcrumbs={[{ name: t.title, path: "/contact" }]}>
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={t.title} />

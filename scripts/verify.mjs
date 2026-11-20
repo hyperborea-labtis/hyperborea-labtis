@@ -299,7 +299,8 @@ if (OFFLINE) {
       const isModule = /\btype="module"/.test(attrs);
       const src = /\bsrc="([^"]*)"/.exec(attrs)?.[1];
       const turnstile = src === "https://challenges.cloudflare.com/turnstile/v0/api.js"; // contact form widget
-      if (!turnstile && (!isModule || (src && !src.startsWith("/_astro/")))) issues.add(`<script${attrs.slice(0, 50)}>`);
+      const jsonLd = /\btype="application\/ld\+json"/.test(attrs) && !src; // data, not code (parsed in check 12)
+      if (!turnstile && !jsonLd && (!isModule || (src && !src.startsWith("/_astro/")))) issues.add(`<script${attrs.slice(0, 50)}>`);
     }
     for (const m of html.matchAll(/<(?!\/)[a-z][^>]*?\son[a-z]+\s*=/gi)) issues.add(`event handler in ${m[0].slice(0, 50)}`);
     for (const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*"\s*(?:javascript|vbscript|data:text)[^"]{0,30}/gi)) issues.add(m[0].slice(0, 60));
@@ -435,7 +436,7 @@ if (OFFLINE) {
   const origin = sitemapUrls.length ? new URL(sitemapUrls[0]).origin : "";
 
   const decode = (t) => t.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
-  /** @type {Map<string, { robots: string | undefined, canonicals: string[], title: string, description: string, hreflang: Map<string, string> }>} */
+  /** @type {Map<string, { robots: string | undefined, canonicals: string[], scholar: string[][], ld: string[], title: string, description: string, hreflang: Map<string, string> }>} */
   const info = new Map();
   for (const f of walk(DIST, (x) => x.endsWith(".html"))) {
     const rel = "/" + path.relative(DIST, f).split(path.sep).join("/");
@@ -446,6 +447,8 @@ if (OFFLINE) {
     info.set(rel.replace(/\.html$/, ""), {
       robots: /<meta name="robots" content="([^"]*)"/.exec(html)?.[1],
       canonicals: [...html.matchAll(/<link rel="canonical" href="([^"]*)"/g)].map((m) => m[1]),
+      scholar: [...html.matchAll(/<meta name="(citation_[a-z_]+)" content="([^"]*)"/g)].map((m) => [m[1], decode(m[2])]),
+      ld: [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]),
       title: decode(/<title>([^<]*)<\/title>/.exec(html)?.[1] ?? ""),
       description: decode(/<meta name="description" content="([^"]*)"/.exec(html)?.[1] ?? ""),
       hreflang: new Map([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]*)"/g)].map((m) => [m[1], m[2]])),
@@ -525,6 +528,64 @@ if (OFFLINE) {
   const dups = (map, what) => [...map.values()].filter((u) => u.length > 1).map((u) => `${what} repeated: ${u.slice(0, 3).join(" , ")}${u.length > 3 ? ` (+${u.length - 3})` : ""}`);
   meta.push(...dups(dupTitle, "title"), ...dups(dupDesc, "description"));
   record("11. Titles and meta descriptions", meta.length ? "fail" : "pass", `${info.size} pages, ${meta.length} problems`, meta);
+  // 12. Scholarly metadata (Google Scholar citation_*) and JSON-LD. Only pages that are their own
+  // canonical carry them; untranslated copies, duplicates and noindex pages carry none.
+  const sch = [];
+  const noAuthor = [];
+  const ISO = /^\d{4}(-\d{2}-\d{2})?$/;
+  const paperPdf = new Map(entries.filter((e) => e.col === "papers" && e.locale === "es" && e.data && !e.data.draft).map((e) => [e.data.slug, e.data]));
+  for (const [url, p] of info) {
+    const own = p.canonicals[0] === `${origin}${url}`;
+    const tags = new Map();
+    for (const [k, v] of p.scholar) tags.set(k, [...(tags.get(k) ?? []), v]);
+    if (!own) {
+      if (tags.size) sch.push(`${url}: a page that is not its own canonical carries citation_* tags`);
+      if (p.ld.length) sch.push(`${url}: a page that is not its own canonical carries JSON-LD`);
+      continue;
+    }
+    // JSON-LD: parses, has a graph, every @id reference resolves, breadcrumbs are well formed
+    const nodes = [];
+    for (const raw of p.ld) {
+      let doc;
+      try { doc = JSON.parse(raw); } catch { sch.push(`${url}: JSON-LD is not valid JSON`); continue; }
+      if (doc["@context"] !== "https://schema.org" || !Array.isArray(doc["@graph"])) { sch.push(`${url}: JSON-LD without @context/@graph`); continue; }
+      nodes.push(...doc["@graph"]);
+    }
+    const defined = new Set(nodes.map((n) => n["@id"]).filter(Boolean));
+    const refs = (o) => (o && typeof o === "object" ? (Object.keys(o).length === 1 && o["@id"] ? [o["@id"]] : Object.values(o).flatMap(refs)) : []);
+    for (const n of nodes) for (const r of refs(Object.fromEntries(Object.entries(n).filter(([k]) => k !== "@id")))) if (!defined.has(r)) sch.push(`${url}: JSON-LD references ${r} but never defines it`);
+    for (const b of nodes.filter((n) => n["@type"] === "BreadcrumbList")) {
+      const items = b.itemListElement ?? [];
+      if (!items.length || items.some((it, i) => it.position !== i + 1)) sch.push(`${url}: breadcrumb positions are not 1..n`);
+      for (const it of items.slice(0, -1)) if (!String(it.item ?? "").startsWith(`${origin}/`)) sch.push(`${url}: breadcrumb link "${it.item}" is not absolute on ${origin}`);
+    }
+    if (/^\/(es|en|fr)$/.test(url) && !nodes.some((n) => n["@type"] === "WebSite")) sch.push(`${url}: home without a WebSite node`);
+
+    const paper = /^\/(es|en|fr)\/paper\/([^/]+)$/.exec(url);
+    if (!paper) continue;
+    const get = (k) => tags.get(k)?.[0];
+    for (const k of ["citation_title", "citation_journal_title", "citation_issn", "citation_language", "citation_publisher", "citation_abstract_html_url"]) if (!get(k)) sch.push(`${url}: no ${k}`);
+    if (get("citation_issn") && get("citation_issn") !== "2618-4397") sch.push(`${url}: citation_issn is ${get("citation_issn")}`);
+    if (get("citation_abstract_html_url") && get("citation_abstract_html_url") !== p.canonicals[0]) sch.push(`${url}: citation_abstract_html_url is not the canonical`);
+    if (!/^\d{4}(\/\d{2}\/\d{2})?$/.test(get("citation_publication_date") ?? "")) sch.push(`${url}: citation_publication_date "${get("citation_publication_date")}" is not YYYY or YYYY/MM/DD`);
+    if (!/^\d+$/.test(get("citation_volume") ?? "")) sch.push(`${url}: citation_volume "${get("citation_volume")}" is not a number`);
+    if (!tags.has("citation_author")) noAuthor.push(`${url}  ${get("citation_title")?.slice(0, 70)}`);
+    const fm = paperPdf.get(paper[2]);
+    if (fm?.pdf) {
+      const pdf = get("citation_pdf_url") ?? "";
+      if (!pdf.startsWith(`${origin}/`)) sch.push(`${url}: citation_pdf_url missing or not absolute (${pdf})`);
+      else if (!existsExact(path.join(DIST, decodeURIComponent(new URL(pdf).pathname)))) sch.push(`${url}: citation_pdf_url ${pdf} does not exist in dist`);
+    } else if (get("citation_pdf_url")) sch.push(`${url}: citation_pdf_url but the paper has no pdf`);
+    const art = nodes.find((n) => n["@type"] === "ScholarlyArticle");
+    if (!art) { sch.push(`${url}: no ScholarlyArticle in JSON-LD`); continue; }
+    if (art.url !== p.canonicals[0]) sch.push(`${url}: ScholarlyArticle url is not the canonical`);
+    if (!art.headline || !art.name) sch.push(`${url}: ScholarlyArticle without headline/name`);
+    if (art.datePublished && !ISO.test(art.datePublished)) sch.push(`${url}: datePublished "${art.datePublished}" is not ISO`);
+    if (!nodes.some((n) => n["@type"] === "BreadcrumbList")) sch.push(`${url}: paper without BreadcrumbList`);
+  }
+  record("12. Scholarly metadata and JSON-LD", sch.length ? "fail" : "pass", `${info.size} pages checked, ${sch.length} problems`, sch);
+  record("12b. Papers without an author", noAuthor.length ? "warn" : "pass", noAuthor.length ? `${noAuthor.length} papers carry no citation_author: Google Scholar needs one to index them (set the \`author\` field)` : "every paper has an author", noAuthor);
+
   record(
     "10b. Indexing mode",
     indexable ? "pass" : "warn",
