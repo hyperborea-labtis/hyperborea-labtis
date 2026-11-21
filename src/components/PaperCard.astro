@@ -27,11 +27,16 @@ const Heading = `h${level}` as const;
 
 <article class:list={["hb-card", `hb-card--${columns}`]}>
   {/* The picture repeats the title's link: one tab stop and one announcement per card, so this
-      link is hidden from keyboard and screen readers and the image is decorative (alt=""). */}
-  <a class="hb-card-media" href={href} aria-hidden="true" tabindex="-1">
-    {image && <ResponsiveImage src={image} kind="card" alt="" sizes={sizes} fallbackWidth={750} fallbackHeight={500} eager={eager} priority={priority} />}
-    <span class="hb-card-overlay" aria-hidden="true">+</span>
-  </a>
+      link is hidden from keyboard and screen readers and the image is decorative (alt=""). A card
+      without a picture (a new paper whose editor set none) has no such link at all. */}
+  {
+    image && (
+      <a class="hb-card-media" href={href} aria-hidden="true" tabindex="-1">
+        <ResponsiveImage src={image} kind="card" alt="" sizes={sizes} fallbackWidth={750} fallbackHeight={500} eager={eager} priority={priority} />
+        <span class="hb-card-overlay" aria-hidden="true">+</span>
+      </a>
+    )
+  }
   <div class="hb-card-body">
     <Heading class="hb-card-title"><a href={href} lang={titleLang}>{title}</a></Heading>
   </div>

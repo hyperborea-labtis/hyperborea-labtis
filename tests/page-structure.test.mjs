@@ -64,3 +64,12 @@ test("aria-controls / aria-labelledby / aria-describedby point at ids that exist
 test("a button with aria-expanded must say what it expands (aria-controls)", () => {
   assert.match(structureProblems(page('<h1>a</h1><button aria-expanded="false">m</button>'), {}).join(), /aria-expanded without aria-controls/);
 });
+
+test("a card's picture link with no picture inside is reported: it is an empty, hidden link that text spacing clips", () => {
+  const empty = '<article class="hb-card"><a class="hb-card-media" href="/es/paper/x" aria-hidden="true" tabindex="-1"><span class="hb-card-overlay" aria-hidden="true">+</span></a><h2><a href="/es/paper/x">X</a></h2></article>';
+  assert.match(structureProblems(page("<h1>T</h1>" + empty), {}).join(), /picture link/);
+  const full = empty.replace('<span class="hb-card-overlay"', '<img src="/a.webp" alt="" /><span class="hb-card-overlay"');
+  assert.deepEqual(structureProblems(page("<h1>T</h1>" + full), {}), []);
+  const none = '<article class="hb-card"><h2><a href="/es/paper/x">X</a></h2></article>';
+  assert.deepEqual(structureProblems(page("<h1>T</h1>" + none), {}), []);
+});

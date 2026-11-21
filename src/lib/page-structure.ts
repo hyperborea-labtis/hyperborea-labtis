@@ -57,6 +57,10 @@ export function structureProblems(html: string, { strictOutline = false }: Struc
   const noAlt = [...doc.matchAll(/<img\b[^>]*>/gi)].filter((m) => !/\salt(=|\s|\/|>)/i.test(m[0]));
   if (noAlt.length) problems.push(`${noAlt.length} <img> without alt`);
 
+  // a card's picture link must hold a picture: without one it is an empty hidden link (and text spacing clips it)
+  const emptyMedia = [...doc.matchAll(/<a\b[^>]*\bclass="[^"]*\bhb-card-media\b[^"]*"[^>]*>([\s\S]*?)<\/a>/gi)].filter((m) => !/<img\b/i.test(m[1]));
+  if (emptyMedia.length) problems.push(`${emptyMedia.length} card picture link(s) without a picture`);
+
   // skip link
   const body = doc.slice(doc.search(/<body\b/i));
   const firstLink = body.match(/<a\b[^>]*>/i)?.[0] ?? "";
