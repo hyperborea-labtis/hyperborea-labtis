@@ -98,8 +98,22 @@ await Promise.all(Array.from({ length: 6 }, async () => { for (let s; (s = queue
 let removed = 0;
 for (const f of fs.readdirSync(OUT)) if (!keep.has(f)) { fs.rmSync(path.join(OUT, f)); removed++; }
 fs.mkdirSync(path.dirname(MANIFEST), { recursive: true });
-fs.writeFileSync(MANIFEST, JSON.stringify(Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b))), null, 1) + "\n");
+const manifestText = JSON.stringify(Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b))), null, 1) + "\n";
+const previous = fs.existsSync(MANIFEST) ? fs.readFileSync(MANIFEST, "utf8") : null;
+fs.writeFileSync(MANIFEST, manifestText);
+// The Markdown plugin (src/plugins/images.mjs) writes srcset/sizes into the HTML that Astro's content cache
+// keeps, and that cache is keyed by the Markdown alone. If the manifest changed (a new image, an edited
+// one, or `astro check` ran before the first manifest existed), the cached HTML points at stale or missing
+// variants: drop it so the next build renders the texts again.
+let cacheCleared = false;
+if (previous !== manifestText) {
+  const cache = path.join(ROOT, "node_modules", ".astro", "data-store.json");
+  if (fs.existsSync(cache)) {
+    fs.rmSync(cache);
+    cacheCleared = true;
+  }
+}
 
 const mb = fs.readdirSync(OUT).reduce((n, f) => n + fs.statSync(path.join(OUT, f)).size, 0) / 1e6;
-console.log(`build-images: ${Object.keys(manifest).length} images, ${encoded} encoded, ${reused} reused, ${removed} removed, ${mb.toFixed(1)} MB, ${((Date.now() - started) / 1000).toFixed(1)} s`);
+console.log(`build-images: ${Object.keys(manifest).length} images, ${encoded} encoded, ${reused} reused, ${removed} removed, ${mb.toFixed(1)} MB${cacheCleared ? ", content cache cleared" : ""}, ${((Date.now() - started) / 1000).toFixed(1)} s`);
 if (missing.length) console.warn(`build-images: ${missing.length} heroImage file(s) not found: ${missing.slice(0, 5).join(", ")}${missing.length > 5 ? "…" : ""}`);
