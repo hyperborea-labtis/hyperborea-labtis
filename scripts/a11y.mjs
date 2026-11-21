@@ -38,7 +38,7 @@ const PAGES = [
   "/es/paper/ceguera-vegetal-ecologia-oscura-y-la-novela-aberrant-273", // paper without abstract
   "/es/actividad/cortometraje-cuadro",
   "/es/presentacion",
-  "/es/sobre_hyperborea",
+  "/es/accesibilidad", // the accessibility statement (an institutional page with lists and links)
   "/es/actividades",
   "/es/Afinidades_electivas",
   "/es/posts-3-col",

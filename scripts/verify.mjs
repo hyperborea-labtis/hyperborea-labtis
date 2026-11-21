@@ -939,6 +939,55 @@ if (OFFLINE) {
   }
   record("23. Sveltia CMS pinned with SRI", problems.length ? "fail" : "pass", `${detail || "no script"}, ${problems.length} problems`, problems);
 }
+// ---------- 24. Discoverability files and the accessibility statement ----------
+// /llms.txt links only to pages that exist; the web app manifest is valid JSON with its icons at the right
+// size and every page points at it; the accessibility statement exists in the three languages, names a
+// contact, and is linked from every footer.
+{
+  const problems = [];
+  const resolves = (p) => [`${p}.html`, path.join(p, "index.html"), p].some((c) => fs.existsSync(path.join(DIST, c)) && fs.statSync(path.join(DIST, c)).isFile());
+  const llms = path.join(DIST, "llms.txt");
+  let links = 0;
+  if (!fs.existsSync(llms)) problems.push("dist/llms.txt is missing");
+  else {
+    for (const [, url] of fs.readFileSync(llms, "utf8").matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)) {
+      links++;
+      if (url.startsWith(ORIGIN + "/")) {
+        const p = decodeURIComponent(new URL(url).pathname);
+        if (!resolves(p)) problems.push(`llms.txt links to ${url}, which is not in dist/`);
+      } else if (!/^https:\/\/creativecommons\.org\//.test(url)) problems.push(`llms.txt links outside the site: ${url}`);
+    }
+    if (!/CC BY-NC-ND/.test(fs.readFileSync(llms, "utf8"))) problems.push("llms.txt does not state the licence");
+  }
+  try {
+    const manifest = JSON.parse(fs.readFileSync(path.join(DIST, "site.webmanifest"), "utf8"));
+    for (const k of ["name", "short_name", "start_url", "icons", "theme_color"]) if (!manifest[k]) problems.push(`site.webmanifest has no "${k}"`);
+    if (manifest.start_url && !resolves(manifest.start_url)) problems.push(`site.webmanifest start_url ${manifest.start_url} does not exist`);
+    for (const icon of manifest.icons ?? []) {
+      const file = path.join(DIST, String(icon.src).replace(/^\//, ""));
+      if (!fs.existsSync(file)) problems.push(`site.webmanifest icon ${icon.src} is missing`);
+      else {
+        const head = fs.readFileSync(file).subarray(0, 24); // PNG: width and height at bytes 16-24
+        const size = `${head.readUInt32BE(16)}x${head.readUInt32BE(20)}`;
+        if (size !== icon.sizes) problems.push(`site.webmanifest icon ${icon.src} says ${icon.sizes} but is ${size}`);
+      }
+    }
+  } catch (e) {
+    problems.push(`site.webmanifest: ${e.message}`);
+  }
+  for (const l of LOCALES) {
+    const home = path.join(DIST, `${l}.html`);
+    if (fs.existsSync(home)) {
+      const html = fs.readFileSync(home, "utf8");
+      if (!/<link rel="manifest" href="\/site\.webmanifest"/.test(html)) problems.push(`/${l}: no <link rel="manifest">`);
+      if (!html.includes(`href="/${l}/accesibilidad"`)) problems.push(`/${l}: the footer does not link to the accessibility statement`);
+    }
+    const page = path.join(DIST, l, "accesibilidad.html");
+    if (!fs.existsSync(page)) problems.push(`/${l}/accesibilidad does not exist`);
+    else if (!fs.readFileSync(page, "utf8").includes("mailto:admin@microagencia.com")) problems.push(`/${l}/accesibilidad does not name the contact address`);
+  }
+  record("24. llms.txt, web manifest and accessibility statement", problems.length ? "fail" : "pass", `${links} llms.txt links, ${problems.length} problems`, problems);
+}
 // ---------- 13. Own-domain links in content ----------
 {
   const bad = [];
