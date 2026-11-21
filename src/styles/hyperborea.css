@@ -320,15 +320,45 @@
   overflow-wrap: break-word;
 }
 
+/* The three 404 messages, centred under the title (the engraving's credits stay left-aligned: they are running text). */
+.hb-notfound {
+  text-align: center;
+}
+
 /* Links in the 404 text: underlined, not told apart by color alone (WCAG 1.4.1). */
-.hb-notfound a {
+.hb-notfound a,
+.hb-notfound-figure a {
   color: var(--hb-yellow-text);
   text-decoration: underline;
   text-underline-offset: 0.18em;
 }
 
-.hb-notfound a:hover {
+.hb-notfound a:hover,
+.hb-notfound-figure a:hover {
   text-decoration-thickness: 2px;
+}
+
+/* 404 engraving with its credits. */
+.hb-notfound-figure {
+  max-width: 880px;
+  margin: 40px auto 0;
+}
+
+.hb-notfound-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hb-notfound-figure figcaption {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--hb-muted);
+}
+
+.hb-notfound-figure figcaption p {
+  margin: 0 0 8px;
 }
 
 .hb-page-title::after {
