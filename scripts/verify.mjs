@@ -740,7 +740,7 @@ if (OFFLINE) {
   for (const e of papers) {
     const d = e.data;
     const words = (d.abstract ?? "").trim().split(/\s+/).filter(Boolean).length;
-    if (d.abstractSource !== undefined && !["author", "editorial"].includes(d.abstractSource)) problems.push(`${relf(e.file)}: abstractSource "${d.abstractSource}" must be "author" or "editorial"`);
+    if (d.abstractSource !== undefined && d.abstractSource !== null && d.abstractSource !== "" && !["author", "editorial"].includes(d.abstractSource)) problems.push(`${relf(e.file)}: abstractSource "${d.abstractSource}" must be "author" or "editorial"`);
     if (!d.abstract) {
       if (d.abstractSource) problems.push(`${relf(e.file)}: abstractSource without an abstract`);
       continue;
