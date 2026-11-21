@@ -35,7 +35,7 @@ draft: false
 lang: es
 ---
 
-## Resumen AAA
+## Resumen
 
 Solamente dos de las ocho novelas de Manuel Puig contienen epígrafes. Mientras _Boquitas pintadas_ utiliza citas de letras de tangos y boleros para encabezar cada una de sus «entregas», _The Buenos Aires Affair_ presenta al comienzo de cada capítulo un diálogo de cine clásico. Aunque aparentemente se presentan como transcripciones fieles, el estudio crítico-genético de comparación con los films citados, la traducción al inglés de la novela y los manuscritos donde Puig ensayó la escritura de esos epígrafes, revelan un trabajo extensivo de la palabra para manipular los diálogos y adaptarlos a la novela.
 
@@ -952,7 +952,7 @@ La apertura del Archivo Puig significó un nuevo acceso a su producción literar
 
 [3] Todos los reportajes citados en el artículo fueron conservados por Puig en su archivo. La mayoría de ellos fueron compilados por Julia Romero en _Puig por Puig_ y se usa ese volumen como referencia. Los que no fueron compilados llevan como referente el nombre del entrevistador y la publicación en la que fueron editados.
 
-[4] Al respecto, se recomienda la lectura de Daniel Balderston. «"Sexualidad y revolución": en torno a las notas de _El beso de la mujer araña_». _El beso de la mujer araña: Edición crítica._ ALLCA/Archivos. Paris, 2002. 564-573 y Romero, Julia. «Manuel Puig: del delito de la escritura al error gay». _Revista Iberoamericana_ LXV. 187 (1999): 305-325. [http://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.9853/pr.9853](http://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.9853/pr.9853)
+[4] Al respecto, se recomienda la lectura de Daniel Balderston. «"Sexualidad y revolución": en torno a las notas de \_El beso de la mujer araña\_». \_El beso de la mujer araña: Edición crítica.\_ ALLCA/Archivos. Paris, 2002. 564-573 y Romero, Julia. «Manuel Puig: del delito de la escritura al error gay». \_Revista Iberoamericana\_ LXV. 187 (1999): 305-325. [http://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.9853/pr.9853](http://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.9853/pr.9853)
 
 [5] En estos términos explica Puig su proyecto literario en la contratapa de la primera edición de _Boquitas pintadas_, publicada por la editorial Sudamericana en 1969.
 
@@ -1020,7 +1020,7 @@ La apertura del Archivo Puig significó un nuevo acceso a su producción literar
 
 [37] La denuncia supuestamente había sido presentada por la Liga de Madres de familia de la Parroquia de la Merced, quienes desmintieron el dato. Más adelante se corroboró que la responsabilidad había sido íntegramente de la Policía Federal.
 
-[38] Juan Pablo Canala se encuentra desarrollando su tesis de doctorado sobre los manuscritos de _The Buenos Aires Affair_. Un adelanto de su trabajo puede encontrarse en el artículo «_The Buenos Aires Affair_: el comienzo de la obra por venir», incluido en el dossier «¡Viva Puig! » que él, Graciela Goldchluk y Lea Hafter coordinaron y salió publicado en la revista _Orbis Tertius_ XXV. 32 e173 (noviembre 2020-abril 2021) [https://www.orbistertius.unlp.edu.ar/article/view/OTe173/13142](https://www.orbistertius.unlp.edu.ar/article/view/OTe173/13142)
+[38] Juan Pablo Canala se encuentra desarrollando su tesis de doctorado sobre los manuscritos de \_The Buenos Aires Affair\_. Un adelanto de su trabajo puede encontrarse en el artículo «\_The Buenos Aires Affair\_: el comienzo de la obra por venir», incluido en el dossier «¡Viva Puig! » que él, Graciela Goldchluk y Lea Hafter coordinaron y salió publicado en la revista \_Orbis Tertius\_ XXV. 32 e173 (noviembre 2020-abril 2021) [https://www.orbistertius.unlp.edu.ar/article/view/OTe173/13142](https://www.orbistertius.unlp.edu.ar/article/view/OTe173/13142)
 
 ## Bibliografía
 
