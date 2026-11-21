@@ -22,7 +22,7 @@ keywords:
   - "paisaje"
   - "espacio"
   - "Colonialismo"
-  - "“nuevo mundo”"
+  - "nuevo mundo"
   - "América y Europa"
   - "Traducción"
 heroImage: "/sites/default/files/ct-paper/hyp.4_chazarreta-1_0.png"
