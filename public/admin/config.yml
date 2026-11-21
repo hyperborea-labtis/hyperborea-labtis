@@ -54,8 +54,8 @@ collections:
     slug: "{{fields.slug}}"
     summary: "{{title}}"
     fields:
-      - { name: title, label: Título, widget: string, i18n: true }
-      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: title, label: Título, widget: string, i18n: true, hint: "Título completo del artículo. También se muestra en la pestaña del navegador y en Google." }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, pattern: ["^[a-z0-9_-]+$", "Solo minúsculas sin acentos, números y guiones (por ejemplo: mi-articulo-2)."], hint: "Es la dirección pública del artículo: minúsculas, sin acentos y con guiones (por ejemplo: mi-articulo-2). Una vez publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
       - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
       - { name: created, label: Fecha y hora de creación (orden en portada y listados), widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: "HH:mm", picker_utc: true, hint: "Los listados ordenan del más nuevo al más viejo por esta fecha y hora. En contenido importado viene de Drupal: no la cambies. En contenido nuevo déjala vacía (se usa la fecha de publicación)." }
       - name: section
@@ -63,13 +63,14 @@ collections:
         widget: select
         required: false
         i18n: duplicate
+        hint: "Sección de la revista bajo la que se muestra el paper."
         options: ["Mare Sugenum", "Kino LabTIS", "Manet et manebit", "41º 9’ S 71º 8’ W", "Afinidades electivas"]
-      - { name: issue, label: Número de Hyperborea, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 a 8. Define en qué número (/numero-N) aparece el paper." }
+      - { name: issue, label: Número de Hyperborea, widget: number, value_type: int, min: 1, required: true, i18n: duplicate, hint: "Obligatorio. Número de la revista en el que se publica (1 a 8). Define en qué página /numero-N aparece el paper." }
       - { name: issueOrder, label: Orden dentro del número, widget: number, value_type: int, min: 1, required: false, i18n: duplicate, hint: "1 = primero. Los que no tienen orden van al final del número." }
-      - { name: author, label: Autor/a, widget: string, required: false, i18n: duplicate }
-      - { name: email, label: Email, widget: string, required: false, i18n: duplicate }
+      - { name: author, label: Autor/a, widget: string, required: false, i18n: duplicate, hint: "Nombre como se cita. Si falta, Google Académico no indexa el artículo." }
+      - { name: email, label: Email, widget: string, type: email, required: false, i18n: duplicate }
       - { name: affiliation, label: Afiliación, widget: string, required: false, i18n: true }
-      - { name: abstract, label: Resumen, widget: text, required: false, i18n: true }
+      - { name: abstract, label: Resumen, widget: text, required: false, i18n: true, pattern: ["^(?:\\s*|[ \\t]*(?:[^\\s*_`#\\[\\]]+[ \\t]+){29,299}[^\\s*_`#\\[\\]]+[ \\t]*)$", "El resumen debe ser un solo párrafo de 30 a 300 palabras, en texto simple (sin asteriscos, guiones bajos, #, corchetes ni enlaces)."], hint: "Opcional. Un solo párrafo de 30 a 300 palabras, en texto simple. Si lo escribe la redacción y no el autor/a, marca abajo «Elaborado por la redacción»." }
       - { name: abstractSource, label: Autoría del resumen, widget: select, options: [{ label: "Del autor/a", value: author }, { label: "Elaborado por la redacción", value: editorial }], required: false, i18n: duplicate, hint: "«Elaborado por la redacción» muestra esa etiqueta bajo el resumen. Si el autor/a envía el suyo, cámbialo a «Del autor/a»." }
       - name: keywords
         label: Palabras clave
@@ -85,13 +86,13 @@ collections:
       - { name: receivedDate, label: Fecha de recepción, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: evaluatedDate, label: Fecha de evaluación, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { name: publishedDate, label: Fecha de publicación, widget: datetime, required: false, i18n: duplicate, hint: "Se muestra bajo el paper. Déjala vacía si no hay fecha de publicación real.", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
-      - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate }
+      - { name: heroImage, label: Imagen destacada, widget: image, required: false, i18n: duplicate, hint: "Opcional. La imagen que acompaña al paper en los listados y en su página. Se optimiza sola (WebP, hasta 2048 px de ancho)." }
       - { name: heroAlt, label: Descripción de la imagen destacada (texto alternativo), widget: string, required: false, i18n: true, hint: "Para personas que no ven la imagen: descríbela en una frase (qué se ve). Déjala vacía si es solo decorativa; el título ya aparece al lado." }
-      - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate }
+      - { name: pdf, label: PDF, widget: file, required: false, i18n: duplicate, hint: "Opcional. El PDF del artículo completo, que se ofrece para descargar." }
       - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
       - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
       - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
-      - { name: body, label: Cuerpo, widget: markdown, i18n: true }
+      - { name: body, label: Cuerpo, widget: markdown, i18n: true, pattern: ["^[\\s\\S]{80,}$", "El texto es muy corto. Escribe al menos un párrafo (unos 80 caracteres): el primero se usa como descripción en Google y en los listados."], hint: "El primer párrafo se usa como descripción del paper en Google, así que conviene que sea un párrafo completo. Si pegas texto desde Word o una web, revisa que las cursivas y los enlaces se vean bien." }
 
   - name: articles
     label: Actividades
@@ -103,7 +104,7 @@ collections:
     summary: "{{title}}"
     fields:
       - { name: title, label: Título, widget: string, i18n: true }
-      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, pattern: ["^[a-z0-9_-]+$", "Solo minúsculas sin acentos, números y guiones (por ejemplo: mi-articulo-2)."], hint: "Es la dirección pública: minúsculas, sin acentos y con guiones (por ejemplo: mi-actividad-2026). Una vez publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
       - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
       - { name: created, label: Fecha y hora de creación (orden en portada y listados), widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: "HH:mm", picker_utc: true, hint: "Los listados ordenan del más nuevo al más viejo por esta fecha y hora. En contenido importado viene de Drupal: no la cambies. En contenido nuevo déjala vacía (se usa la fecha de publicación)." }
       - { name: publishedDate, label: Fecha, widget: datetime, required: false, i18n: duplicate, date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
@@ -125,12 +126,12 @@ collections:
     summary: "{{title}}"
     fields:
       - { name: title, label: Título, widget: string, i18n: true }
-      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, hint: "Es la dirección pública. En contenido ya publicado NO lo cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
+      - { name: slug, label: Slug (URL), widget: string, i18n: duplicate, pattern: ["^[a-z0-9_-]+$", "Solo minúsculas sin acentos, números y guiones (por ejemplo: mi-articulo-2)."], hint: "Es la dirección pública: minúsculas, sin acentos y con guiones. Una vez publicada NO la cambies: si lo haces, agrega la dirección anterior en URLs antiguas." }
       - { name: translationKey, label: ID Drupal (solo contenido importado), widget: string, required: false, i18n: duplicate, hint: "Déjalo vacío en contenido nuevo. Es el ID del nodo original en Drupal." }
       - { name: aliases, label: URLs antiguas (redirecciones), widget: list, required: false, i18n: duplicate, hint: "Direcciones que deben seguir funcionando y llevar a este contenido, p. ej. /es/paper/slug-anterior. Una por línea, empiezan con /." }
       - { name: sourceUrl, label: URL original, widget: string, required: false, i18n: duplicate }
       - { name: draft, label: Ocultar del sitio (despublicar), widget: boolean, default: false, i18n: duplicate, hint: "Solo para retirar algo ya publicado. El estado Borrador/Revisión/Publicado se gestiona con el flujo editorial." }
-      - { name: body, label: Cuerpo, widget: markdown, i18n: true }
+      - { name: body, label: Cuerpo, widget: markdown, i18n: true, pattern: ["^[\\s\\S]{80,}$", "El texto es muy corto. Escribe al menos un párrafo (unos 80 caracteres): el primero se usa como descripción en Google y en los listados."], hint: "El primer párrafo se usa como descripción del paper en Google, así que conviene que sea un párrafo completo. Si pegas texto desde Word o una web, revisa que las cursivas y los enlaces se vean bien." }
 
   # Vocabulary behind the "Palabras clave" menu of papers: one file per term in
   # src/data/keywords/, so the CMS list has search and sorting. Terms imported
