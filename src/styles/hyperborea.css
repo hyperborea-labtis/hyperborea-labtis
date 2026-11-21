@@ -1155,16 +1155,11 @@
 .hb-search-result mark { background: rgba(216, 178, 0, 0.3); color: inherit; }
 .hb-search-more { margin-top: 24px; }
 
-/* ---------- Contact form ---------- */
-.hb-contact { max-width: 640px; margin: 0 auto 60px; }
-.hb-contact label { display: block; margin-bottom: 18px; font-weight: 700; }
-.hb-contact input,
-.hb-contact textarea { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border: 1px solid var(--hb-control-border); font: inherit; }
-.hb-contact button { padding: 12px 34px; border: 2px solid var(--hb-ink); background: var(--hb-ink); color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; }
-.hb-contact .cf-turnstile { margin: 0 0 18px; min-height: 65px; }
-.hb-contact-unavailable { max-width: 640px; margin: 0 auto 60px; text-align: center; font-weight: 700; }
-.hb-contact button:disabled { opacity: 0.6; cursor: wait; }
-.hb-contact-trap { position: absolute; left: -9999px; }
+/* ---------- Contact page ---------- */
+/* The journal's address, centred under the title. */
+.hb-contact-email { max-width: 640px; margin: 0 auto 60px; text-align: center; font-size: 1.25em; }
+.hb-contact-email a { color: var(--hb-yellow-text); text-decoration: underline; text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+.hb-contact-email a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- Keyboard, motion and high-contrast support (WCAG 2.2) ---------- */
 /* Escape pressed while a hover-opened submenu is showing: hide it until the pointer leaves. */
@@ -1196,8 +1191,6 @@
 @media (forced-colors: active) {
   .hb-input:focus,
   .hb-select:focus,
-  .hb-contact input:focus,
-  .hb-contact textarea:focus,
   .hb-button:focus {
     outline: 2px solid Highlight;
     outline-offset: 2px;

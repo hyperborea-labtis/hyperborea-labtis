@@ -5,6 +5,8 @@ export const JOURNAL = {
   name: "Hyperborea. Revista de ensayo y creación",
   shortName: "Hyperborea",
   issn: "2618-4397",
+  /** Where readers and authors write to (the contact page, and nothing else collects messages). Change it here. */
+  contactEmail: "admin@microagencia.com",
   /** Creative Commons license of every paper (also shown in the page footer). */
   license: "https://creativecommons.org/licenses/by-nc-nd/3.0/",
   publisher: {

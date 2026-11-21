@@ -135,14 +135,15 @@ export default defineConfig({
         "default-src 'self'",
         "img-src 'self' data:",
         "font-src 'self'",
-        "connect-src 'self' https://challenges.cloudflare.com",
-        "frame-src https://challenges.cloudflare.com",
+        "connect-src 'self'",
+        "frame-src 'none'",
         "object-src 'none'",
         "base-uri 'self'",
         "form-action 'self'",
       ],
-      // challenges.cloudflare.com: the Turnstile widget on the contact form.
-      scriptDirective: { resources: ["'self'", "'wasm-unsafe-eval'", "https://challenges.cloudflare.com"] },
+      // Nothing external: the contact page is a plain address. Bringing the contact form back (README) means
+      // allowing https://challenges.cloudflare.com in script-src, connect-src and frame-src again.
+      scriptDirective: { resources: ["'self'", "'wasm-unsafe-eval'"] },
     },
   },
   redirects: { "/": "/es" },

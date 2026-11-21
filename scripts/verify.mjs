@@ -309,9 +309,8 @@ if (OFFLINE) {
       const attrs = m[1];
       const isModule = /\btype="module"/.test(attrs);
       const src = /\bsrc="([^"]*)"/.exec(attrs)?.[1];
-      const turnstile = src === "https://challenges.cloudflare.com/turnstile/v0/api.js"; // contact form widget
       const jsonLd = /\btype="application\/ld\+json"/.test(attrs) && !src; // data, not code (parsed in check 12)
-      if (!turnstile && !jsonLd && (!isModule || (src && !src.startsWith("/_astro/")))) issues.add(`<script${attrs.slice(0, 50)}>`);
+      if (!jsonLd && (!isModule || (src && !src.startsWith("/_astro/")))) issues.add(`<script${attrs.slice(0, 50)}>`);
     }
     for (const m of html.matchAll(/<(?!\/)[a-z][^>]*?\son[a-z]+\s*=/gi)) issues.add(`event handler in ${m[0].slice(0, 50)}`);
     for (const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*"\s*(?:javascript|vbscript|data:text)[^"]{0,30}/gi)) issues.add(m[0].slice(0, 60));

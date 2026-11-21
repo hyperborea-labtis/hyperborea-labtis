@@ -110,7 +110,7 @@ const server = await startServer();
 console.log(`Server: ${server.base}  (${pages.length} pages)`);
 const browser = await chromium.launch();
 
-// Only the site itself: no external request (Turnstile, fonts…) makes the run flaky or leaks anything.
+// Only the site itself: no external request (fonts…) makes the run flaky or leaks anything.
 async function context(options = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, ...options });
   await ctx.route("**/*", (route) => (route.request().url().startsWith(server.base) ? route.continue() : route.abort()));
