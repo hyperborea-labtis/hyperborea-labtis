@@ -44,7 +44,8 @@ const papers = defineCollection({
     affiliation: z.string().optional(),
     abstract: z.string().optional(),
     // Who wrote the abstract: the author (default) or the editorial team, which the paper page says.
-    abstractSource: z.enum(["author", "editorial"]).optional(),
+    // The CMS writes `abstractSource: ''` when the select is left empty: that means "not set".
+    abstractSource: z.preprocess(blankToUndefined, z.enum(["author", "editorial"]).optional()),
     keywords: z.array(z.string()).default([]),
     // Shown under the paper: reception, evaluation and publication dates.
     receivedDate: optionalDate,
