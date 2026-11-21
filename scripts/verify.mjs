@@ -992,6 +992,38 @@ if (OFFLINE) {
   }
   record("24. llms.txt, web manifest and accessibility statement", problems.length ? "fail" : "pass", `${links} llms.txt links, ${problems.length} problems`, problems);
 }
+// ---------- 25. Editors' work list (/es/editores/resumenes) ----------
+// An internal page: it lists exactly the papers whose abstract the editorial team wrote (the same set as
+// check 17), links each to its public page and to its CMS entry, and stays out of everything public:
+// noindex in every build, not in the sitemap, not in the search index, linked from no other page.
+{
+  const problems = [];
+  const file = path.join(DIST, "es", "editores", "resumenes.html");
+  const expected = entries.filter((e) => e.col === "papers" && e.locale === "es" && e.data && e.data.abstractSource === "editorial" && e.data.abstract && !e.data.draft).length;
+  let listed = 0;
+  if (!fs.existsSync(file)) problems.push("dist/es/editores/resumenes.html is missing");
+  else {
+    const html = fs.readFileSync(file, "utf8");
+    listed = [...html.matchAll(/class="hb-editor-item"/g)].length;
+    if (listed !== expected) problems.push(`the page lists ${listed} papers but ${expected} have an editorial abstract`);
+    if (!/<meta name="robots" content="noindex/.test(html)) problems.push("the page is not noindex");
+    if (/data-pagefind-body/.test(html)) problems.push("the page is in the search index (data-pagefind-body)");
+    if (/rel="alternate" hreflang/.test(html)) problems.push("the page declares hreflang alternates it does not have");
+    for (const [, slug] of html.matchAll(/href="\/es\/paper\/([^"]+)"/g)) {
+      if (!fs.existsSync(path.join(DIST, "es", "paper", `${slug}.html`))) problems.push(`links to /es/paper/${slug}, which does not exist`);
+    }
+    if (listed && !/href="\/admin#\/collections\/papers\/entries\/[a-z0-9_-]+"/.test(html)) problems.push("no link to the CMS entry");
+  }
+  for (const f of walk(DIST, (x) => x.endsWith(".html"))) {
+    if (f === file) continue;
+    if (fs.readFileSync(f, "utf8").includes("/editores/resumenes")) problems.push(`${path.relative(DIST, f)} links to the editors' page`);
+  }
+  for (const f of walk(DIST, (x) => /^sitemap.*\.xml$/.test(path.basename(x)))) {
+    if (fs.readFileSync(f, "utf8").includes("/editores/")) problems.push(`${path.basename(f)} lists the editors' page`);
+  }
+  record("25. Editors' work list", problems.length ? "fail" : "pass", `${listed} papers listed (${expected} expected), ${problems.length} problems`, problems.slice(0, 10));
+}
+
 // ---------- 13. Own-domain links in content ----------
 {
   const bad = [];

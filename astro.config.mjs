@@ -85,7 +85,7 @@ const ALL_ENTRIES = [...ALL_PAPERS, ...META.articles.es.values()];
 
 /** @param {string} pathname */
 function inSitemap(pathname) {
-  if (pathname.includes("/taxonomy/term/") || pathname.endsWith("/buscar") || pathname.includes("/search/")) return false;
+  if (pathname.includes("/taxonomy/term/") || pathname.endsWith("/buscar") || pathname.includes("/search/") || pathname.includes("/editores/")) return false;
   const m = /^\/(en|fr)\/(paper|actividad)\/([^/]+)$/.exec(pathname);
   if (m) return REAL[m[2] === "paper" ? "papers" : "articles"][m[1]].has(m[3]);
   const p = /^\/(en|fr)\/([^/]+)$/.exec(pathname);

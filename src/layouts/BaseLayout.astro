@@ -27,6 +27,8 @@ interface Props {
   alternates?: readonly Locale[];
   /** Keep the page out of search results (search, 404…). */
   noindex?: boolean;
+  /** A page that exists in one language only (internal pages): no language switcher. */
+  singleLanguage?: boolean;
   /** Locale-relative path of the page this one duplicates: canonical points there, this page is noindex. */
   canonicalPath?: string;
   /** Emit no canonical, hreflang or og:url (the 404 page has no address of its own). */
@@ -53,6 +55,7 @@ const {
   contentLang,
   alternates,
   noindex = false,
+  singleLanguage = false,
   canonicalPath,
   canonical = true,
   image,
@@ -117,7 +120,7 @@ const otherLocales = head.hreflang
   <body>
     <a class="hb-skip-link" href="#main-content">{t("skip")}</a>
     <div class="hb-root">
-      <Header lang={lang} path={path} />
+      <Header lang={lang} path={path} languages={singleLanguage ? [lang] : undefined} />
       <main id="main-content" tabindex="-1">
         <slot />
       </main>

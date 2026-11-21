@@ -6,8 +6,10 @@ import { siteTitle } from "../lib/descriptions";
 interface Props {
   lang: Locale;
   path?: string;
+  /** Languages the page exists in (the switcher shows only these). Default: all. */
+  languages?: readonly Locale[];
 }
-const { lang, path = "" } = Astro.props;
+const { lang, path = "", languages = locales } = Astro.props;
 const t = useTranslations(lang);
 const nav = mainNav(lang);
 const current = Astro.url.pathname.replace(/\/$/, "");
@@ -94,9 +96,10 @@ const isActive = (item: (typeof nav)[number]) =>
             </a>
           </div>
 
+          {languages.length > 1 && (
           <nav class="hb-lang" aria-label={t("lang.label")}>
             {
-              locales.map((l) => (
+              languages.map((l) => (
                 <a
                   href={`/${l}${path}`}
                   class:list={["hb-lang-link", { "is-active": l === lang }]}
@@ -110,6 +113,7 @@ const isActive = (item: (typeof nav)[number]) =>
               ))
             }
           </nav>
+          )}
         </div>
       </div>
     </div>
