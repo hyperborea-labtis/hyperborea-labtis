@@ -148,6 +148,6 @@ collections:
     summary: "{{name}}"
     sortable_fields: { fields: [name, tid], default: { field: name, direction: Ascending } }
     fields:
-      - { name: name, label: Palabra clave, widget: string }
+      - { name: name, label: Palabra clave, widget: string, hint: "Los papers enlazan la palabra por su nombre. Si cambias el nombre de una que ya se usa, el sitio no compila hasta que cambies también esos papers; pide ayuda en ese caso." }
       - { name: tid, label: ID Drupal (solo términos importados), widget: number, value_type: int, required: false, hint: "Déjalo vacío en términos nuevos." }
       - { name: alsoTids, label: Otros IDs Drupal (mismo nombre), widget: list, field: { name: tid, label: ID Drupal, widget: number, value_type: int }, required: false, hint: "Solo importados: IDs antiguos de términos repetidos que se unieron en este. Déjalo vacío en términos nuevos." }
