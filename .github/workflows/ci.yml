@@ -81,3 +81,5 @@ jobs:
         run: npm run validate:html
       - name: Accessibility gate (axe, reflow, keyboard, focus, reduced motion, CSP)
         run: npm run a11y
+      - name: Security headers on real responses (CSP header, HSTS, /admin intact)
+        run: npm run check:headers
