@@ -133,16 +133,21 @@ if (OFFLINE) {
 } else {
   const diffs = [];
   let compared = 0;
+  let added = 0;
   try {
     for (const [col, type] of Object.entries(COLLECTIONS)) {
       for (const lang of LOCALES) {
         const remote = await countRemote(type, lang);
-        const local = entries.filter((e) => e.col === col && e.locale === lang).length;
+        // Only what was imported from Drupal (it carries its node id as translationKey): content written
+        // since (the accessibility statement, new papers) has no counterpart there and is not a mismatch.
+        const here = entries.filter((e) => e.col === col && e.locale === lang);
+        const local = here.filter((e) => e.data?.translationKey).length;
+        added += here.length - local;
         compared += remote;
         if (remote !== local) diffs.push(`${col}/${lang}: Drupal=${remote} local=${local}`);
       }
     }
-    record("2. Counts vs Drupal", diffs.length ? "fail" : "pass", diffs.length ? "mismatch" : `${compared} nodes match across all collections/locales`, diffs);
+    record("2. Counts vs Drupal", diffs.length ? "fail" : "pass", diffs.length ? "mismatch" : `${compared} nodes match across all collections/locales${added ? ` (+${added} entries written since the migration, not in Drupal)` : ""}`, diffs);
   } catch (e) {
     record("2. Counts vs Drupal", "warn", "could not reach Drupal: " + e.message);
   }
