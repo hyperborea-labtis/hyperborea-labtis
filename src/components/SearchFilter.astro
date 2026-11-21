@@ -1,0 +1,12 @@
+---
+// Value of a search filter (Pagefind) for the page it sits in. The usual recipe,
+// <meta data-pagefind-filter="name[content]" content="value">, is not valid HTML inside <body>; a hidden
+// element carrying the value in a data attribute is, and Pagefind reads it the same way.
+interface Props {
+  name: string;
+  value: string;
+}
+const { name, value } = Astro.props;
+---
+
+<span hidden data-pagefind-filter={`${name}[data-value]`} data-value={value}></span>

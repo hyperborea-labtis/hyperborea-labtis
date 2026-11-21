@@ -45,3 +45,39 @@ jobs:
         run: npm run verify -- --offline
         env:
           PUBLIC_INDEXABLE: "true"
+
+  # Accessibility and HTML validity of the BUILT site, in a real browser. Runs in parallel with `verify`
+  # (it builds on its own: the dist artifact is ~300 MB of images, slower to move than to rebuild).
+  # `wrangler dev --local` serves dist/ like production does (_headers, _redirects, 404 page), and
+  # Playwright drives Chromium: axe-core WCAG 2.2 AA, reflow, text spacing, keyboard, focus, reduced motion.
+  # Make this job a required status check too, next to `verify`.
+  a11y:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: Cache Playwright browsers
+        id: browsers
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+        if: steps.browsers.outputs.cache-hit != 'true'
+      - name: Install Chromium system libraries
+        run: npx playwright install-deps chromium
+        if: steps.browsers.outputs.cache-hit == 'true'
+      - name: Build as production does (indexable)
+        run: npm run build
+        env:
+          PUBLIC_INDEXABLE: "true"
+      - name: HTML validity (html-validate over every page)
+        run: npm run validate:html
+      - name: Accessibility gate (axe, reflow, keyboard, focus, reduced motion, CSP)
+        run: npm run a11y

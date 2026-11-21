@@ -55,8 +55,21 @@ test("keeps the markup the content really uses", () => {
     '<figure role="group" class="caption caption-img align-center"><img alt="Figura 4" data-entity-type="file" data-entity-uuid="163420b3" height="389" src="/sites/default/files/inline-images/fig4.jpg" width="518"><figcaption>Fig. 4</figcaption></figure>';
   assert.equal(sanitizeHtml(html), html);
   assert.equal(sanitizeHtml('<a id="04"></a>'), '<a id="04"></a>');
-  const table = '<table align="center" border="0" cellpadding="1" cellspacing="10"><tbody><tr><td colspan="2"><em>x</em></td></tr></tbody></table>';
+  const table = '<table><tbody><tr><td colspan="2"><em>x</em></td></tr></tbody></table>';
   assert.equal(sanitizeHtml(table), table);
+});
+
+test("obsolete presentational table attributes are dropped (HTML validity); a centred table keeps its centring as a class", () => {
+  const old =
+    '<table align="center" border="0" cellpadding="1" cellspacing="10" summary="x" width="500"><tbody><tr align="left" valign="top"><td align="right" valign="middle" width="40" height="9" colspan="2">a</td><th scope="col" align="center">b</th></tr></tbody></table>';
+  assert.equal(
+    sanitizeHtml(old),
+    '<table class="align-center"><tbody><tr><td colspan="2">a</td><th scope="col">b</th></tr></tbody></table>',
+  );
+  // an existing class is kept next to it; other alignments just disappear
+  assert.equal(sanitizeHtml('<table align="center" class="x"><tr><td>a</td></tr></table>'), '<table class="x align-center"><tr><td>a</td></tr></table>');
+  assert.equal(sanitizeHtml('<table align="left"><tr><td>a</td></tr></table>'), "<table><tr><td>a</td></tr></table>");
+  assert.equal(sanitizeHtml('<table data-align="center"><tr><td>a</td></tr></table>'), '<table data-align="center"><tr><td>a</td></tr></table>');
 });
 
 test("target=_blank gets rel=noopener noreferrer", () => {

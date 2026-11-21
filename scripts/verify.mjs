@@ -705,7 +705,7 @@ if (OFFLINE) {
       const html = read(f);
       if (!/<meta name="robots" content="noindex/.test(html)) e.push("404 is not noindex");
       if (/<link rel="(canonical|alternate)" [^>]*hreflang|<link rel="canonical"/.test(html)) e.push("404 has a canonical or hreflang (it has no address of its own)");
-      for (const l of LOCALES) if (!new RegExp(`<p lang="${l}"[^>]*>[^<]*<a href="/${l}"`).test(html)) e.push(`404 has no ${l} block with a link to /${l}`);
+      for (const l of LOCALES) if (!new RegExp(`<p\\b[^>]*\\blang="${l}"[^>]*>[^<]*<a href="/${l}"`).test(html)) e.push(`404 has no ${l} block with a link to /${l}`);
       if ((html.match(/<h1\b/g) ?? []).length !== 1) e.push("404 must have exactly one <h1>");
     }
     record("16. 404 page (neutral, three languages)", e.length ? "fail" : "pass", e.length ? `${e.length} problems` : "noindex, no canonical, es/en/fr blocks", e);

@@ -316,6 +316,19 @@
   font-weight: 700;
   text-transform: uppercase;
   color: var(--hb-ink);
+  /* A long word never pushes the page wider than the screen (WCAG 1.4.10 reflow). */
+  overflow-wrap: break-word;
+}
+
+/* Links in the 404 text: underlined, not told apart by color alone (WCAG 1.4.1). */
+.hb-notfound a {
+  color: var(--hb-yellow-text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.hb-notfound a:hover {
+  text-decoration-thickness: 2px;
 }
 
 .hb-page-title::after {
@@ -904,6 +917,13 @@
     line-height: 1.15;
   }
 
+  /* 320 px phones: "CORTOMETRAJE" at 40 px bold is wider than the column. */
+  @media (max-width: 359px) {
+    .hb-page-title {
+      font-size: 30px;
+    }
+  }
+
   .hb-main {
     padding: 50px 0 70px;
   }
@@ -1169,4 +1189,9 @@
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
   outline: 3px solid var(--hb-focus, #2e3436);
   outline-offset: 2px;
+}
+
+/* Tables the editors centred with the obsolete align="center" (the sanitizer turns it into this class). */
+.hb-article table.align-center {
+  margin-inline: auto;
 }

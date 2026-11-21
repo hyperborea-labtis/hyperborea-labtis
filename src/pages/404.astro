@@ -17,7 +17,7 @@ const messages = [
       <PageTitle text="404" />
       {
         messages.map((m) => (
-          <p lang={m.lang}>
+          <p class="hb-notfound" lang={m.lang}>
             {m.text} <a href={`/${m.lang}`}>{m.home}</a> · <a href={`/${m.lang}/buscar`}>{m.search}</a>
           </p>
         ))

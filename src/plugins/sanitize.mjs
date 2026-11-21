@@ -32,14 +32,16 @@ const ALLOWED = {
   i: [], img: ["src", "alt", "width", "height", "loading", "decoding"], ins: [],
   li: ["value"], mark: [], ol: ["start", "type", "reversed"], p: [], pre: [], q: ["cite"],
   s: [], small: [], span: [], strong: [], sub: [], sup: [],
-  table: ["align", "border", "cellpadding", "cellspacing", "summary", "width"],
-  tbody: [], td: ["colspan", "rowspan", "headers", "align", "valign", "width", "height"],
-  tfoot: [], th: ["colspan", "rowspan", "headers", "scope", "align", "valign", "width", "height"],
-  thead: [], time: ["datetime"], tr: ["align", "valign"], u: [], ul: [],
+  // Tables: only structural attributes. The presentational ones (align, valign, border, cellpadding,
+  // cellspacing, summary, width, height) are obsolete HTML; a table with align="center" keeps its
+  // centring as a class (see below).
+  table: [],
+  tbody: [], td: ["colspan", "rowspan", "headers"],
+  tfoot: [], th: ["colspan", "rowspan", "headers", "scope"],
+  thead: [], time: ["datetime"], tr: [], u: [], ul: [],
 };
 const URL_ATTRS = new Set(["href", "src", "cite"]);
-const NUMERIC_ATTRS = new Set(["width", "height", "colspan", "rowspan", "border", "cellpadding", "cellspacing", "start", "span", "value"]);
-const ALIGN_RE = /^(left|right|center|top|middle|bottom|justify|baseline)$/i;
+const NUMERIC_ATTRS = new Set(["width", "height", "colspan", "rowspan", "start", "span", "value"]);
 
 // Whitespace, control and invisible characters (incl. U+2028/2029 and the BOM).
 const STRIP_RE = new RegExp(
@@ -103,7 +105,6 @@ function attrAllowed(tag, name, value) {
   if (name === "role") return /^[a-z-]{1,30}$/i.test(value);
   if (name === "target") return value === "_blank" || value === "_self";
   if (name === "loading") return value === "lazy" || value === "eager";
-  if (name === "align" || name === "valign") return ALIGN_RE.test(value);
   if (NUMERIC_ATTRS.has(name)) return /^\d{1,5}%?$/.test(value);
   return value.length <= 2000;
 }
@@ -157,6 +158,11 @@ export function sanitizeHtml(input) {
         continue;
       }
       if (attrAllowed(tag, name, value)) attrs.push([name, value]);
+    }
+    if (tag === "table" && /(?:^|\s)align\s*=\s*["']?center/i.test(attrSrc)) {
+      const i = attrs.findIndex(([n]) => n === "class");
+      if (i >= 0) attrs[i] = ["class", `${attrs[i][1]} align-center`.trim()];
+      else attrs.push(["class", "align-center"]);
     }
     if (tag === "a" && attrs.some(([n, v]) => n === "target" && v === "_blank")) {
       const i = attrs.findIndex(([n]) => n === "rel");
