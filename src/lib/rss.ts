@@ -22,6 +22,7 @@ export interface FeedInput {
 /** Escape text for XML and drop the control characters XML 1.0 does not allow at all. */
 export function xmlText(s: string): string {
   return s
+    // eslint-disable-next-line no-control-regex -- stripping the control characters XML 1.0 forbids is the point
     .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")

@@ -8,6 +8,7 @@
  *
  * Exit code 1 if any check FAILS. Warnings never fail the run.
  */
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -745,7 +746,7 @@ if (OFFLINE) {
     if (/[\r\n]/.test(d.abstract.trim())) problems.push(`${relf(e.file)}: abstract must be a single paragraph`);
     if (/[*_`#]|\]\(/.test(d.abstract)) problems.push(`${relf(e.file)}: abstract contains Markdown (it is shown as plain text)`);
     if (d.abstractSource === "editorial") editorial++;
-    LOCALES.forEach((l, i) => {
+    LOCALES.forEach((l) => {
       const f = path.join(DIST, l, "paper", `${d.slug}.html`);
       if (!fs.existsSync(f)) return;
       const html = fs.readFileSync(f, "utf8");
@@ -906,6 +907,37 @@ if (OFFLINE) {
   if (files > 20000) problems.push(`dist has ${files} files; Cloudflare Workers static assets accept at most 20,000`);
   const unique = [...new Set(problems)];
   record("22. Images (variants served, sized, light; asset count)", unique.length ? "fail" : files > 15000 ? "warn" : "pass", `${imgs} <img>, ${variantsSeen} variant references, ${files} files in dist, ${unique.length} problems`, unique);
+}
+// ---------- 23. Sveltia CMS script pin ----------
+// /admin runs third-party code with the editors' GitHub token, so its <script> must name one exact version
+// and carry its SRI hash (an unpinned or hash-less tag would run whatever unpkg serves tomorrow). Online
+// runs also download the file and compare the hash, which catches a stale or mistyped integrity value.
+{
+  const problems = [];
+  const html = fs.readFileSync(path.join(PUBLIC, "admin", "index.html"), "utf8");
+  const tag = /<script\b[^>]*src="(https:\/\/unpkg\.com\/@sveltia\/cms@([^/"]+)\/[^"]+)"[^>]*>/i.exec(html);
+  let detail = "";
+  if (!tag) problems.push("public/admin/index.html: no <script> loading @sveltia/cms from unpkg.com");
+  else {
+    const [whole, url, version] = tag;
+    detail = `@sveltia/cms ${version}`;
+    if (!/^\d+\.\d+\.\d+$/.test(version)) problems.push(`the version is "${version}": pin an exact x.y.z (not latest or a range)`);
+    const integrity = /\sintegrity="(sha384-[A-Za-z0-9+/=]+)"/.exec(whole)?.[1];
+    if (!integrity) problems.push("the <script> has no integrity=\"sha384-…\" attribute");
+    if (!/\scrossorigin="anonymous"/.test(whole)) problems.push('the <script> needs crossorigin="anonymous" for SRI to apply');
+    if (integrity && !OFFLINE) {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const actual = "sha384-" + crypto.createHash("sha384").update(Buffer.from(await res.arrayBuffer())).digest("base64");
+        if (actual !== integrity) problems.push(`the integrity hash does not match the file at ${url}`);
+        else detail += ", hash matches unpkg";
+      } catch (e) {
+        detail += ` (hash not re-checked: ${e.message})`;
+      }
+    }
+  }
+  record("23. Sveltia CMS pinned with SRI", problems.length ? "fail" : "pass", `${detail || "no script"}, ${problems.length} problems`, problems);
 }
 // ---------- 13. Own-domain links in content ----------
 {

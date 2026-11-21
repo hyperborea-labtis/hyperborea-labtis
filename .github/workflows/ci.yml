@@ -27,6 +27,14 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      # Sveltia opens one pull request per save and rewrites the whole file from its form: this fails a
+      # content edit that loses slug/translationKey/created/aliases, changes a slug without keeping the
+      # old URL, or pastes a base64 image (src/lib/content-diff.ts). Only the base commit is fetched.
+      - name: Content edits keep URLs and text intact
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags --depth=1 origin ${{ github.event.pull_request.base.sha }}
+          node scripts/check-content-diff.mjs --base=${{ github.event.pull_request.base.sha }}
       # Production dependencies only: the picomatch ReDoS advisory (<=4.0.7, no fixed
       # release yet) sits in dev/build tooling. Never use `npm audit fix --force`:
       # it proposes downgrading Astro to 5.3.0.
@@ -34,6 +42,15 @@ jobs:
         run: npm audit --omit=dev --audit-level=high
       - name: Type-check the Worker (types are generated from wrangler.jsonc)
         run: npm run check:worker
+      # ESLint: typescript-eslint, no `any`, and the jsx-a11y rules for .astro templates (alt text, valid
+      # links, no click handlers on non-interactive elements). Blocking.
+      - name: Lint
+        run: npm run lint
+      # Prettier is a warning for now: 77 files would be reformatted, which is a diff of its own. It becomes
+      # blocking once `npm run format` has been applied in a dedicated pull request.
+      - name: Formatting (warning only)
+        run: npm run format:check
+        continue-on-error: true
       - name: Unit tests
         run: npm test
       # `verify` runs astro check, the full build and every content/link check.
