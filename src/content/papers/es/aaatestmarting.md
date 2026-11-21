@@ -1,10 +1,10 @@
 ---
 translationKey: ''
 title: AAA test marting
-slug: AAAtestmarting
+slug: aaatestmarting
 created: 2026-11-21 19:36
 section: ''
-issue: null
+issue: 8
 issueOrder: null
 author: ''
 email: ''
