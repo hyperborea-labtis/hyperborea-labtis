@@ -16,6 +16,7 @@ import YAML from "yaml";
 import { findOwnLinks } from "../src/lib/own-links.ts";
 import { structureProblems } from "../src/lib/page-structure.ts";
 import { colorProblems } from "../src/lib/contrast.ts";
+import { manifestKey } from "../src/lib/images.ts";
 import { mergeCsps, cspProblems, parseHeadersFile, parseCsp, LANGUAGE_PATHS } from "../src/lib/csp.ts";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
@@ -858,6 +859,53 @@ if (OFFLINE) {
     if (/preload/i.test(rules.find((r) => r.path === "/*")?.headers.find(([n]) => n.toLowerCase() === "strict-transport-security")?.[1] ?? "")) problems.push("dist/_headers: HSTS asks for preload (not decided yet)");
   }
   record("21. Security headers (page CSP as a header, /admin intact)", problems.length ? "fail" : "pass", `${pagesSeen} pages, ${fromPages.size} distinct policy, ${problems.length} problems`, problems);
+}
+// ---------- 22. Images: variants served, sized, light ----------
+// What pages SHOW comes from public/_img (scripts/build-images.mjs); originals stay for og:image, JSON-LD
+// and citations. Every <img> has width and height (no layout shift), every variant it names exists and is
+// light, a picture with variants is never served as its original, and nothing big is served unprocessed.
+{
+  const MAX_SERVED = 400 * 1024;
+  const problems = [];
+  const manifestPath = path.join(ROOT, "src", "data", "image-manifest.json");
+  const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : null;
+  if (!manifest) problems.push("src/data/image-manifest.json is missing: run `npm run images` (the build does it)");
+  else {
+    for (const file of walk(CONTENT, (f) => f.endsWith(".md"))) {
+      const m = /^heroImage:\s*"?([^"\n]+)"?/m.exec(fs.readFileSync(file, "utf8"));
+      const hero = m?.[1]?.trim();
+      if (hero?.startsWith("/sites/") && existsExact(path.join(PUBLIC, decodeURIComponent(hero))) && !manifest[manifestKey(hero)]?.card?.length && !/\.gif$/i.test(hero)) problems.push(`${relf(file)}: heroImage ${hero} has no variants in the manifest`);
+    }
+  }
+  let imgs = 0;
+  let variantsSeen = 0;
+  const sizeCache = new Map();
+  const sizeOf = (abs) => (sizeCache.has(abs) ? sizeCache.get(abs) : sizeCache.set(abs, fs.existsSync(abs) ? fs.statSync(abs).size : -1).get(abs));
+  for (const f of walk(DIST, (x) => x.endsWith(".html") && !/\/(admin|pagefind)\//.test(x))) {
+    const html = fs.readFileSync(f, "utf8");
+    if (/http-equiv="refresh"/i.test(html)) continue;
+    for (const tag of html.match(/<img\b[^>]*>/gi) ?? []) {
+      imgs++;
+      const where = relf(f);
+      const src = /\ssrc="([^"]*)"/.exec(tag)?.[1] ?? "";
+      if (!/\swidth="\d+"/.test(tag) || !/\sheight="\d+"/.test(tag)) problems.push(`${where}: <img ${src}> has no width/height`);
+      for (const u of [...(/\ssrcset="([^"]*)"/.exec(tag)?.[1] ?? "").split(",").map((x) => x.trim().split(/\s+/)[0]), src].filter((x) => x.startsWith("/_img/"))) {
+        variantsSeen++;
+        const size = sizeOf(path.join(DIST, u));
+        if (size < 0) problems.push(`${where}: variant ${u} does not exist`);
+        else if (size > MAX_SERVED) problems.push(`${where}: variant ${u} is ${Math.round(size / 1024)} KB (limit ${MAX_SERVED / 1024} KB)`);
+      }
+      if (src.startsWith("/sites/")) {
+        const entry = manifest?.[manifestKey(src)];
+        if (entry?.card?.length || entry?.hero?.length) problems.push(`${where}: <img ${src}> is served as the original although it has variants`);
+        else if (sizeOf(path.join(PUBLIC, decodeURIComponent(src))) > MAX_SERVED) problems.push(`${where}: <img ${src}> is a ${Math.round(sizeOf(path.join(PUBLIC, decodeURIComponent(src))) / 1024)} KB original served unprocessed`);
+      }
+    }
+  }
+  const files = walk(DIST, () => true).length;
+  if (files > 20000) problems.push(`dist has ${files} files; Cloudflare Workers static assets accept at most 20,000`);
+  const unique = [...new Set(problems)];
+  record("22. Images (variants served, sized, light; asset count)", unique.length ? "fail" : files > 15000 ? "warn" : "pass", `${imgs} <img>, ${variantsSeen} variant references, ${files} files in dist, ${unique.length} problems`, unique);
 }
 // ---------- 13. Own-domain links in content ----------
 {

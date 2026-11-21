@@ -90,7 +90,7 @@ const t = useTranslations(lang);
         <div class="hb-partners">
           {PARTNERS.map((p) => (
             <a href={p.href} target="_blank" rel="noopener">
-              <img src={p.src} alt={p.alt} width="140" />
+              <img src={p.src} alt={p.alt} width="140" height={p.height} />
             </a>
           ))}
         </div>

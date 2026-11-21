@@ -37,8 +37,8 @@ const intros: Record<Locale, string> = {
       <h2 class="hb-section-title">{t("home.latest")}</h2>
       <div class="hb-grid">
         {
-          publications.map((p) => (
-            <PaperCard title={p.title} href={p.href} image={p.image} columns={3} level={3} titleLang={p.titleLang} />
+          publications.map((p, n) => (
+            <PaperCard title={p.title} href={p.href} image={p.image} columns={3} level={3} titleLang={p.titleLang} eager={n === 0} priority={n === 0} />
           ))
         }
       </div>

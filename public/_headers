@@ -18,6 +18,12 @@
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Responsive image variants (scripts/build-images.mjs): the file name carries a hash of the original's
+# bytes, so a changed image gets a new URL. They live outside /sites on purpose: Cloudflare joins the
+# Cache-Control of every rule that matches, and /sites/* must keep its own.
+/_img/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Pagefind: index/, fragment/ and filter/ files carry a content hash in their name;
 # the entry point and the JS/CSS/wasm do not.
 /pagefind/index/*

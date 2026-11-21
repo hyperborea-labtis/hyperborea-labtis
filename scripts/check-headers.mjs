@@ -37,6 +37,14 @@ try {
     failed++;
     console.log("✗ no /_astro/*.css found on /es");
   }
+  // one responsive image variant (WebP in /_img), found through a card on the latest-publications page
+  const listing = await (await fetch(`${server.base}/es/posts-3-col`)).text();
+  const variant = /src="(\/_img\/[^"]+\.webp)"/.exec(listing)?.[1];
+  if (variant) targets.push(["immutable", variant]);
+  else {
+    failed++;
+    console.log("✗ no /_img/*.webp found on /es/posts-3-col");
+  }
   for (const [kind, url, status = 200] of targets) {
     const res = await fetch(server.base + url, { redirect: "manual" });
     const problems = liveHeaderProblems(kind, lower(res.headers));

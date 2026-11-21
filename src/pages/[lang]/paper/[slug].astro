@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
+import ResponsiveImage from "../../../components/ResponsiveImage.astro";
 import SearchFilter from "../../../components/SearchFilter.astro";
 import PaperMeta from "../../../components/PaperMeta.astro";
 import LicenseNotice from "../../../components/LicenseNotice.astro";
@@ -124,12 +125,16 @@ const related = relatedPapers(toRelated(paper), (await papersForLocale(lang)).ma
 
       <article class="hb-article" lang={textLang}>
         {d.heroImage && (
-          <img
+          <ResponsiveImage
             class="image-style-mt-slideshow-boxed"
             src={d.heroImage}
+            kind="hero"
             alt={d.heroAlt ?? ""}
-            width="1140"
-            height="630"
+            sizes="(min-width: 992px) 940px, calc(100vw - 78px)"
+            fallbackWidth={1140}
+            fallbackHeight={630}
+            eager
+            priority
           />
         )}
 

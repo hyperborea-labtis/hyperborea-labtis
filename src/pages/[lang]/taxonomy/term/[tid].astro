@@ -42,13 +42,15 @@ const primaryId = termIdByName.get(norm(name)) ?? tid;
       <PageTitle text={name} />
       <div class="hb-grid">
         {
-          papers.map((p) => (
+          papers.map((p, n) => (
             <PaperCard
               title={p.data.title}
               href={`/${lang}/paper/${p.data.slug}`}
               image={p.data.heroImage}
               columns={2}
               titleLang={langIfDifferent(p, lang)}
+              eager={n === 0}
+              priority={n === 0}
             />
           ))
         }
