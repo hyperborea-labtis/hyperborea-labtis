@@ -9,6 +9,38 @@ const messages = [
   { lang: "en", text: "Page not found.", home: "Back to the home page", search: "Search" },
   { lang: "fr", text: "Page introuvable.", home: "Retour à l’accueil", search: "Rechercher" },
 ] as const;
+
+// The engraving: Gustave Doré, "Lucifer, King of Hell" (Canto XXXIV of Dante's Inferno), from the German
+// edition Göttliche Komödie, T. 1, Die Hölle (Berlin: W. Moeser, 1870). Public domain (Doré died in 1883;
+// published before 1931). The scan is from Polona (Biblioteca Nacional de Polonia), through Wikimedia
+// Commons, where it was cropped and its contrast adjusted. We serve a 1280 px copy of that file.
+const COMMONS = "https://commons.wikimedia.org/wiki/File:Inferno_Canto_34_%28148619628%29.jpg";
+const captions = [
+  {
+    lang: "es",
+    title: "Lucifer, rey del Infierno",
+    work: "ilustración del Canto XXXIV del Infierno de Dante Alighieri",
+    edition: "Göttliche Komödie, T. 1, «Die Hölle», Berlín: W. Moeser, 1870",
+    rights: "Dominio público. Fuente:",
+    note: "Biblioteca Nacional de Polonia (Polona); imagen recortada y con el contraste ajustado en Commons.",
+  },
+  {
+    lang: "en",
+    title: "Lucifer, King of Hell",
+    work: "illustration for Canto XXXIV of Dante Alighieri’s Inferno",
+    edition: "Göttliche Komödie, vol. 1, “Die Hölle”, Berlin: W. Moeser, 1870",
+    rights: "Public domain. Source:",
+    note: "National Library of Poland (Polona); image cropped and contrast-adjusted on Commons.",
+  },
+  {
+    lang: "fr",
+    title: "Lucifer, roi de l’Enfer",
+    work: "illustration du chant XXXIV de l’Enfer de Dante Alighieri",
+    edition: "Göttliche Komödie, t. 1, « Die Hölle », Berlin : W. Moeser, 1870",
+    rights: "Domaine public. Source :",
+    note: "Bibliothèque nationale de Pologne (Polona) ; image recadrée et au contraste ajusté sur Commons.",
+  },
+] as const;
 ---
 
 <BaseLayout title="404 · Página no encontrada · Page not found" lang="es" noindex canonical={false}>
@@ -22,6 +54,30 @@ const messages = [
           </p>
         ))
       }
+      <figure class="hb-notfound-figure">
+        <img
+          src="/site/404-lucifer-dore.jpg"
+          width="1280"
+          height="1030"
+          lang="es"
+          alt="Grabado de Gustave Doré: Lucifer, con alas de murciélago, asoma hasta el pecho del lago helado del Cocito, donde hay almas atrapadas en el hielo; al fondo a la derecha, Dante y Virgilio, diminutos, sobre un saliente."
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          {
+            captions.map((c) => (
+              <p lang={c.lang}>
+                «<em>{c.title}</em>», Gustave Doré, {c.work} (<em>{c.edition}</em>). {c.rights}{" "}
+                <a href={COMMONS} rel="noopener">
+                  Wikimedia Commons
+                </a>
+                . {c.note}
+              </p>
+            ))
+          }
+        </figcaption>
+      </figure>
     </div>
   </div>
 </BaseLayout>
