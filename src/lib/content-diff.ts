@@ -5,6 +5,8 @@
 //   - losing slug, translationKey, created or a non-empty aliases (they keep URLs, order and redirects alive)
 //   - changing the slug without keeping the old address in `aliases` (the old URL would answer 404)
 //   - a pasted image (`data:` URL) in the text, or a link written as ](< url)
+//   - more escaped emphasis marks (\_ or \*) than before: the Markdown editor does this to italics that sit
+//     next to a URL with underscores, and the italics then show as literal symbols
 // and only warns about other fields that disappear or empty fields that appear.
 
 import YAML from "yaml";
@@ -36,6 +38,7 @@ const empty = (v: unknown) => v === undefined || v === null || v === "" || (Arra
 const count = (text: string, re: RegExp) => (text.match(re) ?? []).length;
 const DATA_IMAGE = /data:image\/[a-z+.-]+;base64,/gi;
 const ANGLE_LINK = /\]\(<\s/g;
+const ESCAPED_EMPHASIS = /\\[_*]/g;
 
 export function contentChanges(before: string | null, after: string): Changes {
   const errors: string[] = [];
@@ -67,5 +70,8 @@ export function contentChanges(before: string | null, after: string): Changes {
   if (count(next.body, DATA_IMAGE) > hadImages) errors.push("a pasted image (data: URL) was added to the text: upload the file instead");
   const hadLinks = prev ? count(prev.body, ANGLE_LINK) : 0;
   if (count(next.body, ANGLE_LINK) > hadLinks) errors.push("a link is written as ](< url): the space makes it a broken %20 URL");
+  const hadEscapes = prev ? count(prev.body, ESCAPED_EMPHASIS) : 0;
+  const nowEscapes = count(next.body, ESCAPED_EMPHASIS);
+  if (nowEscapes > hadEscapes) errors.push(`${nowEscapes - hadEscapes} escaped emphasis mark(s) (\\_ or \\*) were added to the text: the italics would show as literal symbols`);
   return { errors, warnings };
 }

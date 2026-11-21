@@ -66,3 +66,27 @@ test("front matter that does not parse is an error", () => {
   assert.match(contentChanges(base, "sin frontmatter\n").errors.join(), /front matter/i);
   assert.match(contentChanges(base, "---\ntitle: [sin cerrar\n---\ncuerpo").errors.join(), /front matter/i);
 });
+
+const FM = 'title: "Uno"\nslug: uno-1\ntranslationKey: "1"\ncreated: 2020-01-01T10:00\naliases: []\nheroImage: /x.jpg';
+
+test("emphasis the CMS turns into escaped characters (\\_texto\\_, \\*texto\\*) is an error: the italics become literal symbols", () => {
+  const before = md(FM, "Ver _El beso_ y *Otro*.\n");
+  const after = md(FM, "Ver \\_El beso\\_ y \\*Otro\\*.\n");
+  const { errors } = contentChanges(before, after);
+  assert.match(errors.join(), /escaped/i);
+  assert.match(errors.join(), /_|\*/);
+});
+
+test("escapes that were already in the file are not blamed on this change", () => {
+  const had = md(FM, "Un \\_guion\\_ de antes.\n");
+  assert.deepEqual(contentChanges(had, md(FM, "Un \\_guion\\_ de antes, y más texto.\n")).errors, []);
+});
+
+test("a new file is not compared, but one that arrives full of escapes is still reported", () => {
+  assert.match(contentChanges(null, md(FM, "Ver \\_x\\_.\n")).errors.join(), /escaped/i);
+});
+
+test("plain underscores and asterisks (italics, URLs, lists) raise nothing", () => {
+  const after = md(FM, "Ver _El beso_, *Otro* y http://x.org/art_revistas/pr_1.\n\n* uno\n* dos\n");
+  assert.deepEqual(contentChanges(md(FM), after).errors, []);
+});
