@@ -68,5 +68,5 @@ test("enhanceImgTags rewrites every <img> in a piece of HTML and nothing else", 
 test("the result stays inside the sanitizer's guarantees: only /_img paths and numeric sizes are ever added", () => {
   const out = enhanceImgTags('<img alt="a&quot;b" src="/sites/default/files/inline-images/fig5.jpg">', manifest);
   assert.ok(!/javascript:|on\w+=/i.test(out));
-  for (const m of out.matchAll(/(?:src|srcset)="([^"]*)"/g)) assert.ok(/^\/_img\/[\w.\-]+\.webp( \d+w)?(, \/_img\/[\w.\-]+\.webp \d+w)*$/.test(m[1]), m[1]);
+  for (const m of out.matchAll(/(?:src|srcset)="([^"]*)"/g)) assert.ok(/^\/_img\/[\w.-]+\.webp( \d+w)?(, \/_img\/[\w.-]+\.webp \d+w)*$/.test(m[1]), m[1]);
 });

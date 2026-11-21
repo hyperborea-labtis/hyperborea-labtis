@@ -24,7 +24,10 @@
     "a11y": "node scripts/a11y.mjs",
     "validate:html": "html-validate \"dist/**/*.html\"",
     "check:headers": "node scripts/check-headers.mjs",
-    "images": "node scripts/build-images.mjs"
+    "images": "node scripts/build-images.mjs",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",
@@ -35,13 +38,21 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
     "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "globals": "^17.14.0",
     "html-validate": "^11.21.1",
     "pagefind": "^1.6.0",
     "playwright": "^1.65.1",
+    "prettier": "^3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
     "sharp": "^0.35.5",
     "turndown": "^7.2.5",
     "turndown-plugin-gfm": "^1.0.2",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.73.0",
     "wrangler": "^4.163.0",
     "yaml": "^2.9.1"
   }
