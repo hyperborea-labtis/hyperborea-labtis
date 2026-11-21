@@ -39,6 +39,10 @@ i18n:
   structure: multiple_folders
   locales: [es, en, fr]
   default_locale: es
+  # A new entry starts in Spanish only; EN/FR are switched on from the editor when someone translates.
+  # Without this the title is required in all three languages. The site falls back to Spanish where a
+  # translation does not exist.
+  initial_locales: default
 
 collections:
   - name: papers
