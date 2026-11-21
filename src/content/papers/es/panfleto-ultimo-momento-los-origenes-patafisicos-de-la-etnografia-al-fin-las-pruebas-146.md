@@ -1,36 +1,43 @@
 ---
-lang: "es"
-translationKey: "146"
-created: "2019-11-01T13:15:35.000Z"
-slug: "panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146"
-title: "Panfleto. Último momento. Los orígenes patafísicos de la etnografía: al fin las pruebas"
-section: "Kino LabTIS"
+translationKey: '146'
+title: 'Panfleto. Último momento. Los orígenes patafísicos de la etnografía: al fin las pruebas'
+slug: panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146
+created: 2019-11-01T13:15:35.000Z
+section: Kino LabTIS
 issue: 2
 issueOrder: 12
-author: "Bernard Müller"
-affiliation: "Curio, Miembro asociado del IRIS (EHESS, París)"
-abstract: "En tono paródico, este panfleto sostiene que la etnografía tendría orígenes patafísicos largamente ocultos. Recuerda la definición de la patafísica de Alfred Jarry como ciencia de las soluciones imaginarias y la organización del Collège de Patafísica, y hace coincidir el nacimiento de ambas disciplinas, a fines del siglo XIX, con la expansión colonial francesa, los discursos de Jules Ferry y los trabajos de Durkheim y Mauss. Retoma las críticas a la autoridad etnográfica de James Clifford y Johannes Fabian y la sospecha sobre el terreno como relación asimétrica. Propone que la disciplina asuma su carácter imaginativo, su condición de portnawak o de decir no importa qué, y se renueve al modo de OULIPO, concibiendo el terreno como una restricción y un arte de la conversación basado en la amistad, según Ivan Illich, tarea que encomienda a un Taller de Antropología Potencial (OUANPO). Concluye que la patafísica podría contribuir a la reinicialización de la etnografía, en el sentido de George Marcus."
+author: Bernard Müller
+email: ''
+affiliation: Curio, Miembro asociado del IRIS (EHESS, París)
+abstract: En tono paródico, este panfleto sostiene que la etnografía tendría orígenes patafísicos largamente ocultos. Recuerda la definición de la patafísica de Alfred Jarry como ciencia de las soluciones imaginarias y la organización del Collège de Patafísica, y hace coincidir el nacimiento de ambas disciplinas, a fines del siglo XIX, con la expansión colonial francesa, los discursos de Jules Ferry y los trabajos de Durkheim y Mauss. Retoma las críticas a la autoridad etnográfica de James Clifford y Johannes Fabian y la sospecha sobre el terreno como relación asimétrica. Propone que la disciplina asuma su carácter imaginativo, su condición de portnawak o de decir no importa qué, y se renueve al modo de OULIPO, concibiendo el terreno como una restricción y un arte de la conversación basado en la amistad, según Ivan Illich, tarea que encomienda a un Taller de Antropología Potencial (OUANPO). Concluye que la patafísica podría contribuir a la reinicialización de la etnografía, en el sentido de George Marcus.
 abstractSource: editorial
 keywords:
-  - "etnografia"
-  - "`Patafísica"
-  - "Alfred Jarry"
-  - "Jean Rouch"
-  - "Colonialismo"
-  - "antropología"
-  - "Orélie-Antoine I"
-  - "Oulipo"
-  - "Portnawak"
-  - "Ouvroir d’ANthorpologie POtentielle"
-  - "George Marcus"
-  - "pataetnología"
-  - "Ivan Illich"
-  - "refunctionning"
-heroImage: "/sites/default/files/ct-paper/ubu_roi_1.jpg"
-pdf: "/sites/default/files/ct-paper/hyperborea_02-muller-origines_patafisicos_etnografia_2.pdf"
+  - etnografia
+  - Alfred Jarry
+  - Jean Rouch
+  - Colonialismo
+  - antropología
+  - Orélie-Antoine I
+  - Oulipo
+  - Portnawak
+  - Ouvroir d’ANthorpologie POtentielle
+  - George Marcus
+  - pataetnología
+  - Ivan Illich
+  - refunctionning
+  - Patafísica
+receivedDate: ''
+evaluatedDate: ''
+publishedDate: ''
+heroImage: /sites/default/files/ct-paper/ubu_roi_1.jpg
+heroAlt: ''
+pdf: /sites/default/files/ct-paper/hyperborea_02-muller-origines_patafisicos_etnografia_2.pdf
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/es/paper/panfleto-ultimo-momento-los-origenes-patafisicos-de-la-etnografia-al-fin-las-pruebas-146"
+lang: es
 ---
+
 * * *
 
 *All this \[starting\] from a chicken gizzard in Kolwezi*.  
