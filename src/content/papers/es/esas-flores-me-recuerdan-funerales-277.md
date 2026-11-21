@@ -35,7 +35,7 @@ draft: false
 lang: es
 ---
 
-## Resumen - essdfas dasd
+## Resumen
 
 Solamente dos de las ocho novelas de Manuel Puig contienen epígrafes. Mientras _Boquitas pintadas_ utiliza citas de letras de tangos y boleros para encabezar cada una de sus «entregas», _The Buenos Aires Affair_ presenta al comienzo de cada capítulo un diálogo de cine clásico. Aunque aparentemente se presentan como transcripciones fieles, el estudio crítico-genético de comparación con los films citados, la traducción al inglés de la novela y los manuscritos donde Puig ensayó la escritura de esos epígrafes, revelan un trabajo extensivo de la palabra para manipular los diálogos y adaptarlos a la novela.
 
