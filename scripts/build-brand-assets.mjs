@@ -3,8 +3,8 @@
 // so these are crops and enlargements of it. When the client provides a vector logo, replace
 // the source below (or the outputs) and run `node scripts/build-brand-assets.mjs` again.
 //
-// Writes into public/: favicon.ico (16/32/48), favicon-32.png, apple-touch-icon.png (180)
-// and og-default.png (1200x630, the social card used by pages without their own image).
+// Writes into public/: favicon.ico (16/32/48), favicon-32.png, apple-touch-icon.png (180),
+// icon-192.png and icon-512.png (the web app manifest, site.webmanifest) and og-default.png (1200x630, the social card used by pages without their own image).
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -64,6 +64,18 @@ write(
     .png()
     .toBuffer(),
 );
+
+// Web app manifest icons: the same black square with the emblem inset (a 512 px icon from an 80 px logo is
+// soft; it improves with the vector logo, like the rest).
+for (const size of [192, 512]) {
+  write(
+    `icon-${size}.png`,
+    await sharp({ create: { width: size, height: size, channels: 3, background: "#000000" } })
+      .composite([{ input: await emblem(Math.round(size * 0.82)), gravity: "centre" }])
+      .png({ palette: true, quality: 90, compressionLevel: 9 })
+      .toBuffer(),
+  );
+}
 
 // Social card: the full logo, enlarged 3x, centred on black.
 const logo3x = await sharp(LOGO).resize(900, 240, { kernel: "lanczos3" }).png().toBuffer();

@@ -1,0 +1,15 @@
+{
+  "name": "Hyperborea. Revista de ensayo y creación",
+  "short_name": "Hyperborea",
+  "description": "Revista académica anual de ensayo y creación sobre literatura, artes visuales, cine y teatro. LabTIS, Universidad Nacional de Río Negro.",
+  "lang": "es",
+  "start_url": "/es",
+  "scope": "/",
+  "display": "minimal-ui",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
