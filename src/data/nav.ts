@@ -80,11 +80,11 @@ export function footerMenu(locale: Locale): NavLink[] {
   return SECTIONS.map((s) => ({ label: s.label, href: `/${locale}/${s.path}` }));
 }
 
-export type Partner = { alt: string; src: string; href: string };
+export type Partner = { alt: string; src: string; height: number; href: string };
 export const PARTNERS: Partner[] = [
-  { alt: "Dialnet", src: "/site/partners/dialnet_black.png", href: "https://dialnet.unirioja.es/servlet/revista?codigo=29071" },
-  { alt: "Malena", src: "/site/partners/malena_black.png", href: "https://www.caicyt-conicet.gov.ar/malena/items/show/2264" },
-  { alt: "Latindex", src: "/site/partners/latindex_black.png", href: "https://www.latindex.org/latindex/ficha/26479" },
-  { alt: "ROAD", src: "/site/partners/road_black.png", href: "https://portal.issn.org/resource/ISSN/2618-4397" },
-  { alt: "ERIHPLUS", src: "/site/partners/erihplus_black.png", href: "https://kanalregister.hkdir.no/publiseringskanaler/erihplus/periodical/info.action?id=507877" },
+  { alt: "Dialnet", src: "/site/partners/dialnet_black.png", height: 34, href: "https://dialnet.unirioja.es/servlet/revista?codigo=29071" },
+  { alt: "Malena", src: "/site/partners/malena_black.png", height: 54, href: "https://www.caicyt-conicet.gov.ar/malena/items/show/2264" },
+  { alt: "Latindex", src: "/site/partners/latindex_black.png", height: 40, href: "https://www.latindex.org/latindex/ficha/26479" },
+  { alt: "ROAD", src: "/site/partners/road_black.png", height: 49, href: "https://portal.issn.org/resource/ISSN/2618-4397" },
+  { alt: "ERIHPLUS", src: "/site/partners/erihplus_black.png", height: 40, href: "https://kanalregister.hkdir.no/publiseringskanaler/erihplus/periodical/info.action?id=507877" },
 ];

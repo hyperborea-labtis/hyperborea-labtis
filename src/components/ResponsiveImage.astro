@@ -1,0 +1,52 @@
+---
+// A featured image served as WebP variants (see src/lib/images.ts). If the image has none (a new upload
+// before the next build, a missing manifest) the original is used, so the page never breaks.
+import { describeImage, type ImageKind } from "../lib/images";
+import { imageManifest } from "../lib/image-manifest";
+
+interface Props {
+  src: string;
+  kind: ImageKind;
+  alt: string;
+  /** How wide the image is drawn at each viewport: the browser picks a variant from it. */
+  sizes: string;
+  /** Dimensions of the original, used only when there are no variants. */
+  fallbackWidth: number;
+  fallbackHeight: number;
+  class?: string;
+  /** Above the fold: load now. Everything else is lazy. */
+  eager?: boolean;
+  /** The most important image of the page (the LCP candidate): fetched first. */
+  priority?: boolean;
+}
+const { src, kind, alt, sizes, fallbackWidth, fallbackHeight, class: className, eager = false, priority = false } = Astro.props;
+const variants = describeImage(imageManifest, src, kind);
+---
+
+{
+  variants ? (
+    <img
+      class={className}
+      src={variants.src}
+      srcset={variants.srcset}
+      sizes={sizes}
+      width={variants.width}
+      height={variants.height}
+      alt={alt}
+      loading={eager ? "eager" : "lazy"}
+      decoding={eager ? "sync" : "async"}
+      fetchpriority={priority ? "high" : undefined}
+    />
+  ) : (
+    <img
+      class={className}
+      src={src}
+      width={fallbackWidth}
+      height={fallbackHeight}
+      alt={alt}
+      loading={eager ? "eager" : "lazy"}
+      decoding={eager ? "sync" : "async"}
+      fetchpriority={priority ? "high" : undefined}
+    />
+  )
+}

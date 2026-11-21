@@ -3,6 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PageTitle from "../../../components/PageTitle.astro";
+import ResponsiveImage from "../../../components/ResponsiveImage.astro";
 import SearchFilter from "../../../components/SearchFilter.astro";
 import { locales, useTranslations, type Locale } from "../../../i18n/config";
 import { articlesForLocale, articleBySlug, contentLangOf, langIfDifferent, realLocales } from "../../../lib/content";
@@ -63,7 +64,16 @@ const breadcrumbs = [{ name: activitiesTitle(lang), path: "/actividades" }, { na
       <PageTitle text={d.title} lang={textLang} />
       <article class="hb-article" lang={textLang}>
         {d.heroImage && (
-          <img src={d.heroImage} alt={d.heroAlt ?? ""} width="1140" height="630" />
+          <ResponsiveImage
+            src={d.heroImage}
+            kind="hero"
+            alt={d.heroAlt ?? ""}
+            sizes="(min-width: 992px) 940px, calc(100vw - 78px)"
+            fallbackWidth={1140}
+            fallbackHeight={630}
+            eager
+            priority
+          />
         )}
         <Content />
         {d.pdf && (

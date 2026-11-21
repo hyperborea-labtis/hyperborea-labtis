@@ -6,7 +6,9 @@
     "node": ">=22.23.4"
   },
   "scripts": {
+    "predev": "node scripts/build-images.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/build-images.mjs",
     "build": "astro build && pagefind --site dist && node scripts/build-redirects.mjs && node scripts/build-headers.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -21,7 +23,8 @@
     "check:worker": "npm run types --silent && tsc -p worker/tsconfig.json",
     "a11y": "node scripts/a11y.mjs",
     "validate:html": "html-validate \"dist/**/*.html\"",
-    "check:headers": "node scripts/check-headers.mjs"
+    "check:headers": "node scripts/check-headers.mjs",
+    "images": "node scripts/build-images.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",

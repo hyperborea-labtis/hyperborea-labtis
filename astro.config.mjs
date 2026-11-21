@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import { satteri } from "@astrojs/markdown-satteri";
 import { footnotes } from "./src/plugins/footnotes.mjs";
 import { sanitize } from "./src/plugins/sanitize.mjs";
+import { images } from "./src/plugins/images.mjs";
 
 // Production domain: the apex, hyperborea-labtis.org (the old Drupal site's canonical
 // link uses it). `www` also answers there today; at launch it must 301 to the apex.
@@ -114,9 +115,10 @@ export default defineConfig({
   // (/es/paper/x) and one .html file per page, which Cloudflare Pages serves at
   // the extensionless URL without redirecting.
   // Footnote links (#01) lost their targets in the import; rebuilt at render time.
-  // Raw HTML in Markdown is sanitized first (scripts, handlers, javascript: URLs).
+  // Raw HTML in Markdown is sanitized first (scripts, handlers, javascript: URLs); `images` runs last (it adds
+  // srcset/sizes, which the sanitizer would drop).
   // `satteri()` is Astro's default Markdown processor; this only adds the plugins.
-  markdown: { processor: satteri({ hastPlugins: [sanitize, footnotes] }) },
+  markdown: { processor: satteri({ hastPlugins: [sanitize, footnotes, images] }) },
   trailingSlash: "never",
   build: { format: "file" },
   // Never inline assets as data: URIs (fonts included): keeps the CSP free of `data:`
