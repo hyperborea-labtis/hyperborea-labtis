@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist && node scripts/build-redirects.mjs",
+    "build": "astro build && pagefind --site dist && node scripts/build-redirects.mjs && node scripts/build-headers.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check && npm run check:worker",
@@ -20,7 +20,8 @@
     "types": "wrangler types worker/worker-configuration.d.ts --env-file worker/secrets.example",
     "check:worker": "npm run types --silent && tsc -p worker/tsconfig.json",
     "a11y": "node scripts/a11y.mjs",
-    "validate:html": "html-validate \"dist/**/*.html\""
+    "validate:html": "html-validate \"dist/**/*.html\"",
+    "check:headers": "node scripts/check-headers.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",

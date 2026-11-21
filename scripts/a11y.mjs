@@ -22,17 +22,11 @@
  *
  * Exit code 1 if anything fails. Needs Chromium: `npx playwright install chromium`.
  */
-import { spawn } from "node:child_process";
-import fs from "node:fs";
-import net from "node:net";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 import { AxeBuilder } from "@axe-core/playwright";
+import { opt as option, startServer } from "./lib/serve.mjs";
 
-const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
-const args = process.argv.slice(2);
-const opt = (name) => args.find((a) => a.startsWith(`--${name}=`))?.slice(name.length + 3);
+const opt = (name) => option(process.argv.slice(2), name);
 
 // The sample. Pick pages that exercise each template; keep it fixed so results are comparable over time.
 const PAGES = [
@@ -67,52 +61,6 @@ const fail = (where, what) => {
   console.log(`   ✗ ${where}: ${what}`);
 };
 const section = (title) => console.log(`\n${title}`);
-
-// ---------- server ----------
-async function freePort() {
-  return new Promise((resolve, reject) => {
-    const s = net.createServer();
-    s.listen(0, "127.0.0.1", () => {
-      const { port } = s.address();
-      s.close(() => resolve(port));
-    });
-    s.on("error", reject);
-  });
-}
-
-async function startServer() {
-  if (opt("base")) return { base: opt("base"), stop: () => {} };
-  if (!fs.existsSync(path.join(ROOT, "dist", "es.html"))) {
-    console.error("dist/ is missing: run `npm run build` first.");
-    process.exit(2);
-  }
-  const port = await freePort();
-  const bin = path.join(ROOT, "node_modules", ".bin", "wrangler");
-  const child = spawn(bin, ["dev", "--local", "--ip", "127.0.0.1", "--port", String(port)], {
-    cwd: ROOT,
-    env: { ...process.env, WRANGLER_SEND_METRICS: "false", NO_COLOR: "1" },
-    stdio: ["ignore", "pipe", "pipe"],
-  });
-  let log = "";
-  child.stdout.on("data", (d) => (log += d));
-  child.stderr.on("data", (d) => (log += d));
-  const base = `http://127.0.0.1:${port}`;
-  const deadline = Date.now() + 90_000;
-  for (;;) {
-    if (child.exitCode !== null) throw new Error(`wrangler dev exited early:\n${log.slice(-2000)}`);
-    if (Date.now() > deadline) {
-      child.kill();
-      throw new Error(`wrangler dev did not start in 90 s:\n${log.slice(-2000)}`);
-    }
-    try {
-      if ((await fetch(`${base}/es`)).ok) break;
-    } catch {
-      /* not ready yet */
-    }
-    await new Promise((r) => setTimeout(r, 500));
-  }
-  return { base, stop: () => child.kill("SIGTERM") };
-}
 
 // ---------- helpers that run inside the page ----------
 /** Focus indicator of the element that has the focus: outline (survives forced-colors) or box-shadow. */

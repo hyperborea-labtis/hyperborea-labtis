@@ -16,6 +16,7 @@ import YAML from "yaml";
 import { findOwnLinks } from "../src/lib/own-links.ts";
 import { structureProblems } from "../src/lib/page-structure.ts";
 import { colorProblems } from "../src/lib/contrast.ts";
+import { mergeCsps, cspProblems, parseHeadersFile, parseCsp, LANGUAGE_PATHS } from "../src/lib/csp.ts";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const CONTENT = path.join(ROOT, "src", "content");
@@ -806,6 +807,57 @@ if (OFFLINE) {
 {
   const problems = colorProblems(fs.readFileSync(path.join(ROOT, "src", "styles", "hyperborea.css"), "utf8"));
   record("20. Color contrast tokens", problems.length ? "fail" : "pass", `${problems.length} problems`, problems);
+}
+// ---------- 21. Security headers (dist/_headers) ----------
+// The page policy travels as a <meta> in every page (Astro) and, for the public validators, as a real
+// header for /es /en /fr (scripts/build-headers.mjs). Here: every real page carries the policy, the header
+// equals what the pages say, it is strict, it is NOT attached to /* (that would reach /admin) and the CMS
+// keeps its own. check-headers.mjs repeats this on live responses.
+{
+  const problems = [];
+  const metaCsp = /<meta\s+http-equiv="content-security-policy"\s+content="([^"]*)"/i;
+  const decode = (t) => t.replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
+  const fromPages = new Set();
+  let pagesSeen = 0;
+  for (const f of walk(DIST, (x) => x.endsWith(".html") && !/\/(admin|pagefind)\//.test(x))) {
+    const html = fs.readFileSync(f, "utf8");
+    if (/http-equiv="refresh"/i.test(html)) continue; // redirect stub
+    pagesSeen++;
+    const m = metaCsp.exec(html);
+    if (m) fromPages.add(decode(m[1]));
+    else if (problems.length < 5) problems.push(`${relf(f)}: no Content-Security-Policy <meta>`);
+  }
+  const headersFile = path.join(DIST, "_headers");
+  if (!fs.existsSync(headersFile)) problems.push("dist/_headers is missing");
+  else {
+    const rules = parseHeadersFile(fs.readFileSync(headersFile, "utf8"));
+    const cspOf = (rule) => rule.headers.filter(([n]) => n.toLowerCase() === "content-security-policy").map(([, v]) => v);
+    const merged = mergeCsps([...fromPages]);
+    problems.push(...merged.problems);
+    problems.push(...cspProblems(merged.csp).map((x) => `page policy: ${x}`));
+    const sameSet = (a, b) => {
+      const A = parseCsp(a), B = parseCsp(b);
+      return A.size === B.size && [...A].every(([k, v]) => B.has(k) && new Set(v).size === new Set(B.get(k)).size && v.every((x) => B.get(k).includes(x)));
+    };
+    for (const pth of LANGUAGE_PATHS) {
+      const rule = rules.find((r) => r.path === pth);
+      const [header] = rule ? cspOf(rule) : [];
+      if (!header) problems.push(`dist/_headers: no Content-Security-Policy for ${pth} (run \`npm run build\`)`);
+      else if (!sameSet(header, merged.csp)) problems.push(`dist/_headers: the policy for ${pth} differs from the one the pages carry`);
+    }
+    const star = rules.find((r) => r.path === "/*");
+    for (const v of star ? cspOf(star) : []) if (/\b(script-src|default-src)\b/.test(v)) problems.push("dist/_headers: the page policy is attached to /* (it would reach /admin)");
+    for (const pth of ["/admin", "/admin/*"]) {
+      const rule = rules.find((r) => r.path === pth);
+      const csp = rule ? cspOf(rule).join(", ") : "";
+      if (!/unpkg\.com/.test(csp)) problems.push(`dist/_headers: ${pth} lost the CMS policy`);
+      else problems.push(...cspProblems(csp, { allowInlineStyle: true }).map((x) => `${pth} policy: ${x}`));
+    }
+    const permissions = rules.find((r) => r.path === "/*")?.headers.find(([n]) => n.toLowerCase() === "permissions-policy")?.[1] ?? "";
+    if (!permissions.includes("browsing-topics=()")) problems.push("dist/_headers: Permissions-Policy must opt out of browsing-topics");
+    if (/preload/i.test(rules.find((r) => r.path === "/*")?.headers.find(([n]) => n.toLowerCase() === "strict-transport-security")?.[1] ?? "")) problems.push("dist/_headers: HSTS asks for preload (not decided yet)");
+  }
+  record("21. Security headers (page CSP as a header, /admin intact)", problems.length ? "fail" : "pass", `${pagesSeen} pages, ${fromPages.size} distinct policy, ${problems.length} problems`, problems);
 }
 // ---------- 13. Own-domain links in content ----------
 {
