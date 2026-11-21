@@ -45,6 +45,7 @@ const PAGES = [
   "/es/taxonomy/term/10", // keyword page
   "/es/buscar?q=arte", // search with results (Pagefind)
   "/es/contact",
+  "/es/editores/resumenes", // internal list for the editors (93 entries, long page)
   "/es/no-existe-esta-pagina", // 404
   "/en/paper/aigokeros", // untranslated copy: Spanish text under /en (noindex, canonical to /es)
   "/fr/paper/aigokeros",

@@ -1,0 +1,64 @@
+---
+// Working list for the editors: the papers whose abstract was written by the editorial team
+// (`abstractSource: editorial`) and still wait for a review. Rebuilt on every build from the content,
+// so a paper leaves the list once its abstract is marked as the author's. It is an internal page:
+// noindex, not in the sitemap, not in the search index, and linked from nowhere on the site.
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PageTitle from "../../../components/PageTitle.astro";
+import { papersForLocale } from "../../../lib/content";
+import { splitAuthor } from "../../../lib/author";
+
+const papers = (await papersForLocale("es"))
+  .filter((p) => p.data.abstractSource === "editorial" && p.data.abstract)
+  .sort((a, b) => (a.data.issue ?? 99) - (b.data.issue ?? 99) || (a.data.issueOrder ?? 999) - (b.data.issueOrder ?? 999));
+const pad = (n?: number) => (n ? String(n).padStart(2, "0") : "—");
+---
+
+<BaseLayout
+  title="Resúmenes pendientes de revisión"
+  description="Lista de trabajo para la redacción: papers cuyo resumen fue elaborado por la redacción y espera revisión."
+  lang="es"
+  path="/editores/resumenes"
+  alternates={["es"]}
+  noindex
+  singleLanguage
+>
+  <div class="hb-main">
+    <div class="hb-container">
+      <PageTitle text="Resúmenes pendientes de revisión" />
+      <div class="hb-editor-intro">
+        <p>
+          Estos <strong>{papers.length}</strong> papers muestran un resumen que elaboró la redacción (aparece con la etiqueta «Resumen elaborado
+          por la redacción»). Cada enlace «Ver en el sitio» abre el paper publicado y «Editar en el CMS» abre su ficha.
+        </p>
+        <p>
+          Para revisar uno: ábrelo en el CMS, corrige el campo «Resumen» si hace falta y, si el autor o la autora aprueba o envía el suyo, cambia
+          «Autoría del resumen» a «Del autor/a». Guarda, envía a revisión y publica cuando se pongan en verde las comprobaciones. Al publicarse,
+          ese paper sale de esta lista en la siguiente compilación.
+        </p>
+      </div>
+      <ol class="hb-editor-list">
+        {
+          papers.map((p) => (
+            <li class="hb-editor-item">
+              <h2 class="hb-editor-title">{p.data.title}</h2>
+              <p class="hb-editor-meta">
+                Número {pad(p.data.issue)}
+                {p.data.section && <> · {p.data.section}</>}
+                {p.data.author && <> · {splitAuthor(p.data.author).name}</>}
+              </p>
+              <p class="hb-editor-links">
+                <a href={`/es/paper/${p.data.slug}`}>
+                  Ver en el sitio<span class="hb-visually-hidden">: {p.data.title}</span>
+                </a>
+                <a href={`/admin#/collections/papers/entries/${p.data.slug}`}>
+                  Editar en el CMS<span class="hb-visually-hidden">: {p.data.title}</span>
+                </a>
+              </p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</BaseLayout>
