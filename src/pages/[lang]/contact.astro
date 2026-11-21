@@ -1,23 +1,22 @@
 ---
-// Contact form, same URL as the old Drupal site (/es/contact). Submits to the
-// Worker in worker/index.ts (POST /api/contact), protected by Cloudflare Turnstile.
-// Without PUBLIC_TURNSTILE_SITEKEY at build time the form is replaced by a notice:
-// that is the "suspended" state until the secrets and the widget are configured.
+// Contact page, same URL as the old Drupal site (/es/contact). Readers write to the journal's address
+// (JOURNAL.contactEmail): there is no form. The Worker in worker/index.ts (POST /api/contact, Turnstile,
+// Email Service) is kept in the repository but nothing calls it; see the README to bring the form back.
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageTitle from "../../components/PageTitle.astro";
+import { JOURNAL } from "../../data/journal";
 import { locales, type Locale } from "../../i18n/config";
 import { listingDescription } from "../../lib/descriptions";
 
 export const getStaticPaths = (() => locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
 
 const lang = Astro.params.lang as Locale;
-const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITEKEY as string | undefined;
 
-const text: Record<Locale, Record<string, string>> = {
-  es: { title: "Contacto", name: "Su nombre", email: "Su dirección de correo electrónico", subject: "Asunto", message: "Mensaje", send: "Enviar mensaje", ok: "Mensaje enviado. ¡Gracias!", error: "No se pudo enviar el mensaje. Inténtelo de nuevo más tarde.", challenge: "No se pudo verificar la comprobación de seguridad. Actualice la página e inténtelo de nuevo.", limited: "Demasiados intentos. Espere un minuto e inténtelo de nuevo.", unavailable: "El formulario de contacto no está disponible por el momento.", invalid: "Revise los campos marcados: todos son obligatorios y el correo debe ser válido." },
-  en: { title: "Contact", name: "Your name", email: "Your email address", subject: "Subject", message: "Message", send: "Send message", ok: "Message sent. Thank you!", error: "The message could not be sent. Please try again later.", challenge: "The security check could not be verified. Reload the page and try again.", limited: "Too many attempts. Wait a minute and try again.", unavailable: "The contact form is temporarily unavailable.", invalid: "Check the highlighted fields: all are required and the email address must be valid." },
-  fr: { title: "Contact", name: "Votre nom", email: "Votre adresse e-mail", subject: "Sujet", message: "Message", send: "Envoyer le message", ok: "Message envoyé. Merci !", error: "Le message n’a pas pu être envoyé. Veuillez réessayer plus tard.", challenge: "La vérification de sécurité a échoué. Rechargez la page et réessayez.", limited: "Trop de tentatives. Patientez une minute et réessayez.", unavailable: "Le formulaire de contact est momentanément indisponible.", invalid: "Vérifiez les champs signalés : tous sont obligatoires et l’adresse e-mail doit être valide." },
+const text: Record<Locale, { title: string; intro: string }> = {
+  es: { title: "Contacto", intro: "Para comunicarse con la revista, escriba a" },
+  en: { title: "Contact", intro: "To get in touch with the journal, write to" },
+  fr: { title: "Contact", intro: "Pour contacter la revue, écrivez à" },
 };
 const t = text[lang];
 ---
@@ -26,69 +25,9 @@ const t = text[lang];
   <div class="hb-main">
     <div class="hb-container">
       <PageTitle text={t.title} />
-      {!siteKey && <p class="hb-contact-unavailable" role="status">{t.unavailable}</p>}
-      {siteKey && (
-      <form class="hb-contact" id="contact-form" novalidate>
-        <label>{t.name}<input name="name" type="text" required maxlength="120" autocomplete="name" /></label>
-        <label>{t.email}<input name="email" type="email" required maxlength="200" autocomplete="email" /></label>
-        <label>{t.subject}<input name="subject" type="text" required maxlength="200" /></label>
-        <label>{t.message}<textarea name="message" rows="8" required maxlength="5000"></textarea></label>
-        <input class="hb-contact-trap" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="cf-turnstile" data-sitekey={siteKey} data-language={lang} data-theme="light"></div>
-        <button type="submit">{t.send}</button>
-        <p id="contact-status" role="status" data-ok={t.ok} data-error={t.error} data-challenge={t.challenge} data-limited={t.limited} data-invalid={t.invalid}></p>
-      </form>
-      <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-      )}
+      <p class="hb-contact-email">
+        {t.intro} <a href={`mailto:${JOURNAL.contactEmail}`}>{JOURNAL.contactEmail}</a>
+      </p>
     </div>
   </div>
 </BaseLayout>
-
-<script>
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("contact-status");
-  if (form instanceof HTMLFormElement && status) {
-    form.addEventListener("input", (ev) => {
-      const field = ev.target;
-      if (field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) {
-        if (field.hasAttribute("aria-invalid") && field.checkValidity()) field.setAttribute("aria-invalid", "false");
-      }
-    });
-    form.addEventListener("submit", async (ev) => {
-      ev.preventDefault();
-      // Our own validation (the form is novalidate): mark each bad field, say so in the live region
-      // and move the focus to the first one.
-      let firstInvalid: HTMLInputElement | HTMLTextAreaElement | null = null;
-      for (const field of form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[required]")) {
-        const bad = !field.checkValidity();
-        field.setAttribute("aria-invalid", String(bad));
-        if (bad && !firstInvalid) firstInvalid = field;
-      }
-      if (firstInvalid) {
-        status.setAttribute("role", "alert");
-        status.textContent = status.dataset.invalid ?? "";
-        firstInvalid.focus();
-        return;
-      }
-      const button = form.querySelector("button");
-      if (button) button.disabled = true;
-      try {
-        const res = await fetch("/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(Object.fromEntries(new FormData(form))),
-        });
-        const failure = res.status === 429 ? status.dataset.limited : res.status === 403 ? status.dataset.challenge : status.dataset.error;
-        status.setAttribute("role", res.ok ? "status" : "alert");
-        status.textContent = (res.ok ? status.dataset.ok : failure) ?? "";
-        if (res.ok) form.reset();
-      } catch {
-        status.setAttribute("role", "alert");
-        status.textContent = status.dataset.error ?? "";
-      }
-      // A Turnstile token is single-use: ask for a fresh one after every attempt.
-      (window as Window & { turnstile?: { reset: () => void } }).turnstile?.reset();
-      if (button) button.disabled = false;
-    });
-  }
-</script>
