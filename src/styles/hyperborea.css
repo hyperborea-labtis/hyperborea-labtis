@@ -10,7 +10,13 @@
   --hb-ink: #2e3436;
   --hb-light: #e7eff5;
   --hb-yellow: #d8b200;
-  --hb-border: #bdbdbd;
+  --hb-border: #bdbdbd; /* decorative lines only */
+  /* Accessible variants (WCAG 2.2 AA). --hb-yellow stays for backgrounds and for text on black. */
+  --hb-yellow-text: #7a6200; /* yellow-ish text on white / light panels: 5.9:1 */
+  --hb-yellow-large: #9c8100; /* large bold text (>= 24px, or 18.7px bold) on white: 3.8:1 */
+  --hb-control-border: #767676; /* borders of form controls: 4.5:1 */
+  --hb-muted: #595959; /* secondary text: 7:1 */
+  --hb-focus: var(--hb-ink); /* focus ring: redefined on dark and yellow surfaces */
   --hb-slate: rgba(30, 37, 39, 0.95);
 
   font-family: var(--font-lato), "Helvetica Neue", Arial, sans-serif;
@@ -84,6 +90,7 @@
 
 /* ---------- Header ---------- */
 .hb-header-container {
+  --hb-focus: var(--hb-yellow);
   background: #000;
   position: relative;
   z-index: 40;
@@ -357,7 +364,7 @@
   display: block;
   width: 100%;
   height: 40px;
-  border: 1px solid var(--hb-border);
+  border: 1px solid var(--hb-control-border);
   border-radius: 40px;
   padding: 9px 20px;
   font-family: inherit;
@@ -366,7 +373,6 @@
   line-height: 1;
   color: var(--hb-ink);
   background: #fff;
-  outline: none;
   transition: border-color 0.15s linear;
 }
 
@@ -413,7 +419,8 @@
 .hb-footer {
   flex: 0 0 auto;
   background: var(--hb-yellow);
-  color: #fff;
+  color: #000;
+  --hb-focus: #000;
   padding: 40px 0 30px;
 }
 
@@ -438,13 +445,13 @@
 }
 
 .hb-footer a {
-  color: #fff;
+  color: #000;
   font-weight: 300;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid #000;
 }
 
 .hb-footer a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .hb-cc img {
@@ -651,7 +658,7 @@
 }
 
 .hb-card-title a:hover {
-  color: var(--hb-yellow);
+  color: var(--hb-yellow-text);
 }
 
 /* ---------- Node / article ---------- */
@@ -697,7 +704,7 @@
 .hb-article h2.capitulo {
   font-size: 1.2em;
   font-weight: 700;
-  color: gray;
+  color: var(--hb-muted);
   margin: 1.6em 0 0.4em;
 }
 
@@ -734,12 +741,15 @@
 }
 
 .hb-article a {
-  color: var(--hb-yellow);
+  color: var(--hb-yellow-text);
   overflow-wrap: anywhere;
+  /* Links inside running text are told apart by more than color (WCAG 1.4.1). */
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .hb-article a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* Footnote targets: keep the note clear of the fixed header and flag it. */
@@ -818,7 +828,7 @@
 }
 
 .hb-topfooter-menu a:hover {
-  color: var(--hb-yellow);
+  color: var(--hb-yellow-text);
 }
 
 /* ---------- Responsive (≤767px) ---------- */
@@ -1004,7 +1014,7 @@
 .hb-article :is(h2, h3) {
   font-size: 1.2em;
   font-weight: 700;
-  color: gray;
+  color: var(--hb-muted);
   margin: 1.6em 0 0.5em;
 }
 .hb-article p { font-size: 16px; line-height: 1.6; text-align: justify; }
@@ -1045,25 +1055,25 @@
 .hb-paper-meta div { display: flex; flex-wrap: wrap; gap: 0 8px; line-height: 1.7; }
 .hb-paper-meta dt { font-weight: 700; }
 .hb-paper-meta dd { margin: 0; font-weight: 300; }
-.hb-paper-meta a { color: var(--hb-yellow); }
-.hb-paper-meta a:hover { text-decoration: underline; }
+.hb-paper-meta a { color: var(--hb-yellow-text); text-decoration: underline; text-underline-offset: 0.18em; }
+.hb-paper-meta a:hover { text-decoration-thickness: 2px; }
 .hb-file { display: inline-flex; align-items: center; gap: 6px; overflow-wrap: anywhere; }
 .hb-file svg { flex: none; color: #c0392b; }
 .hb-license { margin-top: 1.6em; }
 .hb-article .hb-license img { display: block; margin: 0 0 4px; }
 .hb-license p { margin: 0; font-size: 0.95em; font-weight: 300; }
 .hb-license a { color: var(--hb-ink); border-bottom: 1px solid var(--hb-yellow); }
-.hb-license a:hover { color: var(--hb-yellow); }
+.hb-license a:hover { color: var(--hb-yellow-text); }
 
 /* Issue table of contents (/numero-N) */
 .hb-toc { list-style: none; margin: 0; padding: 0; }
 .hb-toc-item { margin-bottom: 40px; }
 .hb-toc-section {
   margin: 40px 0 50px 60px; padding: 0 0 0 30px; font-size: 13.6px; font-weight: 300;
-  line-height: 1.5; color: var(--hb-yellow); border-left: 3px solid rgba(216, 178, 0, 0.25);
+  line-height: 1.5; color: var(--hb-yellow-text); border-left: 3px solid rgba(216, 178, 0, 0.25);
 }
 .hb-toc-title { margin: 20px 0 10px; font-size: 32px; line-height: 1.2; font-weight: 700; text-transform: uppercase; }
-.hb-toc-title a { color: var(--hb-yellow); }
+.hb-toc-title a { color: var(--hb-yellow-large); }
 .hb-toc-title a:hover { text-decoration: underline; }
 .hb-toc-author { margin: 20px 0 10px; font-size: 25.6px; line-height: 1.2; font-weight: 700; text-transform: uppercase; color: var(--hb-ink); }
 .hb-toc-meta { margin: 0; font-weight: 300; }
@@ -1081,16 +1091,16 @@
 .hb-search-filters { display: flex; flex-wrap: wrap; gap: 14px 20px; margin: 18px 0 6px; }
 .hb-search-filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85em; font-weight: 700; text-transform: uppercase; }
 .hb-select {
-  height: 40px; min-width: 170px; border: 1px solid var(--hb-border); border-radius: 40px;
+  height: 40px; min-width: 170px; border: 1px solid var(--hb-control-border); border-radius: 40px;
   padding: 0 16px; background: #fff; color: var(--hb-ink); font: inherit; font-weight: 400; text-transform: none;
 }
-.hb-select:focus { border-color: var(--hb-yellow); outline: none; }
+.hb-select:focus { border-color: var(--hb-yellow); }
 .hb-select:disabled { opacity: 0.5; }
 .hb-search-results { list-style: none; margin: 0; padding: 0; }
 .hb-search-result { padding: 22px 0; border-bottom: 1px solid #eee; }
 .hb-search-result h2 { margin: 0 0 8px; font-size: 22px; line-height: 1.3; }
 .hb-search-result h2 a { color: var(--hb-ink); }
-.hb-search-result h2 a:hover { color: var(--hb-yellow); }
+.hb-search-result h2 a:hover { color: var(--hb-yellow-text); }
 .hb-search-result p { margin: 0; font-weight: 300; }
 .hb-search-result mark { background: rgba(216, 178, 0, 0.3); color: inherit; }
 .hb-search-more { margin-top: 24px; }
@@ -1099,7 +1109,7 @@
 .hb-contact { max-width: 640px; margin: 0 auto 60px; }
 .hb-contact label { display: block; margin-bottom: 18px; font-weight: 700; }
 .hb-contact input,
-.hb-contact textarea { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border: 1px solid var(--hb-border); font: inherit; }
+.hb-contact textarea { display: block; width: 100%; margin-top: 6px; padding: 10px 12px; border: 1px solid var(--hb-control-border); font: inherit; }
 .hb-contact button { padding: 12px 34px; border: 2px solid var(--hb-ink); background: var(--hb-ink); color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; }
 .hb-contact .cf-turnstile { margin: 0 0 18px; min-height: 65px; }
 .hb-contact-unavailable { max-width: 640px; margin: 0 auto 60px; text-align: center; font-weight: 700; }
@@ -1151,4 +1161,12 @@
     outline: 2px solid ButtonText;
     outline-offset: -2px;
   }
+}
+
+/* ---------- Focus indicator (WCAG 2.4.7, 2.4.11, 1.4.11) ---------- */
+/* One ring for every control, 3 px thick, in the color that contrasts with the surface it sits on:
+   --hb-focus is dark ink on white, yellow on the black header and black on the yellow footer. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--hb-focus, #2e3436);
+  outline-offset: 2px;
 }

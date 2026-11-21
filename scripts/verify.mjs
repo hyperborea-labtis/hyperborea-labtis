@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import YAML from "yaml";
 import { findOwnLinks } from "../src/lib/own-links.ts";
 import { structureProblems } from "../src/lib/page-structure.ts";
+import { colorProblems } from "../src/lib/contrast.ts";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 const CONTENT = path.join(ROOT, "src", "content");
@@ -797,6 +798,14 @@ if (OFFLINE) {
     if (!css.includes(needle)) problems.push(`src/styles/hyperborea.css  lost ${why} (${needle})`);
   }
   record("19. Accessibility guards (no HTML sinks, motion/forced-colors/scroll-padding CSS)", problems.length ? "fail" : "pass", `${sources.length} source files, ${problems.length} problems`, problems);
+}
+// ---------- 20. Color contrast of the design tokens ----------
+// WCAG 2.2 AA (1.4.3, 1.4.11): the text and control-border tokens keep their ratio on the surfaces
+// they are used on, and the plain brand yellow (2:1 on white) only colors text on the black header.
+// The maths and the thresholds live in src/lib/contrast.ts.
+{
+  const problems = colorProblems(fs.readFileSync(path.join(ROOT, "src", "styles", "hyperborea.css"), "utf8"));
+  record("20. Color contrast tokens", problems.length ? "fail" : "pass", `${problems.length} problems`, problems);
 }
 // ---------- 13. Own-domain links in content ----------
 {
