@@ -17,7 +17,7 @@ evaluatedDate: ''
 publishedDate: ''
 heroImage: ''
 heroAlt: ''
-pdf: ''
+pdf: /sites/default/files/marting.pdf
 aliases: []
 sourceUrl: ''
 draft: false
