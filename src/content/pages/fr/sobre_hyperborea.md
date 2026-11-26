@@ -1,11 +1,13 @@
 ---
-lang: "fr"
-translationKey: "66"
-slug: "sobre_hyperborea"
-title: "À propos d'Hyperborea"
+translationKey: '66'
+title: À propos d'Hyperborea
+slug: sobre_hyperborea
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/fr/sobre_hyperborea
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/fr/sobre_hyperborea"
+lang: fr
 ---
+
 ***Hyperborea. Revista de ensayo y creación*** est une revue numérique annuelle portant sur la littérature, l’art et le cinéma publiée par le Laboratoire Texte, image et société \[LabTIS\], qui fonctionne dans la Sede Andina de l’Université Nationale de Río Negro depuis 2016. Les sections de la revue reposent essentiellement sur des critères d’un comité de rédaction en étroite relation avec une direction qui réunissent professeurs et chercheurs de l’Université de Río Negro, l’Université de Buenos Aires, l’Université de La Plata, l'Université de Rosario, l'Université Paris Sorbonne, l'Institut de Recherches Bibliographiques de l'Université Nationale Autonome du Mexique, la Commission Nationale de Recherche Scientifique et Technique du Chili \[CONICYT\] et le Conseil National de la Recherche Scientifique et Technique de la République Argentine \[CONICET\]; certains d’entre eux sont aussi traducteurs, écrivains et réalisateurs de films d’auteur.
 
 ![Mercator\_Simplified](/sites/default/files/inline-images/Mercator_Simplified.gif)
@@ -19,11 +21,11 @@ Silvia Inés Tomas
 Lucrecia Radyk (2018-2020)
 
 **Comité de rédaction**  
-Daniela Chazarreta  
+Daniela Chazarreta 
+Florencia Llarrull 
 Rodolfo Reyes Macaya  
 Tadeo Pablo Stein  
 Mariano Sverdloff  
-Florencia Llarrull
 
 **Édition en français**  
 Silvana Bianchi
