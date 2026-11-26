@@ -3,10 +3,10 @@ translationKey: ''
 title: aaa test marting
 slug: aaatestmarting
 created: 2026-11-26 03:16
-section: ''
+section: Mare Sugenum
 issue: 8
 issueOrder: null
-author: ''
+author: Martín G
 email: ''
 affiliation: ''
 abstract: ''
