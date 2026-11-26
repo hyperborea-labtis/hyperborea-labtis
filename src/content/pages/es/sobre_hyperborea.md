@@ -1,14 +1,16 @@
 ---
-lang: "es"
-translationKey: "66"
-slug: "sobre_hyperborea"
-title: "Sobre Hyperborea"
+translationKey: '66'
+title: Sobre Hyperborea
+slug: sobre_hyperborea
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/es/sobre_hyperborea
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/es/sobre_hyperborea"
+lang: es
 ---
-***Hyperborea. Revista de ensayo y creación*** es una publicación digital anual sobre literatura, arte y cine del Laboratorio Texto, imagen y sociedad \[LabTIS\], que funciona en la Sede Andina de la Universidad Nacional de Río Negro desde el año 2016. Las secciones de la revista descansan en los criterios de un equipo compuesto por editores/as que, junto con la dirección de la publicación, se desempeñan como docentes e investigadores en la Universidad Nacional de Río Negro, Universidad de Buenos Aires, Universidad Nacional de La Plata, Universidad Nacional de Rosario, Université Paris Sorbonne, Instituto de Investigaciones Bibliográficas de la Universidad Nacional Autónoma de México, Comisión Nacional de Investigación Científica y Tecnológica de Chile \[CONICYT\] y el Consejo Nacional de Investigaciones Científico Técnicas de la República Argentina \[CONICET\]; algunos de ellos, a la par de lo anterior, son traductores, escritores y realizadores de cine de autor.
 
-![Mercator\_Simplified](/sites/default/files/inline-images/Mercator_Simplified.gif)
+**_Hyperborea. Revista de ensayo y creación_** es una publicación digital anual sobre literatura, arte y cine del Laboratorio Texto, imagen y sociedad [LabTIS], que funciona en la Sede Andina de la Universidad Nacional de Río Negro desde el año 2016. Las secciones de la revista descansan en los criterios de un equipo compuesto por editores/as que, junto con la dirección de la publicación, se desempeñan como docentes e investigadores en la Universidad Nacional de Río Negro, Universidad de Buenos Aires, Universidad Nacional de La Plata, Universidad Nacional de Rosario, Université Paris Sorbonne, Instituto de Investigaciones Bibliográficas de la Universidad Nacional Autónoma de México, Comisión Nacional de Investigación Científica y Tecnológica de Chile [CONICYT] y el Consejo Nacional de Investigaciones Científico Técnicas de la República Argentina [CONICET]; algunos de ellos, a la par de lo anterior, son traductores, escritores y realizadores de cine de autor.
+
+![Mercator_Simplified](/sites/default/files/inline-images/Mercator_Simplified.gif)
 
 **Directores**  
 Ana Lía Gabrieloni  
@@ -19,11 +21,12 @@ Silvia Inés Tomas
 Lucrecia Radyk (2018-2020)
 
 **Comité editorial**  
-Daniela Chazarreta  
+Daniela Chazarreta
+Florencia Llarrull  
 Rodolfo Reyes Macaya  
 Tadeo Pablo Stein  
 Mariano Sverdloff  
-Florencia Llarrull
+
 
 **Edición en francés**  
 Silvana Bianchi
