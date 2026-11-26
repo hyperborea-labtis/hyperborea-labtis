@@ -1,35 +1,39 @@
 ---
-lang: "es"
-translationKey: "384"
-created: "2025-11-29T02:49:00.000Z"
-receivedDate: "2025-10-27"
-evaluatedDate: "2025-11-07"
-publishedDate: "2025-11-28"
-slug: "la-configuracion-iconografica-de-la-cautiva"
-title: "La configuración iconográfica de la cautiva: del esteticismo romántico a la construcción ideológica del imaginario nacional argentino"
-section: "Mare Sugenum"
+translationKey: '384'
+title: 'La configuración iconográfica de la cautiva: del esteticismo romántico a la construcción ideológica del imaginario nacional argentino'
+slug: la-configuracion-iconografica-de-la-cautiva
+created: 2025-11-29T02:49:00.000Z
+section: Mare Sugenum
 issue: 8
 issueOrder: 1
-author: "Verónica Pérez"
-email: "perezvl@gmail.com"
-affiliation: "Facultad de Filosofía y letras, Universidad de Buenos Aires"
-abstract: "Este artículo abordará la configuración iconográfica de la cautiva en el imaginario argentino del siglo XIX. El objetivo principal es establecer un diálogo entre la representación literaria, centrada en el poema «La Cautiva» (1837) de Esteban Echeverría, y las producciones pictóricas de Johann Moritz Rugendas, Juan Manuel de Blanes y Ángel Della Valle. Mediante el análisis de la transposición de este motivo central, el trabajo pretende mostrar cómo la figura de la cautiva trascendió el esteticismo romántico para operar como un instrumento clave en la construcción ideológica de la identidad nacional, revelando las tensiones sociopolíticas entre civilización y barbarie."
+author: Verónica Pérez
+email: perezvl@gmail.com
+affiliation: Facultad de Filosofía y letras, Universidad de Buenos Aires
+abstract: Este artículo abordará la configuración iconográfica de la cautiva en el imaginario argentino del siglo XIX. El objetivo principal es establecer un diálogo entre la representación literaria, centrada en el poema «La Cautiva» (1837) de Esteban Echeverría, y las producciones pictóricas de Johann Moritz Rugendas, Juan Manuel de Blanes y Ángel Della Valle. Mediante el análisis de la transposición de este motivo central, el trabajo pretende mostrar cómo la figura de la cautiva trascendió el esteticismo romántico para operar como un instrumento clave en la construcción ideológica de la identidad nacional, revelando las tensiones sociopolíticas entre civilización y barbarie. Carta
+abstractSource: ''
 keywords:
-  - "Literatura argentina"
-  - "Pintura argentina"
-  - "La Cautiva"
-  - "imaginario argentino"
-  - "transposición"
-  - "Esteban Echeverría"
-  - "Ángel Della Valle"
-  - "Johann Moritz Rugendas"
-  - "Juan Manuel Blanes"
-  - "ut pictura poesis"
-heroImage: "/sites/default/files/ct-paper/perez.png"
-pdf: "/sites/default/files/ct-paper/hyperborea_08_perez-configuracion-iconografica-la-cautiva-.pdf"
+  - Literatura argentina
+  - Pintura argentina
+  - La Cautiva
+  - imaginario argentino
+  - transposición
+  - Esteban Echeverría
+  - Ángel Della Valle
+  - Johann Moritz Rugendas
+  - Juan Manuel Blanes
+  - ut pictura poesis
+receivedDate: 2025-10-27
+evaluatedDate: 2025-11-07
+publishedDate: 2025-11-28
+heroImage: /sites/default/files/ct-paper/perez.png
+heroAlt: ''
+pdf: /sites/default/files/ct-paper/hyperborea_08_perez-configuracion-iconografica-la-cautiva-.pdf
+aliases: []
+sourceUrl: https://hyperborea-labtis.org/es/paper/la-configuracion-iconografica-de-la-cautiva
 draft: false
-sourceUrl: "https://hyperborea-labtis.org/es/paper/la-configuracion-iconografica-de-la-cautiva"
+lang: es
 ---
+
 ## Resumen
 
 Este artículo abordará la configuración iconográfica de la cautiva en el imaginario argentino del siglo XIX. El objetivo principal es establecer un diálogo entre la representación literaria, centrada en el poema «La Cautiva» (1837) de Esteban Echeverría, y las producciones pictóricas de Johann Moritz Rugendas, Juan Manuel de Blanes y Ángel Della Valle. Mediante el análisis de la transposición de este motivo central, el trabajo pretende mostrar cómo la figura de la cautiva trascendió el esteticismo romántico para operar como un instrumento clave en la construcción ideológica de la identidad nacional, revelando las tensiones sociopolíticas entre civilización y barbarie.
